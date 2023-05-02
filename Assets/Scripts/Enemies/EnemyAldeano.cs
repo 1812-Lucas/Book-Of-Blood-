@@ -24,12 +24,12 @@ public class EnemyAldeano : Enemy
     }
     public void BasicDamage()
     {
-        player.PlayerHealth -= 2;
+        player._maxhealth -= 2;
         Debug.Log("El enemigo inflingio 2 de daño al jugador con un ataque basico");
     }
     public void HeavyDamage()
     {
-        player.PlayerHealth -= 4;
+        player._maxhealth -= 4;
         Debug.Log("El enemigo inflingio 4 de daño al jugador con un golpe pesado");
     }
     public void Regeneration()

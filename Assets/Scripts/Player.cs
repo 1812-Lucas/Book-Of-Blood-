@@ -44,9 +44,13 @@ public class Player : MonoBehaviour
 
     public CharacterController player;
     public float playerspeed;
-    public int PlayerHealth = 30;
+    public int _maxhealth = 30; 
     public int vigorPoints = 40;
     public float gravity = 9.8f;
+
+    public float _currenthealth; 
+
+    
 
     private void Awake()
     {
@@ -54,7 +58,11 @@ public class Player : MonoBehaviour
     }
     private void Start()
     {
+        
+
         player = GetComponent<CharacterController>();
+
+        
     }
     private void Update()
     {

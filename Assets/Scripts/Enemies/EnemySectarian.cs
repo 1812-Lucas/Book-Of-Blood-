@@ -25,12 +25,12 @@ public class EnemySectarian : Enemy
     }
     public void BasicDamage()
     {
-        player.PlayerHealth -= 3;
+        player._maxhealth -= 3;
         Debug.Log("El enemigo inflingio 3 de daño al jugador con un ataque basico");
     }
     public void HeavyDamage()
     {
-        player.PlayerHealth -= 5;
+        player._maxhealth -= 5;
         Debug.Log("El enemigo inflingio 5 de daño al jugador con un golpe pesado");
     }
     public void Regeneration()
