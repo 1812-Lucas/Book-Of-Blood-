@@ -3415,6 +3415,7 @@ MonoBehaviour:
   descriptiontext: {fileID: 790764958}
   image: {fileID: 1074949015}
   attacktext: {fileID: 1217115683}
+  vigortext: {fileID: 1541389936}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -7658,6 +7659,7 @@ MonoBehaviour:
   descriptiontext: {fileID: 11875115}
   image: {fileID: 1397964632}
   attacktext: {fileID: 688736036}
+  vigortext: {fileID: 1412907727}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -9160,6 +9162,7 @@ MonoBehaviour:
   descriptiontext: {fileID: 1800306168}
   image: {fileID: 835009415}
   attacktext: {fileID: 1622506551}
+  vigortext: {fileID: 1387826037}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -9587,6 +9590,7 @@ MonoBehaviour:
   descriptiontext: {fileID: 29331211}
   image: {fileID: 651631902}
   attacktext: {fileID: 1335551938}
+  vigortext: {fileID: 1886113108}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -15654,6 +15658,7 @@ MonoBehaviour:
   descriptiontext: {fileID: 1487833414}
   image: {fileID: 536507031}
   attacktext: {fileID: 1735291071}
+  vigortext: {fileID: 1324034820}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -16374,6 +16379,7 @@ MonoBehaviour:
   descriptiontext: {fileID: 259233418}
   image: {fileID: 434222342}
   attacktext: {fileID: 774178904}
+  vigortext: {fileID: 916222379}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -16678,6 +16684,7 @@ MonoBehaviour:
   descriptiontext: {fileID: 733884832}
   image: {fileID: 1082629061}
   attacktext: {fileID: 1831010097}
+  vigortext: {fileID: 1757216050}
   scriptdeck: {fileID: 1950983790}
   myslot: 2
   attackdmg: 0
@@ -17385,6 +17392,7 @@ MonoBehaviour:
   descriptiontext: {fileID: 134555706}
   image: {fileID: 2013695161}
   attacktext: {fileID: 391630824}
+  vigortext: {fileID: 991920355}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -19327,6 +19335,7 @@ MonoBehaviour:
   descriptiontext: {fileID: 1203272467}
   image: {fileID: 898763190}
   attacktext: {fileID: 361411763}
+  vigortext: {fileID: 270229221}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -20101,6 +20110,7 @@ MonoBehaviour:
   descriptiontext: {fileID: 1111618057}
   image: {fileID: 1696941456}
   attacktext: {fileID: 1154513653}
+  vigortext: {fileID: 1113982860}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -20772,6 +20782,7 @@ MonoBehaviour:
   descriptiontext: {fileID: 806281881}
   image: {fileID: 795272821}
   attacktext: {fileID: 24151349}
+  vigortext: {fileID: 941509215}
   scriptdeck: {fileID: 1950983790}
   myslot: 3
   attackdmg: 0

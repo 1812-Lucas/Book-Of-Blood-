@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ConsoleDisplay : MonoBehaviour
 {
     public Text consoleText;
-    public float timetext = 5f;
+    public float timetext = 10f;
 
     void Start()
     {
