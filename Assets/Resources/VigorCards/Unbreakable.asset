@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Unbreakable
   m_EditorClassIdentifier: 
   name: Unbreakable
-  description: gives 3 aditional <i><color=orange>vigor</color></i> points this turn
+  description: gives 3 aditional <i><color=red>vigor</color></i> points this turn
   image: {fileID: 0}
   vigorcost: 1
