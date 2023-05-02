@@ -166,8 +166,8 @@ GameObject:
   - component: {fileID: 7910656068851151482}
   - component: {fileID: 5712986794260492655}
   - component: {fileID: 2566541265283969750}
-  - component: {fileID: 7947561425360375091}
-  - component: {fileID: 2034795155}
+  - component: {fileID: 5035851363991577847}
+  - component: {fileID: 5273619601675263601}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -308,6 +308,7 @@ MonoBehaviour:
   - {fileID: 0}
   ActiveCamera: {fileID: 0}
   camerascript: {fileID: 0}
+  enemiesreminder: 0
   deckscript: {fileID: 7910656068851151482}
   vigordeckscript: {fileID: 5712986794260492655}
   ScriptVigorCardDisplaySlot4: {fileID: 0}
@@ -351,7 +352,7 @@ MonoBehaviour:
   button5: {fileID: 0}
   button6: {fileID: 0}
   VigorDeckScript: {fileID: 5712986794260492655}
-  PlayerStadisticsScript: {fileID: 2034795155}
+  PlayerStadisticsScript: {fileID: 5273619601675263601}
 --- !u!114 &7910656068851151482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,7 +403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 355303126e14d824680cbf61d03a4de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7947561425360375091
+--- !u!114 &5035851363991577847
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -411,12 +412,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8077958657708868338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 370d1b38e8da182478011df5a9167918, type: 3}
+  m_Script: {fileID: 11500000, guid: a7c7ad2e86523514ba7250171ce3dee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
-  vigor: 40
---- !u!114 &2034795155
+  myGM: {fileID: 0}
+--- !u!114 &5273619601675263601
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

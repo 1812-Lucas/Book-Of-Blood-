@@ -83,7 +83,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combatUI: {fileID: 0}
+  Inventory: {fileID: 0}
   cardsEquiped: 0
+  inventoryactive: 0
   deck: []
   cardslots: []
   availableCardSlots: 
@@ -168,8 +170,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8603241555245809765, guid: f8f8be9228bf2474a921abeb1a9eb981, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 24.601421
+      objectReference: {fileID: 0}
+    - target: {fileID: 8603241555245809765, guid: f8f8be9228bf2474a921abeb1a9eb981, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.32000017
+      value: 3.6023922
+      objectReference: {fileID: 0}
+    - target: {fileID: 8603241555245809765, guid: f8f8be9228bf2474a921abeb1a9eb981, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.389706
+      objectReference: {fileID: 0}
+    - target: {fileID: 8603241555245809765, guid: f8f8be9228bf2474a921abeb1a9eb981, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.94278806
+      objectReference: {fileID: 0}
+    - target: {fileID: 8603241555245809765, guid: f8f8be9228bf2474a921abeb1a9eb981, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.05172855
+      objectReference: {fileID: 0}
+    - target: {fileID: 8603241555245809765, guid: f8f8be9228bf2474a921abeb1a9eb981, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.32886055
+      objectReference: {fileID: 0}
+    - target: {fileID: 8603241555245809765, guid: f8f8be9228bf2474a921abeb1a9eb981, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0180438
       objectReference: {fileID: 0}
     - target: {fileID: 8603241555245809765, guid: f8f8be9228bf2474a921abeb1a9eb981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -183,7 +209,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1552848549782953886, guid: f8f8be9228bf2474a921abeb1a9eb981, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f8f8be9228bf2474a921abeb1a9eb981, type: 3}
 --- !u!4 &8536629146987952638 stripped
 Transform:
