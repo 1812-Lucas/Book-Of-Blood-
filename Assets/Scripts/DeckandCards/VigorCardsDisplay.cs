@@ -18,7 +18,9 @@ public class VigorCardsDisplay : MonoBehaviour
     public string NombredelaCartadeVigoryEjecutarPasiva;
     public Player player;
     public StadisticPlayer stadisticplayerScipt;
-    
+    private int SpiritGrowthStacks;
+    private int ProtectionTottemStacks;
+
     public Enemy enemyy;
 
     private void Start()
@@ -52,15 +54,17 @@ public class VigorCardsDisplay : MonoBehaviour
     public void ejecutarpasivadelacartadevigor()
     {
         NombredelaCartadeVigoryEjecutarPasiva = card.name;
-        
+
         switch (NombredelaCartadeVigoryEjecutarPasiva)
         {
             case "Warrior Pendant":
                 stadisticplayerScipt.health += 5;
+                protectiontottempasive();
                 Debug.Log("te has curado 5 puntos de salud");
                 break;
             case "Senpukku":
                 
+                protectiontottempasive();
                 if (stadisticplayerScipt.health <= 5)
                 {
                     enemyy.health -= 7;
@@ -70,10 +74,45 @@ public class VigorCardsDisplay : MonoBehaviour
             case "Sacrifice":
 
                 enemyy.health -= 12;
+                protectiontottempasive();
                 stadisticplayerScipt.health -= 7;
                 Debug.Log("te has inflingido daño pero mucho mas al enemigo");
                 break;
+            case "Spirit Growth":
 
+                SpiritGrowthStacks += 1;
+                protectiontottempasive();
+                if (SpiritGrowthStacks >= 7)
+                {
+                    enemyy.health -= 8;
+                    Debug.Log("has inflingido 8 de daño con Spirit Growth");
+                }
+                break;
+            case "Unbreakable":
+                stadisticplayerScipt.vigor += 3;
+                protectiontottempasive();
+                Debug.Log("te has aumentado 3 puntos de vigor");
+                break;
+            case "Protection Tottem":
+                stadisticplayerScipt.health += 1;
+                protectiontottempasive();
+                Debug.Log("te has curado 1 puntos de salud");
+               ProtectionTottemStacks+= 1;
+                if (ProtectionTottemStacks >= 5)
+                {
+                    Debug.Log("el tottem de proteccción ya está activado");
+                }
+                break;
+
+        }
+
+
+    }
+    public void protectiontottempasive()
+    {
+        if (ProtectionTottemStacks >= 5)
+        {
+            stadisticplayerScipt.health += 1;
         }
 
     }

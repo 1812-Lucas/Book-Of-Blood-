@@ -129,7 +129,7 @@ public class Combat : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && enemyattack == true)
         {
-            //PlayerStadisticsScript.vigor = MoreVigorPerRound + 1;
+            PlayerStadisticsScript.vigor += 1;
             button1.interactable = true;
             button2.interactable = true;
             button3.interactable = true;

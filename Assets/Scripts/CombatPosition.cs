@@ -26,6 +26,7 @@ public class CombatPosition : MonoBehaviour
     public VigorCardsDisplay ScriptVigorCardDisplaySlot4;
     public VigorCardsDisplay ScriptVigorCardDisplaySlot5;
     public VigorCardsDisplay ScriptVigorCardDisplaySlot6;
+    public StadisticPlayer stadisticPlayerScript;
 
     public float ContadorTransicion;
 
@@ -76,6 +77,8 @@ public class CombatPosition : MonoBehaviour
         Debug.Log("Entraste en combate");
         deckscript.DrawCards();
         vigordeckscript.DrawCards();
+
+        stadisticPlayerScript.vigor = 1;
         
     }
     public void SwitchCamera(CinemachineVirtualCamera camera)

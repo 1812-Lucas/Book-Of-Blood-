@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     CombatPosition _combatposition;
     public int health;
     public string tipodeenemigo;
+    public StadisticPlayer PlayerStadisticsScript;
     public virtual void Start()
     {
         Enemyapears();
