@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1868,7 +1868,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh51448
+  m_Name: pb_Mesh22154
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5682,7 +5682,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh51868
+  m_Name: pb_Mesh22582
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10371,6 +10371,7 @@ GameObject:
   - component: {fileID: 1010339363}
   - component: {fileID: 1010339365}
   - component: {fileID: 1010339364}
+  - component: {fileID: 1010339366}
   m_Layer: 5
   m_Name: Vigor Points
   m_TagString: Untagged
@@ -10495,6 +10496,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010339362}
   m_CullTransparentMesh: 1
+--- !u!114 &1010339366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010339362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa0189e30fd37a1448a7aaac435a1085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stadisticPlayerScript: {fileID: 2034795158}
 --- !u!1 &1032490655
 GameObject:
   m_ObjectHideFlags: 0
@@ -16841,6 +16855,7 @@ GameObject:
   - component: {fileID: 1614581517}
   - component: {fileID: 1614581519}
   - component: {fileID: 1614581518}
+  - component: {fileID: 1614581520}
   m_Layer: 5
   m_Name: Health Points
   m_TagString: Untagged
@@ -16965,6 +16980,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614581516}
   m_CullTransparentMesh: 1
+--- !u!114 &1614581520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614581516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7669e53d3ae7e9a4686fdaafa1621cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stadisticPlayerScript: {fileID: 2034795158}
 --- !u!1 &1622506549
 GameObject:
   m_ObjectHideFlags: 0
@@ -18774,7 +18802,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh51550
+  m_Name: pb_Mesh22256
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19894,7 +19922,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh52188
+  m_Name: pb_Mesh22910
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21007,6 +21035,10 @@ PrefabInstance:
       propertyPath: myGM
       value: 
       objectReference: {fileID: 1695875802}
+    - target: {fileID: 5273619601675263601, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: vigor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5299470838625391949, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: mainCamera
       value: 
@@ -21193,7 +21225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42.87
+      value: -37.51
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21559,31 +21591,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.67033046
+      value: 24.73
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0858562
+      value: 3.2599998
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -22.291458
+      value: 12.729999
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.94278806
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.05172855
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.32886055
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.0180438
       objectReference: {fileID: 0}
     - target: {fileID: 9111124668897760994, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_ExposedReferences.m_References.Array.data[0].second

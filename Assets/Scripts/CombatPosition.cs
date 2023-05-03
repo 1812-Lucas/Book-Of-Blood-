@@ -78,7 +78,7 @@ public class CombatPosition : MonoBehaviour
         deckscript.DrawCards();
         vigordeckscript.DrawCards();
 
-        stadisticPlayerScript.vigor = 1;
+        //stadisticPlayerScript.vigor = 1;
         
     }
     public void SwitchCamera(CinemachineVirtualCamera camera)
