@@ -31,9 +31,9 @@ public class Enemy : MonoBehaviour
     {
         _combatposition = combatPosition;
     }
-    public void SetPlayer(Player playerreference)
+    public void SetPlayer(StadisticPlayer playerreference)
     {
-        player = playerreference;
+        PlayerStadisticsScript = playerreference;
     }
     public virtual void EnemyDies()
     {
