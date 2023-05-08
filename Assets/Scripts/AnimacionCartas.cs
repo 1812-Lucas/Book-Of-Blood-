@@ -19,9 +19,9 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        gameObject.layer = SortingLayer.GetLayerValueFromName("CardSelected");
+       
 
-        LeanTween.scale(gameObject, initialScale * 1.5f, 0.2f);
+        LeanTween.scale(gameObject, initialScale * 1.3f, 0.2f);
         
 
         SeleccionarCartas.Play();
@@ -31,7 +31,7 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        gameObject.layer = SortingLayer.GetLayerValueFromName("Cards");
+       
 
         LeanTween.scale(gameObject, initialScale, 0.2f);
         
