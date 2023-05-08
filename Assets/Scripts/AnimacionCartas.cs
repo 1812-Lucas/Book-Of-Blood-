@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 
 
@@ -9,22 +10,29 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
 {
     private Vector3 initialScale;
 
-    public ParticleSystem SeleccionarCartas;
+    public Image spriteSeleccionado;
+
     
+
+
     void Start()
     {
+        spriteSeleccionado.gameObject.SetActive(false);
         
         initialScale = transform.localScale; 
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-       
+     
 
         LeanTween.scale(gameObject, initialScale * 1.3f, 0.2f);
-        
 
-        SeleccionarCartas.Play();
+
+        spriteSeleccionado.gameObject.SetActive(true);
+        
+        spriteSeleccionado.transform.position = transform.position;
+       
 
        
     }
@@ -34,10 +42,11 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
        
 
         LeanTween.scale(gameObject, initialScale, 0.2f);
+
+        spriteSeleccionado.gameObject.SetActive(false);
         
 
-        SeleccionarCartas.Stop();
 
-       
+
     }
 }
