@@ -307,6 +307,7 @@ MonoBehaviour:
   cameras:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   ActiveCamera: {fileID: 0}
   camerascript: {fileID: 0}
   enemiesreminder: 0

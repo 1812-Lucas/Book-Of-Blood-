@@ -6,12 +6,13 @@ using Cinemachine;
 public class CombatPosition : MonoBehaviour
 {
     //public EnemyAldeano enemyAldean;
-    public ParticleSystem ParticulasAmarillas;
+    
     public Enemy enemyy;
     public Combat combatscript;
     public List<GameObject> enemyGObj;
     public Transform enemytransf;
     public GameObject areaWhereTheEnemySpawns;
+    public GameObject areWhereTheEnemySpawns2;
     public bool battlePosition = false;
     public Rigidbody playerRB;
     public Camera mainCamera;
@@ -27,6 +28,10 @@ public class CombatPosition : MonoBehaviour
     public VigorCardsDisplay ScriptVigorCardDisplaySlot5;
     public VigorCardsDisplay ScriptVigorCardDisplaySlot6;
     public StadisticPlayer stadisticPlayerScript;
+
+    public GameObject magicSeal1;
+
+    public GameObject magicSeal2;
 
     public float ContadorTransicion;
 
@@ -50,7 +55,7 @@ public class CombatPosition : MonoBehaviour
             player.enabled = true;
             playerRB.constraints = RigidbodyConstraints.None;
             playerRB.constraints = RigidbodyConstraints.FreezeRotation;
-            ParticulasAmarillas.Stop();
+            
             Debug.Log("Saliste del combate");
             //playerRB.freezeRotation = false;
             //player.enabled = true;
@@ -60,9 +65,8 @@ public class CombatPosition : MonoBehaviour
 
     public void combatON()
     {
-
-        
-        
+        if(magicSeal1 == true)
+        {
         Cursor.lockState = CursorLockMode.Confined;
         SwitchCamera(cameras[1]);
         battlePosition = true;
@@ -77,6 +81,28 @@ public class CombatPosition : MonoBehaviour
         Debug.Log("Entraste en combate");
         deckscript.DrawCards();
         vigordeckscript.DrawCards();
+
+        }
+
+        
+        if(magicSeal2 == true)
+        {
+            Cursor.lockState = CursorLockMode.Confined;
+            SwitchCamera(cameras[2]);
+            battlePosition = true;
+            camerascript.enabled = false;
+            myGM.activeUI();
+            player.enabled = false;
+            Vector3 direccion = new Vector3(7, 0, 12);
+            transform.LookAt(direccion);
+            mainCamera.transform.LookAt(enemytransf);
+            playerRB.constraints = RigidbodyConstraints.FreezeAll;
+            //playerRB.freezeRotation = true;
+            Debug.Log("Entraste en combate");
+            deckscript.DrawCards();
+            vigordeckscript.DrawCards();
+
+        }
 
         //stadisticPlayerScript.vigor = 1;
         
@@ -107,6 +133,9 @@ public class CombatPosition : MonoBehaviour
     {
         if (other.gameObject.layer == 9)
         {
+            if (magicSeal1 == true)
+            {
+                
             Destroy(other.gameObject);
             camerascript.canMoveCamera = false;
             enemiesreminder = 1;
@@ -120,6 +149,26 @@ public class CombatPosition : MonoBehaviour
             Destroy(areaWhereTheEnemySpawns.gameObject);
             StartCoroutine(CamaraTransicionCombate());
             combatON();
+
+            }
+
+            if (magicSeal2 == true)
+            {
+                Destroy(other.gameObject);
+                camerascript.canMoveCamera = false;
+                enemiesreminder = 1;
+                Enemy actualenemy = Instantiate(enemyGObj[Random.Range(0, enemyGObj.Count)], areWhereTheEnemySpawns2.transform.position, areWhereTheEnemySpawns2.transform.rotation).GetComponent<Enemy>();
+                actualenemy.Setcombat(this);
+                actualenemy.SetPlayer(stadisticPlayerScript);
+                combatscript.setenemy(actualenemy);
+                ScriptVigorCardDisplaySlot4.setenemy(actualenemy);
+                ScriptVigorCardDisplaySlot5.setenemy(actualenemy);
+                ScriptVigorCardDisplaySlot6.setenemy(actualenemy);
+                Destroy(areaWhereTheEnemySpawns.gameObject);
+                StartCoroutine(CamaraTransicionCombate());
+                combatON();
+            }
+
         }
     }
 
