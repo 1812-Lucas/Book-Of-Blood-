@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14084,11 +14084,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217115681}
   m_CullTransparentMesh: 1
---- !u!1 &1222581034 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8077958657708868338, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-  m_PrefabInstance: {fileID: 8077958658333811773}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1248712712
 GameObject:
   m_ObjectHideFlags: 0
@@ -15280,7 +15275,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8077958657708868335, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
   m_PrefabInstance: {fileID: 8077958658333811773}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222581034}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77cb29c30c68d77478505583e1e35024, type: 3}
@@ -15291,7 +15286,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
   m_PrefabInstance: {fileID: 8077958658333811773}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222581034}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a75fb82f03a3d5846b756eb4c4bfd576, type: 3}
@@ -17400,7 +17395,7 @@ GameObject:
   - component: {fileID: 1611642970}
   - component: {fileID: 1611642969}
   - component: {fileID: 1611642968}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: cardsbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20185,7 +20180,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
   m_PrefabInstance: {fileID: 8077958658333811773}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222581034}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77dde7aaf5a5160458b2bad6508c44bf, type: 3}
@@ -20953,7 +20948,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
   m_PrefabInstance: {fileID: 8077958658333811773}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222581034}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25c77a0e4092ed349ac62f62d597fa4d, type: 3}
@@ -20964,40 +20959,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5273619601675263601, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
   m_PrefabInstance: {fileID: 8077958658333811773}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222581034}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 370d1b38e8da182478011df5a9167918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2034795165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222581034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 070f1e47aa90e2b4e830e3e1afa25813, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cardsOnInventory:
-  - {fileID: 231035093}
-  - {fileID: 399890905}
-  - {fileID: 1801275866}
-  - {fileID: 1575878095}
-  - {fileID: 1001653277}
-  - {fileID: 530141770}
-  - {fileID: 2007568931}
-  - {fileID: 1725659768}
-  - {fileID: 1534423239}
-  - {fileID: 764236757}
-  - {fileID: 934056758}
-  - {fileID: 470247702}
-  - {fileID: 1557557546}
-  - {fileID: 916718612}
-  ActivatorsOfCards: 0000000000000000000000000000
 --- !u!1 &2036985052
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,12 +17,8 @@ TagManager:
   - MagicSeals
   - player
   - PlayerSensor
-<<<<<<< Updated upstream
-  - CardBoxes
-=======
   - PatrolEnemy
->>>>>>> Stashed changes
-  - 
+  - CardBoxes
   - 
   - 
   - 

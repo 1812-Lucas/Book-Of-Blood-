@@ -168,6 +168,7 @@ GameObject:
   - component: {fileID: 2566541265283969750}
   - component: {fileID: 5035851363991577847}
   - component: {fileID: 5273619601675263601}
+  - component: {fileID: 5489668236635680053}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -276,6 +277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KeyForTheBlackDoor: 0
   mainCamera: {fileID: 0}
+  menumanagerscript: {fileID: 0}
   doormask:
     serializedVersion: 2
     m_Bits: 128
@@ -347,6 +349,7 @@ MonoBehaviour:
   cardOrange4: {fileID: 0}
   cardOrange5: {fileID: 0}
   cardOrange6: {fileID: 0}
+  passButton: {fileID: 0}
   button1: {fileID: 0}
   button2: {fileID: 0}
   button3: {fileID: 0}
@@ -433,6 +436,34 @@ MonoBehaviour:
   health: 30
   vigor: 40
   defense: 0
+--- !u!114 &5489668236635680053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8077958657708868338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 070f1e47aa90e2b4e830e3e1afa25813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardsOnInventory:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  ActivatorsOfCards: 0000000000000000000000000000
 --- !u!1 &8077958658602386710
 GameObject:
   m_ObjectHideFlags: 0

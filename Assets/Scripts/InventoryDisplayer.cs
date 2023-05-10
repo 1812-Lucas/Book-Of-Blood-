@@ -10,8 +10,8 @@ public class InventoryDisplayer : MonoBehaviour
 
     public GameObject[] cardsOnInventory;
     public bool[] ActivatorsOfCards;
-    private bool TriggerClock = true;
-    private float Clock;
+    public bool TriggerClock = true;
+    public float Clock;
 
 
 
@@ -31,7 +31,6 @@ public class InventoryDisplayer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
         if (other.gameObject.layer == 13)
         {
 
@@ -48,9 +47,11 @@ public class InventoryDisplayer : MonoBehaviour
 
             }
         }
+
     }
     private void OnCollisionEnter(Collision other)
     {
+
         
     }
 

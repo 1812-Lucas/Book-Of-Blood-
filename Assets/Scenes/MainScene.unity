@@ -21861,6 +21861,62 @@ PrefabInstance:
       propertyPath: ScriptVigorCardDisplaySlot6
       value: 
       objectReference: {fileID: 256322632}
+    - target: {fileID: 5489668236635680053, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardsOnInventory.Array.data[0]
+      value: 
+      objectReference: {fileID: 231035093}
+    - target: {fileID: 5489668236635680053, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardsOnInventory.Array.data[1]
+      value: 
+      objectReference: {fileID: 399890905}
+    - target: {fileID: 5489668236635680053, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardsOnInventory.Array.data[2]
+      value: 
+      objectReference: {fileID: 1801275866}
+    - target: {fileID: 5489668236635680053, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardsOnInventory.Array.data[3]
+      value: 
+      objectReference: {fileID: 1575878095}
+    - target: {fileID: 5489668236635680053, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardsOnInventory.Array.data[4]
+      value: 
+      objectReference: {fileID: 1001653277}
+    - target: {fileID: 5489668236635680053, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardsOnInventory.Array.data[5]
+      value: 
+      objectReference: {fileID: 530141770}
+    - target: {fileID: 5489668236635680053, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardsOnInventory.Array.data[6]
+      value: 
+      objectReference: {fileID: 2007568931}
+    - target: {fileID: 5489668236635680053, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardsOnInventory.Array.data[7]
+      value: 
+      objectReference: {fileID: 1725659768}
+    - target: {fileID: 5489668236635680053, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardsOnInventory.Array.data[8]
+      value: 
+      objectReference: {fileID: 1534423239}
+    - target: {fileID: 5489668236635680053, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardsOnInventory.Array.data[9]
+      value: 
+      objectReference: {fileID: 764236757}
+    - target: {fileID: 5489668236635680053, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardsOnInventory.Array.data[10]
+      value: 
+      objectReference: {fileID: 934056758}
+    - target: {fileID: 5489668236635680053, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardsOnInventory.Array.data[11]
+      value: 
+      objectReference: {fileID: 470247702}
+    - target: {fileID: 5489668236635680053, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardsOnInventory.Array.data[12]
+      value: 
+      objectReference: {fileID: 1557557546}
+    - target: {fileID: 5489668236635680053, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: cardsOnInventory.Array.data[13]
+      value: 
+      objectReference: {fileID: 916718612}
     - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: mainCamera
       value: 
@@ -22003,7 +22059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22011,7 +22067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -34.6
+      value: -40.2
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -22451,15 +22507,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.62221086
+      value: 0.7303786
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.019451141
+      value: 0.067871094
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -22.291462
+      value: -22.291458
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.w
