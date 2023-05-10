@@ -29,6 +29,7 @@ public class Combat : MonoBehaviour
     public Image cardOrange4;
     public Image cardOrange5;
     public Image cardOrange6;
+    public Button passButton;
     public Button button1;
     public Button button2;
     public Button button3;
@@ -50,22 +51,11 @@ public class Combat : MonoBehaviour
 
     void Start()
     {
-        /*if (enemy >= 1)
-        {
-            combatmodeON();
-            if (combatmode == true)
-            {
-                for (int turnos = 1; turnos >= 1; turnos++)
-                {
-                    Debug.Log("Inicia el turno numero " + turnos);
-                    //carddmg();
-                }
-            }
-        }*/
+
     }
     void Update()
     {
-        Enemydealsdamage();
+
     }
 
     public void activaryDesactivarCartaAlUsarlaSlot1()
@@ -127,7 +117,7 @@ public class Combat : MonoBehaviour
     }*/
     public void Enemydealsdamage()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && enemyattack == true)
+        if (enemyattack == true)
         {
             PlayerStadisticsScript.vigor += 1;
             button1.interactable = true;
