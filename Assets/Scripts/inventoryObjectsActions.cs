@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class inventoryObjectsActions : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class inventoryObjectsActions : MonoBehaviour
     public int KeyForTheBlackDoor;
     
     public Camera mainCamera;
+    public MenuManager menumanagerscript;
     [SerializeField] LayerMask doormask;
     
     private void OnCollisionEnter(Collision other)
@@ -49,6 +51,10 @@ public class inventoryObjectsActions : MonoBehaviour
                 Destroy(other.gameObject);
             }
 
+        }
+        if (other.gameObject.layer == 12)
+        {
+            menumanagerscript.Restartscene();
         }
     }    /*private void Update()
     {
