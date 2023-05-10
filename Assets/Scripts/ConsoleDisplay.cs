@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ConsoleDisplay : MonoBehaviour
 {
     public Text consoleText;
-    public float timetext = 10f;
+    public float messageTime = 1000f;
 
     void Start()
     {
@@ -31,7 +31,7 @@ public class ConsoleDisplay : MonoBehaviour
 
     IEnumerator DestroyText()
     {
-        yield return new WaitForSeconds(timetext);
+        yield return new WaitForSeconds(messageTime);
         consoleText.text = "";
     }
 }

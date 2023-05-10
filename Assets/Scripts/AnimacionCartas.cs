@@ -12,9 +12,6 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public Image spriteSeleccionado;
 
-    
-
-
     void Start()
     {
         spriteSeleccionado.gameObject.SetActive(false);
