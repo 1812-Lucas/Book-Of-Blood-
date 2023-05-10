@@ -6,42 +6,56 @@ using UnityEngine.Events;
 public class InventoryDisplayer : MonoBehaviour
 {
 
-    [SerializeField] UnityEvent EV_OnPlayerEnter;
-    [SerializeField] UnityEvent EV_OnPlayerExit;
-    public Player player;
-    public Collider playerColl;
-    public int MyNumber;
-    //public List<> CardsinInventory;
 
 
 
+    public GameObject[] cardsOnInventory;
+    public bool[] ActivatorsOfCards;
+    private bool TriggerClock = true;
+    private float Clock;
 
-    private void OnTriggerEnter(Collider other)
+
+
+    private void Update()
     {
-
-        if (IsPlayer(other))
+        if (TriggerClock == false)
         {
-
-        }
-    }
-
-    public void IamThisCard(int thesenumber)
-    {
-        thesenumber = MyNumber;
-        if (thesenumber == 1)
-        {
-
+            Clock = Time.deltaTime;
+            if (Clock >= 5)
+            {
+                TriggerClock = true;
+            }
         }
     }
 
 
-    bool IsPlayer(Collider col)
+
+    private void OnCollisionEnter(Collision other)
     {
-        Player c = col.GetComponent<Player>();
-        if (c == GameManager.instance.Player())
+
+
+
+        if (other.gameObject.layer == 12)
         {
-            return true;
+            
+            if (TriggerClock == true)
+            {
+                for (int i = 0; i <= cardsOnInventory.Length; i++)
+                {
+                    ActivatorsOfCards[i] = true;
+                    cardsOnInventory[i].gameObject.SetActive(ActivatorsOfCards[i]);
+                    Debug.Log("has obtenido una nueva carta [i] para ver el inventario");
+                    Destroy(other.gameObject);
+                    TriggerClock = false;
+                }
+
+            }
         }
-        return false;
     }
+
+
+
+
+
+
 }
