@@ -23,7 +23,7 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
     {
      
 
-        LeanTween.scale(gameObject, initialScale * 1.3f, 0.2f);
+        LeanTween.scale(gameObject, initialScale * 1.2f, 0.2f);
 
 
         spriteSeleccionado.gameObject.SetActive(true);
