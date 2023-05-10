@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class InventoryDisplayer : MonoBehaviour
 {
@@ -30,14 +29,14 @@ public class InventoryDisplayer : MonoBehaviour
 
 
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
 
 
 
         if (other.gameObject.layer == 12)
         {
-            
+
             if (TriggerClock == true)
             {
                 for (int i = 0; i <= cardsOnInventory.Length; i++)
@@ -52,6 +51,12 @@ public class InventoryDisplayer : MonoBehaviour
             }
         }
     }
+    private void OnCollisionEnter(Collision other)
+    {
+        
+    }
+
+
 
 
 
