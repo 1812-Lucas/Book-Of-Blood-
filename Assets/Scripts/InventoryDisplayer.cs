@@ -31,7 +31,7 @@ public class InventoryDisplayer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == 13)
+        if (other.gameObject.layer == 15)
         {
 
             if (TriggerClock == true)
@@ -49,11 +49,11 @@ public class InventoryDisplayer : MonoBehaviour
         }
 
     }
-    private void OnCollisionEnter(Collision other)
+    /*private void OnCollisionEnter(Collision other)
     {
 
         
-    }
+    }*/
 
 
 
