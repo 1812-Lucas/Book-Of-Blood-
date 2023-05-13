@@ -11,10 +11,23 @@ public class inventoryObjectsActions : MonoBehaviour
     public Camera mainCamera;
     public MenuManager menumanagerscript;
     [SerializeField] LayerMask doormask;
-    
+
+    public GameObject[] cardsOnInventory;
+    public bool[] ActivatorsOfCards;
+    public int CardsOnCountdown;
+
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.layer == 6)
+        if (other.gameObject.layer == 15)
+        {
+            ActivatorsOfCards[CardsOnCountdown] = true;
+            cardsOnInventory[CardsOnCountdown].gameObject.SetActive(ActivatorsOfCards[CardsOnCountdown]);
+            Debug.Log("has obtenido una nueva carta [i] para ver el inventario");
+            Destroy(other.gameObject);
+            CardsOnCountdown += 1;
+        }
+
+            if (other.gameObject.layer == 6)
         {
             WhispersCount += 1;
             Destroy(other.gameObject);

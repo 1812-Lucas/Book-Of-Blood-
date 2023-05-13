@@ -13,6 +13,7 @@ public class VigorDeck : MonoBehaviour
     public bool SlotBool4 = false;
     public bool SlotBool5 = false;
     public bool SlotBool6 = false;
+    public VigorCards[] DeckOfTheDeck;
 
     private void Awake()
     {

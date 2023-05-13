@@ -10,12 +10,13 @@ public class InventoryDisplayer : MonoBehaviour
 
     public GameObject[] cardsOnInventory;
     public bool[] ActivatorsOfCards;
-    public bool TriggerClock = true;
-    public float Clock;
+    public int CardsOnCountdown;
+    //public bool TriggerClock = true;
+    //public float Clock;
 
 
 
-    private void Update()
+   /* private void Update()
     {
         if (TriggerClock == false)
         {
@@ -26,15 +27,20 @@ public class InventoryDisplayer : MonoBehaviour
             }
         }
     }
+   */
 
 
-
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.layer == 15)
         {
+            ActivatorsOfCards[CardsOnCountdown]= true;
+            cardsOnInventory[CardsOnCountdown].gameObject.SetActive(ActivatorsOfCards[CardsOnCountdown]);
+            Debug.Log("has obtenido una nueva carta [i] para ver el inventario");
+            Destroy(other.gameObject);
+            CardsOnCountdown += 1;
 
-            if (TriggerClock == true)
+            /*if (TriggerClock == true)
             {
                 for (int i = 0; i <= cardsOnInventory.Length; i++)
                 {
@@ -46,6 +52,8 @@ public class InventoryDisplayer : MonoBehaviour
                 }
 
             }
+            */
+
         }
 
     }
