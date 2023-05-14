@@ -210,7 +210,7 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   menumanagerscript: {fileID: 0}
   player: {fileID: 2164653984255317432}
-  playerspeed: 20
+  playerspeed: 10
   _maxhealth: 30
   vigorPoints: 40
   gravity: 9.8
@@ -281,6 +281,9 @@ MonoBehaviour:
   doormask:
     serializedVersion: 2
     m_Bits: 128
+  cardsOnInventory: []
+  ActivatorsOfCards: 
+  CardsOnCountdown: 0
 --- !u!114 &5299470838625391949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,6 +399,8 @@ MonoBehaviour:
   SlotBool4: 0
   SlotBool5: 0
   SlotBool6: 0
+  DeckOfTheDeck: []
+  DeckDisplayerInventory: []
 --- !u!114 &2566541265283969750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -448,24 +453,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070f1e47aa90e2b4e830e3e1afa25813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardsOnInventory:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  ActivatorsOfCards: 0000000000000000000000000000
-  TriggerClock: 1
-  Clock: 0
+  card: {fileID: 0}
+  nametext: {fileID: 0}
+  descriptiontext: {fileID: 0}
+  image: {fileID: 0}
+  attacktext: {fileID: 0}
 --- !u!1 &8077958658602386710
 GameObject:
   m_ObjectHideFlags: 0
