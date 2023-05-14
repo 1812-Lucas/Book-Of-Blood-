@@ -14,7 +14,7 @@ public class CardDisplay : MonoBehaviour
     public Image image;
     
     public Text attacktext;
-    public Text vigortext;
+  
     public Deck scriptdeck;
     public int myslot;
     public int attackdmg;
@@ -31,7 +31,7 @@ public class CardDisplay : MonoBehaviour
         image.sprite = card.image;
        
         attacktext.text = card.attack.ToString();
-        vigortext.text = card.vigorcost.ToString();
+        
 
     }
     public int Thecarddmg()
@@ -59,7 +59,7 @@ public class CardDisplay : MonoBehaviour
         image.sprite = card.image;
         
         attacktext.text = card.attack.ToString();
-        vigortext.text = card.vigorcost.ToString();
+       
     }
 
     public void ejecutarpasivadelacarta()

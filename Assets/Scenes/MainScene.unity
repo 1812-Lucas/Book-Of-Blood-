@@ -332,7 +332,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2144618734}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -679,9 +679,9 @@ RectTransform:
   m_Father: {fileID: 1954190898}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: 10}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 261, y: -198}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &37706109
@@ -2232,86 +2232,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259233416}
   m_CullTransparentMesh: 1
---- !u!1 &270229219
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 270229220}
-  - component: {fileID: 270229222}
-  - component: {fileID: 270229221}
-  m_Layer: 5
-  m_Name: Vigor Cost
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &270229220
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270229219}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1909126498}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 45, y: -45}
-  m_SizeDelta: {x: 60, y: 60}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &270229221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270229219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 50
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 1
---- !u!222 &270229222
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270229219}
-  m_CullTransparentMesh: 1
 --- !u!1 &287092478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2572,7 +2492,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1909126498}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -3345,7 +3265,6 @@ MonoBehaviour:
   descriptiontext: {fileID: 790764958}
   image: {fileID: 1074949015}
   attacktext: {fileID: 1217115683}
-  vigortext: {fileID: 1541389936}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -7667,7 +7586,6 @@ MonoBehaviour:
   descriptiontext: {fileID: 11875115}
   image: {fileID: 1397964632}
   attacktext: {fileID: 688736036}
-  vigortext: {fileID: 1412907727}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -9481,7 +9399,6 @@ MonoBehaviour:
   descriptiontext: {fileID: 1800306168}
   image: {fileID: 835009415}
   attacktext: {fileID: 1622506551}
-  vigortext: {fileID: 1387826037}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -9909,7 +9826,6 @@ MonoBehaviour:
   descriptiontext: {fileID: 29331211}
   image: {fileID: 651631902}
   attacktext: {fileID: 1335551938}
-  vigortext: {fileID: 1886113108}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -10033,86 +9949,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935609498}
-  m_CullTransparentMesh: 1
---- !u!1 &941509213
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 941509214}
-  - component: {fileID: 941509216}
-  - component: {fileID: 941509215}
-  m_Layer: 5
-  m_Name: Vigor Cost
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &941509214
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 941509213}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2144618734}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 45, y: -45}
-  m_SizeDelta: {x: 60, y: 60}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &941509215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 941509213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 50
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 1
---- !u!222 &941509216
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 941509213}
   m_CullTransparentMesh: 1
 --- !u!1 &949051331
 GameObject:
@@ -15485,7 +15321,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -334, y: 50}
+  m_AnchoredPosition: {x: -206.1, y: 50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1362805049
@@ -16379,7 +16215,6 @@ MonoBehaviour:
   descriptiontext: {fileID: 1487833414}
   image: {fileID: 536507031}
   attacktext: {fileID: 1735291071}
-  vigortext: {fileID: 1324034820}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -17131,7 +16966,6 @@ MonoBehaviour:
   descriptiontext: {fileID: 259233418}
   image: {fileID: 434222342}
   attacktext: {fileID: 774178904}
-  vigortext: {fileID: 916222379}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -17409,7 +17243,6 @@ RectTransform:
   - {fileID: 1361012802}
   - {fileID: 733884831}
   - {fileID: 1082629060}
-  - {fileID: 1757216049}
   - {fileID: 1831010096}
   m_Father: {fileID: 576756648}
   m_RootOrder: 0
@@ -17436,7 +17269,6 @@ MonoBehaviour:
   descriptiontext: {fileID: 733884832}
   image: {fileID: 1082629061}
   attacktext: {fileID: 1831010097}
-  vigortext: {fileID: 1757216050}
   scriptdeck: {fileID: 1950983790}
   myslot: 2
   attackdmg: 0
@@ -18479,7 +18311,6 @@ MonoBehaviour:
   descriptiontext: {fileID: 134555706}
   image: {fileID: 2013695161}
   attacktext: {fileID: 391630824}
-  vigortext: {fileID: 991920355}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -19068,86 +18899,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754035223}
   m_CullTransparentMesh: 1
---- !u!1 &1757216048
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1757216049}
-  - component: {fileID: 1757216051}
-  - component: {fileID: 1757216050}
-  m_Layer: 5
-  m_Name: Vigor Cost
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1757216049
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757216048}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1581599280}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 45, y: -45}
-  m_SizeDelta: {x: 60, y: 60}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1757216050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757216048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 50
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 1
---- !u!222 &1757216051
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757216048}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1765241172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19721,7 +19472,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1581599280}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -20423,7 +20174,6 @@ RectTransform:
   - {fileID: 165223964}
   - {fileID: 1203272466}
   - {fileID: 898763189}
-  - {fileID: 270229220}
   - {fileID: 361411762}
   m_Father: {fileID: 929106318}
   m_RootOrder: 0
@@ -20488,7 +20238,6 @@ MonoBehaviour:
   descriptiontext: {fileID: 1203272467}
   image: {fileID: 898763190}
   attacktext: {fileID: 361411763}
-  vigortext: {fileID: 270229221}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -21375,7 +21124,6 @@ MonoBehaviour:
   descriptiontext: {fileID: 1111618057}
   image: {fileID: 1696941456}
   attacktext: {fileID: 1154513653}
-  vigortext: {fileID: 1113982860}
   scriptdeck: {fileID: 1950983790}
   myslot: 1
   attackdmg: 0
@@ -21653,7 +21401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 214, y: 50}
+  m_AnchoredPosition: {x: 86.79, y: 50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2036985054
@@ -22269,7 +22017,6 @@ RectTransform:
   - {fileID: 894611641}
   - {fileID: 806281880}
   - {fileID: 795272820}
-  - {fileID: 941509214}
   - {fileID: 24151348}
   m_Father: {fileID: 1729719323}
   m_RootOrder: 0
@@ -22296,7 +22043,6 @@ MonoBehaviour:
   descriptiontext: {fileID: 806281881}
   image: {fileID: 795272821}
   attacktext: {fileID: 24151349}
-  vigortext: {fileID: 941509215}
   scriptdeck: {fileID: 1950983790}
   myslot: 3
   attackdmg: 0
