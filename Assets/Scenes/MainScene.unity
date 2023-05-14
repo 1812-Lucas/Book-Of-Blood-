@@ -2047,6 +2047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 0}
+  combatScript: {fileID: 0}
 --- !u!1 &256322630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,6 +2755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 0}
+  combatScript: {fileID: 0}
 --- !u!114 &399890908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3248,6 +3250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 0}
+  combatScript: {fileID: 0}
 --- !u!114 &470247705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3595,6 +3598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 492675753}
+  combatScript: {fileID: 1393160490}
 --- !u!114 &506857994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4101,6 +4105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 0}
+  combatScript: {fileID: 0}
 --- !u!114 &530141773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5524,6 +5529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 492675753}
+  combatScript: {fileID: 1393160490}
 --- !u!1 &601717910
 GameObject:
   m_ObjectHideFlags: 0
@@ -5716,6 +5722,7 @@ MonoBehaviour:
   SlotBool1: 0
   SlotBool2: 0
   SlotBool3: 0
+  DeckOfTheDeck: []
 --- !u!114 &613998382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5741,8 +5748,7 @@ MonoBehaviour:
   SlotBool4: 0
   SlotBool5: 0
   SlotBool6: 0
-  DeckOfTheDeck: []
-  DeckDisplayerInventory: []
+  DeckOfTheVigorDeck: []
 --- !u!1001 &643350398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7569,6 +7575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 0}
+  combatScript: {fileID: 0}
 --- !u!114 &764236760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9382,6 +9389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 0}
+  combatScript: {fileID: 0}
 --- !u!114 &916718615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9751,6 +9759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 492675753}
+  combatScript: {fileID: 1393160490}
 --- !u!1 &934056758
 GameObject:
   m_ObjectHideFlags: 0
@@ -9809,6 +9818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 0}
+  combatScript: {fileID: 0}
 --- !u!114 &934056761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10463,6 +10473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 0}
+  combatScript: {fileID: 0}
 --- !u!114 &1001653280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14470,6 +14481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 492675753}
+  combatScript: {fileID: 1393160490}
 --- !u!114 &1248712717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16198,6 +16210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 0}
+  combatScript: {fileID: 0}
 --- !u!114 &1534423242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16949,6 +16962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 0}
+  combatScript: {fileID: 0}
 --- !u!114 &1557557549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17147,6 +17161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 0}
+  combatScript: {fileID: 0}
 --- !u!114 &1575878098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18294,6 +18309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 0}
+  combatScript: {fileID: 0}
 --- !u!114 &1725659771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18583,6 +18599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 492675753}
+  combatScript: {fileID: 1393160490}
 --- !u!1 &1732886470
 GameObject:
   m_ObjectHideFlags: 0
@@ -19379,6 +19396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 0}
+  combatScript: {fileID: 0}
 --- !u!114 &1801275869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19882,6 +19900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 492675753}
+  combatScript: {fileID: 1393160490}
 --- !u!114 &1897917466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21181,6 +21200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSeleccionado: {fileID: 0}
+  combatScript: {fileID: 0}
 --- !u!1 &2013695159
 GameObject:
   m_ObjectHideFlags: 0

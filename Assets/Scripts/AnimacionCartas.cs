@@ -12,6 +12,8 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public Image spriteSeleccionado;
 
+    public Combat combatScript;
+
     void Start()
     {
         spriteSeleccionado.gameObject.SetActive(false);
@@ -30,7 +32,10 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
         
         spriteSeleccionado.transform.position = transform.position;
        
-
+        if(combatScript.playercontador == 1)
+        {
+            spriteSeleccionado.gameObject.SetActive(false);
+        }
        
     }
 
