@@ -6588,6 +6588,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3253050404891371973}
+  - component: {fileID: 5847467022846884438}
   m_Layer: 0
   m_Name: Bicicleta
   m_TagString: Untagged
@@ -6604,7 +6605,7 @@ Transform:
   m_GameObject: {fileID: 6791621491038650642}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 37.09354, y: -780.4545, z: 524.23987}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.008332236, y: 0.008332238, z: 0.008332238}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7348136656209654083}
@@ -6617,6 +6618,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5847467022846884438
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6791621491038650642}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 497.0101, y: 61.55977, z: 234.23117}
+  m_Center: {x: -69.488235, y: -66.145, z: -55.681698}
 --- !u!1 &6837585259513480971
 GameObject:
   m_ObjectHideFlags: 0

@@ -258,6 +258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4615355275983009089}
+  - component: {fileID: 1789737502712192840}
   m_Layer: 0
   m_Name: alcantariilas
   m_TagString: Untagged
@@ -286,6 +287,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1789737502712192840
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4077960421304460453}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 114.66744, y: 14.580226, z: 158.88383}
+  m_Center: {x: 0.37771854, y: 0.22084923, z: 0.2524789}
 --- !u!1 &5222505343516255941
 GameObject:
   m_ObjectHideFlags: 0

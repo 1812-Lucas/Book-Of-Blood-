@@ -3080,6 +3080,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6962536739643836691}
+  - component: {fileID: 3639706081120914577}
   m_Layer: 0
   m_Name: torre
   m_TagString: Untagged
@@ -3147,6 +3148,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -174.445, z: 0}
+--- !u!136 &3639706081120914577
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7769895636117459881}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 4.005737
+  m_Height: 27.697277
+  m_Direction: 1
+  m_Center: {x: -2.8000596e-10, y: 10.69351, z: 0.026206493}
 --- !u!1 &8343805055859634803
 GameObject:
   m_ObjectHideFlags: 0

@@ -1752,6 +1752,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8537864430476752251}
+  - component: {fileID: 6859569268621920421}
   m_Layer: 0
   m_Name: casa aldeano
   m_TagString: Untagged
@@ -1795,3 +1796,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6859569268621920421
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9022758282148851649}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.876358, y: 8.035278, z: 12.8085375}
+  m_Center: {x: -0.2503624, y: 3.9368553, z: 0.0879693}

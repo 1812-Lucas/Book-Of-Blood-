@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3001920542087673976}
   - component: {fileID: 5738391001240754225}
   - component: {fileID: 2617935564346069086}
+  - component: {fileID: 7760017305180684566}
   m_Layer: 0
   m_Name: textureEditorIsolateSelectSet_frasco3
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7760017305180684566
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6330454118902850796}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.931863, y: 23.227182, z: 12.137584}
+  m_Center: {x: 33.893715, y: 241.72366, z: -395.7108}
 --- !u!1 &7859873739930325823
 GameObject:
   m_ObjectHideFlags: 0
