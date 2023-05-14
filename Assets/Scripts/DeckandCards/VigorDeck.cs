@@ -18,7 +18,7 @@ public class VigorDeck : MonoBehaviour
 
     private void Awake()
     {
-        //_deck = Resources.FindObjectsOfTypeAll<VigorCards>();
+        _deck = Resources.FindObjectsOfTypeAll<VigorCards>();
 
         //DeckOfTheDeck.CopyTo(_deck, 0);
     }

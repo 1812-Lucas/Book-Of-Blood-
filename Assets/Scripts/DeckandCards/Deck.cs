@@ -19,7 +19,7 @@ public class Deck : MonoBehaviour
 
     private void Awake()
     {
-        //_deck = Resources.FindObjectsOfTypeAll<Card>();
+        _deck = Resources.FindObjectsOfTypeAll<Card>();
         
     }
     public void BuildMyDeck(int browser)
