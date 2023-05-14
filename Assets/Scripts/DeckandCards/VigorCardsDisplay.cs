@@ -63,7 +63,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 Debug.Log("te has curado 5 puntos de salud");
                 break;
             case "Senpukku":
-                
+
                 protectiontottempasive();
                 if (stadisticplayerScipt.health <= 5)
                 {
@@ -97,13 +97,40 @@ public class VigorCardsDisplay : MonoBehaviour
                 stadisticplayerScipt.health += 1;
                 protectiontottempasive();
                 Debug.Log("te has curado 1 puntos de salud");
-               ProtectionTottemStacks+= 1;
+                ProtectionTottemStacks += 1;
                 if (ProtectionTottemStacks >= 5)
                 {
                     Debug.Log("el tottem de proteccción ya está activado");
                 }
                 break;
-
+            case "Caos":
+                enemyy.health -= 8;
+                Debug.Log("Has inflingido 8 de daño");
+                Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
+                break;
+            case "Dead eye":
+                enemyy.health -= 7;
+                stadisticplayerScipt.health += 2;
+                Debug.Log("Has inflingido 7 de daño y te has curado 2 puntos de salud");
+                Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
+                break;
+            case "Prominence burn":
+                enemyy.health -= 3;
+                stadisticplayerScipt.health += 3;
+                Debug.Log("Has inflingido 3 de daño y te has curado 3 puntos de salud");
+                Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
+                break;
+            case "Absolution":
+                enemyy.health -= 6;
+                stadisticplayerScipt.health += 4;
+                Debug.Log("Has inflingido 6 de daño y te has curado 4 puntos de salud");
+                Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
+                break;
+            case "Uncontrolled pride":
+                enemyy.health -= 5;
+                Debug.Log("Has inflingido 5 de daño");
+                Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
+                break;
         }
 
 
