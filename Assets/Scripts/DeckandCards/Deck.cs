@@ -19,8 +19,8 @@ public class Deck : MonoBehaviour
 
     private void Awake()
     {
-        _deck = Resources.FindObjectsOfTypeAll<Card>();
-        //DeckOfTheDeck.CopyTo(_deck, 0);
+        //_deck = Resources.FindObjectsOfTypeAll<Card>();
+        
     }
     public void BuildMyDeck(int browser)
     {
