@@ -13,14 +13,20 @@ public class VigorDeck : MonoBehaviour
     public bool SlotBool4 = false;
     public bool SlotBool5 = false;
     public bool SlotBool6 = false;
-    public VigorCards[] DeckOfTheDeck;
-    public VigorCards[] DeckDisplayerInventory;
+    public VigorCards[] DeckOfTheVigorDeck;
+    //public VigorCards[] VigorDeckDisplayerInventory;
 
     private void Awake()
     {
-        _deck = Resources.FindObjectsOfTypeAll<VigorCards>();
+        //_deck = Resources.FindObjectsOfTypeAll<VigorCards>();
 
         //DeckOfTheDeck.CopyTo(_deck, 0);
+    }
+
+    public void BuildMyVigorDeck(int browser)
+    {
+        _deck.CopyTo(DeckOfTheVigorDeck, browser);
+
     }
 
     public void DrawCards()

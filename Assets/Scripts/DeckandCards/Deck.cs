@@ -13,10 +13,19 @@ public class Deck : MonoBehaviour
     public bool SlotBool1 = false;
     public bool SlotBool2 = false;
     public bool SlotBool3 = false;
+    //public Card[] DeckDisplayerInventory;
+    public Card[] DeckOfTheDeck;
+
 
     private void Awake()
     {
         _deck = Resources.FindObjectsOfTypeAll<Card>();
+        //DeckOfTheDeck.CopyTo(_deck, 0);
+    }
+    public void BuildMyDeck(int browser)
+    {
+        _deck.CopyTo(DeckOfTheDeck, browser);
+        
     }
 
     public void DrawCards()

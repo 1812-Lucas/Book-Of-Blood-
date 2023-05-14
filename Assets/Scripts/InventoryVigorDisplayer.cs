@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-public class InventoryDisplayer : MonoBehaviour
+public class InventoryVigorDisplayer : MonoBehaviour
 {
-    public Card card;
+    public VigorCards card;
     public Text nametext;
     public Text descriptiontext;
     public Image image;
-    public Text attacktext;
-    public int MyPlaceOnTheArray;
-    public Deck DeckScript;
+    public int MyPlaceOnTheVigorArray;
+    public Text vigortext;
+    public VigorDeck VigorDeckScript;
 
 
     private void Start()
@@ -21,22 +20,14 @@ public class InventoryDisplayer : MonoBehaviour
         nametext.text = card.name;
         descriptiontext.text = card.description;
         image.sprite = card.image;
+        vigortext.text = card.vigorcost.ToString();
+        
 
-        attacktext.text = card.attack.ToString();
     }
-
-    public void AddCardToMyDeck()
+    public void AddCardToMyVigorDeck()
     {
-        DeckScript.BuildMyDeck(MyPlaceOnTheArray);
+        VigorDeckScript.BuildMyVigorDeck(MyPlaceOnTheVigorArray);
 
     }
-
-
-
-
-
-
-
-
 
 }
