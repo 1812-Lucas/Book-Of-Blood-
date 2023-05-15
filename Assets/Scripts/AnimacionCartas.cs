@@ -28,15 +28,12 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
         LeanTween.scale(gameObject, initialScale * 1.2f, 0.2f);
 
 
-        spriteSeleccionado.gameObject.SetActive(true);
+        //spriteSeleccionado.gameObject.SetActive(true);
         
         spriteSeleccionado.transform.position = transform.position;
        
-        if(combatScript.playercontador == 1)
-        {
-            spriteSeleccionado.gameObject.SetActive(false);
-        }
-       
+        
+
     }
 
     public void OnPointerExit(PointerEventData eventData)

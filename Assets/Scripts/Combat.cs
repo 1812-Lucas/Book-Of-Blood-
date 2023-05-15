@@ -15,7 +15,7 @@ public class Combat : MonoBehaviour
     public Enemy enemyy;
     //private CombatPosition combat;
     //private bool combatmode = false;
-    public int playercontador;
+    int playercontador;
     public Deck deckscript;
     public CardDisplay carddisplayscriptinSlot1;
     public CardDisplay carddisplayscriptinSlot2;
