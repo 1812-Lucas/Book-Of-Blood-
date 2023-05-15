@@ -14,7 +14,7 @@ public class VigorDeck : MonoBehaviour
     public bool SlotBool5 = false;
     public bool SlotBool6 = false;
     public VigorCards[] DeckOfTheVigorDeck;
-    //public VigorCards[] VigorDeckDisplayerInventory;
+    public bool[] EquipOrUnequipTheCardBool;
 
     private void Awake()
     {
@@ -22,14 +22,24 @@ public class VigorDeck : MonoBehaviour
 
         //DeckOfTheDeck.CopyTo(_deck, 0);
         //DeckOfTheVigorDeck[2] = _deck[2];
+        //_deck.CopyTo(DeckOfTheVigorDeck, browser);
+        //DeckOfTheVigorDeck[browser] = _deck[browser];
     }
 
-    public void BuildMyVigorDeck(int browser)
+    public void BuildMyVigorDeck(VigorCards browser, int ThePlaceInArray)
     {
-        //_deck.CopyTo(DeckOfTheVigorDeck, browser);
-        DeckOfTheVigorDeck[browser] = _deck[browser];
-
-
+        //DeckOfTheVigorDeck[ThePlaceInArray] = browser;
+        //DeckOfTheVigorDeck[ThePlaceInArray] = null;
+        if (EquipOrUnequipTheCardBool[ThePlaceInArray]==false)
+        {
+            DeckOfTheVigorDeck[ThePlaceInArray] = browser;
+            EquipOrUnequipTheCardBool[ThePlaceInArray] = true;
+        }
+        else if(EquipOrUnequipTheCardBool[ThePlaceInArray] == true)
+        {
+            DeckOfTheVigorDeck[ThePlaceInArray] = null;
+            EquipOrUnequipTheCardBool[ThePlaceInArray] = false;
+        }
     }
 
     public void DrawCards()

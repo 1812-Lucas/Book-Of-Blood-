@@ -26,7 +26,7 @@ public class InventoryVigorDisplayer : MonoBehaviour
     }
     public void AddCardToMyVigorDeck()
     {
-        VigorDeckScript.BuildMyVigorDeck(MyPlaceOnTheVigorArray);
+        VigorDeckScript.BuildMyVigorDeck(card,MyPlaceOnTheVigorArray);
 
     }
 

@@ -6390,6 +6390,7 @@ MonoBehaviour:
   SlotBool5: 0
   SlotBool6: 0
   DeckOfTheVigorDeck: []
+  EquipOrUnequipTheCardBool: 
 --- !u!1 &621433089
 GameObject:
   m_ObjectHideFlags: 0
@@ -25739,6 +25740,10 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: e94580e23d5643f409d08f484781ac8b, type: 2}
     - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: DeckOfTheVigorDeck.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: EquipOrUnequipTheCardBool.Array.size
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
