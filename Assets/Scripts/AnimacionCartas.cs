@@ -23,10 +23,11 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if(combatScript.button1.interactable == false)
+        if (!gameObject.activeInHierarchy)
         {
             return;
         }
+
 
         LeanTween.scale(gameObject, initialScale * 1.2f, 0.2f);
 
