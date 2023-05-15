@@ -15,6 +15,7 @@ public class Deck : MonoBehaviour
     public bool SlotBool3 = false;
     //public Card[] DeckDisplayerInventory;
     public Card[] DeckOfTheDeck;
+    public bool[] EquipOrUnequipTheNormalCardBool;
 
 
     private void Awake()
@@ -26,6 +27,21 @@ public class Deck : MonoBehaviour
     {
         _deck.CopyTo(DeckOfTheDeck, browser);
         
+    }
+
+    public void BuildMyDeck(Card browser, int ThePlaceInArray)
+    {
+        
+        if (EquipOrUnequipTheNormalCardBool[ThePlaceInArray] == false)
+        {
+            DeckOfTheDeck[ThePlaceInArray] = browser;
+            EquipOrUnequipTheNormalCardBool[ThePlaceInArray] = true;
+        }
+        else if (EquipOrUnequipTheNormalCardBool[ThePlaceInArray] == true)
+        {
+            DeckOfTheDeck[ThePlaceInArray] = null;
+            EquipOrUnequipTheNormalCardBool[ThePlaceInArray] = false;
+        }
     }
 
     public void DrawCards()

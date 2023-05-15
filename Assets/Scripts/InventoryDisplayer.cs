@@ -15,6 +15,7 @@ public class InventoryDisplayer : MonoBehaviour
     public Deck DeckScript;
 
 
+
     private void Start()
     {
 
@@ -27,7 +28,7 @@ public class InventoryDisplayer : MonoBehaviour
 
     public void AddCardToMyDeck()
     {
-        DeckScript.BuildMyDeck(MyPlaceOnTheArray);
+        DeckScript.BuildMyDeck(card, MyPlaceOnTheArray);
 
     }
 
