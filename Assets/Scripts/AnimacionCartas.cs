@@ -23,16 +23,22 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-     
+        if(combatScript.button1.interactable == false)
+        {
+            return;
+        }
 
         LeanTween.scale(gameObject, initialScale * 1.2f, 0.2f);
 
 
-        //spriteSeleccionado.gameObject.SetActive(true);
+        spriteSeleccionado.gameObject.SetActive(true);
         
         spriteSeleccionado.transform.position = transform.position;
        
-        
+        if(combatScript.button1.interactable == false)
+        {
+            spriteSeleccionado.gameObject.SetActive(false);
+        }
 
     }
 
