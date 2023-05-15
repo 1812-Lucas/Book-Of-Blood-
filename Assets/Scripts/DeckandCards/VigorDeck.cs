@@ -21,11 +21,14 @@ public class VigorDeck : MonoBehaviour
         _deck = Resources.FindObjectsOfTypeAll<VigorCards>();
 
         //DeckOfTheDeck.CopyTo(_deck, 0);
+        //DeckOfTheVigorDeck[2] = _deck[2];
     }
 
     public void BuildMyVigorDeck(int browser)
     {
-        _deck.CopyTo(DeckOfTheVigorDeck, browser);
+        //_deck.CopyTo(DeckOfTheVigorDeck, browser);
+        DeckOfTheVigorDeck[browser] = _deck[browser];
+
 
     }
 
