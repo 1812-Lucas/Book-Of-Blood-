@@ -46,7 +46,6 @@ public class CombatPosition : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
             SwitchCamera(cameras[0]);
-
             myGM.activeUI();
             battlePosition = false;
             //camerascript.enabled = true;
@@ -63,8 +62,6 @@ public class CombatPosition : MonoBehaviour
 
     public void combatON()
     {
-
-
         Cursor.lockState = CursorLockMode.Confined;
         SwitchCamera(cameras[1]);
         battlePosition = true;
