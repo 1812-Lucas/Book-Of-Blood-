@@ -46,7 +46,7 @@ public class Combat : MonoBehaviour
     public VigorDeck VigorDeckScript;
     public StadisticPlayer PlayerStadisticsScript;
     //int MoreVigorPerRound=10;
-
+    
     public object WaitForSeconds3 { get; private set; }
 
     void Start()
@@ -55,7 +55,7 @@ public class Combat : MonoBehaviour
     }
     void Update()
     {
-
+        
     }
 
     public void activaryDesactivarCartaAlUsarlaSlot1()
@@ -126,6 +126,7 @@ public class Combat : MonoBehaviour
             button4.interactable = true;
             button5.interactable = true;
             button6.interactable = true;
+            
             enemyy.Enemyturn();
             //contador = 0;
             playercontador = 0;
@@ -178,7 +179,9 @@ public class Combat : MonoBehaviour
             deckscript.DrawCards();
             activaryDesactivarCartaAlUsarlaSlot1();
             button1.interactable = false;
+            
         }
+
     }
     public void clickonslottwo()
     {
@@ -196,6 +199,7 @@ public class Combat : MonoBehaviour
             playercontador = 1;
             activaryDesactivarCartaAlUsarlaSlot2();
             button2.interactable = false;
+           
         }
     }
     public void clickonslotthree()
@@ -214,6 +218,7 @@ public class Combat : MonoBehaviour
             playercontador = 1;
             activaryDesactivarCartaAlUsarlaSlot3();
             button3.interactable = false;
+            
         }
     }
     public void clickonslotfour()
@@ -228,6 +233,7 @@ public class Combat : MonoBehaviour
             button4.interactable = false;
             VigorDeckScript.SlotBool4 = false;
             damageparticleSlot4.Play();
+            
         }
     }
     public void clickonslotfive()
@@ -241,6 +247,7 @@ public class Combat : MonoBehaviour
             activaryDesactivarCartaAlUsarlaSlot5();
             button5.interactable = false;
             VigorDeckScript.SlotBool5 = false;
+            
         }
     }
     public void clickonslotsix()
@@ -254,6 +261,7 @@ public class Combat : MonoBehaviour
             activaryDesactivarCartaAlUsarlaSlot6();
             VigorDeckScript.SlotBool6 = false;
             button6.interactable = false;
+            
         }
     }
 }
