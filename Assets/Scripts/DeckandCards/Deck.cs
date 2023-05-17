@@ -23,12 +23,7 @@ public class Deck : MonoBehaviour
         _deck = Resources.FindObjectsOfTypeAll<Card>();
         
     }
-    public void BuildMyDeck(int browser)
-    {
-        _deck.CopyTo(DeckOfTheDeck, browser);
-        
-    }
-
+    
     public void BuildMyDeck(Card browser, int ThePlaceInArray)
     {
         
@@ -46,11 +41,11 @@ public class Deck : MonoBehaviour
 
     public void DrawCards()
     {
-        if (_deck.Length >= 1)
+        if (DeckOfTheDeck.Length >= 1)
         {
             for (int i = 0; i <= availableCardSlots; i++)
             {
-                Card randomCard = _deck[Random.Range(0, _deck.Length)];
+                Card randomCard = DeckOfTheDeck[Random.Range(0, DeckOfTheDeck.Length)];
                 if (i == 0 && SlotBool1 == false)
                 {
                     Slot1.card = randomCard;

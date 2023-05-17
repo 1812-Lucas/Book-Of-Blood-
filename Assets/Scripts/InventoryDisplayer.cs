@@ -13,7 +13,8 @@ public class InventoryDisplayer : MonoBehaviour
     public Text attacktext;
     public int MyPlaceOnTheArray;
     public Deck DeckScript;
-
+    public bool VigorCardEquipedEffectBool;
+    public Image EquipedEffectVigor;
 
 
     private void Start()
@@ -26,9 +27,16 @@ public class InventoryDisplayer : MonoBehaviour
         attacktext.text = card.attack.ToString();
     }
 
+    public void CardEffectFunction()
+    {
+        VigorCardEquipedEffectBool = !VigorCardEquipedEffectBool;
+        EquipedEffectVigor.gameObject.SetActive(VigorCardEquipedEffectBool);
+    }
+
     public void AddCardToMyDeck()
     {
         DeckScript.BuildMyDeck(card, MyPlaceOnTheArray);
+        CardEffectFunction();
 
     }
 

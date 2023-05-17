@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class VigorDeck : MonoBehaviour
 {
     public VigorCards[] _deck;
@@ -15,6 +16,7 @@ public class VigorDeck : MonoBehaviour
     public bool SlotBool6 = false;
     public VigorCards[] DeckOfTheVigorDeck;
     public bool[] EquipOrUnequipTheCardBool;
+    
 
     private void Awake()
     {
@@ -24,6 +26,7 @@ public class VigorDeck : MonoBehaviour
         //DeckOfTheVigorDeck[2] = _deck[2];
         //_deck.CopyTo(DeckOfTheVigorDeck, browser);
         //DeckOfTheVigorDeck[browser] = _deck[browser];
+        //cardsondeck = EquipOrUnequipTheCardBool.Count
     }
 
     public void BuildMyVigorDeck(VigorCards browser, int ThePlaceInArray)
@@ -44,11 +47,11 @@ public class VigorDeck : MonoBehaviour
 
     public void DrawCards()
     {
-        if (_deck.Length >= 1)
+        if (DeckOfTheVigorDeck.Length >= 1)
         {
             for (int i = 0; i <= availableCardSlots; i++)
             {
-                VigorCards randomCard = _deck[Random.Range(0, _deck.Length)];
+                VigorCards randomCard = DeckOfTheVigorDeck[Random.Range(0, DeckOfTheVigorDeck.Length)];
                 if (i == 0 && SlotBool4 == false)
                 {
                     Slot4.card = randomCard;

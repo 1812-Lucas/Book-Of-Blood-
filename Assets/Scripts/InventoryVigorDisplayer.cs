@@ -12,6 +12,8 @@ public class InventoryVigorDisplayer : MonoBehaviour
     public int MyPlaceOnTheVigorArray;
     public Text vigortext;
     public VigorDeck VigorDeckScript;
+    public bool VigorCardEquipedEffectBool;
+    public Image EquipedEffectVigor;
 
 
     private void Start()
@@ -24,10 +26,15 @@ public class InventoryVigorDisplayer : MonoBehaviour
         
 
     }
+    public void CardEffectFunction()
+    {
+        VigorCardEquipedEffectBool = !VigorCardEquipedEffectBool;
+        EquipedEffectVigor.gameObject.SetActive(VigorCardEquipedEffectBool);
+    }
     public void AddCardToMyVigorDeck()
     {
         VigorDeckScript.BuildMyVigorDeck(card,MyPlaceOnTheVigorArray);
-
+        CardEffectFunction();
     }
 
 }
