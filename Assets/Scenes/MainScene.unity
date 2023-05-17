@@ -8999,14 +8999,14 @@ MonoBehaviour:
   SlotBool2: 0
   SlotBool3: 0
   DeckOfTheDeck:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 60ff571e932c28842930df7c5147f318, type: 2}
+  - {fileID: 11400000, guid: 6f19c75e623ebe643963cf66516398a3, type: 2}
+  - {fileID: 11400000, guid: 2ac1539ecf7bac146a8f597997582f73, type: 2}
+  - {fileID: 11400000, guid: 813c10266c434994298a313d06ddf158, type: 2}
+  - {fileID: 11400000, guid: 4dbb9639a3bd42d49a8b3713bfc1187a, type: 2}
+  - {fileID: 11400000, guid: dd5bc7ce5329e0340b2a852d9454369f, type: 2}
+  - {fileID: 11400000, guid: 93af45eb7dc6e7e49adba7ca9c906810, type: 2}
+  - {fileID: 11400000, guid: 8e20a41ed110f5d48a501ed02773741c, type: 2}
   EquipOrUnequipTheNormalCardBool: 0000000000000000
 --- !u!114 &613998382
 MonoBehaviour:
@@ -9039,17 +9039,17 @@ MonoBehaviour:
   SlotBool5: 0
   SlotBool6: 0
   DeckOfTheVigorDeck:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 36faaad448fc0334395169b6f694627c, type: 2}
+  - {fileID: 11400000, guid: 671e3ee5e9eddaf4499a5be9f195191e, type: 2}
+  - {fileID: 11400000, guid: 4aeab9ab94c9ea248b3890f8e5343b2f, type: 2}
+  - {fileID: 11400000, guid: ed1ec2053f3da3647b721ddc6b7d146a, type: 2}
+  - {fileID: 11400000, guid: e53f071c551e1f3499a8ff83fb64ebd8, type: 2}
+  - {fileID: 11400000, guid: 56a3a760cde64fb4993811e70f1c0a4f, type: 2}
+  - {fileID: 11400000, guid: aecf45d6a9c991e4ab801d60a5ec531a, type: 2}
+  - {fileID: 11400000, guid: 10818df954978514f90b9d6a31fa9830, type: 2}
+  - {fileID: 11400000, guid: ea52360be65fe6a48a0b705e038f6609, type: 2}
+  - {fileID: 11400000, guid: 60735b2b9667a9249886cf141a8697ea, type: 2}
+  - {fileID: 11400000, guid: e94580e23d5643f409d08f484781ac8b, type: 2}
   EquipOrUnequipTheCardBool: 0000000000000000000000
 --- !u!1 &620850348
 GameObject:
@@ -18646,7 +18646,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43366
+  m_Name: pb_Mesh346152
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19686,7 +19686,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42974
+  m_Name: pb_Mesh345760
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27342,7 +27342,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42814
+  m_Name: pb_Mesh345600
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28406,7 +28406,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43766
+  m_Name: pb_Mesh346552
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29343,20 +29343,6 @@ MonoBehaviour:
   patrolpoints:
   - {fileID: 457823278}
   - {fileID: 887008130}
---- !u!136 &2047261108
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2047261106}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.57
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!54 &2047261109
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29373,6 +29359,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!65 &2047261111
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047261106}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3, y: 2, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &2048165480
 GameObject:
   m_ObjectHideFlags: 0
@@ -31014,6 +31013,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1393160489}
     - target: {fileID: 8195275790442974233, guid: ee87b28aa820d424caab4be16d7ffadd, type: 3}
+      propertyPath: mycamera
+      value: 
+      objectReference: {fileID: 9112766969278726830}
+    - target: {fileID: 8195275790442974233, guid: ee87b28aa820d424caab4be16d7ffadd, type: 3}
       propertyPath: playerRB
       value: 
       objectReference: {fileID: 1950983795}
@@ -31419,14 +31422,6 @@ PrefabInstance:
       propertyPath: Slot6
       value: 
       objectReference: {fileID: 256322632}
-    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: DeckOfTheVigorDeck.Array.size
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: EquipOrUnequipTheCardBool.Array.size
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: player
       value: 
@@ -31535,21 +31530,13 @@ PrefabInstance:
       propertyPath: Slot3
       value: 
       objectReference: {fileID: 2144618735}
-    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: DeckOfTheDeck.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: EquipOrUnequipTheNormalCardBool.Array.size
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2
+      value: -0.23
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -31557,7 +31544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42.19
+      value: -42.43
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -31751,6 +31738,10 @@ PrefabInstance:
     - target: {fileID: 2114575325129571047, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.32000017
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487563882257749773, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3275541678128238454, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_SceneBindings.Array.size
@@ -31998,11 +31989,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.73631454
+      value: 0.5893358
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.081523776
+      value: 0.083070874
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32105,3 +32096,14 @@ PlayableDirector:
     - dc5977211d14ad54481f396b404243f1: {fileID: 115887560}
     - c1830b98262ab0e4ba992dbff4e477f8: {fileID: 9112766969278726825}
     - 9519fd158130a684785b17328941909b: {fileID: 4816908725937176156}
+--- !u!114 &9112766969278726830 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2487563882257749773, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
+  m_PrefabInstance: {fileID: 9112766969278726821}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8755e1871e11d4f9130495bc113104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

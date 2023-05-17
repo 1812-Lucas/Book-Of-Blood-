@@ -380,6 +380,16 @@ MonoBehaviour:
   SlotBool1: 0
   SlotBool2: 0
   SlotBool3: 0
+  DeckOfTheDeck:
+  - {fileID: 11400000, guid: 60ff571e932c28842930df7c5147f318, type: 2}
+  - {fileID: 11400000, guid: 6f19c75e623ebe643963cf66516398a3, type: 2}
+  - {fileID: 11400000, guid: 2ac1539ecf7bac146a8f597997582f73, type: 2}
+  - {fileID: 11400000, guid: 813c10266c434994298a313d06ddf158, type: 2}
+  - {fileID: 11400000, guid: 4dbb9639a3bd42d49a8b3713bfc1187a, type: 2}
+  - {fileID: 11400000, guid: dd5bc7ce5329e0340b2a852d9454369f, type: 2}
+  - {fileID: 11400000, guid: 93af45eb7dc6e7e49adba7ca9c906810, type: 2}
+  - {fileID: 11400000, guid: 8e20a41ed110f5d48a501ed02773741c, type: 2}
+  EquipOrUnequipTheNormalCardBool: 0000000000000000
 --- !u!114 &5712986794260492655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,8 +409,19 @@ MonoBehaviour:
   SlotBool4: 0
   SlotBool5: 0
   SlotBool6: 0
-  DeckOfTheDeck: []
-  DeckDisplayerInventory: []
+  DeckOfTheVigorDeck:
+  - {fileID: 11400000, guid: 36faaad448fc0334395169b6f694627c, type: 2}
+  - {fileID: 11400000, guid: 671e3ee5e9eddaf4499a5be9f195191e, type: 2}
+  - {fileID: 11400000, guid: 4aeab9ab94c9ea248b3890f8e5343b2f, type: 2}
+  - {fileID: 11400000, guid: ed1ec2053f3da3647b721ddc6b7d146a, type: 2}
+  - {fileID: 11400000, guid: e53f071c551e1f3499a8ff83fb64ebd8, type: 2}
+  - {fileID: 11400000, guid: 56a3a760cde64fb4993811e70f1c0a4f, type: 2}
+  - {fileID: 11400000, guid: aecf45d6a9c991e4ab801d60a5ec531a, type: 2}
+  - {fileID: 11400000, guid: 10818df954978514f90b9d6a31fa9830, type: 2}
+  - {fileID: 11400000, guid: ea52360be65fe6a48a0b705e038f6609, type: 2}
+  - {fileID: 11400000, guid: 60735b2b9667a9249886cf141a8697ea, type: 2}
+  - {fileID: 11400000, guid: e94580e23d5643f409d08f484781ac8b, type: 2}
+  EquipOrUnequipTheCardBool: 0000000000000000000000
 --- !u!114 &2566541265283969750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,6 +479,10 @@ MonoBehaviour:
   descriptiontext: {fileID: 0}
   image: {fileID: 0}
   attacktext: {fileID: 0}
+  MyPlaceOnTheArray: 0
+  DeckScript: {fileID: 0}
+  VigorCardEquipedEffectBool: 0
+  EquipedEffectVigor: {fileID: 0}
 --- !u!1 &8077958658602386710
 GameObject:
   m_ObjectHideFlags: 0
