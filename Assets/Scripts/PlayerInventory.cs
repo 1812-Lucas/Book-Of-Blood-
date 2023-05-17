@@ -30,10 +30,18 @@ public class PlayerInventory : MonoBehaviour
                 ActivateOrDeactivateMouseForTheinventory = true;
             }
         }
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            InventoryExit();
+        }
     }
     void Inventoryactivate()
     {
         myGM.Activeinventory();
+    }
+    void InventoryExit()
+    {
+        myGM.DesactivateInventory();
     }
     public void OnPointerEnter(PointerEventData eventData)
     {

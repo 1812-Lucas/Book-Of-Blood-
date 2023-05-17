@@ -81,4 +81,8 @@ public class GameManager : MonoBehaviour
         inventoryactive = !inventoryactive;
         Inventory.gameObject.SetActive(inventoryactive);
     }
+    public void DesactivateInventory()
+    {
+        Inventory.gameObject.SetActive(false);
+    }
 }
