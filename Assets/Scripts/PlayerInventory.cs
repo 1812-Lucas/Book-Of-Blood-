@@ -19,16 +19,6 @@ public class PlayerInventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             Inventoryactivate();
-            if (ActivateOrDeactivateMouseForTheinventory == true)
-            {
-                Cursor.lockState = CursorLockMode.Confined;
-                ActivateOrDeactivateMouseForTheinventory = false;
-            }
-            else if (ActivateOrDeactivateMouseForTheinventory == false)
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-                ActivateOrDeactivateMouseForTheinventory = true;
-            }
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -38,10 +28,21 @@ public class PlayerInventory : MonoBehaviour
     void Inventoryactivate()
     {
         myGM.Activeinventory();
+        if (ActivateOrDeactivateMouseForTheinventory == true)
+        {
+            Cursor.lockState = CursorLockMode.Confined;
+            ActivateOrDeactivateMouseForTheinventory = false;
+        }
+        else if (ActivateOrDeactivateMouseForTheinventory == false)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            ActivateOrDeactivateMouseForTheinventory = true;
+        }
     }
     void InventoryExit()
     {
         myGM.DesactivateInventory();
+        Cursor.lockState = CursorLockMode.Locked;
     }
     public void OnPointerEnter(PointerEventData eventData)
     {

@@ -15,8 +15,7 @@ public class inventoryObjectsActions : MonoBehaviour
     public GameObject[] cardsOnInventory;
     public bool[] ActivatorsOfCards;
     public int CardsOnCountdown;
-
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == 15)
         {
