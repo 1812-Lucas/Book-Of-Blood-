@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8987,15 +8987,16 @@ MonoBehaviour:
   SlotBool2: 0
   SlotBool3: 0
   DeckOfTheDeck:
-  - {fileID: 11400000, guid: 60ff571e932c28842930df7c5147f318, type: 2}
-  - {fileID: 11400000, guid: 6f19c75e623ebe643963cf66516398a3, type: 2}
-  - {fileID: 11400000, guid: 2ac1539ecf7bac146a8f597997582f73, type: 2}
-  - {fileID: 11400000, guid: 813c10266c434994298a313d06ddf158, type: 2}
-  - {fileID: 11400000, guid: 4dbb9639a3bd42d49a8b3713bfc1187a, type: 2}
-  - {fileID: 11400000, guid: dd5bc7ce5329e0340b2a852d9454369f, type: 2}
-  - {fileID: 11400000, guid: 93af45eb7dc6e7e49adba7ca9c906810, type: 2}
-  - {fileID: 11400000, guid: 8e20a41ed110f5d48a501ed02773741c, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   EquipOrUnequipTheNormalCardBool: 0000000000000000
+  TrueDeckInCombat: []
 --- !u!114 &613998382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9027,18 +9028,19 @@ MonoBehaviour:
   SlotBool5: 0
   SlotBool6: 0
   DeckOfTheVigorDeck:
-  - {fileID: 11400000, guid: 36faaad448fc0334395169b6f694627c, type: 2}
-  - {fileID: 11400000, guid: 671e3ee5e9eddaf4499a5be9f195191e, type: 2}
-  - {fileID: 11400000, guid: 4aeab9ab94c9ea248b3890f8e5343b2f, type: 2}
-  - {fileID: 11400000, guid: ed1ec2053f3da3647b721ddc6b7d146a, type: 2}
-  - {fileID: 11400000, guid: e53f071c551e1f3499a8ff83fb64ebd8, type: 2}
-  - {fileID: 11400000, guid: 56a3a760cde64fb4993811e70f1c0a4f, type: 2}
-  - {fileID: 11400000, guid: aecf45d6a9c991e4ab801d60a5ec531a, type: 2}
-  - {fileID: 11400000, guid: 10818df954978514f90b9d6a31fa9830, type: 2}
-  - {fileID: 11400000, guid: ea52360be65fe6a48a0b705e038f6609, type: 2}
-  - {fileID: 11400000, guid: 60735b2b9667a9249886cf141a8697ea, type: 2}
-  - {fileID: 11400000, guid: e94580e23d5643f409d08f484781ac8b, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   EquipOrUnequipTheCardBool: 0000000000000000000000
+  TrueVigorDeckInCombat: []
 --- !u!1 &620850348
 GameObject:
   m_ObjectHideFlags: 0
@@ -18610,7 +18612,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230834
+  m_Name: pb_Mesh24980
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19650,7 +19652,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230442
+  m_Name: pb_Mesh24588
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27294,7 +27296,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230282
+  m_Name: pb_Mesh24428
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28358,7 +28360,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh231234
+  m_Name: pb_Mesh25380
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31374,6 +31376,50 @@ PrefabInstance:
       propertyPath: Slot6
       value: 
       objectReference: {fileID: 256322632}
+    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheVigorDeck.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheVigorDeck.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheVigorDeck.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheVigorDeck.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheVigorDeck.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheVigorDeck.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheVigorDeck.Array.data[6]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheVigorDeck.Array.data[7]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheVigorDeck.Array.data[8]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheVigorDeck.Array.data[9]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheVigorDeck.Array.data[10]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: player
       value: 
@@ -31482,6 +31528,38 @@ PrefabInstance:
       propertyPath: Slot3
       value: 
       objectReference: {fileID: 2144618735}
+    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheDeck.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheDeck.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheDeck.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheDeck.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheDeck.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheDeck.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheDeck.Array.data[6]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: DeckOfTheDeck.Array.data[7]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -31496,7 +31574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42.43
+      value: -12.4
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -31941,15 +32019,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5893358
+      value: 0.84000003
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.083070874
+      value: 0.32000017
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -22.291462
+      value: -9.49
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.w

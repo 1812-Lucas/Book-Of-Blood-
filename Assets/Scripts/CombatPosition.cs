@@ -68,6 +68,8 @@ public class CombatPosition : MonoBehaviour
         camerascript.enabled = false;
         myGM.activeUI();
         player.enabled = false;
+        vigordeckscript.CreateListOfMyVigorCardsBuildForCombat();
+        deckscript.CreateListOfMyrCardsBuildForCombat();
         Vector3 direccion = new Vector3(7, 0, 12);
         transform.LookAt(direccion);
         mainCamera.transform.LookAt(enemytransf);

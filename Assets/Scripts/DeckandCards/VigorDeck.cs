@@ -16,7 +16,7 @@ public class VigorDeck : MonoBehaviour
     public bool SlotBool6 = false;
     public VigorCards[] DeckOfTheVigorDeck;
     public bool[] EquipOrUnequipTheCardBool;
-    
+    public List<VigorCards> TrueVigorDeckInCombat = new List<VigorCards>();
 
     private void Awake()
     {
@@ -27,6 +27,16 @@ public class VigorDeck : MonoBehaviour
         //_deck.CopyTo(DeckOfTheVigorDeck, browser);
         //DeckOfTheVigorDeck[browser] = _deck[browser];
         //cardsondeck = EquipOrUnequipTheCardBool.Count
+    }
+    public void CreateListOfMyVigorCardsBuildForCombat()
+    {
+        foreach (VigorCards objeto in DeckOfTheVigorDeck)
+        {
+            if (objeto != null)
+            {
+                TrueVigorDeckInCombat.Add(objeto);
+            }
+        }
     }
 
     public void BuildMyVigorDeck(VigorCards browser, int ThePlaceInArray)
@@ -47,11 +57,11 @@ public class VigorDeck : MonoBehaviour
 
     public void DrawCards()
     {
-        if (DeckOfTheVigorDeck.Length >= 1)
+        if (TrueVigorDeckInCombat.Count >= 1)
         {
             for (int i = 0; i <= availableCardSlots; i++)
             {
-                VigorCards randomCard = DeckOfTheVigorDeck[Random.Range(0, DeckOfTheVigorDeck.Length)];
+                VigorCards randomCard = TrueVigorDeckInCombat[Random.Range(0, TrueVigorDeckInCombat.Count)];
                 if (i == 0 && SlotBool4 == false)
                 {
                     Slot4.card = randomCard;

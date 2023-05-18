@@ -16,7 +16,7 @@ public class Deck : MonoBehaviour
     //public Card[] DeckDisplayerInventory;
     public Card[] DeckOfTheDeck;
     public bool[] EquipOrUnequipTheNormalCardBool;
-
+    public List<Card> TrueDeckInCombat = new List<Card>();
 
     private void Awake()
     {
@@ -38,14 +38,23 @@ public class Deck : MonoBehaviour
             EquipOrUnequipTheNormalCardBool[ThePlaceInArray] = false;
         }
     }
-
+    public void CreateListOfMyrCardsBuildForCombat()
+    {
+        foreach (Card objeto in DeckOfTheDeck)
+        {
+            if (objeto != null)
+            {
+                TrueDeckInCombat.Add(objeto);
+            }
+        }
+    }
     public void DrawCards()
     {
-        if (DeckOfTheDeck.Length >= 1)
+        if (TrueDeckInCombat.Count >= 1)
         {
             for (int i = 0; i <= availableCardSlots; i++)
             {
-                Card randomCard = DeckOfTheDeck[Random.Range(0, DeckOfTheDeck.Length)];
+                Card randomCard = TrueDeckInCombat[Random.Range(0, TrueDeckInCombat.Count)];
                 if (i == 0 && SlotBool1 == false)
                 {
                     Slot1.card = randomCard;
