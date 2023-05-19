@@ -28,6 +28,7 @@ public class CombatPosition : MonoBehaviour
     public VigorCardsDisplay ScriptVigorCardDisplaySlot5;
     public VigorCardsDisplay ScriptVigorCardDisplaySlot6;
     public StadisticPlayer stadisticPlayerScript;
+    public EnemyHeathPointsUI EnemyHealthPointsScript;
 
 
 
@@ -121,6 +122,9 @@ public class CombatPosition : MonoBehaviour
             actualenemy.Setcombat(this);
             actualenemy.SetPlayer(stadisticPlayerScript);
             combatscript.setenemy(actualenemy);
+
+            EnemyHealthPointsScript.SetEnemyInEnemyHealthPoints(actualenemy);
+
             ScriptVigorCardDisplaySlot4.setenemy(actualenemy);
             ScriptVigorCardDisplaySlot5.setenemy(actualenemy);
             ScriptVigorCardDisplaySlot6.setenemy(actualenemy);

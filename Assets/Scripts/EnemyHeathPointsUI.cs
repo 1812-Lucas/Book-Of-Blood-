@@ -13,12 +13,17 @@ public class EnemyHeathPointsUI : MonoBehaviour
     private void Start()
     {
         HealthEnemyCounter = GetComponent<TextMeshProUGUI>();
+        
 
+    }
+    public void SetEnemyInEnemyHealthPoints(Enemy EnemyReference)
+    {
+        EnemyScript = EnemyReference;
     }
 
     public void Update()
     {
-        //HealthEnemyCounter.text = Enemy.health.ToString();
+        HealthEnemyCounter.text = EnemyScript.health.ToString();
 
     }
 
