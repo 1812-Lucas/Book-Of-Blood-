@@ -13,6 +13,9 @@ public class CombatPosition : MonoBehaviour
     public Transform enemytransf;
     public GameObject areaWhereTheEnemySpawns;
 
+    public List<GameObject> AreasWhereTheEnemiesSpawns;
+    public int CounterforPlacesWhereEnemiesSpawns;
+
     public bool battlePosition = false;
     public bool CombatON = false;
     public bool enemyInvoke = false;
@@ -125,7 +128,10 @@ public class CombatPosition : MonoBehaviour
     }
     void EnemyInvoke()
     {
-        Enemy actualenemy = Instantiate(enemyGObj[Random.Range(0, enemyGObj.Count)], areaWhereTheEnemySpawns.transform.position, areaWhereTheEnemySpawns.transform.rotation).GetComponent<Enemy>();
+        //Enemy actualenemy = Instantiate(enemyGObj[Random.Range(0, enemyGObj.Count)], areaWhereTheEnemySpawns.transform.position, areaWhereTheEnemySpawns.transform.rotation).GetComponent<Enemy>(); FUNCIONA PREDETERMINADO
+        Enemy actualenemy = Instantiate(enemyGObj[CounterforPlacesWhereEnemiesSpawns], AreasWhereTheEnemiesSpawns[CounterforPlacesWhereEnemiesSpawns].transform.position, AreasWhereTheEnemiesSpawns[CounterforPlacesWhereEnemiesSpawns].transform.rotation).GetComponent<Enemy>();  //PRUEBA
+
+        //enemyGObj.Remove(actualenemy); NO FUNCIONA
         actualenemy.Setcombat(this);
         actualenemy.SetPlayer(stadisticPlayerScript);
         combatscript.setenemy(actualenemy);
@@ -134,6 +140,7 @@ public class CombatPosition : MonoBehaviour
         ScriptVigorCardDisplaySlot5.setenemy(actualenemy);
         ScriptVigorCardDisplaySlot6.setenemy(actualenemy);
         enemyInvoke = true;
+        CounterforPlacesWhereEnemiesSpawns += 1; // PRUEBA
     }
     /*private void OnCollisionEnter(Collision other)
     {
