@@ -15,6 +15,7 @@ public class CombatPosition : MonoBehaviour
 
     public bool battlePosition = false;
     public bool CombatON = false;
+    public bool enemyInvoke = false;
     public Rigidbody playerRB;
     public Camera mainCamera;
     public Player player;
@@ -55,7 +56,7 @@ public class CombatPosition : MonoBehaviour
             playerRB.constraints = RigidbodyConstraints.None;
             playerRB.constraints = RigidbodyConstraints.FreezeRotation;
             CombatON = false;
-
+            enemyInvoke = false;
             Debug.Log("Saliste del combate");
         }
     }
@@ -108,16 +109,12 @@ public class CombatPosition : MonoBehaviour
             Destroy(other.gameObject);
             camerascript.canMoveCamera = false;
             enemiesreminder = 1;
-            Enemy actualenemy = Instantiate(enemyGObj[Random.Range(0, enemyGObj.Count)], areaWhereTheEnemySpawns.transform.position, areaWhereTheEnemySpawns.transform.rotation).GetComponent<Enemy>();
-            actualenemy.Setcombat(this);
-            actualenemy.SetPlayer(stadisticPlayerScript);
-            combatscript.setenemy(actualenemy);
 
-            EnemyHealthPointsScript.SetEnemyInEnemyHealthPoints(actualenemy);
+            if (enemyInvoke == false)
+            {
+                EnemyInvoke();
+            }
 
-            ScriptVigorCardDisplaySlot4.setenemy(actualenemy);
-            ScriptVigorCardDisplaySlot5.setenemy(actualenemy);
-            ScriptVigorCardDisplaySlot6.setenemy(actualenemy);
             Destroy(areaWhereTheEnemySpawns.gameObject);
 
             if (CombatON == false)
@@ -125,6 +122,18 @@ public class CombatPosition : MonoBehaviour
                 combatON();
             }
         }
+    }
+    void EnemyInvoke()
+    {
+        Enemy actualenemy = Instantiate(enemyGObj[Random.Range(0, enemyGObj.Count)], areaWhereTheEnemySpawns.transform.position, areaWhereTheEnemySpawns.transform.rotation).GetComponent<Enemy>();
+        actualenemy.Setcombat(this);
+        actualenemy.SetPlayer(stadisticPlayerScript);
+        combatscript.setenemy(actualenemy);
+        EnemyHealthPointsScript.SetEnemyInEnemyHealthPoints(actualenemy);
+        ScriptVigorCardDisplaySlot4.setenemy(actualenemy);
+        ScriptVigorCardDisplaySlot5.setenemy(actualenemy);
+        ScriptVigorCardDisplaySlot6.setenemy(actualenemy);
+        enemyInvoke = true;
     }
     /*private void OnCollisionEnter(Collision other)
     {
