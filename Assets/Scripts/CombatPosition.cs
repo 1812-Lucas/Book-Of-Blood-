@@ -14,6 +14,7 @@ public class CombatPosition : MonoBehaviour
     public GameObject areaWhereTheEnemySpawns;
 
     public bool battlePosition = false;
+    public bool CombatON = false;
     public Rigidbody playerRB;
     public Camera mainCamera;
     public Player player;
@@ -53,11 +54,9 @@ public class CombatPosition : MonoBehaviour
             player.enabled = true;
             playerRB.constraints = RigidbodyConstraints.None;
             playerRB.constraints = RigidbodyConstraints.FreezeRotation;
+            CombatON = false;
 
             Debug.Log("Saliste del combate");
-            //playerRB.freezeRotation = false;
-            //player.enabled = true;
-
         }
     }
 
@@ -79,13 +78,7 @@ public class CombatPosition : MonoBehaviour
         Debug.Log("Entraste en combate");
         deckscript.DrawCards();
         vigordeckscript.DrawCards();
-
-
-
-
-
-        //stadisticPlayerScript.vigor = 1;
-
+        CombatON = true;
     }
     public void SwitchCamera(CinemachineVirtualCamera camera)
     {
@@ -108,13 +101,35 @@ public class CombatPosition : MonoBehaviour
 
 
     }
-
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == 9)
         {
+            Destroy(other.gameObject);
+            camerascript.canMoveCamera = false;
+            enemiesreminder = 1;
+            Enemy actualenemy = Instantiate(enemyGObj[Random.Range(0, enemyGObj.Count)], areaWhereTheEnemySpawns.transform.position, areaWhereTheEnemySpawns.transform.rotation).GetComponent<Enemy>();
+            actualenemy.Setcombat(this);
+            actualenemy.SetPlayer(stadisticPlayerScript);
+            combatscript.setenemy(actualenemy);
 
+            EnemyHealthPointsScript.SetEnemyInEnemyHealthPoints(actualenemy);
 
+            ScriptVigorCardDisplaySlot4.setenemy(actualenemy);
+            ScriptVigorCardDisplaySlot5.setenemy(actualenemy);
+            ScriptVigorCardDisplaySlot6.setenemy(actualenemy);
+            Destroy(areaWhereTheEnemySpawns.gameObject);
+
+            if (CombatON == false)
+            {
+                combatON();
+            }
+        }
+    }
+    /*private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.layer == 9)
+        {
             Destroy(other.gameObject);
             camerascript.canMoveCamera = false;
             enemiesreminder = 1;
@@ -131,20 +146,16 @@ public class CombatPosition : MonoBehaviour
             Destroy(areaWhereTheEnemySpawns.gameObject);
             //StartCoroutine(CamaraTransicionCombate());
             combatON();
-
         }
+    }*/
+}
+//IEnumerator CamaraTransicionCombate()
+//{
+//    yield return new WaitForSeconds(ContadorTransicion);
 
 
+//    camerascript.canMoveCamera = false;
 
-    }
-}  
-    //IEnumerator CamaraTransicionCombate()
-    //{
-    //    yield return new WaitForSeconds(ContadorTransicion);
-
-
-    //    camerascript.canMoveCamera = false;
-
-    //    yield return null;
-    //}
+//    yield return null;
+//}
 
