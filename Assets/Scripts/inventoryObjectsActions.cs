@@ -42,7 +42,7 @@ public class inventoryObjectsActions : MonoBehaviour
             }
             else if (WhispersCount == 3)
             {
-                Debug.Log("el mazo que no consume tu vigor son sólo un suplemento, pero pueden ser muy oportunas. Te las di por pena ");
+                Debug.Log("El mazo que no consume tu vigor son sólo un suplemento, pero pueden ser muy oportunas. Te las di por pena...");
             }
             else if (WhispersCount == 4)
             {

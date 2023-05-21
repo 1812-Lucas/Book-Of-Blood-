@@ -66,8 +66,9 @@ public class CombatPosition : MonoBehaviour
 
     public void combatON()
     {
+
         Cursor.lockState = CursorLockMode.Confined;
-        SwitchCamera(cameras[1]);
+       // SwitchCamera(cameras[1]);
         battlePosition = true;
         camerascript.enabled = false;
         myGM.activeUI();
@@ -122,6 +123,45 @@ public class CombatPosition : MonoBehaviour
 
             if (CombatON == false)
             {
+                SwitchCamera(cameras[1]);
+                combatON();
+            }
+        }
+        if (other.gameObject.layer == 13)
+        {
+            Destroy(other.gameObject);
+            camerascript.canMoveCamera = false;
+            enemiesreminder = 1;
+
+            if (enemyInvoke == false)
+            {
+                EnemyInvoke();
+            }
+
+            Destroy(areaWhereTheEnemySpawns.gameObject);
+
+            if (CombatON == false)
+            {
+                SwitchCamera(cameras[2]);
+                combatON();
+            }
+        }
+        if (other.gameObject.layer == 14)
+        {
+            Destroy(other.gameObject);
+            camerascript.canMoveCamera = false;
+            enemiesreminder = 1;
+
+            if (enemyInvoke == false)
+            {
+                EnemyInvoke();
+            }
+
+            Destroy(areaWhereTheEnemySpawns.gameObject);
+
+            if (CombatON == false)
+            {
+                SwitchCamera(cameras[3]);
                 combatON();
             }
         }
