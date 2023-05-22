@@ -40,7 +40,7 @@ public class inventoryObjectsActions : MonoBehaviour
             cardsOnInventory[CardsOnCountdown].gameObject.SetActive(ActivatorsOfCards[CardsOnCountdown]);
             if (inventoryTutorialTrigger == false)
             {
-                Debug.Log("has obtenido una nueva carta [i] para ver el inventario");
+                Debug.Log("Has obtenido una nueva carta [i] para ver el inventario");
                 inventoryTutorialTrigger = true;
             }
             Destroy(other.gameObject);
@@ -54,11 +54,11 @@ public class inventoryObjectsActions : MonoBehaviour
             PlayAudioInventory(OpenCardBox);
             if (WhispersCount == 1)
             {
-                Debug.Log("vas por buen camino Oswald, puedo sentirlo. ahora recupera mi libro y dale buen uso a mis cartas, o conocerás las consecuencias");
+                Debug.Log("Vas por buen camino Oswald, puedo sentirlo. ahora recupera mi libro y dale buen uso a mis cartas, o conocerás las consecuencias");
             }
             else if (WhispersCount == 2)
             {
-                Debug.Log("escucha atentamente Oswald, el combate está cerca. tienes dos mazos. uno de ellos me alimentará de tu vigor para darte" +
+                Debug.Log("Escucha atentamente Oswald, el combate está cerca. tienes dos mazos. uno de ellos me alimentará de tu vigor para darte" +
                     " gran parte de mi poder y pueden poner el combate a tu favor si lo usas con ingenio. Mientras más luches tu vigor aumentará" +
                     ", y por ende, más podré consumir de ti, así que trata de no morirte tan rápido");
             }

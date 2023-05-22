@@ -9,10 +9,22 @@ public class ConsoleDisplay : MonoBehaviour
     public float messageTime;
     public Image backgroundImage;
 
+    private List<MessageInfo> logMessages;
+    private Coroutine clearConsoleCoroutine;
+
+    private class MessageInfo
+    {
+        public string message;
+        public float startTime;
+        public bool isDestroyed;
+    }
+
     void Start()
     {
         consoleText.text = "";
         backgroundImage.gameObject.SetActive(false);
+
+        logMessages = new List<MessageInfo>();
     }
 
     void OnEnable()
@@ -27,26 +39,69 @@ public class ConsoleDisplay : MonoBehaviour
 
     void HandleLog(string logString, string stackTrace, LogType type)
     {
-        consoleText.text += logString + "\n\n"; // Agregar un salto de línea adicional
+        var messageInfo = new MessageInfo()
+        {
+            message = logString,
+            startTime = Time.time,
+            isDestroyed = false
+        };
+
+        logMessages.Add(messageInfo);
+        UpdateConsoleText();
 
         if (!string.IsNullOrEmpty(logString))
         {
             // Mostrar la imagen de fondo
             backgroundImage.gameObject.SetActive(true);
 
-            StartCoroutine(DestroyText());
+            if (clearConsoleCoroutine != null)
+            {
+                StopCoroutine(clearConsoleCoroutine);
+            }
+            clearConsoleCoroutine = StartCoroutine(DestroyTextDelayed(messageInfo, messageTime));
         }
     }
 
-    IEnumerator DestroyText()
+    IEnumerator DestroyTextDelayed(MessageInfo messageInfo, float delay)
     {
-        yield return new WaitForSeconds(messageTime);
-        consoleText.text = "";
+        yield return new WaitForSeconds(delay);
 
-        // Ocultar la imagen de fondo si el campo de texto está vacío
-        if (string.IsNullOrEmpty(consoleText.text))
+        if (!messageInfo.isDestroyed)
+        {
+            logMessages.Remove(messageInfo);
+            UpdateConsoleText();
+            messageInfo.isDestroyed = true;
+        }
+
+        // Ocultar la imagen de fondo si no hay mensajes en la lista
+        if (logMessages.Count == 0)
         {
             backgroundImage.gameObject.SetActive(false);
+        }
+    }
+
+    void UpdateConsoleText()
+    {
+        string consoleString = "";
+        foreach (var messageInfo in logMessages)
+        {
+            consoleString += messageInfo.message + "\n\n";
+        }
+        consoleText.text = consoleString;
+    }
+
+    void Update()
+    {
+        for (int i = logMessages.Count - 1; i >= 0; i--)
+        {
+            var messageInfo = logMessages[i];
+            float elapsedTime = Time.time - messageInfo.startTime;
+            if (elapsedTime >= messageTime && !messageInfo.isDestroyed)
+            {
+                logMessages.RemoveAt(i);
+                UpdateConsoleText();
+                messageInfo.isDestroyed = true;
+            }
         }
     }
 }
