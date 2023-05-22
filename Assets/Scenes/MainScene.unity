@@ -41293,6 +41293,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9112766969278726823}
     - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: OpenCardBox
+      value: 
+      objectReference: {fileID: 8300000, guid: 70910e94ac9394d4f86ff5736ca1811f, type: 3}
+    - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: menumanagerscript
       value: 
       objectReference: {fileID: 1695875805}

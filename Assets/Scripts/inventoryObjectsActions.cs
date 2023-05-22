@@ -7,7 +7,7 @@ public class inventoryObjectsActions : MonoBehaviour
 {
     private int WhispersCount;
     public int KeyForTheBlackDoor;
-    
+
     public Camera mainCamera;
     public MenuManager menumanagerscript;
     [SerializeField] LayerMask doormask;
@@ -15,21 +15,43 @@ public class inventoryObjectsActions : MonoBehaviour
     public GameObject[] cardsOnInventory;
     public bool[] ActivatorsOfCards;
     public int CardsOnCountdown;
+    private bool inventoryTutorialTrigger = false;
+
+    AudioSource MyAudioSource;
+    public AudioClip OpenCardBox;
+
+
+    private void Awake()
+    {
+        MyAudioSource = GetComponent<AudioSource>();
+    }
+
+    public void PlayAudioInventory(AudioClip AC)
+    {
+        MyAudioSource.clip = AC;
+        MyAudioSource.Play();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == 15)
         {
             ActivatorsOfCards[CardsOnCountdown] = true;
             cardsOnInventory[CardsOnCountdown].gameObject.SetActive(ActivatorsOfCards[CardsOnCountdown]);
-            Debug.Log("has obtenido una nueva carta [i] para ver el inventario");
+            if (inventoryTutorialTrigger == false)
+            {
+                Debug.Log("has obtenido una nueva carta [i] para ver el inventario");
+                inventoryTutorialTrigger = true;
+            }
             Destroy(other.gameObject);
             CardsOnCountdown += 1;
         }
 
-            if (other.gameObject.layer == 6)
+        if (other.gameObject.layer == 6)
         {
             WhispersCount += 1;
             Destroy(other.gameObject);
+            PlayAudioInventory(OpenCardBox);
             if (WhispersCount == 1)
             {
                 Debug.Log("vas por buen camino Oswald, puedo sentirlo. ahora recupera mi libro y dale buen uso a mis cartas, o conocerás las consecuencias");
@@ -57,8 +79,8 @@ public class inventoryObjectsActions : MonoBehaviour
         }
         if (other.gameObject.layer == 7)
         {
-           //puerta
-            if (KeyForTheBlackDoor==1)
+            //puerta
+            if (KeyForTheBlackDoor == 1)
             {
                 Destroy(other.gameObject);
             }
