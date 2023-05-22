@@ -12,7 +12,7 @@ public class CombatPosition : MonoBehaviour
     public List<GameObject> enemyGObj;
     public Transform enemytransf;
     public GameObject areaWhereTheEnemySpawns;
-
+    
     public List<GameObject> AreasWhereTheEnemiesSpawns;
     public int CounterforPlacesWhereEnemiesSpawns;
 
@@ -125,6 +125,7 @@ public class CombatPosition : MonoBehaviour
             {
                 SwitchCamera(cameras[1]);
                 combatON();
+                
             }
         }
         if (other.gameObject.layer == 13)

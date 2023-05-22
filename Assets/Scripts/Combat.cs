@@ -10,6 +10,20 @@ public class Combat : MonoBehaviour
     public ParticleSystem damageParticleSlot2;
     public ParticleSystem damageParticleSlot3;
     public ParticleSystem damageparticleSlot4;
+    public ParticleSystem damageparticleSlot5;
+    public ParticleSystem damageparticleSlot6;
+    public ParticleSystem damageParticleSlot1Combate2;
+    public ParticleSystem damageParticleSlot2Combate2;
+    public ParticleSystem damageParticleSlot3Combate2;
+    public ParticleSystem damageparticleSlot4Combate2;
+    public ParticleSystem damageparticleSlot5Combate2;
+    public ParticleSystem damageparticleSlot6Combate2;
+    public ParticleSystem damageParticleSlot1_Combate3;
+    public ParticleSystem damageParticleSlot2_Combate3;
+    public ParticleSystem damageParticleSlot3_Combate3;
+    public ParticleSystem damageparticleSlot4_Combate3;
+    public ParticleSystem damageparticleSlot5_Combate3;
+    public ParticleSystem damageparticleSlot6_Combate3;
     //int contador;
     //public EnemyAldeano enemyaldean;
     public Enemy enemyy;
@@ -215,6 +229,8 @@ public class Combat : MonoBehaviour
             enemyy.health -= carddmgtrue;
             carddisplayscriptinSlot1.ejecutarpasivadelacarta();
             damageParticleSlot1.Play();
+            damageParticleSlot1Combate2.Play();
+            damageParticleSlot1_Combate3.Play();
             Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
             Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
             //contador = 1;
@@ -236,6 +252,8 @@ public class Combat : MonoBehaviour
             enemyy.health -= carddmgtrue;
             carddisplayscriptinSlot2.ejecutarpasivadelacarta();
             damageParticleSlot2.Play();
+            damageParticleSlot2Combate2.Play();
+            damageParticleSlot2_Combate3.Play();
             Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
             Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
             //contador = 1;
@@ -255,6 +273,8 @@ public class Combat : MonoBehaviour
             enemyy.health -= carddmgtrue;
             carddisplayscriptinSlot3.ejecutarpasivadelacarta();
             damageParticleSlot3.Play();
+            damageParticleSlot3Combate2.Play();
+            damageParticleSlot3_Combate3.Play();
             Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
             Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
             //contador = 1;
@@ -277,6 +297,8 @@ public class Combat : MonoBehaviour
             button4.interactable = false;
             VigorDeckScript.SlotBool4 = false;
             damageparticleSlot4.Play();
+            damageparticleSlot4Combate2.Play();
+            damageparticleSlot4_Combate3.Play();
             
         }
     }
@@ -291,7 +313,10 @@ public class Combat : MonoBehaviour
             activaryDesactivarCartaAlUsarlaSlot5();
             button5.interactable = false;
             VigorDeckScript.SlotBool5 = false;
-            
+            damageparticleSlot5.Play();
+            damageparticleSlot5Combate2.Play();
+            damageparticleSlot5_Combate3.Play();
+
         }
     }
     public void clickonslotsix()
@@ -305,7 +330,10 @@ public class Combat : MonoBehaviour
             activaryDesactivarCartaAlUsarlaSlot6();
             VigorDeckScript.SlotBool6 = false;
             button6.interactable = false;
-            
+            damageparticleSlot6.Play();
+            damageparticleSlot6Combate2.Play();
+            damageparticleSlot6_Combate3.Play();
+
         }
     }
 }
