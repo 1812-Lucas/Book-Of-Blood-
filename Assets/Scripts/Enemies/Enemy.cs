@@ -13,8 +13,16 @@ public class Enemy : MonoBehaviour
     public virtual void Start()
     {
         Enemyapears();
+        GameObject PlayerObject = GameObject.Find("Player");
+
+        if (PlayerObject != null)
+        {
+            // Obtener la referencia al script "OtroScript" en el objeto encontrado
+            combat = PlayerObject.GetComponent<Combat>();
+
+        }
     }
-    void Enemyapears()
+        void Enemyapears()
     {
         Debug.Log("Aparecio un " + tipodeenemigo);
     }
@@ -39,6 +47,8 @@ public class Enemy : MonoBehaviour
     {
         if (health <= 0)
         {
+            combat.EndOfCombat();//prueba
+            PlayerStadisticsScript.vigor = 0;//prueba
             _combatposition.salircombate();
             Destroy(gameObject);
         }

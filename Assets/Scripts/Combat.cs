@@ -162,7 +162,51 @@ public class Combat : MonoBehaviour
             Debug.Log("Inicio el siguiente turno");
         }
     }
-    public void clickonslotone()
+    public void EndOfCombat()
+    {
+        if (enemyattack == true)
+        {
+            PlayerStadisticsScript.vigor += 1;
+            button1.interactable = true;
+            button2.interactable = true;
+            button3.interactable = true;
+            button4.interactable = true;
+            button5.interactable = true;
+            button6.interactable = true;
+            //contador = 0;
+            playercontador = 0;
+            deckscript.DrawCards();
+            VigorDeckScript.DrawCards();
+
+            if (cartafueUsada == false)
+            {
+                activaryDesactivarCartaAlUsarlaSlot1();
+            }
+            if (cartafueUsada2 == false)
+            {
+                activaryDesactivarCartaAlUsarlaSlot2();
+            }
+            if (cartafueUsada3 == false)
+            {
+                activaryDesactivarCartaAlUsarlaSlot3();
+            }
+            if (cartafueUsada4 == false)
+            {
+                activaryDesactivarCartaAlUsarlaSlot4();
+            }
+            if (cartafueUsada5 == false)
+            {
+                activaryDesactivarCartaAlUsarlaSlot5();
+            }
+            if (cartafueUsada6 == false)
+            {
+                activaryDesactivarCartaAlUsarlaSlot6();
+            }
+            enemyattack = false;
+            
+        }
+    }
+        public void clickonslotone()
     {
         if (carddisplayscriptinSlot1.myslot == 1 && playercontador == 0)
         {
