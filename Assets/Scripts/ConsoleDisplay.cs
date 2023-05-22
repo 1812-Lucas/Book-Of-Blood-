@@ -8,33 +8,26 @@ public class ConsoleDisplay : MonoBehaviour
     public Text consoleText;
     public float messageTime;
     public Image backgroundImage;
-    
+
     void Start()
     {
         consoleText.text = "";
         backgroundImage.gameObject.SetActive(false);
-
     }
 
-    public void Update()
-    {
-        
-    }
     void OnEnable()
     {
         Application.logMessageReceived += HandleLog;
-        
     }
 
     void OnDisable()
     {
         Application.logMessageReceived -= HandleLog;
-        
     }
 
     void HandleLog(string logString, string stackTrace, LogType type)
     {
-        consoleText.text += logString + "\n";
+        consoleText.text += logString + "\n\n"; // Agregar un salto de línea adicional
 
         if (!string.IsNullOrEmpty(logString))
         {
@@ -43,7 +36,6 @@ public class ConsoleDisplay : MonoBehaviour
 
             StartCoroutine(DestroyText());
         }
-       
     }
 
     IEnumerator DestroyText()
