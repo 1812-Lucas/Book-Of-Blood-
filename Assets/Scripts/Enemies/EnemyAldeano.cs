@@ -44,7 +44,7 @@ public class EnemyAldeano : Enemy
             {
                 HeavyDamage();
             }
-            if (Numero3 <= 30)
+            if (Numero3 <= 40)
             {
                 Regeneration();
             }

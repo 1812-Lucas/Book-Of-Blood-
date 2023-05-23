@@ -45,7 +45,7 @@ public class EnemySectarian : Enemy
             {
                 HeavyDamage();
             }
-            if (Numero3 <= 40)
+            if (Numero3 <= 50)
             {
                 Regeneration();
             }

@@ -45,7 +45,7 @@ public class EnemyTank : Enemy
             {
                 HeavyDamage();
             }
-            if (Numero3 <= 50)
+            if (Numero3 <= 60)
             {
                 Regeneration();
             }
