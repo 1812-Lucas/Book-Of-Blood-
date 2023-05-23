@@ -75,8 +75,8 @@ public class CombatPosition : MonoBehaviour
         player.enabled = false;
         vigordeckscript.CreateListOfMyVigorCardsBuildForCombat();
         deckscript.CreateListOfMyrCardsBuildForCombat();
-        Vector3 direccion = new Vector3(7, 0, 12);
-        transform.LookAt(direccion);
+        //Vector3 direccion = new Vector3(7, 0, 12);
+        //transform.LookAt(direccion);
         mainCamera.transform.LookAt(enemytransf);
         playerRB.constraints = RigidbodyConstraints.FreezeAll;
         //playerRB.freezeRotation = true;
@@ -113,6 +113,8 @@ public class CombatPosition : MonoBehaviour
             Destroy(other.gameObject);
             camerascript.canMoveCamera = false;
             enemiesreminder = 1;
+            Vector3 direccion = new Vector3(15, 1, 15);
+            transform.LookAt(direccion);
 
             if (enemyInvoke == false)
             {
@@ -133,6 +135,8 @@ public class CombatPosition : MonoBehaviour
             Destroy(other.gameObject);
             camerascript.canMoveCamera = false;
             enemiesreminder = 1;
+            Vector3 direccion = new Vector3(0, 1, 5);
+            transform.LookAt(direccion);
 
             if (enemyInvoke == false)
             {
@@ -152,6 +156,8 @@ public class CombatPosition : MonoBehaviour
             Destroy(other.gameObject);
             camerascript.canMoveCamera = false;
             enemiesreminder = 1;
+            Vector3 direccion = new Vector3(-120, 1, 80);
+            transform.LookAt(direccion);
 
             if (enemyInvoke == false)
             {
