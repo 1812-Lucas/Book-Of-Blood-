@@ -12,15 +12,43 @@ public class EnemySectarian : Enemy
     {
         if (health <= 15 && health > 11)
         {
-            BasicDamage();
+            int Numero = Random.Range(1, 101);
+            if (Numero >= 30)
+            {
+                BasicDamage();
+            }
+            else if (Numero < 30)
+            {
+                HeavyDamage();
+            }
         }
-        else if (health > 6 && health <= 11)
+        else if (health > 7 && health <= 11)
         {
-            HeavyDamage();
+            int Numero2 = Random.Range(1, 101);
+            if (Numero2 >= 50)
+            {
+                BasicDamage();
+            }
+            else if (Numero2 < 50)
+            {
+                HeavyDamage();
+            }
         }
-        else if (health > 0 && health <= 6)
+        else if (health > 0 && health <= 7)
         {
-            Regeneration();
+            int Numero3 = Random.Range(1, 101);
+            if (Numero3 >= 60)
+            {
+                BasicDamage();
+            }
+            else if (Numero3 < 60)
+            {
+                HeavyDamage();
+            }
+            if (Numero3 <= 40)
+            {
+                Regeneration();
+            }
         }
     }
     public void BasicDamage()

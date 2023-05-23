@@ -12,15 +12,43 @@ public class EnemyTank : Enemy
     {
         if (health <= 20 && health > 15)
         {
-            BasicDamage();
+            int Numero = Random.Range(1, 101);
+            if (Numero >= 40)
+            {
+                BasicDamage();
+            }
+            else if (Numero < 40)
+            {
+                HeavyDamage();
+            }
         }
-        else if (health > 7 && health <= 15)
+        else if (health > 9 && health <= 15)
         {
-            HeavyDamage();
+            int Numero2 = Random.Range(1, 101);
+            if (Numero2 >= 60)
+            {
+                BasicDamage();
+            }
+            else if (Numero2 < 60)
+            {
+                HeavyDamage();
+            }
         }
-        else if (health > 0 && health <= 7)
+        else if (health > 0 && health <= 9)
         {
-            Regeneration();
+            int Numero3 = Random.Range(1, 101);
+            if (Numero3 >= 70)
+            {
+                BasicDamage();
+            }
+            else if (Numero3 < 70)
+            {
+                HeavyDamage();
+            }
+            if (Numero3 <= 50)
+            {
+                Regeneration();
+            }
         }
     }
     public void BasicDamage()
