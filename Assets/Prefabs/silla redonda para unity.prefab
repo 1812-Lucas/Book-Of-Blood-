@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 7754259368797330152}
   - component: {fileID: 1264023201852033650}
   - component: {fileID: 5588504987069518234}
-  - component: {fileID: 460749460680857635}
+  - component: {fileID: 6144117123351149783}
   m_Layer: 0
   m_Name: Banco2
   m_TagString: Untagged
@@ -116,8 +116,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &460749460680857635
-CapsuleCollider:
+--- !u!65 &6144117123351149783
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -126,7 +126,6 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 21.118816
-  m_Height: 99.847725
-  m_Direction: 1
-  m_Center: {x: 93.993484, y: 42.928345, z: -105.32373}
+  serializedVersion: 2
+  m_Size: {x: 42.23764, y: 77.308815, z: 42.23764}
+  m_Center: {x: 93.9935, y: 42.13576, z: -105.32361}

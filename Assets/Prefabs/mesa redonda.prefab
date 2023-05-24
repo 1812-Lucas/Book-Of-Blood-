@@ -23,7 +23,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080748685052406824}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 38.6, y: -0.23, z: -30.99}
   m_LocalScale: {x: 0.029071923, y: 0.022731628, z: 0.029071923}
   m_ConstrainProportionsScale: 0
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 5098431224012998677}
   - component: {fileID: 4291811507109987749}
   - component: {fileID: 1175559636026377241}
-  - component: {fileID: 425489765372536985}
+  - component: {fileID: 8026187055033373296}
   m_Layer: 0
   m_Name: Mesa5_Bar_Completo
   m_TagString: Untagged
@@ -116,8 +116,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &425489765372536985
-CapsuleCollider:
+--- !u!65 &8026187055033373296
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -126,7 +126,6 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 59.402958
-  m_Height: 151.9432
-  m_Direction: 1
-  m_Center: {x: 19.894949, y: 23.778467, z: -280.97794}
+  serializedVersion: 2
+  m_Size: {x: 116.84085, y: 55.37318, z: 117.69939}
+  m_Center: {x: 19.283918, y: 31.186047, z: -280.3283}
