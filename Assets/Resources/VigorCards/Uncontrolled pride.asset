@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Uncontrolled pride
   description: Deal <i><color=red>5 damage</color></i> to an enemy
   image: {fileID: 21300000, guid: 76125c68bea6c1e4a991bddd29ba9ffe, type: 3}
-  vigorcost: 4
+  vigorcost: 3

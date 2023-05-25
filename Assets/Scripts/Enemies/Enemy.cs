@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             combat.EndOfCombat();//prueba
-            PlayerStadisticsScript.vigor = 0;//prueba
+            PlayerStadisticsScript.vigor = 3;//prueba
             _combatposition.salircombate();
             Destroy(gameObject);
         }

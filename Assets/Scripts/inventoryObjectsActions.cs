@@ -20,6 +20,9 @@ public class inventoryObjectsActions : MonoBehaviour
     AudioSource MyAudioSource;
     public AudioClip OpenCardBox;
 
+    public int HealthPotions;
+    public StadisticPlayer StadisticPlayerScript;
+
 
     private void Awake()
     {
@@ -30,6 +33,17 @@ public class inventoryObjectsActions : MonoBehaviour
     {
         MyAudioSource.clip = AC;
         MyAudioSource.Play();
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.H) && HealthPotions > 0)
+        {
+            // Llamar a tu función aquí
+            //TuFuncion();
+            StadisticPlayerScript.health += 3;
+            Debug.Log("te has curado 3 puntos de salud con una mejora de salud");
+
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -46,6 +60,11 @@ public class inventoryObjectsActions : MonoBehaviour
             Destroy(other.gameObject);
             CardsOnCountdown += 1;
         }
+        if (other.gameObject.layer == 16)
+        {
+            HealthPotions += 1;
+            Destroy(other.gameObject);
+        }
 
         if (other.gameObject.layer == 6)
         {
@@ -54,7 +73,8 @@ public class inventoryObjectsActions : MonoBehaviour
             PlayAudioInventory(OpenCardBox);
             if (WhispersCount == 1)
             {
-                Debug.Log("Vas por buen camino Oswald, puedo sentirlo. ahora recupera mi libro y dale buen uso a mis cartas, o conocerás las consecuencias");
+                Debug.Log("Al presionar [i] entrarás en el inventario, presiona sobre una carta para equipartela. debes equiparte tanto" +
+                    " cartas de vigor como cartas normales o no podrás derrotar a tus enemigos.");
             }
             else if (WhispersCount == 2)
             {
