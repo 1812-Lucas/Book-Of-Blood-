@@ -52,11 +52,11 @@ public class inventoryObjectsActions : MonoBehaviour
         {
             ActivatorsOfCards[CardsOnCountdown] = true;
             cardsOnInventory[CardsOnCountdown].gameObject.SetActive(ActivatorsOfCards[CardsOnCountdown]);
-            if (inventoryTutorialTrigger == false)
+            Debug.Log("Has obtenido una nueva carta [i] para ver el inventario");
+            /*if (inventoryTutorialTrigger == false)
             {
-                Debug.Log("Has obtenido una nueva carta [i] para ver el inventario");
                 inventoryTutorialTrigger = true;
-            }
+            //}*/
             Destroy(other.gameObject);
             CardsOnCountdown += 1;
         }
