@@ -23,6 +23,12 @@ public class CardDisplay : MonoBehaviour
     public Player player;
     public StadisticPlayer StatsPlayerScript;
 
+    public AudioSource MyAudioSource;
+    public AudioClip BigBangAudio;
+    public AudioClip fireExplosionAudio;
+    public AudioClip DestructionAudio;
+    public AudioClip NormalAudioCard;
+
     private void Start()
     {
         
@@ -33,6 +39,11 @@ public class CardDisplay : MonoBehaviour
         attacktext.text = card.attack.ToString();
         
 
+    }
+    public void PlayAudio(AudioClip AC)
+    {
+        MyAudioSource.clip = AC;
+        MyAudioSource.Play();
     }
     public int Thecarddmg()
     {
@@ -75,9 +86,24 @@ public class CardDisplay : MonoBehaviour
         {
             case "Sacred Font":
                 StatsPlayerScript.health += 5;
+                PlayAudio(NormalAudioCard);
                 Debug.Log("te has curado 5 puntos de salud");
                 break;
-           
+
+            case "Big Bang":
+                PlayAudio(BigBangAudio);
+                break;
+            case "Fire Explosion":
+                PlayAudio(fireExplosionAudio);
+                break;
+            case "Destruction":
+                PlayAudio(DestructionAudio);
+                break;
+            case "cristal Pierce":
+                PlayAudio(NormalAudioCard);
+                break;
+
+
         }
 
     }

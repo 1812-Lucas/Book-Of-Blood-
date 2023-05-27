@@ -15,10 +15,11 @@ public class inventoryObjectsActions : MonoBehaviour
     public GameObject[] cardsOnInventory;
     public bool[] ActivatorsOfCards;
     public int CardsOnCountdown;
-    private bool inventoryTutorialTrigger = false;
+   // private bool inventoryTutorialTrigger = false;
 
     AudioSource MyAudioSource;
     public AudioClip OpenCardBox;
+   
 
     public int HealthPotions;
     public StadisticPlayer StadisticPlayerScript;

@@ -20,9 +20,23 @@ public class VigorCardsDisplay : MonoBehaviour
     public StadisticPlayer stadisticplayerScipt;
     private int SpiritGrowthStacks;
     private int ProtectionTottemStacks;
-
     public Enemy enemyy;
 
+    AudioSource MyAudioSource;
+    public AudioClip WarriorPendantAudio;
+    public AudioClip DeadEyeAudio;
+    public AudioClip CaosAudio;
+
+
+    private void Awake()
+    {
+        MyAudioSource = GetComponent<AudioSource>();
+    }
+    public void PlayAudio(AudioClip AC)
+    {
+        MyAudioSource.clip = AC;
+        MyAudioSource.Play();
+    }
     private void Start()
     {
 
@@ -60,6 +74,7 @@ public class VigorCardsDisplay : MonoBehaviour
             case "Warrior Pendant":
                 stadisticplayerScipt.health += 8;
                 protectiontottempasive();
+                PlayAudio(WarriorPendantAudio);
                 Debug.Log("te has curado 5 puntos de salud");
                 break;
             case "Senpukku":
@@ -106,6 +121,7 @@ public class VigorCardsDisplay : MonoBehaviour
             case "Caos":
                 enemyy.health -= 9;
                 protectiontottempasive();
+                PlayAudio(CaosAudio);
                 Debug.Log("Has inflingido 9 de daño");
                 Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
                 break;
@@ -113,6 +129,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 enemyy.health -= 7;
                 stadisticplayerScipt.health += 3;
                 protectiontottempasive();
+                PlayAudio(DeadEyeAudio);
                 Debug.Log("Has inflingido 7 de daño y te has curado 2 puntos de salud");
                 Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
                 break;

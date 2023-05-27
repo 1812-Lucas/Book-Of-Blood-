@@ -12,7 +12,7 @@ public class CombatPosition : MonoBehaviour
     public List<GameObject> enemyGObj;
     public Transform enemytransf;
     public GameObject areaWhereTheEnemySpawns;
-    
+
     public List<GameObject> AreasWhereTheEnemiesSpawns;
     public int CounterforPlacesWhereEnemiesSpawns;
 
@@ -35,15 +35,26 @@ public class CombatPosition : MonoBehaviour
     public StadisticPlayer stadisticPlayerScript;
     public EnemyHeathPointsUI EnemyHealthPointsScript;
 
-
+    AudioSource MyAudioSource;
+    public AudioClip CardSwipe;
+    public AudioClip EnemyDiesAudio;
 
     public float ContadorTransicion;
+
+    private void Awake()
+    {
+        MyAudioSource = GetComponent<AudioSource>();
+    }
 
     public void Start()
     {
         myGM = GameManager.instance;
     }
-
+    public void PlayAudio(AudioClip AC)
+    {
+        MyAudioSource.clip = AC;
+        MyAudioSource.Play();
+    }
     public void salircombate()
     {
 
@@ -52,6 +63,7 @@ public class CombatPosition : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
             SwitchCamera(cameras[0]);
+            PlayAudio(EnemyDiesAudio);
             myGM.activeUI();
             battlePosition = false;
             //camerascript.enabled = true;
@@ -68,8 +80,9 @@ public class CombatPosition : MonoBehaviour
     {
 
         Cursor.lockState = CursorLockMode.Confined;
-       // SwitchCamera(cameras[1]);
+        // SwitchCamera(cameras[1]);
         battlePosition = true;
+        PlayAudio(CardSwipe);
         camerascript.enabled = false;
         myGM.activeUI();
         player.enabled = false;
@@ -127,7 +140,7 @@ public class CombatPosition : MonoBehaviour
             {
                 SwitchCamera(cameras[1]);
                 combatON();
-                
+
             }
         }
         if (other.gameObject.layer == 13)
