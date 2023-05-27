@@ -73,14 +73,14 @@ public class inventoryObjectsActions : MonoBehaviour
             PlayAudioInventory(OpenCardBox);
             if (WhispersCount == 1)
             {
-                Debug.Log("Al presionar [i] entrarás en el inventario, presiona sobre una carta para equipartela. debes equiparte tanto" +
-                    " cartas de vigor como cartas normales o no podrás derrotar a tus enemigos.");
-            }
-            else if (WhispersCount == 2)
-            {
                 Debug.Log("Escucha atentamente Oswald, el combate está cerca. tienes dos mazos. uno de ellos me alimentará de tu vigor para darte" +
                     " gran parte de mi poder y pueden poner el combate a tu favor si lo usas con ingenio. Mientras más luches tu vigor aumentará" +
                     ", y por ende, más podré consumir de ti, así que trata de no morirte tan rápido");
+            }
+            else if (WhispersCount == 2)
+            {
+                Debug.Log("Al presionar [i] entrarás en el inventario, presiona sobre una carta para equipartela. debes equiparte tanto" +
+                    " cartas de vigor como cartas normales o no podrás derrotar a tus enemigos.");
             }
             else if (WhispersCount == 3)
             {
