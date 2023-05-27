@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 public class EnemyAldeano : Enemy
 {
+    
     public override void Start()
     {
         base.Start();
+       
     }
     public override void Enemyturn()
     {
@@ -53,12 +55,14 @@ public class EnemyAldeano : Enemy
     public void BasicDamage()
     {
         //player._maxhealth -= 2;
+        
         PlayerStadisticsScript.health -= 2;
         Debug.Log("El enemigo inflingio 2 de daño al jugador con un ataque basico");
     }
     public void HeavyDamage()
     {
         //player._maxhealth -= 4;
+        
         PlayerStadisticsScript.health -= 4;
         Debug.Log("El enemigo inflingio 4 de daño al jugador con un golpe pesado");
     }

@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class EnemySectarian : Enemy
 {
+    //public ParticleSystem ataqueEnemigo1;
+    //public ParticleSystem ataqueEnemigo2;
+
     public override void Start()
     {
         base.Start();
+        //ataqueEnemigo1 = gameObject.AddComponent<ParticleSystem>();
+        //ataqueEnemigo2 = gameObject.AddComponent<ParticleSystem>();
     }
     public override void Enemyturn()
     {
@@ -54,12 +59,14 @@ public class EnemySectarian : Enemy
     public void BasicDamage()
     {
         //player._maxhealth -= 3;
+       // ataqueEnemigo1.Play();
         PlayerStadisticsScript.health -= 3;
         Debug.Log("El enemigo inflingio 3 de daño al jugador con un ataque basico");
     }
     public void HeavyDamage()
     {
         //player._maxhealth -= 5;
+        //ataqueEnemigo2.Play();
         PlayerStadisticsScript.health -= 5;
         Debug.Log("El enemigo inflingio 5 de daño al jugador con un golpe pesado");
     }

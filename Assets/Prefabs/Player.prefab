@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 5035851363991577847}
   - component: {fileID: 5273619601675263601}
   - component: {fileID: 8940846620823324685}
+  - component: {fileID: 8997924972283122296}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -304,6 +305,8 @@ MonoBehaviour:
   ActivatorsOfCards: 00000000000000000000000000000000000000
   CardsOnCountdown: 0
   OpenCardBox: {fileID: 8300000, guid: 70910e94ac9394d4f86ff5736ca1811f, type: 3}
+  HealthPotions: 0
+  StadisticPlayerScript: {fileID: 0}
 --- !u!114 &5299470838625391949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,6 +353,8 @@ MonoBehaviour:
   ScriptVigorCardDisplaySlot6: {fileID: 0}
   stadisticPlayerScript: {fileID: 5273619601675263601}
   EnemyHealthPointsScript: {fileID: 0}
+  CardSwipe: {fileID: 0}
+  EnemyDiesAudio: {fileID: 0}
   ContadorTransicion: 1
 --- !u!114 &5790167006782233436
 MonoBehaviour:
@@ -603,6 +608,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8997924972283122296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8077958657708868338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 064148694a5e11241b88c1e957aaf83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Mixer: {fileID: 24100000, guid: 8262a736eaaffc3448115d7b81144708, type: 2}
+  MasterSlider: {fileID: 0}
+  EffectsSlider: {fileID: 0}
+  MusicSlider: {fileID: 0}
 --- !u!1 &8077958658602386710
 GameObject:
   m_ObjectHideFlags: 0
