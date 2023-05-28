@@ -24,6 +24,12 @@ public class Combat : MonoBehaviour
     public ParticleSystem damageparticleSlot4_Combate3;
     public ParticleSystem damageparticleSlot5_Combate3;
     public ParticleSystem damageparticleSlot6_Combate3;
+    //public ParticleSystem ataqueEnemy1;
+    //public ParticleSystem ataqueEnemigo2;
+    //public ParticleSystem ataqueEnemy1_Combate2;
+    //public ParticleSystem ataqueEnemigo2_Combate2;
+    //public ParticleSystem ataqueEnemy1_Combate3;
+    //public ParticleSystem ataqueEnemigo2_Combate3;
     //int contador;
     //public EnemyAldeano enemyaldean;
     public Enemy enemyy;
@@ -174,6 +180,18 @@ public class Combat : MonoBehaviour
             enemyattack = false;
             Debug.Log("Final del turno");
             Debug.Log("Inicio el siguiente turno");
+            //if (enemyy.attackType == 1)
+            //{
+            //    ataqueEnemy1.Play();
+            //    ataqueEnemy1_Combate2.Play();
+            //    ataqueEnemy1_Combate3.Play();
+            //}
+            //else if (enemyy.attackType == 2)
+            //{
+            //    ataqueEnemigo2.Play();
+            //    ataqueEnemigo2_Combate2.Play();
+            //    ataqueEnemigo2_Combate3.Play();
+            //}
         }
     }
     public void EndOfCombat()

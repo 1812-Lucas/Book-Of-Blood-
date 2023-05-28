@@ -4,24 +4,12 @@ using UnityEngine;
 
 public class EnemyTank : Enemy
 {
-    public string basicAttackParticlesPrefabPath; // Ruta del prefab del sistema de partículas del ataque básico
-    public string heavyAttackParticlesPrefabPath; // Ruta del prefab del sistema de partículas del golpe pesado
-
-    private ParticleSystem ataqueEnemy1;
-    private ParticleSystem ataqueEnemigo2;
+   
 
     public override void Start()
     {
         base.Start();
-        // Cargar los prefabs de los sistemas de partículas en tiempo de ejecución
-        GameObject basicAttackParticlesPrefab = Resources.Load<GameObject>(basicAttackParticlesPrefabPath);
-        GameObject heavyAttackParticlesPrefab = Resources.Load<GameObject>(heavyAttackParticlesPrefabPath);
-
-        // Crear instancias de los sistemas de partículas
-        ataqueEnemy1 = Instantiate(basicAttackParticlesPrefab, transform).GetComponent<ParticleSystem>();
-        ataqueEnemigo2 = Instantiate(heavyAttackParticlesPrefab, transform).GetComponent<ParticleSystem>();
-        ataqueEnemy1.Stop(); // Asegurarse de que las partículas estén detenidas al inicio
-        ataqueEnemigo2.Stop();
+       
     }
     public override void Enemyturn()
     {
@@ -72,7 +60,8 @@ public class EnemyTank : Enemy
         
         PlayerStadisticsScript.health -= 4;
         Debug.Log("El enemigo inflingio 4 de daño al jugador con un ataque basico");
-        ataqueEnemy1.Play();
+        PlayBasicAttackParticles();
+
     }
     public void HeavyDamage()
     {
@@ -80,7 +69,8 @@ public class EnemyTank : Enemy
        
         PlayerStadisticsScript.health -= 6;
         Debug.Log("El enemigo inflingio 6 de daño al jugador con un golpe pesado");
-        ataqueEnemigo2.Play();
+        PlayHeavyAttackParticles();
+
     }
     public void Regeneration()
     {

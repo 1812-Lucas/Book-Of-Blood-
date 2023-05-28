@@ -306,7 +306,7 @@ MonoBehaviour:
   CardsOnCountdown: 0
   OpenCardBox: {fileID: 8300000, guid: 70910e94ac9394d4f86ff5736ca1811f, type: 3}
   HealthPotions: 0
-  StadisticPlayerScript: {fileID: 0}
+  StadisticPlayerScript: {fileID: 5273619601675263601}
 --- !u!114 &5299470838625391949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,8 +353,8 @@ MonoBehaviour:
   ScriptVigorCardDisplaySlot6: {fileID: 0}
   stadisticPlayerScript: {fileID: 5273619601675263601}
   EnemyHealthPointsScript: {fileID: 0}
-  CardSwipe: {fileID: 0}
-  EnemyDiesAudio: {fileID: 0}
+  CardSwipe: {fileID: 8300000, guid: 120669a9b14f2154e94d7ebeb03fd389, type: 3}
+  EnemyDiesAudio: {fileID: 8300000, guid: a99e3c4ff882fc7498ed6c65ea8e07ba, type: 3}
   ContadorTransicion: 1
 --- !u!114 &5790167006782233436
 MonoBehaviour:
@@ -386,6 +386,12 @@ MonoBehaviour:
   damageparticleSlot4_Combate3: {fileID: 0}
   damageparticleSlot5_Combate3: {fileID: 0}
   damageparticleSlot6_Combate3: {fileID: 0}
+  ataqueEnemy1: {fileID: 0}
+  ataqueEnemigo2: {fileID: 0}
+  ataqueEnemy1_Combate2: {fileID: 0}
+  ataqueEnemigo2_Combate2: {fileID: 0}
+  ataqueEnemy1_Combate3: {fileID: 0}
+  ataqueEnemigo2_Combate3: {fileID: 0}
   enemyy: {fileID: 0}
   deckscript: {fileID: 7910656068851151482}
   carddisplayscriptinSlot1: {fileID: 0}
@@ -521,7 +527,7 @@ AudioSource:
   m_GameObject: {fileID: 8077958657708868338}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 1872109540932863135, guid: 8262a736eaaffc3448115d7b81144708, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
