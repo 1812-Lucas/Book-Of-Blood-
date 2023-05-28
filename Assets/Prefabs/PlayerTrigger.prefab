@@ -135,6 +135,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   ActiveCamera: {fileID: 0}
+  mycamera: {fileID: 0}
 --- !u!33 &5134942900894227951
 MeshFilter:
   m_ObjectHideFlags: 0

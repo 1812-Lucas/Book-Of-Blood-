@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
     public int health;
     public string tipodeenemigo;
     public StadisticPlayer PlayerStadisticsScript;
+   
+
     public virtual void Start()
     {
         Enemyapears();
@@ -21,8 +23,10 @@ public class Enemy : MonoBehaviour
             combat = PlayerObject.GetComponent<Combat>();
 
         }
+        
+
     }
-        void Enemyapears()
+    void Enemyapears()
     {
         Debug.Log("Aparecio un " + tipodeenemigo);
     }

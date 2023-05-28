@@ -4,14 +4,26 @@ using UnityEngine;
 
 public class EnemySectarian : Enemy
 {
-    //public ParticleSystem ataqueEnemigo1;
-    //public ParticleSystem ataqueEnemigo2;
+
+    public string basicAttackParticlesPrefabPath; // Ruta del prefab del sistema de partículas del ataque básico
+    public string heavyAttackParticlesPrefabPath; // Ruta del prefab del sistema de partículas del golpe pesado
+
+    private ParticleSystem ataqueEnemy1;
+    private ParticleSystem ataqueEnemigo2;
 
     public override void Start()
     {
         base.Start();
-        //ataqueEnemigo1 = gameObject.AddComponent<ParticleSystem>();
-        //ataqueEnemigo2 = gameObject.AddComponent<ParticleSystem>();
+        // Cargar los prefabs de los sistemas de partículas en tiempo de ejecución
+        GameObject basicAttackParticlesPrefab = Resources.Load<GameObject>(basicAttackParticlesPrefabPath);
+        GameObject heavyAttackParticlesPrefab = Resources.Load<GameObject>(heavyAttackParticlesPrefabPath);
+
+        // Crear instancias de los sistemas de partículas
+        ataqueEnemy1 = Instantiate(basicAttackParticlesPrefab, transform).GetComponent<ParticleSystem>();
+        ataqueEnemigo2 = Instantiate(heavyAttackParticlesPrefab, transform).GetComponent<ParticleSystem>();
+        ataqueEnemy1.Stop(); // Asegurarse de que las partículas estén detenidas al inicio
+        ataqueEnemigo2.Stop();
+
     }
     public override void Enemyturn()
     {
@@ -59,16 +71,18 @@ public class EnemySectarian : Enemy
     public void BasicDamage()
     {
         //player._maxhealth -= 3;
-       // ataqueEnemigo1.Play();
+      
         PlayerStadisticsScript.health -= 3;
         Debug.Log("El enemigo inflingio 3 de daño al jugador con un ataque basico");
+        ataqueEnemy1.Play();
     }
     public void HeavyDamage()
     {
         //player._maxhealth -= 5;
-        //ataqueEnemigo2.Play();
+        
         PlayerStadisticsScript.health -= 5;
         Debug.Log("El enemigo inflingio 5 de daño al jugador con un golpe pesado");
+        ataqueEnemigo2.Play();
     }
     public void Regeneration()
     {
