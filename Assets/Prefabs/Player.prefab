@@ -386,12 +386,6 @@ MonoBehaviour:
   damageparticleSlot4_Combate3: {fileID: 0}
   damageparticleSlot5_Combate3: {fileID: 0}
   damageparticleSlot6_Combate3: {fileID: 0}
-  ataqueEnemy1: {fileID: 0}
-  ataqueEnemigo2: {fileID: 0}
-  ataqueEnemy1_Combate2: {fileID: 0}
-  ataqueEnemigo2_Combate2: {fileID: 0}
-  ataqueEnemy1_Combate3: {fileID: 0}
-  ataqueEnemigo2_Combate3: {fileID: 0}
   enemyy: {fileID: 0}
   deckscript: {fileID: 7910656068851151482}
   carddisplayscriptinSlot1: {fileID: 0}
@@ -518,6 +512,7 @@ MonoBehaviour:
   health: 30
   vigor: 1
   defense: 0
+  _myGM: {fileID: 0}
 --- !u!82 &8940846620823324685
 AudioSource:
   m_ObjectHideFlags: 0

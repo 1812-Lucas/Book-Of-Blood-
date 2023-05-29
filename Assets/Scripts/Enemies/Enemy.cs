@@ -10,27 +10,29 @@ public class Enemy : MonoBehaviour
     public int health;
     public string tipodeenemigo;
     public StadisticPlayer PlayerStadisticsScript;
-    public int attackType;
 
-    public GameObject ataqueEnemy1Prefab;
-    public GameObject ataqueEnemigo2Prefab;
-    public GameObject debrisParticles;
-    public GameObject ataqueEnemy1Prefab_combate2;
-    public GameObject ataqueEnemigo2Prefab_Combate2;
-    public GameObject debrisParticles_Combate2;
-    public GameObject ataqueEnemy1Prefab_Combate3;
-    public GameObject ataqueEnemigo2Prefab_Combate3;
-    public GameObject debrisParticles_Combate3;
+
+
+
+
+    public Transform ataqueEnemy1SpawnPoint;
+    public Transform ataqueEnemigo2SpawnPoint;
+    public Transform ataqueEnemy1SpawnPoint_Combate2;
+    public Transform ataqueEnemigo2SpawnPoint_Combate2;
+    public Transform ataqueEnemy1SpawnPoint_Combate3;
+    public Transform ataqueEnemigo2SpawnPoint_Combate3;
 
     private ParticleSystem ataqueEnemy1;
     private ParticleSystem ataqueEnemigo2;
-    private ParticleSystem Debris;
+    private ParticleSystem debris;
     private ParticleSystem ataqueEnemy1_combate2;
     private ParticleSystem ataqueEnemigo2_combate2;
-    private ParticleSystem Debris_combate2;
+    private ParticleSystem debris_combate2;
     private ParticleSystem ataqueEnemy1_combate3;
     private ParticleSystem ataqueEnemigo2_combate3;
-    private ParticleSystem Debris_combate3;
+    private ParticleSystem debris_combate3;
+
+
 
     public virtual void Start()
     {
@@ -44,19 +46,26 @@ public class Enemy : MonoBehaviour
 
         }
 
-        // Crear instancias de los sistemas de partículas
-        ataqueEnemy1 = Instantiate(ataqueEnemy1Prefab.transform).GetComponent<ParticleSystem>();
-        ataqueEnemigo2 = Instantiate(ataqueEnemigo2Prefab.transform).GetComponent<ParticleSystem>();
-        Debris = Instantiate(debrisParticles.transform).GetComponent<ParticleSystem>();
-        ataqueEnemy1_combate2 = Instantiate(ataqueEnemy1Prefab_combate2.transform).GetComponent<ParticleSystem>();
-        ataqueEnemigo2_combate2 = Instantiate(ataqueEnemigo2Prefab_Combate2.transform).GetComponent<ParticleSystem>();
-        Debris_combate2 = Instantiate(debrisParticles_Combate2.transform).GetComponent<ParticleSystem>();
-        ataqueEnemy1_combate3 = Instantiate(ataqueEnemy1Prefab_Combate3.transform).GetComponent<ParticleSystem>();
-        ataqueEnemigo2_combate3 = Instantiate(ataqueEnemigo2Prefab_Combate3.transform).GetComponent<ParticleSystem>();
-        Debris_combate3 = Instantiate(debrisParticles_Combate3.transform).GetComponent<ParticleSystem>();
-        //ataqueEnemy1.Stop();  Asegurarse de que las partículas estén detenidas al inicio
-        //ataqueEnemigo2.Stop();
-        //Debris.Play();
+        ataqueEnemy1 = GameObject.Find("AtaqueEnemy1").GetComponent<ParticleSystem>();
+        ataqueEnemigo2 = GameObject.Find("AtaqueEnemigo2").GetComponent<ParticleSystem>();
+        debris = GameObject.Find("Debris").GetComponent<ParticleSystem>();
+        ataqueEnemy1_combate2 = GameObject.Find("AtaqueEnemy1_Combat2").GetComponent<ParticleSystem>();
+        ataqueEnemigo2_combate2 = GameObject.Find("AtaqueEnemigo2_Combat2").GetComponent<ParticleSystem>();
+        debris_combate2 = GameObject.Find("Debris_Combat2").GetComponent<ParticleSystem>();
+        ataqueEnemy1_combate3 = GameObject.Find("AtaqueEnemy1_Combat3").GetComponent<ParticleSystem>();
+        ataqueEnemigo2_combate3 = GameObject.Find("AtaqueEnemigo2_Combat3").GetComponent<ParticleSystem>();
+        debris_combate3 = GameObject.Find("Debris_Combat3").GetComponent<ParticleSystem>();
+
+
+        ataqueEnemy1.Stop(); 
+        ataqueEnemigo2.Stop();
+        debris.Stop();
+        ataqueEnemy1_combate2.Stop();
+        ataqueEnemigo2_combate2.Stop();
+        debris_combate2.Stop();
+        ataqueEnemy1_combate3.Stop();
+        ataqueEnemigo2_combate3.Stop();
+        debris_combate3.Stop();
     }
     void Enemyapears()
     {
@@ -95,6 +104,7 @@ public class Enemy : MonoBehaviour
         ataqueEnemy1.Play();
         ataqueEnemy1_combate2.Play();
         ataqueEnemy1_combate3.Play();
+
     }
 
     public void PlayHeavyAttackParticles()
@@ -102,8 +112,10 @@ public class Enemy : MonoBehaviour
         ataqueEnemigo2.Play();
         ataqueEnemigo2_combate2.Play();
         ataqueEnemigo2_combate3.Play();
-        Debris.Play();
-        Debris_combate2.Play();
-        Debris_combate3.Play();
+
+        debris.Play();
+        debris_combate2.Play();
+        debris_combate3.Play();
+
     }
 }
