@@ -16,6 +16,15 @@ public class GameManager : MonoBehaviour
     public Transform[] cardslots;
     public bool[] availableCardSlots;
     public Text deckSizeText;
+    private bool ActivateOrDeactivateMouseForThePauseMenu = true;
+    
+    
+    public bool gameispaused;
+    public Image PauseMenu;
+    public MyCamera camerascript;
+    public Rigidbody playerRB;
+    
+
     //PROFE si ve esto  es solo prueba del script de mazo, nada más
     public void DrawCard()
     {
@@ -41,6 +50,34 @@ public class GameManager : MonoBehaviour
             //deckSizeText.text = deck.Count.ToString();
         //}
     }
+
+    public void PauseGame()
+    {
+        gameispaused = !gameispaused;
+        PauseMenu.gameObject.SetActive(gameispaused);
+
+        if (gameispaused)
+            Time.timeScale = 0;
+        else
+            Time.timeScale = 1;
+    }
+    public void PauseMenuactivate()
+    {
+        PauseGame();
+        if (ActivateOrDeactivateMouseForThePauseMenu == true)
+        {
+            
+            Cursor.lockState = CursorLockMode.Confined;            
+            ActivateOrDeactivateMouseForThePauseMenu = false;
+        }
+        else if (ActivateOrDeactivateMouseForThePauseMenu == false)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            
+            ActivateOrDeactivateMouseForThePauseMenu = true;
+        }
+    }
+
     private void Awake()
     {
         if (instance == null)

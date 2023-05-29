@@ -42,6 +42,7 @@ public class inventoryObjectsActions : MonoBehaviour
             // Llamar a tu función aquí
             //TuFuncion();
             StadisticPlayerScript.health += 3;
+            HealthPotions -= 1;
             Debug.Log("te has curado 3 puntos de salud con una mejora de salud");
 
         }

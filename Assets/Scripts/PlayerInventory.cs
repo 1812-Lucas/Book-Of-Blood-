@@ -8,6 +8,7 @@ public class PlayerInventory : MonoBehaviour
 {
     public GameManager myGM;
     private bool ActivateOrDeactivateMouseForTheinventory=true;
+    
     private Vector3 initialScale;
 
     private void Start()
