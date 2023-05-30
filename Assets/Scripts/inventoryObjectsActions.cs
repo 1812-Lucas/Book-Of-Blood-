@@ -66,6 +66,7 @@ public class inventoryObjectsActions : MonoBehaviour
         {
             HealthPotions += 1;
             Destroy(other.gameObject);
+            Debug.Log("Obtuviste una pocion de curacion");
         }
 
         if (other.gameObject.layer == 6)
