@@ -13,7 +13,6 @@ public class StadisticPlayer : MonoBehaviour
     public GameManager _myGM;
 
 
-
     public void PlayerDies()
     {
         if (health <= 0)
@@ -21,14 +20,4 @@ public class StadisticPlayer : MonoBehaviour
             SceneManager.LoadScene("Main");
         }
     }
-    void Update()
-    {
-
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            _myGM.PauseMenuactivate();
-        }
-    }
-
 }

@@ -25,6 +25,11 @@ public class PlayerInventory : MonoBehaviour
         {
             InventoryExit();
         }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            myGM.PauseMenuactivate();
+        }
     }
     void Inventoryactivate()
     {
