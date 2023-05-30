@@ -41,10 +41,19 @@ public class inventoryObjectsActions : MonoBehaviour
         {
             // Llamar a tu función aquí
             //TuFuncion();
-            StadisticPlayerScript.health += 3;
+            StadisticPlayerScript.health += 10;
             HealthPotions -= 1;
-            Debug.Log("te has curado 3 puntos de salud con una mejora de salud");
+            Debug.Log("Te has curado 10 puntos de salud con una mejora de salud");
 
+        }
+    }
+    public void UsePotion()
+    {
+        if (HealthPotions > 0)
+        {
+            StadisticPlayerScript.health += 10;
+            HealthPotions -= 1;
+            Debug.Log("Te has curado 10 puntos de salud con una mejora de salud");
         }
     }
 
