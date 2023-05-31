@@ -22,7 +22,7 @@ public class VigorCardsDisplay : MonoBehaviour
     private int ProtectionTottemStacks;
     public Enemy enemyy;
 
-    AudioSource MyAudioSource;
+    public AudioSource MyAudioSource;
     public AudioClip WarriorPendantAudio;
     public AudioClip DeadEyeAudio;
     public AudioClip CaosAudio;
@@ -30,12 +30,12 @@ public class VigorCardsDisplay : MonoBehaviour
 
     private void Awake()
     {
-        MyAudioSource = GetComponent<AudioSource>();
+        //MyAudioSource = GetComponent<AudioSource>();
     }
     public void PlayAudio(AudioClip AC)
     {
-        MyAudioSource.clip = AC;
-        MyAudioSource.Play();
+        //MyAudioSource.clip = AC;
+        //MyAudioSource.Play();
     }
     private void Start()
     {

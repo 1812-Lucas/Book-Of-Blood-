@@ -472,6 +472,7 @@ MonoBehaviour:
   player: {fileID: 1393160489}
   stadisticplayerScipt: {fileID: 2034795158}
   enemyy: {fileID: 0}
+  MyAudioSource: {fileID: 737274274}
   WarriorPendantAudio: {fileID: 8300000, guid: 3c35c8ba9a303ec46ac961afdc682a69, type: 3}
   DeadEyeAudio: {fileID: 8300000, guid: 0bb589d4f64da2b42baeee7ee6c305b0, type: 3}
   CaosAudio: {fileID: 8300000, guid: ed2bac00bb413e54386a0543c9e1f5fb, type: 3}
@@ -3887,6 +3888,7 @@ MonoBehaviour:
   player: {fileID: 1393160489}
   stadisticplayerScipt: {fileID: 2034795158}
   enemyy: {fileID: 0}
+  MyAudioSource: {fileID: 737274274}
   WarriorPendantAudio: {fileID: 8300000, guid: 3c35c8ba9a303ec46ac961afdc682a69, type: 3}
   DeadEyeAudio: {fileID: 8300000, guid: 0bb589d4f64da2b42baeee7ee6c305b0, type: 3}
   CaosAudio: {fileID: 8300000, guid: ed2bac00bb413e54386a0543c9e1f5fb, type: 3}
@@ -5032,6 +5034,7 @@ MonoBehaviour:
   player: {fileID: 1393160489}
   stadisticplayerScipt: {fileID: 2034795158}
   enemyy: {fileID: 0}
+  MyAudioSource: {fileID: 737274274}
   WarriorPendantAudio: {fileID: 8300000, guid: 3c35c8ba9a303ec46ac961afdc682a69, type: 3}
   DeadEyeAudio: {fileID: 8300000, guid: 0bb589d4f64da2b42baeee7ee6c305b0, type: 3}
   CaosAudio: {fileID: 8300000, guid: ed2bac00bb413e54386a0543c9e1f5fb, type: 3}
