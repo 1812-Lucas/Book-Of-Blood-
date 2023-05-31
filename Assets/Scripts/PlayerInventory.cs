@@ -7,55 +7,79 @@ using UnityEngine.UI;
 public class PlayerInventory : MonoBehaviour
 {
     public GameManager myGM;
-    private bool ActivateOrDeactivateMouseForTheinventory=true;
-    
+    private bool isInventoryActive = false;
+    private bool isMenuActive = false;
     private Vector3 initialScale;
 
     private void Start()
     {
-        initialScale = transform.localScale;
+        //initialScale = transform.localScale;
     }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            Inventoryactivate();
+            if (!isMenuActive)
+                ToggleInventory();
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
-            InventoryExit();
+            if (isInventoryActive)
+                ToggleInventory();
+            if (isMenuActive)
+                ToggleMenu();
         }
 
         if (Input.GetKeyDown(KeyCode.P))
         {
-            myGM.PauseMenuactivate();
+            if (!isInventoryActive)
+                ToggleMenu();
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isMenuActive)
+                ToggleMenu();
         }
     }
-    void Inventoryactivate()
+
+    void ToggleInventory()
     {
-        myGM.Activeinventory();
-        if (ActivateOrDeactivateMouseForTheinventory == true)
+        isInventoryActive = !isInventoryActive;
+        if (isInventoryActive)
         {
+            myGM.Activeinventory();
             Cursor.lockState = CursorLockMode.Confined;
-            ActivateOrDeactivateMouseForTheinventory = false;
         }
-        else if (ActivateOrDeactivateMouseForTheinventory == false)
+        else
         {
+            myGM.DesactivateInventory();
             Cursor.lockState = CursorLockMode.Locked;
-            ActivateOrDeactivateMouseForTheinventory = true;
         }
     }
-    void InventoryExit()
+
+    void ToggleMenu()
     {
-        myGM.DesactivateInventory();
-        Cursor.lockState = CursorLockMode.Locked;
+        isMenuActive = !isMenuActive;
+        if (isMenuActive)
+        {
+            myGM.PauseMenuactivate();
+            Cursor.lockState = CursorLockMode.Confined;
+        }
+        else
+        {
+            myGM.PauseMenudesactivate();
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
-    public void OnPointerEnter(PointerEventData eventData)
+
+    /*public void OnPointerEnter(PointerEventData eventData)
     {
         LeanTween.scale(gameObject, initialScale * 1.2f, 0.2f);
     }
+
     public void OnPointerExit(PointerEventData eventData)
     {
         LeanTween.scale(gameObject, initialScale, 0.2f);
-    }
+    }*/
 }

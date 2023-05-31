@@ -16,14 +16,14 @@ public class GameManager : MonoBehaviour
     public Transform[] cardslots;
     public bool[] availableCardSlots;
     public Text deckSizeText;
-    private bool ActivateOrDeactivateMouseForThePauseMenu = true;
-    
-    
+    private bool activatePauseMenu = false;
+
+
     public bool gameispaused;
     public Image PauseMenu;
     public MyCamera camerascript;
     public Rigidbody playerRB;
-    
+
 
     //PROFE si ve esto  es solo prueba del script de mazo, nada más
     public void DrawCard()
@@ -45,37 +45,10 @@ public class GameManager : MonoBehaviour
             }
         }
 
-       //  void Update()
+        //  void Update()
         //{
-            //deckSizeText.text = deck.Count.ToString();
+        //deckSizeText.text = deck.Count.ToString();
         //}
-    }
-
-    public void PauseGame()
-    {
-        gameispaused = !gameispaused;
-        PauseMenu.gameObject.SetActive(gameispaused);
-
-        if (gameispaused)
-            Time.timeScale = 0;
-        else
-            Time.timeScale = 1;
-    }
-    public void PauseMenuactivate()
-    {
-        PauseGame();
-        if (ActivateOrDeactivateMouseForThePauseMenu == true)
-        {
-            
-            Cursor.lockState = CursorLockMode.Confined;            
-            ActivateOrDeactivateMouseForThePauseMenu = false;
-        }
-        else if (ActivateOrDeactivateMouseForThePauseMenu == false)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            
-            ActivateOrDeactivateMouseForThePauseMenu = true;
-        }
     }
 
     private void Awake()
@@ -92,7 +65,6 @@ public class GameManager : MonoBehaviour
     }
     public Player Player()
     {
-        
         {
             return player;
         }
@@ -102,7 +74,6 @@ public class GameManager : MonoBehaviour
         get
         {
             return instance.player.transform;
-
         }
 
     }
@@ -111,15 +82,31 @@ public class GameManager : MonoBehaviour
     {
         cardsEquiped = !cardsEquiped;
         combatUI.gameObject.SetActive(cardsEquiped);
-
     }
     public void Activeinventory()
     {
-        inventoryactive = !inventoryactive;
-        Inventory.gameObject.SetActive(inventoryactive);
+        Inventory.gameObject.SetActive(true);
     }
     public void DesactivateInventory()
     {
         Inventory.gameObject.SetActive(false);
+    }
+    public void PauseMenuactivate()
+    {
+        PauseGame();
+        PauseMenu.gameObject.SetActive(true);
+    }
+    public void PauseMenudesactivate()
+    {
+        PlayGame();
+        PauseMenu.gameObject.SetActive(false);
+    }
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+    }
+    public void PlayGame()
+    {
+        Time.timeScale = 1;
     }
 }
