@@ -55,6 +55,19 @@ public class VigorDeck : MonoBehaviour
         }
     }
 
+    public int PermissionToLeaveTheInventoryMinimumVigorDeckCards(VigorCards[] deckOfTheVigorDeck)
+    {
+        int contadorNoNulos = 0;
+        foreach (VigorCards objeto in deckOfTheVigorDeck)
+        {
+            if (objeto != null)
+            {
+                contadorNoNulos++;
+            }
+        }
+        return contadorNoNulos;
+    }
+
     public void DrawCards()
     {
         if (TrueVigorDeckInCombat.Count >= 1)

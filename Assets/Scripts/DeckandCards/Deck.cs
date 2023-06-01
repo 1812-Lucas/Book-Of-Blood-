@@ -17,6 +17,7 @@ public class Deck : MonoBehaviour
     public Card[] DeckOfTheDeck;
     public bool[] EquipOrUnequipTheNormalCardBool;
     public List<Card> TrueDeckInCombat = new List<Card>();
+    
 
     private void Awake()
     {
@@ -48,6 +49,20 @@ public class Deck : MonoBehaviour
             }
         }
     }
+
+    public int PermissionToLeaveTheInventoryMinimumDeckCards(Card[] deckOfTheDeck)
+    {
+        int contadorNoNulos = 0;
+        foreach (Card objeto in deckOfTheDeck)
+        {
+            if (objeto != null)
+            {
+                contadorNoNulos++;
+            }
+        }
+        return contadorNoNulos;
+    }
+
     public void DrawCards()
     {
         if (TrueDeckInCombat.Count >= 1)

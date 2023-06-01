@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public Transform[] cardslots;
     public bool[] availableCardSlots;
     public Text deckSizeText;
-    private bool activatePauseMenu = false;
+    //private bool activatePauseMenu = false;   ME DICE EL CONSOLE QUE ESTA VARIABLE NUNCA SE USA Y LO COMENTÉ  ~Facu
 
 
     public bool gameispaused;

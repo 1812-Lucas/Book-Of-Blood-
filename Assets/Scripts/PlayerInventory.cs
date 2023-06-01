@@ -10,6 +10,8 @@ public class PlayerInventory : MonoBehaviour
     private bool isInventoryActive = false;
     private bool isMenuActive = false;
     private Vector3 initialScale;
+    public Deck DeckScipt;
+    public VigorDeck VigorDeckScipt;
 
     private void Start()
     {
@@ -45,13 +47,15 @@ public class PlayerInventory : MonoBehaviour
 
     void ToggleInventory()
     {
+        DeckScipt.PermissionToLeaveTheInventoryMinimumDeckCards(DeckScipt.DeckOfTheDeck);
+        VigorDeckScipt.PermissionToLeaveTheInventoryMinimumVigorDeckCards(VigorDeckScipt.DeckOfTheVigorDeck);
         isInventoryActive = !isInventoryActive;
         if (isInventoryActive)
         {
             myGM.Activeinventory();
             Cursor.lockState = CursorLockMode.Confined;
         }
-        else
+        else if(!isInventoryActive && DeckScipt.PermissionToLeaveTheInventoryMinimumDeckCards(DeckScipt.DeckOfTheDeck)>=5 && VigorDeckScipt.PermissionToLeaveTheInventoryMinimumVigorDeckCards(VigorDeckScipt.DeckOfTheVigorDeck)>=5)
         {
             myGM.DesactivateInventory();
             Cursor.lockState = CursorLockMode.Locked;
