@@ -28,14 +28,14 @@ public class VigorCardsDisplay : MonoBehaviour
     public AudioClip CaosAudio;
 
 
-    private void Awake()
-    {
+   // private void Awake()
+    //{
         //MyAudioSource = GetComponent<AudioSource>();
-    }
+    //}
     public void PlayAudio(AudioClip AC)
     {
-        //MyAudioSource.clip = AC;
-        //MyAudioSource.Play();
+        MyAudioSource.clip = AC;
+        MyAudioSource.Play();
     }
     private void Start()
     {
