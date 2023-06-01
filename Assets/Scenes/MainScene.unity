@@ -680,7 +680,7 @@ MonoBehaviour:
   MyPlaceOnTheVigorArray: 2
   vigortext: {fileID: 15594095}
   VigorDeckScript: {fileID: 2034795150}
-  VigorCardEquipedEffectBool: 0
+  VigorCardEquipedEffectBool: 1
   EquipedEffectVigor: {fileID: 1768227752}
 --- !u!114 &35425948
 MonoBehaviour:
@@ -1243,7 +1243,7 @@ MonoBehaviour:
   MyPlaceOnTheVigorArray: 1
   vigortext: {fileID: 839272429}
   VigorDeckScript: {fileID: 2034795150}
-  VigorCardEquipedEffectBool: 0
+  VigorCardEquipedEffectBool: 1
   EquipedEffectVigor: {fileID: 1745399993}
 --- !u!114 &49324861
 MonoBehaviour:
@@ -2255,7 +2255,7 @@ MonoBehaviour:
   attacktext: {fileID: 1719083938}
   MyPlaceOnTheArray: 0
   DeckScript: {fileID: 1950983790}
-  VigorCardEquipedEffectBool: 0
+  VigorCardEquipedEffectBool: 1
   EquipedEffectVigor: {fileID: 412893900}
 --- !u!114 &113218728
 MonoBehaviour:
@@ -5755,7 +5755,7 @@ MonoBehaviour:
   attacktext: {fileID: 1215302886}
   MyPlaceOnTheArray: 4
   DeckScript: {fileID: 1950983790}
-  VigorCardEquipedEffectBool: 0
+  VigorCardEquipedEffectBool: 1
   EquipedEffectVigor: {fileID: 39007139}
 --- !u!114 &303620050
 MonoBehaviour:
@@ -5934,7 +5934,7 @@ MonoBehaviour:
   MyPlaceOnTheVigorArray: 3
   vigortext: {fileID: 913539033}
   VigorDeckScript: {fileID: 2034795150}
-  VigorCardEquipedEffectBool: 0
+  VigorCardEquipedEffectBool: 1
   EquipedEffectVigor: {fileID: 328569093}
 --- !u!114 &309629018
 MonoBehaviour:
@@ -6775,7 +6775,7 @@ MonoBehaviour:
   attacktext: {fileID: 828763914}
   MyPlaceOnTheArray: 3
   DeckScript: {fileID: 1950983790}
-  VigorCardEquipedEffectBool: 0
+  VigorCardEquipedEffectBool: 1
   EquipedEffectVigor: {fileID: 884898771}
 --- !u!114 &371463546
 MonoBehaviour:
@@ -7390,7 +7390,7 @@ MonoBehaviour:
   attacktext: {fileID: 786459629}
   MyPlaceOnTheArray: 2
   DeckScript: {fileID: 1950983790}
-  VigorCardEquipedEffectBool: 0
+  VigorCardEquipedEffectBool: 1
   EquipedEffectVigor: {fileID: 459482662}
 --- !u!114 &420203311
 MonoBehaviour:
@@ -12473,7 +12473,7 @@ MonoBehaviour:
   MyPlaceOnTheVigorArray: 4
   vigortext: {fileID: 442917366}
   VigorDeckScript: {fileID: 2034795150}
-  VigorCardEquipedEffectBool: 0
+  VigorCardEquipedEffectBool: 1
   EquipedEffectVigor: {fileID: 1575722303}
 --- !u!114 &573025074
 MonoBehaviour:
@@ -12945,7 +12945,7 @@ MonoBehaviour:
   MyPlaceOnTheVigorArray: 0
   vigortext: {fileID: 355146479}
   VigorDeckScript: {fileID: 2034795150}
-  VigorCardEquipedEffectBool: 0
+  VigorCardEquipedEffectBool: 1
   EquipedEffectVigor: {fileID: 388044002}
 --- !u!114 &582649243
 MonoBehaviour:
@@ -43987,7 +43987,7 @@ MonoBehaviour:
   attacktext: {fileID: 1183618249}
   MyPlaceOnTheArray: 1
   DeckScript: {fileID: 1950983790}
-  VigorCardEquipedEffectBool: 0
+  VigorCardEquipedEffectBool: 1
   EquipedEffectVigor: {fileID: 55164708}
 --- !u!114 &2048165483
 MonoBehaviour:
