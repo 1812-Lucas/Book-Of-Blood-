@@ -41,6 +41,14 @@ public class CombatPosition : MonoBehaviour
 
     public float ContadorTransicion;
 
+    public void Update()
+    {
+        if (CombatON == true)
+        {
+            Cursor.lockState = CursorLockMode.Confined;
+        }
+    }
+
     private void Awake()
     {
         MyAudioSource = GetComponent<AudioSource>();
@@ -78,8 +86,6 @@ public class CombatPosition : MonoBehaviour
 
     public void combatON()
     {
-
-        Cursor.lockState = CursorLockMode.Confined;
         // SwitchCamera(cameras[1]);
         battlePosition = true;
         PlayAudio(CardSwipe);
