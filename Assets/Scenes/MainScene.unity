@@ -9945,13 +9945,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteSeleccionado: {fileID: 492675753}
-  spriteSeleccionado2: {fileID: 134887532}
-  spriteSeleccionado3: {fileID: 2064984771}
-  spriteSeleccionado4: {fileID: 1970299018}
-  spriteSeleccionado5: {fileID: 1782115052}
-  spriteSeleccionado6: {fileID: 2120327611}
+  MySprite: {fileID: 1970299018}
   combatScript: {fileID: 1393160490}
+  MyButton: {fileID: 506857994}
 --- !u!114 &506857994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13145,13 +13141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteSeleccionado: {fileID: 492675753}
-  spriteSeleccionado2: {fileID: 134887532}
-  spriteSeleccionado3: {fileID: 2064984771}
-  spriteSeleccionado4: {fileID: 1970299018}
-  spriteSeleccionado5: {fileID: 1782115052}
-  spriteSeleccionado6: {fileID: 2120327611}
+  MySprite: {fileID: 134887532}
   combatScript: {fileID: 1393160490}
+  MyButton: {fileID: 576756649}
 --- !u!1 &582649240
 GameObject:
   m_ObjectHideFlags: 0
@@ -21817,13 +21809,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteSeleccionado: {fileID: 492675753}
-  spriteSeleccionado2: {fileID: 134887532}
-  spriteSeleccionado3: {fileID: 2064984771}
-  spriteSeleccionado4: {fileID: 1970299018}
-  spriteSeleccionado5: {fileID: 1782115052}
-  spriteSeleccionado6: {fileID: 2120327611}
+  MySprite: {fileID: 492675753}
   combatScript: {fileID: 1393160490}
+  MyButton: {fileID: 929106319}
 --- !u!1 &933583746
 GameObject:
   m_ObjectHideFlags: 0
@@ -28719,13 +28707,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteSeleccionado: {fileID: 492675753}
-  spriteSeleccionado2: {fileID: 134887532}
-  spriteSeleccionado3: {fileID: 2064984771}
-  spriteSeleccionado4: {fileID: 1970299018}
-  spriteSeleccionado5: {fileID: 1782115052}
-  spriteSeleccionado6: {fileID: 2120327611}
+  MySprite: {fileID: 2120327611}
   combatScript: {fileID: 1393160490}
+  MyButton: {fileID: 1248712717}
 --- !u!114 &1248712717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38194,13 +38178,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteSeleccionado: {fileID: 492675753}
-  spriteSeleccionado2: {fileID: 134887532}
-  spriteSeleccionado3: {fileID: 2064984771}
-  spriteSeleccionado4: {fileID: 1970299018}
-  spriteSeleccionado5: {fileID: 1782115052}
-  spriteSeleccionado6: {fileID: 2120327611}
+  MySprite: {fileID: 2064984771}
   combatScript: {fileID: 1393160490}
+  MyButton: {fileID: 1729719324}
 --- !u!1001 &1731585272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41452,13 +41432,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteSeleccionado: {fileID: 492675753}
-  spriteSeleccionado2: {fileID: 134887532}
-  spriteSeleccionado3: {fileID: 2064984771}
-  spriteSeleccionado4: {fileID: 1970299018}
-  spriteSeleccionado5: {fileID: 1782115052}
-  spriteSeleccionado6: {fileID: 2120327611}
+  MySprite: {fileID: 1782115052}
   combatScript: {fileID: 1393160490}
+  MyButton: {fileID: 1897917466}
 --- !u!114 &1897917466
 MonoBehaviour:
   m_ObjectHideFlags: 0

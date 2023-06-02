@@ -10,22 +10,23 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
 {
     private Vector3 initialScale;
 
-    public Image spriteSeleccionado;
-    public Image spriteSeleccionado2;
-    public Image spriteSeleccionado3;
-    public Image spriteSeleccionado4;
+    public Image MySprite;
+   // public Image spriteSeleccionado2;
+   // public Image spriteSeleccionado3;
+    /*public Image spriteSeleccionado4;
     public Image spriteSeleccionado5;
-    public Image spriteSeleccionado6;
+    public Image spriteSeleccionado6;*/
     public Combat combatScript;
+    public Button MyButton;
 
     void Start()
     {
-        spriteSeleccionado.gameObject.SetActive(false);
-        spriteSeleccionado2.gameObject.SetActive(false);
+        MySprite.gameObject.SetActive(false);
+       /* spriteSeleccionado2.gameObject.SetActive(false);
         spriteSeleccionado3.gameObject.SetActive(false);
         spriteSeleccionado4.gameObject.SetActive(false);
         spriteSeleccionado5.gameObject.SetActive(false);
-        spriteSeleccionado6.gameObject.SetActive(false);
+        spriteSeleccionado6.gameObject.SetActive(false);*/
 
         initialScale = transform.localScale; 
     }
@@ -41,22 +42,22 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
         //spriteSeleccionado.gameObject.SetActive(true);
         
-        spriteSeleccionado.transform.position = transform.position;
-        spriteSeleccionado2.transform.position = transform.position;
+        MySprite.transform.position = transform.position;
+        /*spriteSeleccionado2.transform.position = transform.position;
         spriteSeleccionado3.transform.position = transform.position;
         spriteSeleccionado4.transform.position = transform.position;
         spriteSeleccionado5.transform.position = transform.position;
-        spriteSeleccionado6.transform.position = transform.position;
+        spriteSeleccionado6.transform.position = transform.position;*/
 
-        if (combatScript.button1.interactable == false)
+        if (MyButton.interactable == false)
         {
-            spriteSeleccionado.GetComponent<Image>().gameObject.SetActive(false);
+            MySprite.GetComponent<Image>().gameObject.SetActive(false);
         }
-        else if(combatScript.button1.interactable == true)
+        else if(MyButton.interactable == true)
         {
-            spriteSeleccionado.GetComponent<Image>().gameObject.SetActive(true);
+            MySprite.GetComponent<Image>().gameObject.SetActive(true);
         }
-        if (combatScript.button2.interactable == false)
+        /*if (combatScript.button2.interactable == false)
         {
             spriteSeleccionado2.GetComponent<Image>().gameObject.SetActive(false);
         }
@@ -96,6 +97,7 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
         {
             spriteSeleccionado6.GetComponent<Image>().gameObject.SetActive(true);
         }
+        */
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -104,13 +106,13 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
         LeanTween.scale(gameObject, initialScale, 0.2f);
 
-        spriteSeleccionado.gameObject.SetActive(false);
-        spriteSeleccionado2.gameObject.SetActive(false);
+        MySprite.gameObject.SetActive(false);
+        /*spriteSeleccionado2.gameObject.SetActive(false);
         spriteSeleccionado3.gameObject.SetActive(false);
         spriteSeleccionado4.gameObject.SetActive(false);
         spriteSeleccionado5.gameObject.SetActive(false);
         spriteSeleccionado6.gameObject.SetActive(false);
-
+        */
 
 
 
