@@ -24,6 +24,8 @@ public class inventoryObjectsActions : MonoBehaviour
     public int HealthPotions;
     public StadisticPlayer StadisticPlayerScript;
 
+    public ParticleSystem HealthPotionParticles;
+
 
     private void Awake()
     {
@@ -43,6 +45,7 @@ public class inventoryObjectsActions : MonoBehaviour
             //TuFuncion();
             StadisticPlayerScript.health += 10;
             HealthPotions -= 1;
+            HealthPotionParticles.Play();
             Debug.Log("Te has curado 10 puntos de salud con una mejora de salud");
 
         }
@@ -53,6 +56,7 @@ public class inventoryObjectsActions : MonoBehaviour
         {
             StadisticPlayerScript.health += 10;
             HealthPotions -= 1;
+            HealthPotionParticles.Play();
             Debug.Log("Te has curado 10 puntos de salud con una mejora de salud");
         }
     }
