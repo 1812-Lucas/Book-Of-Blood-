@@ -27,6 +27,6 @@ public class StadisticPlayer : MonoBehaviour
 
     public void PlayerDies()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("MainScene");
     }
 }

@@ -278,6 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KeyForTheBlackDoor: 0
+  combatpositionscript: {fileID: 5299470838625391949}
   mainCamera: {fileID: 0}
   menumanagerscript: {fileID: 0}
   doormask:
@@ -489,8 +490,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myGM: {fileID: 0}
-  DeckScipt: {fileID: 7910656068851151482}
-  VigorDeckScipt: {fileID: 5712986794260492655}
+  DeckScript: {fileID: 0}
+  VigorDeckScript: {fileID: 0}
 --- !u!114 &5273619601675263601
 MonoBehaviour:
   m_ObjectHideFlags: 0

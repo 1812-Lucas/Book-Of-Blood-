@@ -7,6 +7,7 @@ public class inventoryObjectsActions : MonoBehaviour
 {
     private int WhispersCount;
     public int KeyForTheBlackDoor;
+    public CombatPosition combatpositionscript;
 
     public Camera mainCamera;
     public MenuManager menumanagerscript;
@@ -39,7 +40,7 @@ public class inventoryObjectsActions : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H) && HealthPotions > 0)
+        if (Input.GetKeyDown(KeyCode.H) && HealthPotions > 0 && combatpositionscript.CombatON == true)
         {
             // Llamar a tu función aquí
             //TuFuncion();
@@ -52,7 +53,7 @@ public class inventoryObjectsActions : MonoBehaviour
     }
     public void UsePotion()
     {
-        if (HealthPotions > 0)
+        if (HealthPotions > 0 && combatpositionscript.CombatON == true)
         {
             StadisticPlayerScript.health += 10;
             HealthPotions -= 1;
@@ -79,7 +80,7 @@ public class inventoryObjectsActions : MonoBehaviour
         {
             HealthPotions += 1;
             Destroy(other.gameObject);
-            Debug.Log("Obtuviste una pocion de curacion, para usarla presiona H para curarte dentro o fuera del combate");
+            Debug.Log("Obtuviste una pocion de curacion, para usarla presiona H para curarte dentro del combate");
         }
 
         if (other.gameObject.layer == 6)
