@@ -63,7 +63,7 @@ MonoBehaviour:
   EV_OnPlayerEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1739695029856293157, guid: ed4e133e435ad4746a591ec8ff511cdc, type: 3}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -102,7 +102,7 @@ MonoBehaviour:
   EV_OnPlayerExit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3705839930550585576, guid: df925c492acbec349b685ed89f00be59, type: 3}
+      - m_Target: {fileID: 2665529480930371468, guid: c3da7253e6b43d44ab0acfc4b889fbdb, type: 3}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -112,9 +112,9 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2665529480930371468, guid: c3da7253e6b43d44ab0acfc4b889fbdb, type: 3}
+      - m_Target: {fileID: 1739695029856293157, guid: ed4e133e435ad4746a591ec8ff511cdc, type: 3}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6

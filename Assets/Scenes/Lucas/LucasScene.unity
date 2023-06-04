@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -570,6 +570,10 @@ MonoBehaviour:
   player: {fileID: 1393160489}
   stadisticplayerScipt: {fileID: 2034795158}
   enemyy: {fileID: 0}
+  MyAudioSource: {fileID: 0}
+  WarriorPendantAudio: {fileID: 0}
+  DeadEyeAudio: {fileID: 0}
+  CaosAudio: {fileID: 0}
 --- !u!114 &29717457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3376,6 +3380,10 @@ MonoBehaviour:
   player: {fileID: 1393160489}
   stadisticplayerScipt: {fileID: 2034795158}
   enemyy: {fileID: 0}
+  MyAudioSource: {fileID: 0}
+  WarriorPendantAudio: {fileID: 0}
+  DeadEyeAudio: {fileID: 0}
+  CaosAudio: {fileID: 0}
 --- !u!114 &200995805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4316,6 +4324,10 @@ MonoBehaviour:
   player: {fileID: 1393160489}
   stadisticplayerScipt: {fileID: 2034795158}
   enemyy: {fileID: 0}
+  MyAudioSource: {fileID: 0}
+  WarriorPendantAudio: {fileID: 0}
+  DeadEyeAudio: {fileID: 0}
+  CaosAudio: {fileID: 0}
 --- !u!114 &256322633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4469,7 +4481,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &273018816
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7634,13 +7646,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteSeleccionado: {fileID: 492675753}
-  spriteSeleccionado2: {fileID: 134887532}
-  spriteSeleccionado3: {fileID: 2064984771}
-  spriteSeleccionado4: {fileID: 1970299018}
-  spriteSeleccionado5: {fileID: 1782115052}
-  spriteSeleccionado6: {fileID: 2120327611}
+  MySprite: {fileID: 0}
   combatScript: {fileID: 1393160490}
+  MyButton: {fileID: 0}
 --- !u!114 &506857994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10013,13 +10021,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteSeleccionado: {fileID: 492675753}
-  spriteSeleccionado2: {fileID: 134887532}
-  spriteSeleccionado3: {fileID: 2064984771}
-  spriteSeleccionado4: {fileID: 1970299018}
-  spriteSeleccionado5: {fileID: 1782115052}
-  spriteSeleccionado6: {fileID: 2120327611}
+  MySprite: {fileID: 0}
   combatScript: {fileID: 1393160490}
+  MyButton: {fileID: 0}
 --- !u!1 &582649240
 GameObject:
   m_ObjectHideFlags: 0
@@ -16958,13 +16962,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteSeleccionado: {fileID: 492675753}
-  spriteSeleccionado2: {fileID: 134887532}
-  spriteSeleccionado3: {fileID: 2064984771}
-  spriteSeleccionado4: {fileID: 1970299018}
-  spriteSeleccionado5: {fileID: 1782115052}
-  spriteSeleccionado6: {fileID: 2120327611}
+  MySprite: {fileID: 0}
   combatScript: {fileID: 1393160490}
+  MyButton: {fileID: 0}
 --- !u!1 &933583746
 GameObject:
   m_ObjectHideFlags: 0
@@ -22492,13 +22492,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteSeleccionado: {fileID: 492675753}
-  spriteSeleccionado2: {fileID: 134887532}
-  spriteSeleccionado3: {fileID: 2064984771}
-  spriteSeleccionado4: {fileID: 1970299018}
-  spriteSeleccionado5: {fileID: 1782115052}
-  spriteSeleccionado6: {fileID: 2120327611}
+  MySprite: {fileID: 0}
   combatScript: {fileID: 1393160490}
+  MyButton: {fileID: 0}
 --- !u!114 &1248712717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26434,6 +26430,11 @@ MonoBehaviour:
   NombredelaCartayEjecutarPasiva: 
   player: {fileID: 1393160489}
   StatsPlayerScript: {fileID: 2034795158}
+  MyAudioSource: {fileID: 0}
+  BigBangAudio: {fileID: 0}
+  fireExplosionAudio: {fileID: 0}
+  DestructionAudio: {fileID: 0}
+  NormalAudioCard: {fileID: 0}
 --- !u!114 &1581599282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29717,13 +29718,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteSeleccionado: {fileID: 492675753}
-  spriteSeleccionado2: {fileID: 134887532}
-  spriteSeleccionado3: {fileID: 2064984771}
-  spriteSeleccionado4: {fileID: 1970299018}
-  spriteSeleccionado5: {fileID: 1782115052}
-  spriteSeleccionado6: {fileID: 2120327611}
+  MySprite: {fileID: 0}
   combatScript: {fileID: 1393160490}
+  MyButton: {fileID: 0}
 --- !u!1 &1745399992
 GameObject:
   m_ObjectHideFlags: 0
@@ -31805,13 +31802,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db12a5ecf6ede9c40bea47553533cc37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteSeleccionado: {fileID: 492675753}
-  spriteSeleccionado2: {fileID: 134887532}
-  spriteSeleccionado3: {fileID: 2064984771}
-  spriteSeleccionado4: {fileID: 1970299018}
-  spriteSeleccionado5: {fileID: 1782115052}
-  spriteSeleccionado6: {fileID: 2120327611}
+  MySprite: {fileID: 0}
   combatScript: {fileID: 1393160490}
+  MyButton: {fileID: 0}
 --- !u!114 &1897917466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32272,6 +32265,11 @@ MonoBehaviour:
   NombredelaCartayEjecutarPasiva: 
   player: {fileID: 1393160489}
   StatsPlayerScript: {fileID: 2034795158}
+  MyAudioSource: {fileID: 0}
+  BigBangAudio: {fileID: 0}
+  fireExplosionAudio: {fileID: 0}
+  DestructionAudio: {fileID: 0}
+  NormalAudioCard: {fileID: 0}
 --- !u!850595691 &1937914800
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -32751,6 +32749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   consoleText: {fileID: 37706109}
   messageTime: 20
+  backgroundImage: {fileID: 0}
 --- !u!1 &1954286242
 GameObject:
   m_ObjectHideFlags: 0
@@ -36102,6 +36101,11 @@ MonoBehaviour:
   NombredelaCartayEjecutarPasiva: 
   player: {fileID: 1393160489}
   StatsPlayerScript: {fileID: 2034795158}
+  MyAudioSource: {fileID: 0}
+  BigBangAudio: {fileID: 0}
+  fireExplosionAudio: {fileID: 0}
+  DestructionAudio: {fileID: 0}
+  NormalAudioCard: {fileID: 0}
 --- !u!114 &2144618736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36993,7 +36997,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.8
+      value: 24.1
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -37446,15 +37450,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.164833
+      value: 19.164818
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.10918534
+      value: -0.21284413
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.7378597
+      value: -3.5901022
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.w
