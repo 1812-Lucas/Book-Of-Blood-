@@ -293,16 +293,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   ActivatorsOfCards: 00000000000000000000000000000000000000
   CardsOnCountdown: 0
   OpenCardBox: {fileID: 8300000, guid: 70910e94ac9394d4f86ff5736ca1811f, type: 3}
@@ -431,15 +421,15 @@ MonoBehaviour:
   SlotBool2: 0
   SlotBool3: 0
   DeckOfTheDeck:
+  - {fileID: 11400000, guid: 8e20a41ed110f5d48a501ed02773741c, type: 2}
+  - {fileID: 11400000, guid: 60ff571e932c28842930df7c5147f318, type: 2}
+  - {fileID: 11400000, guid: 6f19c75e623ebe643963cf66516398a3, type: 2}
+  - {fileID: 11400000, guid: 2ac1539ecf7bac146a8f597997582f73, type: 2}
+  - {fileID: 11400000, guid: 813c10266c434994298a313d06ddf158, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  EquipOrUnequipTheNormalCardBool: 0000000000000000
+  EquipOrUnequipTheNormalCardBool: 0101010101000000
   TrueDeckInCombat: []
 --- !u!114 &5712986794260492655
 MonoBehaviour:
@@ -461,18 +451,18 @@ MonoBehaviour:
   SlotBool5: 0
   SlotBool6: 0
   DeckOfTheVigorDeck:
+  - {fileID: 11400000, guid: aecf45d6a9c991e4ab801d60a5ec531a, type: 2}
+  - {fileID: 11400000, guid: e53f071c551e1f3499a8ff83fb64ebd8, type: 2}
+  - {fileID: 11400000, guid: 56a3a760cde64fb4993811e70f1c0a4f, type: 2}
+  - {fileID: 11400000, guid: 10818df954978514f90b9d6a31fa9830, type: 2}
+  - {fileID: 11400000, guid: ea52360be65fe6a48a0b705e038f6609, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  EquipOrUnequipTheCardBool: 0000000000000000000000
+  EquipOrUnequipTheCardBool: 0101010101000000000000
   TrueVigorDeckInCombat: []
 --- !u!114 &2566541265283969750
 MonoBehaviour:
@@ -499,8 +489,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myGM: {fileID: 0}
-  DeckScipt: {fileID: 0}
-  VigorDeckScipt: {fileID: 0}
+  DeckScipt: {fileID: 7910656068851151482}
+  VigorDeckScipt: {fileID: 5712986794260492655}
 --- !u!114 &5273619601675263601
 MonoBehaviour:
   m_ObjectHideFlags: 0

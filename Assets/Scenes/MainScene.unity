@@ -10560,7 +10560,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh53018
+  m_Name: pb_Mesh23354
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11678,7 +11678,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh51572
+  m_Name: pb_Mesh21906
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28280,7 +28280,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh51830
+  m_Name: pb_Mesh22164
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29012,7 +29012,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh52390
+  m_Name: pb_Mesh22724
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -48128,11 +48128,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1695875802}
     - target: {fileID: 5035851363991577847, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: DeckScipt
+      propertyPath: DeckScript
       value: 
       objectReference: {fileID: 1950983790}
     - target: {fileID: 5035851363991577847, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: VigorDeckScipt
+      propertyPath: VigorDeckScript
       value: 
       objectReference: {fileID: 2034795150}
     - target: {fileID: 5273619601675263601, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
@@ -48208,10 +48208,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1695875805}
     - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: cardsOnInventory.Array.size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: cardsOnInventory.Array.data[0]
       value: 
       objectReference: {fileID: 1549392822}
@@ -48251,22 +48247,6 @@ PrefabInstance:
       propertyPath: cardsOnInventory.Array.data[9]
       value: 
       objectReference: {fileID: 1635686998}
-    - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: ActivatorsOfCards.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: ActivatorsOfCards.Array.data[1]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: ActivatorsOfCards.Array.data[2]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: ActivatorsOfCards.Array.data[3]
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: cardsOnInventory.Array.data[10]
       value: 
@@ -48315,46 +48295,6 @@ PrefabInstance:
       propertyPath: Slot6
       value: 
       objectReference: {fileID: 256322632}
-    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: DeckOfTheVigorDeck.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: aecf45d6a9c991e4ab801d60a5ec531a, type: 2}
-    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: DeckOfTheVigorDeck.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: e53f071c551e1f3499a8ff83fb64ebd8, type: 2}
-    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: DeckOfTheVigorDeck.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: 56a3a760cde64fb4993811e70f1c0a4f, type: 2}
-    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: DeckOfTheVigorDeck.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 10818df954978514f90b9d6a31fa9830, type: 2}
-    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: DeckOfTheVigorDeck.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: ea52360be65fe6a48a0b705e038f6609, type: 2}
-    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: EquipOrUnequipTheCardBool.Array.data[0]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: EquipOrUnequipTheCardBool.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: EquipOrUnequipTheCardBool.Array.data[2]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: EquipOrUnequipTheCardBool.Array.data[3]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5712986794260492655, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: EquipOrUnequipTheCardBool.Array.data[4]
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: button1
       value: 
@@ -48539,46 +48479,6 @@ PrefabInstance:
       propertyPath: Slot3
       value: 
       objectReference: {fileID: 2144618735}
-    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: DeckOfTheDeck.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 8e20a41ed110f5d48a501ed02773741c, type: 2}
-    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: DeckOfTheDeck.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 60ff571e932c28842930df7c5147f318, type: 2}
-    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: DeckOfTheDeck.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: 6f19c75e623ebe643963cf66516398a3, type: 2}
-    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: DeckOfTheDeck.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 2ac1539ecf7bac146a8f597997582f73, type: 2}
-    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: DeckOfTheDeck.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: 813c10266c434994298a313d06ddf158, type: 2}
-    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: EquipOrUnequipTheNormalCardBool.Array.data[0]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: EquipOrUnequipTheNormalCardBool.Array.data[1]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: EquipOrUnequipTheNormalCardBool.Array.data[2]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: EquipOrUnequipTheNormalCardBool.Array.data[3]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
-      propertyPath: EquipOrUnequipTheNormalCardBool.Array.data[4]
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_RootOrder
       value: 5

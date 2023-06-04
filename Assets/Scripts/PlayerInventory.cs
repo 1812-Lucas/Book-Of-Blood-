@@ -10,12 +10,12 @@ public class PlayerInventory : MonoBehaviour
     private bool isInventoryActive = false;
     private bool isMenuActive = false;
     private Vector3 initialScale;
-    public Deck DeckScipt;
-    public VigorDeck VigorDeckScipt;
+    public Deck DeckScript;
+    public VigorDeck VigorDeckScript;
 
     private void Start()
     {
-        //initialScale = transform.localScale;
+        initialScale = transform.localScale;
     }
 
     private void Update()
@@ -47,16 +47,18 @@ public class PlayerInventory : MonoBehaviour
 
     void ToggleInventory()
     {
-        DeckScipt.PermissionToLeaveTheInventoryMinimumDeckCards(DeckScipt.DeckOfTheDeck);
-        VigorDeckScipt.PermissionToLeaveTheInventoryMinimumVigorDeckCards(VigorDeckScipt.DeckOfTheVigorDeck);
-        isInventoryActive = !isInventoryActive;
-        if (isInventoryActive)
+        int deckCardsCount = DeckScript.PermissionToLeaveTheInventoryMinimumDeckCards(DeckScript.DeckOfTheDeck);
+        int vigorCardsCount = VigorDeckScript.PermissionToLeaveTheInventoryMinimumVigorDeckCards(VigorDeckScript.DeckOfTheVigorDeck);
+
+        if (!isInventoryActive)
         {
+            isInventoryActive = true;
             myGM.Activeinventory();
             Cursor.lockState = CursorLockMode.Confined;
         }
-        else if(!isInventoryActive && DeckScipt.PermissionToLeaveTheInventoryMinimumDeckCards(DeckScipt.DeckOfTheDeck)>=5 && VigorDeckScipt.PermissionToLeaveTheInventoryMinimumVigorDeckCards(VigorDeckScipt.DeckOfTheVigorDeck)>=5)
+        else if (isInventoryActive && deckCardsCount >= 5 && vigorCardsCount >= 5)
         {
+            isInventoryActive = false;
             myGM.DesactivateInventory();
             Cursor.lockState = CursorLockMode.Locked;
         }
@@ -77,7 +79,7 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
-    /*public void OnPointerEnter(PointerEventData eventData)
+    public void OnPointerEnter(PointerEventData eventData)
     {
         LeanTween.scale(gameObject, initialScale * 1.2f, 0.2f);
     }
@@ -85,5 +87,5 @@ public class PlayerInventory : MonoBehaviour
     public void OnPointerExit(PointerEventData eventData)
     {
         LeanTween.scale(gameObject, initialScale, 0.2f);
-    }*/
+    }
 }
