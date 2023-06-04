@@ -12,12 +12,21 @@ public class StadisticPlayer : MonoBehaviour
     public int defense;
     public GameManager _myGM;
 
+    public void Update()
+    {
+        if (health > 30)
+        {
+            health = 30;
+        }
+
+        if (health <= 0)
+        {
+            PlayerDies();
+        }
+    }
 
     public void PlayerDies()
     {
-        if (health <= 0)
-        {
-            SceneManager.LoadScene("Main");
-        }
+        SceneManager.LoadScene("Main");
     }
 }
