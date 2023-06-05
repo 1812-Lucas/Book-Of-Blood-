@@ -13,13 +13,27 @@ public class PlayerInventory : MonoBehaviour
     public Deck DeckScript;
     public VigorDeck VigorDeckScript;
 
+    public AudioClip MyEffectAudio;
+    public AudioSource MyAudioSource;
+
     private void Start()
     {
         initialScale = transform.localScale;
     }
 
+    public void PlayAudio(AudioClip AC)
+    {
+        MyAudioSource.clip = AC;
+        MyAudioSource.Play();
+        
+    }
     private void Update()
     {
+       /* if (isMenuActive)
+        {
+            PlayAudio(MyEffectAudio);
+        }*/
+
         if (Input.GetKeyDown(KeyCode.I))
         {
             if (!isMenuActive)
@@ -71,11 +85,14 @@ public class PlayerInventory : MonoBehaviour
         {
             myGM.PauseMenuactivate();
             Cursor.lockState = CursorLockMode.Confined;
+            MyAudioSource.clip = MyEffectAudio;
+            MyAudioSource.Play();
         }
         else
         {
             myGM.PauseMenudesactivate();
             Cursor.lockState = CursorLockMode.Locked;
+            MyAudioSource.Stop();
         }
     }
 

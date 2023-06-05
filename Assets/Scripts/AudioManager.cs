@@ -10,11 +10,15 @@ public class AudioManager : MonoBehaviour
     public Slider MasterSlider;
     public Slider EffectsSlider;
     public Slider MusicSlider;
+   
 
+  
     public void Update()
     {
         Mixer.SetFloat("MasterVolume", MasterSlider.value);
         Mixer.SetFloat("EffectsVolume", EffectsSlider.value);
         Mixer.SetFloat("MusicVolume", MusicSlider.value);
     }
+
+   
 }
