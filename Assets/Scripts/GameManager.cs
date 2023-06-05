@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     public bool gameispaused;
     public Image PauseMenu;
+    public GameObject controls;
     public MyCamera camerascript;
     public Rigidbody playerRB;
 
@@ -108,5 +109,13 @@ public class GameManager : MonoBehaviour
     public void PlayGame()
     {
         Time.timeScale = 1;
+    }
+    public void Showcontrols()
+    {
+        controls.gameObject.SetActive(true);
+    }
+    public void Hidecontrols()
+    {
+        controls.gameObject.SetActive(false);
     }
 }

@@ -9,6 +9,7 @@ public class PlayerInventory : MonoBehaviour
     public GameManager myGM;
     private bool isInventoryActive = false;
     private bool isMenuActive = false;
+    private bool isControlsActive = false;
     private Vector3 initialScale;
     public Deck DeckScript;
     public VigorDeck VigorDeckScript;
@@ -57,6 +58,14 @@ public class PlayerInventory : MonoBehaviour
             if (isMenuActive)
                 ToggleMenu();
         }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            if (!isInventoryActive && !isMenuActive)
+            {
+                ToggleControls();
+            }
+        }
     }
 
     void ToggleInventory()
@@ -95,7 +104,18 @@ public class PlayerInventory : MonoBehaviour
             MyAudioSource.Stop();
         }
     }
-
+    void ToggleControls()
+    {
+        isControlsActive = !isControlsActive;
+        if (isControlsActive)
+        {
+            myGM.Showcontrols();
+        }
+        else
+        {
+            myGM.Hidecontrols();
+        }
+    }
     public void OnPointerEnter(PointerEventData eventData)
     {
         LeanTween.scale(gameObject, initialScale * 1.2f, 0.2f);
