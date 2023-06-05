@@ -80,7 +80,7 @@ public class inventoryObjectsActions : MonoBehaviour
         {
             HealthPotions += 1;
             Destroy(other.gameObject);
-            Debug.Log("Obtuviste una pocion de curacion, para usarla presiona H para curarte dentro del combate");
+            Debug.Log("Obtuviste una pocion de curacion, para usarla puedes presionar H o tocar el icono desde el inventario, pero recuerda que solamente podras curarte estando en combate");
         }
 
         if (other.gameObject.layer == 6)
