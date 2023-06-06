@@ -27,6 +27,8 @@ public class inventoryObjectsActions : MonoBehaviour
 
     public ParticleSystem HealthPotionParticles;
 
+    public GameObject DoorHolder;
+
 
     private void Awake()
     {
@@ -120,6 +122,7 @@ public class inventoryObjectsActions : MonoBehaviour
             if (KeyForTheBlackDoor == 1)
             {
                 Destroy(other.gameObject);
+                Destroy(DoorHolder);
             }
 
         }
