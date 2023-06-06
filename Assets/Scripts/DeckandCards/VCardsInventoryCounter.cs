@@ -22,6 +22,6 @@ public class VCardsInventoryCounter : MonoBehaviour
     private void Update()
     {
         VigorCardsOnDeckCounter();
-        ContadorCartasVigorEnMazo.text = cardsondeck.ToString() + ("/11");
+        ContadorCartasVigorEnMazo.text = cardsondeck.ToString() + ("/8");
     }
 }

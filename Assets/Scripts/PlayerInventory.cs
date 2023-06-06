@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerInventory : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class PlayerInventory : MonoBehaviour
 
     public AudioClip MyEffectAudio;
     public AudioSource MyAudioSource;
+    public TextMeshProUGUI NotAppropiateDeckWarningText;
 
     private void Start()
     {
@@ -48,6 +50,7 @@ public class PlayerInventory : MonoBehaviour
                 ToggleMenu();
         }
 
+
         if (Input.GetKeyDown(KeyCode.P))
         {
             if (!isInventoryActive)
@@ -72,19 +75,30 @@ public class PlayerInventory : MonoBehaviour
     {
         int deckCardsCount = DeckScript.PermissionToLeaveTheInventoryMinimumDeckCards(DeckScript.DeckOfTheDeck);
         int vigorCardsCount = VigorDeckScript.PermissionToLeaveTheInventoryMinimumVigorDeckCards(VigorDeckScript.DeckOfTheVigorDeck);
-
+        if(deckCardsCount < 5 || deckCardsCount > 8 || vigorCardsCount < 5 || vigorCardsCount > 8)
+        {
+            NotAppropiateDeckWarningText.gameObject.SetActive(true);
+        }
+        else
+        {
+            NotAppropiateDeckWarningText.gameObject.SetActive(false);
+        }
         if (!isInventoryActive)
         {
             isInventoryActive = true;
             myGM.Activeinventory();
             Cursor.lockState = CursorLockMode.Confined;
         }
-        else if (isInventoryActive && deckCardsCount >= 5 && vigorCardsCount >= 5)
+        else if (isInventoryActive && deckCardsCount >= 5 && deckCardsCount<=8 &&vigorCardsCount >= 5&&vigorCardsCount<=8)
         {
             isInventoryActive = false;
             myGM.DesactivateInventory();
             Cursor.lockState = CursorLockMode.Locked;
+            
+            
         }
+
+
     }
 
     void ToggleMenu()
