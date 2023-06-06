@@ -40092,6 +40092,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puerta Casa - Mesh
       objectReference: {fileID: 0}
+    - target: {fileID: 4153709985002371743, guid: ed4e133e435ad4746a591ec8ff511cdc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4e133e435ad4746a591ec8ff511cdc, type: 3}
 --- !u!4 &1505832543920825919 stripped
@@ -40699,6 +40703,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2312509979427514969, guid: 2751b5b7d445dd440847481e148842d0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3830979668700791632, guid: 2751b5b7d445dd440847481e148842d0, type: 3}
       propertyPath: m_Name
       value: Llave trigger - Mesh
@@ -41829,7 +41837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: -98.97
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -41837,7 +41845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -39.09
+      value: 29.7
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalRotation.w
