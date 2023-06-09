@@ -14,6 +14,7 @@ public class PlayerInventory : MonoBehaviour
     private Vector3 initialScale;
     public Deck DeckScript;
     public VigorDeck VigorDeckScript;
+    public MyCamera camerascript;
 
     public AudioClip MyEffectAudio;
     public AudioSource MyAudioSource;
@@ -80,14 +81,14 @@ public class PlayerInventory : MonoBehaviour
             isInventoryActive = true;
             myGM.Activeinventory();
             Cursor.lockState = CursorLockMode.Confined;
+            camerascript.enabled = false;
         }
         else if (isInventoryActive && deckCardsCount >= 5 && deckCardsCount<=8 &&vigorCardsCount >= 5&&vigorCardsCount<=8)
         {
             isInventoryActive = false;
             myGM.DesactivateInventory();
             Cursor.lockState = CursorLockMode.Locked;
-            
-            
+            camerascript.enabled = true;
         }
     }
     public void ToggleMenu()
@@ -99,12 +100,14 @@ public class PlayerInventory : MonoBehaviour
             Cursor.lockState = CursorLockMode.Confined;
             MyAudioSource.clip = MyEffectAudio;
             MyAudioSource.Play();
+            camerascript.enabled = false;
         }
         else
         {
             myGM.Menudesactivate();
             Cursor.lockState = CursorLockMode.Locked;
             MyAudioSource.Stop();
+            camerascript.enabled = true;
         }
     }
     public void ToggleControls()

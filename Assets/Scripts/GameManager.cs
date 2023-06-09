@@ -87,10 +87,12 @@ public class GameManager : MonoBehaviour
     }
     public void Activeinventory()
     {
+        PauseGame();
         Inventory.gameObject.SetActive(true);
     }
     public void DesactivateInventory()
     {
+        PlayGame();
         Inventory.gameObject.SetActive(false);
     }
     public void Menuactivate()

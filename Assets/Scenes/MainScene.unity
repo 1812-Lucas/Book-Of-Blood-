@@ -54060,6 +54060,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1950983790}
     - target: {fileID: 5035851363991577847, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: camerascript
+      value: 
+      objectReference: {fileID: 9112766969278726830}
+    - target: {fileID: 5035851363991577847, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: MyAudioSource
       value: 
       objectReference: {fileID: 2034795170}
