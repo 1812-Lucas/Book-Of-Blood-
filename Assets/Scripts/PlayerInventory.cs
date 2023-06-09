@@ -19,16 +19,10 @@ public class PlayerInventory : MonoBehaviour
     public AudioSource MyAudioSource;
     public TextMeshProUGUI NotAppropiateDeckWarningText;
 
-    private void Start()
-    {
-        initialScale = transform.localScale;
-    }
-
     public void PlayAudio(AudioClip AC)
     {
         MyAudioSource.clip = AC;
         MyAudioSource.Play();
-        
     }
     private void Update()
     {
@@ -50,8 +44,7 @@ public class PlayerInventory : MonoBehaviour
                 ToggleMenu();
         }
 
-
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (!isInventoryActive)
                 ToggleMenu();
@@ -70,8 +63,7 @@ public class PlayerInventory : MonoBehaviour
             }
         }
     }
-
-    void ToggleInventory()
+    public void ToggleInventory()
     {
         int deckCardsCount = DeckScript.PermissionToLeaveTheInventoryMinimumDeckCards(DeckScript.DeckOfTheDeck);
         int vigorCardsCount = VigorDeckScript.PermissionToLeaveTheInventoryMinimumVigorDeckCards(VigorDeckScript.DeckOfTheVigorDeck);
@@ -97,28 +89,25 @@ public class PlayerInventory : MonoBehaviour
             
             
         }
-
-
     }
-
-    void ToggleMenu()
+    public void ToggleMenu()
     {
         isMenuActive = !isMenuActive;
         if (isMenuActive)
         {
-            myGM.PauseMenuactivate();
+            myGM.Menuactivate();
             Cursor.lockState = CursorLockMode.Confined;
             MyAudioSource.clip = MyEffectAudio;
             MyAudioSource.Play();
         }
         else
         {
-            myGM.PauseMenudesactivate();
+            myGM.Menudesactivate();
             Cursor.lockState = CursorLockMode.Locked;
             MyAudioSource.Stop();
         }
     }
-    void ToggleControls()
+    public void ToggleControls()
     {
         isControlsActive = !isControlsActive;
         if (isControlsActive)
@@ -129,14 +118,5 @@ public class PlayerInventory : MonoBehaviour
         {
             myGM.Hidecontrols();
         }
-    }
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        LeanTween.scale(gameObject, initialScale * 1.2f, 0.2f);
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        LeanTween.scale(gameObject, initialScale, 0.2f);
     }
 }

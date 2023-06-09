@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     public bool gameispaused;
     public Image PauseMenu;
+    public GameObject Menu;
     public GameObject controls;
     public MyCamera camerascript;
     public Rigidbody playerRB;
@@ -92,15 +93,15 @@ public class GameManager : MonoBehaviour
     {
         Inventory.gameObject.SetActive(false);
     }
-    public void PauseMenuactivate()
+    public void Menuactivate()
     {
         PauseGame();
-        PauseMenu.gameObject.SetActive(true);
+        Menu.gameObject.SetActive(true);
     }
-    public void PauseMenudesactivate()
+    public void Menudesactivate()
     {
         PlayGame();
-        PauseMenu.gameObject.SetActive(false);
+        Menu.gameObject.SetActive(false);
     }
     public void PauseGame()
     {

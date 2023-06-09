@@ -91,6 +91,12 @@ MonoBehaviour:
   cardslots: []
   availableCardSlots: 
   deckSizeText: {fileID: 0}
+  gameispaused: 0
+  PauseMenu: {fileID: 0}
+  Menu: {fileID: 0}
+  controls: {fileID: 0}
+  camerascript: {fileID: 8536629146987952639}
+  playerRB: {fileID: 0}
 --- !u!114 &7123913083679719163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,6 +280,8 @@ PlayableDirector:
     value: {fileID: 8036138512042513145}
   - key: {fileID: -2807396716735526616, guid: 22ccf4571990db34db203a6ecf92798f, type: 2}
     value: {fileID: 8036138512042513145}
+  - key: {fileID: -6816354758410927799, guid: 22ccf4571990db34db203a6ecf92798f, type: 2}
+    value: {fileID: 8036138512042513145}
   m_ExposedReferences:
     m_References:
     - 536faa0911f33864cbb6d36feed98307: {fileID: 3932207500671228773}
@@ -289,6 +297,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8603241555245809765, guid: f8f8be9228bf2474a921abeb1a9eb981, type: 3}
   m_PrefabInstance: {fileID: 80194419180452251}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8536629146987952639 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8603241555245809764, guid: f8f8be9228bf2474a921abeb1a9eb981, type: 3}
+  m_PrefabInstance: {fileID: 80194419180452251}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8536629146987952635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8755e1871e11d4f9130495bc113104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3082845723257620165
 PrefabInstance:
   m_ObjectHideFlags: 0
