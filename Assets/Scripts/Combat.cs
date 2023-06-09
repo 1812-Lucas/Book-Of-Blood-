@@ -65,8 +65,10 @@ public class Combat : MonoBehaviour
     private bool enemyattack = false;
     public VigorDeck VigorDeckScript;
     public StadisticPlayer PlayerStadisticsScript;
+
+    public CanvasGroup[] TheCanvasesForFade;
     //int MoreVigorPerRound=10;
-    
+
     public object WaitForSeconds3 { get; private set; }
 
     void Start()
@@ -238,47 +240,181 @@ public class Combat : MonoBehaviour
             
         }
     }
-        public void clickonslotone()
+    IEnumerator FadeAnimSlot1(int myplace)
+    {
+        float alpha = 1;
+
+        while (alpha >= 0)
+        {
+            alpha -= 0.1f;
+            yield return new WaitForEndOfFrame();
+            TheCanvasesForFade[myplace].alpha = alpha;
+        }
+        deckscript.SlotBool1 = false;
+        int carddmgtrue = carddisplayscriptinSlot1.Thecarddmg();
+        enemyy.health -= carddmgtrue;
+        carddisplayscriptinSlot1.ejecutarpasivadelacarta();
+        damageParticleSlot1.Play();
+        damageParticleSlot1Combate2.Play();
+        damageParticleSlot1_Combate3.Play();
+        Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
+        Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
+        enemyattack = true;
+        playercontador = 1;
+        deckscript.DrawCards();
+        activaryDesactivarCartaAlUsarlaSlot1();
+        button1.interactable = false;
+        TheCanvasesForFade[0].alpha = 1;
+        yield return null;
+    }
+
+
+
+    IEnumerator FadeAnimSlot2(int myplace)
+    {
+        float alpha = 1;
+
+        while (alpha >= 0)
+        {
+            alpha -= 0.1f;
+            yield return new WaitForEndOfFrame();
+            TheCanvasesForFade[myplace].alpha = alpha;
+        }
+        deckscript.SlotBool2 = false;
+        int carddmgtrue = carddisplayscriptinSlot2.Thecarddmg();
+        enemyy.health -= carddmgtrue;
+        carddisplayscriptinSlot2.ejecutarpasivadelacarta();
+        damageParticleSlot2.Play();
+        damageParticleSlot2Combate2.Play();
+        damageParticleSlot2_Combate3.Play();
+        Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
+        Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
+        //contador = 1;
+        enemyattack = true;
+        playercontador = 1;
+        activaryDesactivarCartaAlUsarlaSlot2();
+        button2.interactable = false;
+        TheCanvasesForFade[myplace].alpha = 1;
+        yield return null;
+    }
+
+    IEnumerator FadeAnimSlot3(int myplace)
+    {
+        float alpha = 1;
+
+        while (alpha >= 0)
+        {
+            alpha -= 0.1f;
+            yield return new WaitForEndOfFrame();
+            TheCanvasesForFade[myplace].alpha = alpha;
+        }
+        deckscript.SlotBool3 = false;
+        int carddmgtrue = carddisplayscriptinSlot3.Thecarddmg();
+        enemyy.health -= carddmgtrue;
+        carddisplayscriptinSlot3.ejecutarpasivadelacarta();
+        damageParticleSlot3.Play();
+        damageParticleSlot3Combate2.Play();
+        damageParticleSlot3_Combate3.Play();
+        Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
+        Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
+        //contador = 1;
+        enemyattack = true;
+        playercontador = 1;
+        activaryDesactivarCartaAlUsarlaSlot3();
+        button3.interactable = false;
+        TheCanvasesForFade[myplace].alpha = 1;
+        yield return null;
+    }
+
+    IEnumerator FadeAnimSlot4(int myplace)
+    {
+        float alpha = 1;
+
+        while (alpha >= 0)
+        {
+            alpha -= 0.1f;
+            yield return new WaitForEndOfFrame();
+            TheCanvasesForFade[myplace].alpha = alpha;
+        }
+        PlayerStadisticsScript.vigor -= carddisplayscriptinSlot4.actualizarinformacióncostedeVigor();
+        Debug.Log("restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
+        carddisplayscriptinSlot4.ejecutarpasivadelacartadevigor();
+        activaryDesactivarCartaAlUsarlaSlot4();
+
+        button4.interactable = false;
+        VigorDeckScript.SlotBool4 = false;
+        damageparticleSlot4.Play();
+        damageparticleSlot4Combate2.Play();
+        damageparticleSlot4_Combate3.Play();
+        TheCanvasesForFade[myplace].alpha = 1;
+        yield return null;
+    }
+
+    IEnumerator FadeAnimSlot5(int myplace)
+    {
+        float alpha = 1;
+
+        while (alpha >= 0)
+        {
+            alpha -= 0.1f;
+            yield return new WaitForEndOfFrame();
+            TheCanvasesForFade[myplace].alpha = alpha;
+        }
+        PlayerStadisticsScript.vigor -= carddisplayscriptinSlot5.actualizarinformacióncostedeVigor();
+        Debug.Log("restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
+        carddisplayscriptinSlot5.ejecutarpasivadelacartadevigor();
+
+        activaryDesactivarCartaAlUsarlaSlot5();
+        button5.interactable = false;
+        VigorDeckScript.SlotBool5 = false;
+        damageparticleSlot5.Play();
+        damageparticleSlot5Combate2.Play();
+        damageparticleSlot5_Combate3.Play();
+        TheCanvasesForFade[myplace].alpha = 1;
+        yield return null;
+    }
+
+    IEnumerator FadeAnimSlot6(int myplace)
+    {
+        float alpha = 1;
+
+        while (alpha >= 0)
+        {
+            alpha -= 0.1f;
+            yield return new WaitForEndOfFrame();
+            TheCanvasesForFade[myplace].alpha = alpha;
+        }
+        PlayerStadisticsScript.vigor -= carddisplayscriptinSlot6.actualizarinformacióncostedeVigor();
+        Debug.Log("restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
+        carddisplayscriptinSlot6.ejecutarpasivadelacartadevigor();
+
+        activaryDesactivarCartaAlUsarlaSlot6();
+        VigorDeckScript.SlotBool6 = false;
+        button6.interactable = false;
+        damageparticleSlot6.Play();
+        damageparticleSlot6Combate2.Play();
+        damageparticleSlot6_Combate3.Play();
+        TheCanvasesForFade[myplace].alpha = 1;
+        yield return null;
+    }
+
+
+
+
+
+
+    public void clickonslotone()
     {
         if (carddisplayscriptinSlot1.myslot == 1 && playercontador == 0)
         {
-            deckscript.SlotBool1 = false;
-            int carddmgtrue = carddisplayscriptinSlot1.Thecarddmg();
-            enemyy.health -= carddmgtrue;
-            carddisplayscriptinSlot1.ejecutarpasivadelacarta();
-            damageParticleSlot1.Play();
-            damageParticleSlot1Combate2.Play();
-            damageParticleSlot1_Combate3.Play();
-            Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
-            Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
-            //contador = 1;
-            enemyattack = true;
-            playercontador = 1;
-            deckscript.DrawCards();
-            activaryDesactivarCartaAlUsarlaSlot1();
-            button1.interactable = false;
-            
+            StartCoroutine(FadeAnimSlot1(0));
         }
-
     }
     public void clickonslottwo()
     {
         if (carddisplayscriptinSlot2.myslot == 2 && playercontador == 0)
         {
-            deckscript.SlotBool2 = false;
-            int carddmgtrue = carddisplayscriptinSlot2.Thecarddmg();
-            enemyy.health -= carddmgtrue;
-            carddisplayscriptinSlot2.ejecutarpasivadelacarta();
-            damageParticleSlot2.Play();
-            damageParticleSlot2Combate2.Play();
-            damageParticleSlot2_Combate3.Play();
-            Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
-            Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
-            //contador = 1;
-            enemyattack = true;
-            playercontador = 1;
-            activaryDesactivarCartaAlUsarlaSlot2();
-            button2.interactable = false;
+            StartCoroutine(FadeAnimSlot2(1));
            
         }
     }
@@ -286,20 +422,7 @@ public class Combat : MonoBehaviour
     {
         if (carddisplayscriptinSlot3.myslot == 3 && playercontador == 0)
         {
-            deckscript.SlotBool3 = false;
-            int carddmgtrue = carddisplayscriptinSlot3.Thecarddmg();
-            enemyy.health -= carddmgtrue;
-            carddisplayscriptinSlot3.ejecutarpasivadelacarta();
-            damageParticleSlot3.Play();
-            damageParticleSlot3Combate2.Play();
-            damageParticleSlot3_Combate3.Play();
-            Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
-            Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
-            //contador = 1;
-            enemyattack = true;
-            playercontador = 1;
-            activaryDesactivarCartaAlUsarlaSlot3();
-            button3.interactable = false;
+            StartCoroutine(FadeAnimSlot3(2));
             
         }
     }
@@ -307,16 +430,7 @@ public class Combat : MonoBehaviour
     {
         if (PlayerStadisticsScript.vigor >= carddisplayscriptinSlot4.actualizarinformacióncostedeVigor())
         {
-            PlayerStadisticsScript.vigor -= carddisplayscriptinSlot4.actualizarinformacióncostedeVigor();
-            Debug.Log("restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
-            carddisplayscriptinSlot4.ejecutarpasivadelacartadevigor();
-            activaryDesactivarCartaAlUsarlaSlot4();
-
-            button4.interactable = false;
-            VigorDeckScript.SlotBool4 = false;
-            damageparticleSlot4.Play();
-            damageparticleSlot4Combate2.Play();
-            damageparticleSlot4_Combate3.Play();
+            StartCoroutine(FadeAnimSlot4(3));
             
         }
     }
@@ -324,16 +438,7 @@ public class Combat : MonoBehaviour
     {
         if (PlayerStadisticsScript.vigor >= carddisplayscriptinSlot5.actualizarinformacióncostedeVigor())
         {
-            PlayerStadisticsScript.vigor -= carddisplayscriptinSlot5.actualizarinformacióncostedeVigor();
-            Debug.Log("restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
-            carddisplayscriptinSlot5.ejecutarpasivadelacartadevigor();
-
-            activaryDesactivarCartaAlUsarlaSlot5();
-            button5.interactable = false;
-            VigorDeckScript.SlotBool5 = false;
-            damageparticleSlot5.Play();
-            damageparticleSlot5Combate2.Play();
-            damageparticleSlot5_Combate3.Play();
+            StartCoroutine(FadeAnimSlot5(4));
 
         }
     }
@@ -341,16 +446,7 @@ public class Combat : MonoBehaviour
     {
         if (PlayerStadisticsScript.vigor >= carddisplayscriptinSlot6.actualizarinformacióncostedeVigor())
         {
-            PlayerStadisticsScript.vigor -= carddisplayscriptinSlot6.actualizarinformacióncostedeVigor();
-            Debug.Log("restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
-            carddisplayscriptinSlot6.ejecutarpasivadelacartadevigor();
-
-            activaryDesactivarCartaAlUsarlaSlot6();
-            VigorDeckScript.SlotBool6 = false;
-            button6.interactable = false;
-            damageparticleSlot6.Play();
-            damageparticleSlot6Combate2.Play();
-            damageparticleSlot6_Combate3.Play();
+            StartCoroutine(FadeAnimSlot6(5));
 
         }
     }

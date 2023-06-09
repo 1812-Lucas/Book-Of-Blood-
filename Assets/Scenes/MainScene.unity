@@ -10368,6 +10368,7 @@ GameObject:
   - component: {fileID: 506857993}
   - component: {fileID: 506857992}
   - component: {fileID: 506857991}
+  - component: {fileID: 506857997}
   m_Layer: 5
   m_Name: slot 4
   m_TagString: Untagged
@@ -10583,6 +10584,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 506857989}
   m_CullTransparentMesh: 1
+--- !u!225 &506857997
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506857989}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &520521213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13596,6 +13609,7 @@ GameObject:
   - component: {fileID: 576756654}
   - component: {fileID: 576756653}
   - component: {fileID: 576756652}
+  - component: {fileID: 576756655}
   m_Layer: 5
   m_Name: slot 2
   m_TagString: Untagged
@@ -13811,6 +13825,18 @@ MonoBehaviour:
   MySprite: {fileID: 134887532}
   combatScript: {fileID: 1393160490}
   MyButton: {fileID: 576756649}
+--- !u!225 &576756655
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576756647}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &582649240
 GameObject:
   m_ObjectHideFlags: 0
@@ -23155,6 +23181,7 @@ GameObject:
   - component: {fileID: 929106324}
   - component: {fileID: 929106323}
   - component: {fileID: 929106322}
+  - component: {fileID: 929106325}
   m_Layer: 5
   m_Name: slot 1
   m_TagString: Untagged
@@ -23370,6 +23397,18 @@ MonoBehaviour:
   MySprite: {fileID: 492675753}
   combatScript: {fileID: 1393160490}
   MyButton: {fileID: 929106319}
+--- !u!225 &929106325
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929106317}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &930983352
 GameObject:
   m_ObjectHideFlags: 0
@@ -32082,6 +32121,7 @@ GameObject:
   - component: {fileID: 1248712716}
   - component: {fileID: 1248712715}
   - component: {fileID: 1248712714}
+  - component: {fileID: 1248712720}
   m_Layer: 5
   m_Name: slot 6
   m_TagString: Untagged
@@ -32297,6 +32337,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248712712}
   m_CullTransparentMesh: 1
+--- !u!225 &1248712720
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248712712}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1254612995
 GameObject:
   m_ObjectHideFlags: 0
@@ -42340,6 +42392,7 @@ GameObject:
   - component: {fileID: 1729719329}
   - component: {fileID: 1729719328}
   - component: {fileID: 1729719327}
+  - component: {fileID: 1729719330}
   m_Layer: 5
   m_Name: slot 3
   m_TagString: Untagged
@@ -42555,6 +42608,18 @@ MonoBehaviour:
   MySprite: {fileID: 2064984771}
   combatScript: {fileID: 1393160490}
   MyButton: {fileID: 1729719324}
+--- !u!225 &1729719330
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729719322}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &1731585272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46316,6 +46381,7 @@ GameObject:
   - component: {fileID: 1897917465}
   - component: {fileID: 1897917464}
   - component: {fileID: 1897917463}
+  - component: {fileID: 1897917469}
   m_Layer: 5
   m_Name: slot 5
   m_TagString: Untagged
@@ -46531,6 +46597,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897917461}
   m_CullTransparentMesh: 1
+--- !u!225 &1897917469
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897917461}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1899747050
 GameObject:
   m_ObjectHideFlags: 0
@@ -54419,6 +54497,34 @@ PrefabInstance:
       propertyPath: damageparticleSlot6_Combate3
       value: 
       objectReference: {fileID: 1596451533}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: TheCanvasesForFade.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: TheCanvasesForFade.Array.data[0]
+      value: 
+      objectReference: {fileID: 929106325}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: TheCanvasesForFade.Array.data[1]
+      value: 
+      objectReference: {fileID: 576756655}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: TheCanvasesForFade.Array.data[2]
+      value: 
+      objectReference: {fileID: 1729719330}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: TheCanvasesForFade.Array.data[3]
+      value: 
+      objectReference: {fileID: 506857997}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: TheCanvasesForFade.Array.data[4]
+      value: 
+      objectReference: {fileID: 1897917469}
+    - target: {fileID: 5790167006782233436, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: TheCanvasesForFade.Array.data[5]
+      value: 
+      objectReference: {fileID: 1248712720}
     - target: {fileID: 7910656068851151482, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: Slot1
       value: 
