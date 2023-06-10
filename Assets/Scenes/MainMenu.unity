@@ -1329,7 +1329,7 @@ MonoBehaviour:
 
     -I: Acceso al inventario
 
-    -Esc: Acceso al menu de pausa
+    -P: Acceso al menu de pausa
 
     -H:
     Usar pocion

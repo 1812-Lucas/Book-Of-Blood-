@@ -45,7 +45,7 @@ public class PlayerInventory : MonoBehaviour
                 ToggleMenu();
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             if (!isInventoryActive)
                 ToggleMenu();
@@ -98,15 +98,12 @@ public class PlayerInventory : MonoBehaviour
         {
             myGM.Menuactivate();
             Cursor.lockState = CursorLockMode.Confined;
-            MyAudioSource.clip = MyEffectAudio;
-            MyAudioSource.Play();
             camerascript.enabled = false;
         }
         else
         {
             myGM.Menudesactivate();
             Cursor.lockState = CursorLockMode.Locked;
-            MyAudioSource.Stop();
             camerascript.enabled = true;
         }
     }
@@ -121,5 +118,14 @@ public class PlayerInventory : MonoBehaviour
         {
             myGM.Hidecontrols();
         }
+    }
+    public void MusicON()
+    {
+        MyAudioSource.clip = MyEffectAudio;
+        MyAudioSource.Play();
+    }
+    public void MusicOFF()
+    {
+        MyAudioSource.Stop();
     }
 }
