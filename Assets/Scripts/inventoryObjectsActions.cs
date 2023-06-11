@@ -35,6 +35,9 @@ public class inventoryObjectsActions : MonoBehaviour
 
     public Light healthPotionLight;
 
+    public Light lightCardbox;
+
+    public Light demonWhispersLight;
     private void Awake()
     {
         MyAudioSource = GetComponent<AudioSource>();
@@ -81,6 +84,7 @@ public class inventoryObjectsActions : MonoBehaviour
                 inventoryTutorialTrigger = true;
             //}*/
             Destroy(other.gameObject);
+            lightCardbox.enabled = false;
             CardsOnCountdown += 1;
         }
         if (other.gameObject.layer == 16)
@@ -97,6 +101,7 @@ public class inventoryObjectsActions : MonoBehaviour
         {
             WhispersCount += 1;
             Destroy(other.gameObject);
+            demonWhispersLight.enabled = false;
             PlayAudioInventory(OpenCardBox);
             if (WhispersCount == 1)
             {

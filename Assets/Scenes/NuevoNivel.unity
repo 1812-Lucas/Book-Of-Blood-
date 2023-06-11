@@ -19755,6 +19755,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3091684468674929271, guid: eb4a6b0b3e8470645a676d5d1de8857f, type: 3}
   m_PrefabInstance: {fileID: 882196609}
   m_PrefabAsset: {fileID: 0}
+--- !u!108 &882762249 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 882762249, guid: eb4a6b0b3e8470645a676d5d1de8857f, type: 3}
+  m_PrefabInstance: {fileID: 1689791647}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &884178411
 GameObject:
   m_ObjectHideFlags: 0
@@ -22762,6 +22767,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59bd7539790c2744aa964a692fdc0db2, type: 3}
+--- !u!108 &1053721869 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 1053721869, guid: dda147e4cbe921c4ebba1a0d87ea3e10, type: 3}
+  m_PrefabInstance: {fileID: 1535821988}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1062526381
 GameObject:
   m_ObjectHideFlags: 0
@@ -28862,7 +28872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3091684468674929271, guid: eb4a6b0b3e8470645a676d5d1de8857f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 238.4
+      value: 234.46
       objectReference: {fileID: 0}
     - target: {fileID: 3091684468674929271, guid: eb4a6b0b3e8470645a676d5d1de8857f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -34210,16 +34220,8 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3091684468674929271, guid: eb4a6b0b3e8470645a676d5d1de8857f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091684468674929271, guid: eb4a6b0b3e8470645a676d5d1de8857f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3091684468674929271, guid: eb4a6b0b3e8470645a676d5d1de8857f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 242.32
+      value: 239.6
       objectReference: {fileID: 0}
     - target: {fileID: 3091684468674929271, guid: eb4a6b0b3e8470645a676d5d1de8857f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -34227,7 +34229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3091684468674929271, guid: eb4a6b0b3e8470645a676d5d1de8857f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.88
+      value: -3.34
       objectReference: {fileID: 0}
     - target: {fileID: 3091684468674929271, guid: eb4a6b0b3e8470645a676d5d1de8857f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -34257,10 +34259,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4466446387771670276, guid: eb4a6b0b3e8470645a676d5d1de8857f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 270d5530e00859c4fbd9289f7d456ab7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb4a6b0b3e8470645a676d5d1de8857f, type: 3}
 --- !u!4 &1689791648 stripped
@@ -43547,7 +43545,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22242
+  m_Name: pb_Mesh22190
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -45827,6 +45825,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9112766969278726823}
     - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: lightCardbox
+      value: 
+      objectReference: {fileID: 882762249}
+    - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: healthPotionLight
       value: 
       objectReference: {fileID: 8598961833115518445}
@@ -45834,6 +45836,10 @@ PrefabInstance:
       propertyPath: menumanagerscript
       value: 
       objectReference: {fileID: 1695875805}
+    - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: demonWhispersLight
+      value: 
+      objectReference: {fileID: 1053721869}
     - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: healthPotionParticles
       value: 

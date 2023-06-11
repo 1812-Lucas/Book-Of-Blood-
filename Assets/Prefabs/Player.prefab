@@ -305,6 +305,8 @@ MonoBehaviour:
   healthPotionParticles: {fileID: 0}
   healthPotionMiniParticles: {fileID: 0}
   healthPotionLight: {fileID: 0}
+  lightCardbox: {fileID: 0}
+  demonWhispersLight: {fileID: 0}
 --- !u!114 &5299470838625391949
 MonoBehaviour:
   m_ObjectHideFlags: 0
