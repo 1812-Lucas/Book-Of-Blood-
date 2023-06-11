@@ -16040,7 +16040,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.9339623, g: 0.71809363, b: 0.71809363, a: 1}
+  m_Color: {r: 0.4811321, g: 0.3290762, b: 0.3290762, a: 1}
   m_Intensity: 1.5
   m_Range: 10
   m_SpotAngle: 30
@@ -25523,6 +25523,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1629035457}
     m_Modifications:
+    - target: {fileID: 1788836862, guid: 6a77419051f820d408d7f624917dc136, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 534
+      objectReference: {fileID: 0}
     - target: {fileID: 6149808874824291138, guid: 6a77419051f820d408d7f624917dc136, type: 3}
       propertyPath: m_Name
       value: lantern_2 (3)
@@ -30826,7 +30830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8200239708426538663, guid: dda147e4cbe921c4ebba1a0d87ea3e10, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.1
+      value: -17.44
       objectReference: {fileID: 0}
     - target: {fileID: 8200239708426538663, guid: dda147e4cbe921c4ebba1a0d87ea3e10, type: 3}
       propertyPath: m_LocalPosition.y
@@ -43923,7 +43927,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22190
+  m_Name: pb_Mesh122884
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44850,6 +44854,11 @@ PrefabInstance:
 --- !u!4 &1505832543920825919 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1400465299260083103, guid: ed4e133e435ad4746a591ec8ff511cdc, type: 3}
+  m_PrefabInstance: {fileID: 1505832543920825918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1505832543920825920 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1725791608160727947, guid: ed4e133e435ad4746a591ec8ff511cdc, type: 3}
   m_PrefabInstance: {fileID: 1505832543920825918}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1559229862839699973
@@ -46267,6 +46276,10 @@ PrefabInstance:
       propertyPath: AreasWhereTheEnemiesSpawns.Array.data[2]
       value: 
       objectReference: {fileID: 1610068534}
+    - target: {fileID: 5548725968369103981, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.972
+      objectReference: {fileID: 0}
     - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: mainCamera
       value: 
@@ -46275,6 +46288,10 @@ PrefabInstance:
       propertyPath: lightCardbox
       value: 
       objectReference: {fileID: 882762249}
+    - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
+      propertyPath: animationDoor
+      value: 
+      objectReference: {fileID: 1505832543920825920}
     - target: {fileID: 5561988426673552123, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: healthPotionLight
       value: 
@@ -46509,15 +46526,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 245
+      value: 244.198
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.164
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -39.412
+      value: -38.48
       objectReference: {fileID: 0}
     - target: {fileID: 8077958657708868334, guid: 97bf9d8207519ce4d89143c227b3dd1f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -47380,15 +47397,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 175.66632
+      value: 173.48518
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.6712093
+      value: -7.6850524
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -155.5311
+      value: -153.63441
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.w

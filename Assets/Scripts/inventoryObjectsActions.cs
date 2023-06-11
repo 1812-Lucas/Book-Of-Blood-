@@ -38,9 +38,12 @@ public class inventoryObjectsActions : MonoBehaviour
     public Light lightCardbox;
 
     public Light demonWhispersLight;
+
+    public Animator animationDoor;
     private void Awake()
     {
         MyAudioSource = GetComponent<AudioSource>();
+        
     }
 
     public void PlayAudioInventory(AudioClip AC)
@@ -134,6 +137,7 @@ public class inventoryObjectsActions : MonoBehaviour
             //puerta
             if (KeyForTheBlackDoor == 1)
             {
+                animationDoor.Play("AnimationDoor");
                 Destroy(other.gameObject);
                 Destroy(DoorHolder);
             }
