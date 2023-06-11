@@ -29,6 +29,11 @@ public class inventoryObjectsActions : MonoBehaviour
 
     public GameObject DoorHolder;
 
+    public ParticleSystem healthPotionParticles;
+
+    public ParticleSystem healthPotionMiniParticles;
+
+    public Light healthPotionLight;
 
     private void Awake()
     {
@@ -82,6 +87,9 @@ public class inventoryObjectsActions : MonoBehaviour
         {
             HealthPotions += 1;
             Destroy(other.gameObject);
+            healthPotionLight.enabled = false;
+            healthPotionParticles.Stop();
+            healthPotionMiniParticles.Stop();
             Debug.Log("Obtuviste una pocion de curacion, para usarla puedes presionar H o tocar el icono desde el inventario, pero recuerda que solamente podras curarte estando en combate");
         }
 
