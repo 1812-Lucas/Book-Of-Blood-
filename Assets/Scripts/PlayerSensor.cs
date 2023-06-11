@@ -18,6 +18,10 @@ public class PlayerSensor : MonoBehaviour
     public CinemachineVirtualCamera ActiveCamera;
     public MyCamera mycamera;
 
+    public Light keyLight;
+
+    public ParticleSystem particleKey;
+
     private void OnTriggerEnter(Collider other)
     {
         print("La puerta se abrio");
@@ -29,6 +33,8 @@ public class PlayerSensor : MonoBehaviour
             playerRB.constraints = RigidbodyConstraints.FreezeAll;
             EV_OnPlayerEnter.Invoke();
             playerColl.enabled = false;
+            keyLight.enabled = false;
+            particleKey.Stop();
             StartCoroutine(CameraTransation());
         }
     }
