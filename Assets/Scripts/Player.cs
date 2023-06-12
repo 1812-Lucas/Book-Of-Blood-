@@ -93,7 +93,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            view.Isrunning(false);
+          view.Isrunning(false);
         }
     }
 

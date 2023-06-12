@@ -16,11 +16,11 @@ public class inventoryObjectsActions : MonoBehaviour
     public GameObject[] cardsOnInventory;
     public bool[] ActivatorsOfCards;
     public int CardsOnCountdown;
-   // private bool inventoryTutorialTrigger = false;
+    // private bool inventoryTutorialTrigger = false;
 
     AudioSource MyAudioSource;
     public AudioClip OpenCardBox;
-   
+
 
     public int HealthPotions;
     public StadisticPlayer StadisticPlayerScript;
@@ -43,7 +43,7 @@ public class inventoryObjectsActions : MonoBehaviour
     private void Awake()
     {
         MyAudioSource = GetComponent<AudioSource>();
-        
+
     }
 
     public void PlayAudioInventory(AudioClip AC)
@@ -87,7 +87,7 @@ public class inventoryObjectsActions : MonoBehaviour
                 inventoryTutorialTrigger = true;
             //}*/
             Destroy(other.gameObject);
-            lightCardbox.enabled = false;
+
             CardsOnCountdown += 1;
         }
         if (other.gameObject.layer == 16)
@@ -104,7 +104,7 @@ public class inventoryObjectsActions : MonoBehaviour
         {
             WhispersCount += 1;
             Destroy(other.gameObject);
-            demonWhispersLight.enabled = false;
+
             PlayAudioInventory(OpenCardBox);
             if (WhispersCount == 1)
             {
@@ -138,7 +138,7 @@ public class inventoryObjectsActions : MonoBehaviour
             if (KeyForTheBlackDoor == 1)
             {
                 animationDoor.Play("AnimationDoor");
-                Destroy(other.gameObject);
+               // Destroy(other.gameObject);
                 Destroy(DoorHolder);
             }
 
@@ -147,7 +147,24 @@ public class inventoryObjectsActions : MonoBehaviour
         {
             menumanagerscript.Restartscene();
         }
-    }    /*private void Update()
+
+
+    }
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.layer == 15)
+        {
+
+            lightCardbox.enabled = false;
+        }
+        if (other.gameObject.layer == 6)
+        {
+
+            demonWhispersLight.enabled = false;
+        }
+    }
+
+    /*private void Update()
     {
         if(combatMode == true)
         {
