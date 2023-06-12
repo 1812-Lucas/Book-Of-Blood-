@@ -80,9 +80,10 @@ public class VigorCardsDisplay : MonoBehaviour
             case "Senpukku":
 
                 protectiontottempasive();
+                enemyy.health -= 4;
                 if (stadisticplayerScipt.health <= 20)
                 {
-                    enemyy.health -= 7;
+                    enemyy.health -= 3;
                 }
                 Debug.Log("has cometido Senpukku");
                 break;
@@ -96,10 +97,11 @@ public class VigorCardsDisplay : MonoBehaviour
             case "Spirit Growth":
 
                 SpiritGrowthStacks += 1;
+                enemyy.health -= 1;
                 protectiontottempasive();
                 if (SpiritGrowthStacks >= 3)
                 {
-                    enemyy.health -= 8;
+                    enemyy.health -= 3;
                     Debug.Log("has inflingido 8 de daño con Spirit Growth");
                 }
                 break;
