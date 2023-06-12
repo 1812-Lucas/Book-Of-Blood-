@@ -214,7 +214,7 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   menumanagerscript: {fileID: 0}
   player: {fileID: 2164653984255317432}
-  playerspeed: 10
+  playerspeed: 5
   _maxhealth: 30
   vigorPoints: 40
   gravity: 9.8
