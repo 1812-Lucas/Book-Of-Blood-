@@ -98837,6 +98837,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puerta Casa - Mesh
       objectReference: {fileID: 0}
+    - target: {fileID: 1739695029856293157, guid: ed4e133e435ad4746a591ec8ff511cdc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4153709985002371743, guid: ed4e133e435ad4746a591ec8ff511cdc, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -101473,6 +101477,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3323654084146621482, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
+      propertyPath: m_Priority
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5160004461706741554, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: Menu
       value: 
@@ -101511,31 +101519,31 @@ PrefabInstance:
       objectReference: {fileID: 8077958658333811775}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 175.32898
+      value: 170.09
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.51947
+      value: -5.59
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -157.53978
+      value: -124.79999
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.97544706
+      value: 0.99646515
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0000000037252903
+      value: 0.07865098
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.22023402
+      value: 0.029426381
       objectReference: {fileID: 0}
     - target: {fileID: 8536629146987952638, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00000001105218
+      value: -0.0023226233
       objectReference: {fileID: 0}
     - target: {fileID: 9112766969278726826, guid: 5078f4026d2b6b449873856fdc6fed9c, type: 3}
       propertyPath: m_SceneBindings.Array.size
