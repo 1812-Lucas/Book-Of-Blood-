@@ -30,6 +30,19 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
         initialScale = transform.localScale; 
     }
+    private void Update()
+    {
+        //OnPointerEnter(PointerEventData eventData);
+        //OnPointerExit(PointerEventData);
+        if (MyButton.interactable == false)
+        {
+            MySprite.GetComponent<Image>().gameObject.SetActive(false);
+        }
+        else if (MyButton.interactable == true)
+        {
+            MySprite.GetComponent<Image>().gameObject.SetActive(true);
+        }
+    }
 
     public void OnPointerEnter(PointerEventData eventData)
     {

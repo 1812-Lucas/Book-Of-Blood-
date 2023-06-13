@@ -19,21 +19,45 @@ public class PlayerInventory : MonoBehaviour
     public AudioClip MyEffectAudio;
     public AudioSource MyAudioSource;
     public TextMeshProUGUI NotAppropiateDeckWarningText;
+    [SerializeField]
+    private CombatPosition CombatPositionScript;
+    [SerializeField]
+    private Image InventoryBlockerImage;
+    [SerializeField]
+    private InventoryDisplayer[] ArrayOfInventoryDisplayer;
+    private int Counter;
 
     public void PlayAudio(AudioClip AC)
     {
         MyAudioSource.clip = AC;
         MyAudioSource.Play();
     }
+    public void DataInventoryFixer()
+    {
+        for (Counter = 0; Counter <= 7; Counter++)
+        {
+            ArrayOfInventoryDisplayer[Counter].ActualizationData();
+        }
+    }
     private void Update()
     {
-       /* if (isMenuActive)
+        /* if (isMenuActive)
+         {
+             PlayAudio(MyEffectAudio);
+         }*/
+
+        if (CombatPositionScript.battlePosition == true)
         {
-            PlayAudio(MyEffectAudio);
-        }*/
+            InventoryBlockerImage.gameObject.SetActive(true);
+        }
+        else
+        {
+            InventoryBlockerImage.gameObject.SetActive(false);
+        }
 
         if (Input.GetKeyDown(KeyCode.I))
         {
+            DataInventoryFixer();
             if (!isMenuActive)
                 ToggleInventory();
         }

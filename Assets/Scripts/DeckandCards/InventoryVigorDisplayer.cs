@@ -16,15 +16,25 @@ public class InventoryVigorDisplayer : MonoBehaviour
     public Image EquipedEffectVigor;
 
 
+    private void Awake()
+    {
+        ActualizationData();
+    }
+
     private void Start()
     {
-
+        ActualizationData();
+    }
+    private void Update()
+    {
+        ActualizationData();
+    }
+    public void ActualizationData()
+    {
         nametext.text = card.name;
         descriptiontext.text = card.description;
         image.sprite = card.image;
         vigortext.text = card.vigorcost.ToString();
-        
-
     }
     public void CardEffectFunction()
     {
@@ -33,7 +43,7 @@ public class InventoryVigorDisplayer : MonoBehaviour
     }
     public void AddCardToMyVigorDeck()
     {
-        VigorDeckScript.BuildMyVigorDeck(card,MyPlaceOnTheVigorArray);
+        VigorDeckScript.BuildMyVigorDeck(card, MyPlaceOnTheVigorArray);
         CardEffectFunction();
     }
 

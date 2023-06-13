@@ -15,11 +15,23 @@ public class InventoryDisplayer : MonoBehaviour
     public Deck DeckScript;
     public bool VigorCardEquipedEffectBool;
     public Image EquipedEffectVigor;
+    
 
-
+    private void Awake()
+    {
+        ActualizationData();
+    }
     private void Start()
     {
 
+        ActualizationData();
+    }
+    private void Update()
+    {
+        ActualizationData();
+    }
+    public void ActualizationData()
+    {
         nametext.text = card.name;
         descriptiontext.text = card.description;
         image.sprite = card.image;
