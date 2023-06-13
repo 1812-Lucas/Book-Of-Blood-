@@ -27,6 +27,9 @@ public class PlayerInventory : MonoBehaviour
     private InventoryDisplayer[] ArrayOfInventoryDisplayer;
     private int Counter;
 
+    [SerializeField]
+    private GameObject OptionsMenu;
+
     public void PlayAudio(AudioClip AC)
     {
         MyAudioSource.clip = AC;
@@ -45,6 +48,8 @@ public class PlayerInventory : MonoBehaviour
          {
              PlayAudio(MyEffectAudio);
          }*/
+
+        EffectAudioPlayer();
 
         if (CombatPositionScript.battlePosition == true)
         {
@@ -92,7 +97,7 @@ public class PlayerInventory : MonoBehaviour
     {
         int deckCardsCount = DeckScript.PermissionToLeaveTheInventoryMinimumDeckCards(DeckScript.DeckOfTheDeck);
         int vigorCardsCount = VigorDeckScript.PermissionToLeaveTheInventoryMinimumVigorDeckCards(VigorDeckScript.DeckOfTheVigorDeck);
-        if(deckCardsCount < 4 || deckCardsCount > 6 || vigorCardsCount < 5 || vigorCardsCount > 8)
+        if (deckCardsCount < 4 || deckCardsCount > 6 || vigorCardsCount < 5 || vigorCardsCount > 8)
         {
             NotAppropiateDeckWarningText.gameObject.SetActive(true);
         }
@@ -107,7 +112,7 @@ public class PlayerInventory : MonoBehaviour
             Cursor.lockState = CursorLockMode.Confined;
             camerascript.enabled = false;
         }
-        else if (isInventoryActive && deckCardsCount >= 4 && deckCardsCount<=6 &&vigorCardsCount >= 5&&vigorCardsCount<=8)
+        else if (isInventoryActive && deckCardsCount >= 4 && deckCardsCount <= 6 && vigorCardsCount >= 5 && vigorCardsCount <= 8)
         {
             isInventoryActive = false;
             myGM.DesactivateInventory();
@@ -143,6 +148,20 @@ public class PlayerInventory : MonoBehaviour
             myGM.Hidecontrols();
         }
     }
+
+    public void EffectAudioPlayer()
+    {
+
+        if (OptionsMenu.activeSelf)
+        {
+            PlayAudio(MyEffectAudio);
+        }
+        else
+        {
+            MusicOFF();
+        }
+    }
+
     public void MusicON()
     {
         MyAudioSource.clip = MyEffectAudio;
