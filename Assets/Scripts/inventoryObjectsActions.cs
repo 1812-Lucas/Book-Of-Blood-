@@ -138,8 +138,8 @@ public class inventoryObjectsActions : MonoBehaviour
             if (KeyForTheBlackDoor == 1)
             {
                 animationDoor.Play("AnimationDoor");
-               // Destroy(other.gameObject);
-                Destroy(DoorHolder);
+                // Destroy(other.gameObject);
+                DoorHolder.gameObject.SetActive(false);
             }
 
         }
