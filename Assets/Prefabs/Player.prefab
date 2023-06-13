@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 2034795175}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -327,6 +327,7 @@ MonoBehaviour:
   - {fileID: 1883684176553347868, guid: d398157aa9b1e4f44aff92b21add58d9, type: 3}
   - {fileID: 6107105603314195914, guid: bf53cac988929f74ea49db6e9fff9c92, type: 3}
   - {fileID: 3232888709861344664, guid: db88ad0712515b245824c40d7c152d01, type: 3}
+  - {fileID: 4319138868206258675, guid: 44efad12093d5244397e73627ba7b8ce, type: 3}
   enemytransf: {fileID: 8249360497324799471, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
   areaWhereTheEnemySpawns: {fileID: 0}
   AreasWhereTheEnemiesSpawns:
@@ -1098,16 +1099,28 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5123469846127668440, guid: b752c8dfdb930f94897ffc39df860951, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123469846127668440, guid: b752c8dfdb930f94897ffc39df860951, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123469846127668440, guid: b752c8dfdb930f94897ffc39df860951, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123469846127668440, guid: b752c8dfdb930f94897ffc39df860951, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3939972
+      value: 1.66
       objectReference: {fileID: 0}
     - target: {fileID: 5123469846127668440, guid: b752c8dfdb930f94897ffc39df860951, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.164
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 5123469846127668440, guid: b752c8dfdb930f94897ffc39df860951, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0030021667
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5123469846127668440, guid: b752c8dfdb930f94897ffc39df860951, type: 3}
       propertyPath: m_LocalRotation.w

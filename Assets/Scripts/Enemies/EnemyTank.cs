@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class EnemyTank : Enemy
 {
-   
-
     public override void Start()
     {
         base.Start();
-       
     }
     public override void Enemyturn()
     {

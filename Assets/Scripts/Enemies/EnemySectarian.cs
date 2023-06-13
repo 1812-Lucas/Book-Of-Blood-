@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class EnemySectarian : Enemy
 {
-
-   
-
     public override void Start()
     {
         base.Start();
-       
-
     }
     public override void Enemyturn()
     {
