@@ -139,7 +139,7 @@ public class inventoryObjectsActions : MonoBehaviour
             {
                 animationDoor.Play("AnimationDoor");
                 // Destroy(other.gameObject);
-                DoorHolder.gameObject.SetActive(false);
+                Destroy(DoorHolder);
             }
 
         }
