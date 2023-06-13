@@ -191,6 +191,27 @@ public class CombatPosition : MonoBehaviour
                 combatON();
             }
         }
+        if (other.gameObject.layer == 17)
+        {
+            Destroy(other.gameObject);
+            camerascript.canMoveCamera = false;
+            enemiesreminder = 1;
+            Vector3 direccion = new Vector3(-147, 1, 67);
+            transform.LookAt(direccion);
+
+            if (enemyInvoke == false)
+            {
+                EnemyInvoke();
+            }
+
+            Destroy(areaWhereTheEnemySpawns.gameObject);
+
+            if (CombatON == false)
+            {
+                SwitchCamera(cameras[4]);
+                combatON();
+            }
+        }
     }
     void EnemyInvoke()
     {
