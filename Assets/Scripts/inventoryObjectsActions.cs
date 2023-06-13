@@ -43,7 +43,7 @@ public class inventoryObjectsActions : MonoBehaviour
     private void Awake()
     {
         MyAudioSource = GetComponent<AudioSource>();
-
+       
     }
 
     public void PlayAudioInventory(AudioClip AC)
