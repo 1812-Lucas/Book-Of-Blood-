@@ -25,11 +25,11 @@ public class EnemyBoss : Enemy
         else if (health > 15 && health <= 30)
         {
             int Numero2 = Random.Range(1, 101);
-            if (Numero2 >= 60)
+            if (Numero2 >= 50)
             {
                 BasicDamage();
             }
-            else if (Numero2 < 60)
+            else if (Numero2 < 50)
             {
                 HeavyDamage();
             }
@@ -37,15 +37,15 @@ public class EnemyBoss : Enemy
         else if (health > 0 && health <= 15)
         {
             int Numero3 = Random.Range(1, 101);
-            if (Numero3 >= 70)
+            if (Numero3 >= 60)
             {
                 BasicDamage();
             }
-            else if (Numero3 >= 30 && Numero3 < 70)
+            else if (Numero3 >= 20 && Numero3 < 60)
             {
                 HeavyDamage();
             }
-            else if (Numero3 < 30)
+            else if (Numero3 < 20)
             {
                 SuperHeavyDamage();
             }
