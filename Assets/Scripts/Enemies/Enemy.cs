@@ -11,10 +11,6 @@ public class Enemy : MonoBehaviour
     public string tipodeenemigo;
     public StadisticPlayer PlayerStadisticsScript;
 
-
-
-
-
     public Transform ataqueEnemy1SpawnPoint;
     public Transform ataqueEnemigo2SpawnPoint;
     public Transform ataqueEnemy1SpawnPoint_Combate2;
@@ -31,7 +27,6 @@ public class Enemy : MonoBehaviour
     private ParticleSystem ataqueEnemy1_combate3;
     private ParticleSystem ataqueEnemigo2_combate3;
     private ParticleSystem debris_combate3;
-
 
 
     public virtual void Start()
@@ -104,7 +99,6 @@ public class Enemy : MonoBehaviour
         ataqueEnemy1.Play();
         ataqueEnemy1_combate2.Play();
         ataqueEnemy1_combate3.Play();
-
     }
 
     public void PlayHeavyAttackParticles()
@@ -116,6 +110,5 @@ public class Enemy : MonoBehaviour
         debris.Play();
         debris_combate2.Play();
         debris_combate3.Play();
-
     }
 }

@@ -10,7 +10,7 @@ public class EnemyTank : Enemy
     }
     public override void Enemyturn()
     {
-        if (health <= 20 && health > 15)
+        if (health <= 40 && health > 25)
         {
             int Numero = Random.Range(1, 101);
             if (Numero >= 40)
@@ -22,7 +22,7 @@ public class EnemyTank : Enemy
                 HeavyDamage();
             }
         }
-        else if (health > 9 && health <= 15)
+        else if (health > 15 && health <= 25)
         {
             int Numero2 = Random.Range(1, 101);
             if (Numero2 >= 50)
@@ -34,7 +34,7 @@ public class EnemyTank : Enemy
                 HeavyDamage();
             }
         }
-        else if (health > 0 && health <= 9)
+        else if (health > 0 && health <= 15)
         {
             int Numero3 = Random.Range(1, 101);
             if (Numero3 >= 60)
@@ -53,21 +53,15 @@ public class EnemyTank : Enemy
     }
     public void BasicDamage()
     {
-        //player._maxhealth -= 4;
-        
         PlayerStadisticsScript.health -= 4;
         Debug.Log("El enemigo inflingio 4 de daño al jugador con un ataque basico");
         PlayBasicAttackParticles();
-
     }
     public void HeavyDamage()
     {
-        //player._maxhealth -= 6;
-       
         PlayerStadisticsScript.health -= 6;
         Debug.Log("El enemigo inflingio 6 de daño al jugador con un golpe pesado");
         PlayHeavyAttackParticles();
-
     }
     public void Regeneration()
     {

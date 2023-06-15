@@ -646,19 +646,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   combat: {fileID: 0}
-  health: 10
+  health: 20
   tipodeenemigo: Aldeano
   PlayerStadisticsScript: {fileID: 0}
-  attackType: 0
-  ataqueEnemy1Prefab: {fileID: 7015988589378483784, guid: 90c84a1b08676fd479da44a7517273c6, type: 3}
-  ataqueEnemigo2Prefab: {fileID: 1853674194870884847, guid: deaf0e7f5db268f46988cbb487ec6cb5, type: 3}
-  debrisParticles: {fileID: 3617404748834019465, guid: eadce33f9a453da4795e5c0adc1555eb, type: 3}
-  ataqueEnemy1Prefab_combate2: {fileID: 9010356956588081798, guid: 94b94a725f4f72c46a8a2c18d0619621, type: 3}
-  ataqueEnemigo2Prefab_Combate2: {fileID: 2499751118654025515, guid: e6523c67cc6cace40a571adf9c3d9e2b, type: 3}
-  debrisParticles_Combate2: {fileID: 5758698540485025839, guid: 83057cca7bfe2e340a63250968362231, type: 3}
-  ataqueEnemy1Prefab_Combate3: {fileID: 2809114770865967830, guid: 977f78abfe489fd4cac815f70919f97d, type: 3}
-  ataqueEnemigo2Prefab_Combate3: {fileID: 2269131734129824512, guid: 01147796d32bb7c4fa793811cc27d47c, type: 3}
-  debrisParticles_Combate3: {fileID: 4256947255142428458, guid: a140a87e0a2feb44a92496a83072e46f, type: 3}
+  ataqueEnemy1SpawnPoint: {fileID: 0}
+  ataqueEnemigo2SpawnPoint: {fileID: 0}
+  ataqueEnemy1SpawnPoint_Combate2: {fileID: 0}
+  ataqueEnemigo2SpawnPoint_Combate2: {fileID: 0}
+  ataqueEnemy1SpawnPoint_Combate3: {fileID: 0}
+  ataqueEnemigo2SpawnPoint_Combate3: {fileID: 0}
 --- !u!136 &4440287569902730533
 CapsuleCollider:
   m_ObjectHideFlags: 0

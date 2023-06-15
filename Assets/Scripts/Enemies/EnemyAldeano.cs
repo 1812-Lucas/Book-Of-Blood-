@@ -9,7 +9,7 @@ public class EnemyAldeano : Enemy
     }
     public override void Enemyturn()
     {
-        if (health <= 10 && health > 8)
+        if (health <= 20 && health > 15)
         {
             int Numero = Random.Range(1, 101);
             if (Numero >= 20)
@@ -21,7 +21,7 @@ public class EnemyAldeano : Enemy
                 HeavyDamage();
             }
         }
-        else if (health > 5 && health <= 8)
+        else if (health > 5 && health <= 15)
         {
             int Numero2 = Random.Range(1, 101);
             if (Numero2 >= 30)
@@ -52,21 +52,15 @@ public class EnemyAldeano : Enemy
     }
     public void BasicDamage()
     {
-        //player._maxhealth -= 2;
-        
         PlayerStadisticsScript.health -= 2;
         Debug.Log("El enemigo inflingio 2 de daño al jugador con un ataque basico");
         PlayBasicAttackParticles();
-
     }
     public void HeavyDamage()
     {
-        //player._maxhealth -= 4;
-        
         PlayerStadisticsScript.health -= 4;
         Debug.Log("El enemigo inflingio 4 de daño al jugador con un golpe pesado");
         PlayHeavyAttackParticles();
-
     }
     public void Regeneration()
     {

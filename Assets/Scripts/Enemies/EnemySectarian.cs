@@ -10,7 +10,7 @@ public class EnemySectarian : Enemy
     }
     public override void Enemyturn()
     {
-        if (health <= 15 && health > 11)
+        if (health <= 30 && health > 20)
         {
             int Numero = Random.Range(1, 101);
             if (Numero >= 30)
@@ -22,7 +22,7 @@ public class EnemySectarian : Enemy
                 HeavyDamage();
             }
         }
-        else if (health > 7 && health <= 11)
+        else if (health > 10 && health <= 20)
         {
             int Numero2 = Random.Range(1, 101);
             if (Numero2 >= 40)
@@ -34,7 +34,7 @@ public class EnemySectarian : Enemy
                 HeavyDamage();
             }
         }
-        else if (health > 0 && health <= 7)
+        else if (health > 0 && health <= 10)
         {
             int Numero3 = Random.Range(1, 101);
             if (Numero3 >= 50)
@@ -53,8 +53,6 @@ public class EnemySectarian : Enemy
     }
     public void BasicDamage()
     {
-        //player._maxhealth -= 3;
-      
         PlayerStadisticsScript.health -= 3;
         Debug.Log("El enemigo inflingio 3 de daño al jugador con un ataque basico");
        
@@ -62,8 +60,6 @@ public class EnemySectarian : Enemy
     }
     public void HeavyDamage()
     {
-        //player._maxhealth -= 5;
-        
         PlayerStadisticsScript.health -= 5;
         Debug.Log("El enemigo inflingio 5 de daño al jugador con un golpe pesado");
        

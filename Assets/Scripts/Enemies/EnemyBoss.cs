@@ -22,7 +22,7 @@ public class EnemyBoss : Enemy
                 HeavyDamage();
             }
         }
-        else if (health > 15 && health <= 30)
+        else if (health > 20 && health <= 30)
         {
             int Numero2 = Random.Range(1, 101);
             if (Numero2 >= 50)
@@ -34,7 +34,7 @@ public class EnemyBoss : Enemy
                 HeavyDamage();
             }
         }
-        else if (health > 0 && health <= 15)
+        else if (health > 0 && health <= 20)
         {
             int Numero3 = Random.Range(1, 101);
             if (Numero3 >= 60)
@@ -57,21 +57,15 @@ public class EnemyBoss : Enemy
     }
     public void BasicDamage()
     {
-        //player._maxhealth -= 4;
-
         PlayerStadisticsScript.health -= 5;
         Debug.Log("El jefe inflingio 5 de daño al jugador con un ataque basico");
         PlayBasicAttackParticles();
-
     }
     public void HeavyDamage()
     {
-        //player._maxhealth -= 6;
-
         PlayerStadisticsScript.health -= 7;
         Debug.Log("El jefe inflingio 7 de daño al jugador con un golpe pesado");
         PlayHeavyAttackParticles();
-
     }
     public void SuperHeavyDamage()
     {

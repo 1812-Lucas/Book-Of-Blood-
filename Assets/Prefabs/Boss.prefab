@@ -1397,8 +1397,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   combat: {fileID: 0}
-  health: 40
-  tipodeenemigo: 
+  health: 50
+  tipodeenemigo: Boss
   PlayerStadisticsScript: {fileID: 0}
   ataqueEnemy1SpawnPoint: {fileID: 0}
   ataqueEnemigo2SpawnPoint: {fileID: 0}

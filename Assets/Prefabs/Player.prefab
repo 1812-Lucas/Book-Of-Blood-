@@ -621,6 +621,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  OptionsMenu: {fileID: 0}
 --- !u!114 &5273619601675263601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,7 +634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 370d1b38e8da182478011df5a9167918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
+  health: 50
   vigor: 1
   defense: 0
   _myGM: {fileID: 0}
