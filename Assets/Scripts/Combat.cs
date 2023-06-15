@@ -337,7 +337,7 @@ public class Combat : MonoBehaviour
             TheCanvasesForFade[myplace].alpha = alpha;
         }
         PlayerStadisticsScript.vigor -= carddisplayscriptinSlot4.actualizarinformacióncostedeVigor();
-        Debug.Log("restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
+        Debug.Log("Restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
         carddisplayscriptinSlot4.ejecutarpasivadelacartadevigor();
         activaryDesactivarCartaAlUsarlaSlot4();
 
@@ -361,7 +361,7 @@ public class Combat : MonoBehaviour
             TheCanvasesForFade[myplace].alpha = alpha;
         }
         PlayerStadisticsScript.vigor -= carddisplayscriptinSlot5.actualizarinformacióncostedeVigor();
-        Debug.Log("restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
+        Debug.Log("Restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
         carddisplayscriptinSlot5.ejecutarpasivadelacartadevigor();
 
         activaryDesactivarCartaAlUsarlaSlot5();
@@ -385,7 +385,7 @@ public class Combat : MonoBehaviour
             TheCanvasesForFade[myplace].alpha = alpha;
         }
         PlayerStadisticsScript.vigor -= carddisplayscriptinSlot6.actualizarinformacióncostedeVigor();
-        Debug.Log("restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
+        Debug.Log("Restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
         carddisplayscriptinSlot6.ejecutarpasivadelacartadevigor();
 
         activaryDesactivarCartaAlUsarlaSlot6();

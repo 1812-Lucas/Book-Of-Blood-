@@ -75,7 +75,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 stadisticplayerScipt.health += 8;
                 protectiontottempasive();
                 PlayAudio(WarriorPendantAudio);
-                Debug.Log("te has curado 5 puntos de salud");
+                Debug.Log("Te has curado 5 puntos de salud");
                 break;
             case "Senpukku":
 
@@ -85,14 +85,14 @@ public class VigorCardsDisplay : MonoBehaviour
                 {
                     enemyy.health -= 3;
                 }
-                Debug.Log("has cometido Senpukku");
+                Debug.Log("Has cometido Senpukku");
                 break;
             case "Sacrifice":
 
                 enemyy.health -= 12;
                 protectiontottempasive();
                 stadisticplayerScipt.health -= 3;
-                Debug.Log("te has inflingido daño pero mucho mas al enemigo");
+                Debug.Log("Te has inflingido daño pero mucho mas al enemigo");
                 break;
             case "Spirit Growth":
 
@@ -102,22 +102,22 @@ public class VigorCardsDisplay : MonoBehaviour
                 if (SpiritGrowthStacks >= 3)
                 {
                     enemyy.health -= 3;
-                    Debug.Log("has inflingido 8 de daño con Spirit Growth");
+                    Debug.Log("Has inflingido 8 de daño con Spirit Growth");
                 }
                 break;
             case "Unbreakable":
                 stadisticplayerScipt.vigor += 5;
                 protectiontottempasive();
-                Debug.Log("te has aumentado 5 puntos de vigor");
+                Debug.Log("Te has aumentado 5 puntos de vigor");
                 break;
             case "Protection Tottem":
                 stadisticplayerScipt.health += 1;
                 protectiontottempasive();
-                Debug.Log("te has curado 1 puntos de salud");
+                Debug.Log("Te has curado 1 puntos de salud");
                 ProtectionTottemStacks += 1;
                 if (ProtectionTottemStacks == 5)
                 {
-                    Debug.Log("el tottem de proteccción ya está activado");
+                    Debug.Log("El tottem de proteccción ya está activado");
                 }
                 break;
             case "Caos":

@@ -51,13 +51,4 @@ public class InventoryDisplayer : MonoBehaviour
         CardEffectFunction();
 
     }
-
-
-
-
-
-
-
-
-
 }

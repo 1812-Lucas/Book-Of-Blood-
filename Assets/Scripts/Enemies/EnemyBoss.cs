@@ -60,7 +60,7 @@ public class EnemyBoss : Enemy
         //player._maxhealth -= 4;
 
         PlayerStadisticsScript.health -= 5;
-        Debug.Log("El enemigo inflingio 5 de daño al jugador con un ataque basico");
+        Debug.Log("El jefe inflingio 5 de daño al jugador con un ataque basico");
         PlayBasicAttackParticles();
 
     }
@@ -69,19 +69,19 @@ public class EnemyBoss : Enemy
         //player._maxhealth -= 6;
 
         PlayerStadisticsScript.health -= 7;
-        Debug.Log("El enemigo inflingio 7 de daño al jugador con un golpe pesado");
+        Debug.Log("El jefe inflingio 7 de daño al jugador con un golpe pesado");
         PlayHeavyAttackParticles();
 
     }
     public void SuperHeavyDamage()
     {
         PlayerStadisticsScript.health -= 10;
-        Debug.Log("El enemigo inflingio 10 de daño al jugador con un golpe super pesado");
+        Debug.Log("El jefe inflingio 10 de daño al jugador con un golpe super pesado");
         PlayHeavyAttackParticles();
     }
     public void Regeneration()
     {
         health += 7;
-        Debug.Log("El enemigo se curo 7 de vida");
+        Debug.Log("El jefe se curo 7 de vida");
     }
 }

@@ -87,7 +87,7 @@ public class CardDisplay : MonoBehaviour
             case "Sacred Font":
                 StatsPlayerScript.health += 5;
                 PlayAudio(NormalAudioCard);
-                Debug.Log("te has curado 5 puntos de salud");
+                Debug.Log("Te has curado 5 puntos de salud");
                 break;
 
             case "Big Bang":
