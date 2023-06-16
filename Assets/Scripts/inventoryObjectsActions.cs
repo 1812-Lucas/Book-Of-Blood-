@@ -154,12 +154,10 @@ public class inventoryObjectsActions : MonoBehaviour
     {
         if (other.gameObject.layer == 15)
         {
-
             lightCardbox.enabled = false;
         }
         if (other.gameObject.layer == 6)
         {
-
             demonWhispersLight.enabled = false;
         }
     }
