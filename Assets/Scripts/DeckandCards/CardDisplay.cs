@@ -29,6 +29,7 @@ public class CardDisplay : MonoBehaviour
     public AudioClip DestructionAudio;
     public AudioClip NormalAudioCard;
 
+   
     private void Start()
     {
         

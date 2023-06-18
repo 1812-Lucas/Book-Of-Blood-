@@ -102,8 +102,9 @@ public class CombatPosition : MonoBehaviour
         Debug.Log("Entraste en combate");
         deckscript.DrawCards();
         vigordeckscript.DrawCards();
-        
         CombatON = true;
+        combatscript.NormalCardsAnimation.CrossFade("CardsAnimation", 0f);
+        combatscript.VigorCardsAnimation.CrossFade("CardsNormalAnimation", 0f);
     }
     public void SwitchCamera(CinemachineVirtualCamera camera)
     {
