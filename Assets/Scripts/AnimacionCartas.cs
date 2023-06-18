@@ -60,13 +60,9 @@ public class AnimacionCartas : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public void OnPointerExit(PointerEventData eventData)
     {
        
-
         LeanTween.scale(gameObject, initialScale, 0.2f);
 
         MySprite.gameObject.SetActive(false);
-        
-
-
-
+      
     }
 }

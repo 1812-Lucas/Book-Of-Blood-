@@ -102,6 +102,7 @@ public class CombatPosition : MonoBehaviour
         Debug.Log("Entraste en combate");
         deckscript.DrawCards();
         vigordeckscript.DrawCards();
+        
         CombatON = true;
     }
     public void SwitchCamera(CinemachineVirtualCamera camera)

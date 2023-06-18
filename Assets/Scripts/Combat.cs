@@ -71,6 +71,9 @@ public class Combat : MonoBehaviour
 
     public object WaitForSeconds3 { get; private set; }
 
+    public Animator VigorCardsAnimation;
+    public Animator NormalCardsAnimation;
+
     void Start()
     {
 
@@ -180,8 +183,11 @@ public class Combat : MonoBehaviour
                 activaryDesactivarCartaAlUsarlaSlot6();
             }
             enemyattack = false;
+            VigorCardsAnimation.Play("CardsAnimation");
+            NormalCardsAnimation.Play("CardsNormalAnimation");
             Debug.Log("Final del turno");
             Debug.Log("Inicio el siguiente turno");
+
             //if (enemyy.attackType == 1)
             //{
             //    ataqueEnemy1.Play();
