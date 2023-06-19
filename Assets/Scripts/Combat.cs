@@ -466,7 +466,7 @@ public class Combat : MonoBehaviour
         if (PlayerStadisticsScript.vigor >= carddisplayscriptinSlot4.actualizarinformacióncostedeVigor())
         {
             StartCoroutine(FadeAnimSlot4(3));
-
+            VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed", 0f);
         }
     }
     public void clickonslotfive()
@@ -474,6 +474,7 @@ public class Combat : MonoBehaviour
         if (PlayerStadisticsScript.vigor >= carddisplayscriptinSlot5.actualizarinformacióncostedeVigor())
         {
             StartCoroutine(FadeAnimSlot5(4));
+            VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed2", 0f);
 
         }
     }
@@ -482,6 +483,7 @@ public class Combat : MonoBehaviour
         if (PlayerStadisticsScript.vigor >= carddisplayscriptinSlot6.actualizarinformacióncostedeVigor())
         {
             StartCoroutine(FadeAnimSlot6(5));
+            VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed3", 0f);
 
         }
     }
