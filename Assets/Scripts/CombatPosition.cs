@@ -41,6 +41,7 @@ public class CombatPosition : MonoBehaviour
 
     public float ContadorTransicion;
 
+    
     public void Update()
     {
         if (CombatON == true)
@@ -57,6 +58,9 @@ public class CombatPosition : MonoBehaviour
     public void Start()
     {
         myGM = GameManager.instance;
+        
+
+        
     }
     public void PlayAudio(AudioClip AC)
     {
@@ -103,8 +107,11 @@ public class CombatPosition : MonoBehaviour
         deckscript.DrawCards();
         vigordeckscript.DrawCards();
         CombatON = true;
-        combatscript.NormalCardsAnimation.CrossFade("CardsAnimation", 0f);
-        combatscript.VigorCardsAnimation.CrossFade("CardsNormalAnimation", 0f);
+        combatscript.NormalCardsAnimation.CrossFade("CardsNormalAnimation", 0f);
+        combatscript.VigorCardsAnimation.CrossFade("CardsAnimations", 0f);
+        //combatscript.NormalCardsAnimation.SetBool("CardUsed", true);
+        //combatscript.NormalCardsAnimation.SetBool("CardUsed2", true);
+        //combatscript.NormalCardsAnimation.SetBool("CardUsed3", true);
     }
     public void SwitchCamera(CinemachineVirtualCamera camera)
     {

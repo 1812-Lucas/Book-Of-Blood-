@@ -94,9 +94,10 @@ public class Combat : MonoBehaviour
         {
             
             NormalCardsAnimation.CrossFade("NormalCardNewAnimation", 0f);
-
+            
         }
 
+        
     }
     public void activaryDesactivarCartaAlUsarlaSlot2()
     {
@@ -246,6 +247,7 @@ public class Combat : MonoBehaviour
 
             if (cartafueUsada == false)
             {
+               
                 activaryDesactivarCartaAlUsarlaSlot1();
             }
             if (cartafueUsada2 == false)
@@ -440,6 +442,7 @@ public class Combat : MonoBehaviour
         if (carddisplayscriptinSlot1.myslot == 1 && playercontador == 0)
         {
             StartCoroutine(FadeAnimSlot1(0));
+            NormalCardsAnimation.CrossFade("CardAlreadyUsed", 0f);
         }
     }
     public void clickonslottwo()
@@ -447,7 +450,7 @@ public class Combat : MonoBehaviour
         if (carddisplayscriptinSlot2.myslot == 2 && playercontador == 0)
         {
             StartCoroutine(FadeAnimSlot2(1));
-
+            NormalCardsAnimation.CrossFade("CardAlreadyUsed2_", 0f);
         }
     }
     public void clickonslotthree()
@@ -455,7 +458,7 @@ public class Combat : MonoBehaviour
         if (carddisplayscriptinSlot3.myslot == 3 && playercontador == 0)
         {
             StartCoroutine(FadeAnimSlot3(2));
-
+            NormalCardsAnimation.CrossFade("CardAlreadyUsed3", 0f);
         }
     }
     public void clickonslotfour()
