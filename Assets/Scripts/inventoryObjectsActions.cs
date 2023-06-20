@@ -137,7 +137,8 @@ public class inventoryObjectsActions : MonoBehaviour
             //puerta
             if (KeyForTheBlackDoor == 1)
             {
-                animationDoor.Play("AnimationDoor");
+                animationDoor.SetBool("PlayAnimation", true);
+                animationDoor.CrossFade("AnimationDoor", 0f);
                 // Destroy(other.gameObject);
                 Destroy(DoorHolder);
             }

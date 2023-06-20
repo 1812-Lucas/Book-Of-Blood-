@@ -237,7 +237,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8077958658602386705}
-  - {fileID: 698525928744542753}
   - {fileID: 2009315323480608034}
   m_Father: {fileID: 8077958658664785622}
   m_RootOrder: 0
@@ -966,101 +965,6 @@ Transform:
   m_Father: {fileID: 8077958657708868334}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1025431881120384458
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8077958657340852550}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.17
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-      propertyPath: m_Name
-      value: Romualdo
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844210747320480167, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.972
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
---- !u!1 &214617029054281883 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-  m_PrefabInstance: {fileID: 1025431881120384458}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &4210982326558822642
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 214617029054281883}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-  m_Controller: {fileID: 9100000, guid: a1011284b747e6547b7d93a5122f8292, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!4 &698525928744542753 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 35d88ea5cc2c7d24393a75522e9d9fa7, type: 3}
-  m_PrefabInstance: {fileID: 1025431881120384458}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6117983486533681994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1209,7 +1113,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5123469846127668440, guid: b752c8dfdb930f94897ffc39df860951, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5123469846127668440, guid: b752c8dfdb930f94897ffc39df860951, type: 3}
       propertyPath: m_LocalScale.x
