@@ -67,43 +67,51 @@ public class Combat : MonoBehaviour
     public StadisticPlayer PlayerStadisticsScript;
 
     public CanvasGroup[] TheCanvasesForFade;
-    //int MoreVigorPerRound=10;
+
+    public bool drawButtonBool;
+    public Button drawButton;
+
 
     public object WaitForSeconds3 { get; private set; }
 
     public Animator VigorCardsAnimation;
     public Animator NormalCardsAnimation;
 
-    
+
 
 
     void Start()
     {
-       
+
     }
     void Update()
     {
 
     }
+    public void DrawButtonActiveOrNot()
+    {
+        drawButtonBool = !drawButtonBool;
+        drawButton.gameObject.SetActive(drawButtonBool);
 
+    }
     public void activaryDesactivarCartaAlUsarlaSlot1()
     {
         cartafueUsada = !cartafueUsada;
         cardOrange1.gameObject.SetActive(cartafueUsada);
         if (cartafueUsada == true)
         {
-            
+
             NormalCardsAnimation.CrossFade("NormalCardNewAnimation", 0f);
-            
+
         }
 
-        
+
     }
     public void activaryDesactivarCartaAlUsarlaSlot2()
     {
         cartafueUsada2 = !cartafueUsada2;
         cardOrange2.gameObject.SetActive(cartafueUsada2);
-        if(cartafueUsada2 == true)
+        if (cartafueUsada2 == true)
         {
             NormalCardsAnimation.CrossFade("NormalcardNewAnimation2", 0f);
         }
@@ -114,7 +122,7 @@ public class Combat : MonoBehaviour
     {
         cartafueUsada3 = !cartafueUsada3;
         cardOrange3.gameObject.SetActive(cartafueUsada3);
-        if(cartafueUsada3 == true)
+        if (cartafueUsada3 == true)
         {
             NormalCardsAnimation.CrossFade("NormalCardNewAnimation3", 0f);
         }
@@ -125,7 +133,7 @@ public class Combat : MonoBehaviour
     {
         cartafueUsada4 = !cartafueUsada4;
         cardOrange4.gameObject.SetActive(cartafueUsada4);
-        if(cartafueUsada4 == true)
+        if (cartafueUsada4 == true)
         {
             VigorCardsAnimation.CrossFade("VigorCardNewAnimation", 0f);
         }
@@ -134,7 +142,7 @@ public class Combat : MonoBehaviour
     {
         cartafueUsada5 = !cartafueUsada5;
         cardOrange5.gameObject.SetActive(cartafueUsada5);
-        if(cartafueUsada5 == true)
+        if (cartafueUsada5 == true)
         {
             VigorCardsAnimation.CrossFade("VigorCardNewAnimation2", 0f);
         }
@@ -143,7 +151,7 @@ public class Combat : MonoBehaviour
     {
         cartafueUsada6 = !cartafueUsada6;
         cardOrange6.gameObject.SetActive(cartafueUsada6);
-        if(cartafueUsada6 == true)
+        if (cartafueUsada6 == true)
         {
             VigorCardsAnimation.CrossFade("VigorCardNewAnimation3", 0f);
         }
@@ -211,7 +219,7 @@ public class Combat : MonoBehaviour
                 activaryDesactivarCartaAlUsarlaSlot6();
             }
             enemyattack = false;
-            
+
             Debug.Log("Final del turno");
             Debug.Log("Inicio el siguiente turno");
 
@@ -247,7 +255,7 @@ public class Combat : MonoBehaviour
 
             if (cartafueUsada == false)
             {
-               
+
                 activaryDesactivarCartaAlUsarlaSlot1();
             }
             if (cartafueUsada2 == false)
@@ -273,6 +281,77 @@ public class Combat : MonoBehaviour
             enemyattack = false;
 
         }
+    }
+    public void DrawAgain()
+    {
+        StartCoroutine(DrawCardsForAllSlotsAgain());
+    }
+
+    IEnumerator DrawCardsForAllSlotsAgain()
+    {
+        DrawButtonActiveOrNot();
+        foreach (CanvasGroup canvasGroup in TheCanvasesForFade)
+        {
+            float alpha = 1;
+
+            while (alpha >= 0)
+            {
+                alpha -= 0.5f;
+                yield return new WaitForEndOfFrame();
+                canvasGroup.alpha = alpha;
+            }
+        }
+        deckscript.SlotBool1 = false;
+        deckscript.SlotBool2 = false;
+        deckscript.SlotBool3 = false;
+        VigorDeckScript.SlotBool4 = false;
+        VigorDeckScript.SlotBool5 = false;
+        VigorDeckScript.SlotBool6 = false;
+
+
+        cardOrange1.gameObject.SetActive(false);
+        cardOrange2.gameObject.SetActive(false);
+        cardOrange3.gameObject.SetActive(false);
+        cardOrange4.gameObject.SetActive(false);
+        cardOrange5.gameObject.SetActive(false);
+        cardOrange6.gameObject.SetActive(false);
+
+        button1.interactable = false;
+        button2.interactable = false;
+        button3.interactable = false;
+        button4.interactable = false;
+        button5.interactable = false;
+        button6.interactable = false;
+
+        deckscript.DrawCards();
+        VigorDeckScript.DrawCards();
+        cardOrange1.gameObject.SetActive(true);
+        cardOrange2.gameObject.SetActive(true);
+        cardOrange3.gameObject.SetActive(true);
+        cardOrange4.gameObject.SetActive(true);
+        cardOrange5.gameObject.SetActive(true);
+        cardOrange6.gameObject.SetActive(true);
+        cartafueUsada = true;
+        cartafueUsada2 = true;
+        cartafueUsada3 = true;
+        cartafueUsada4 = true;
+        cartafueUsada5 = true;
+        cartafueUsada6 = true;
+        button1.interactable = true;
+        button2.interactable = true;
+        button3.interactable = true;
+        button4.interactable = true;
+        button5.interactable = true;
+        button6.interactable = true;
+        for (int i = 0; i <=5; i++)
+        {
+            TheCanvasesForFade[i].alpha = 1;
+        }
+
+
+
+
+
     }
     IEnumerator FadeAnimSlot1(int myplace)
     {
