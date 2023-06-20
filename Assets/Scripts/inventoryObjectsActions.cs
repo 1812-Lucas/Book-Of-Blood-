@@ -19,7 +19,12 @@ public class inventoryObjectsActions : MonoBehaviour
     // private bool inventoryTutorialTrigger = false;
 
     AudioSource MyAudioSource;
-    public AudioClip OpenCardBox;
+    public AudioClip DeadlyEvilPageTutorial;
+    public AudioClip doorOpen;
+    public AudioClip newCard;
+    public AudioClip UsePotionAudio;
+
+    private int contador;
 
 
     public int HealthPotions;
@@ -43,7 +48,7 @@ public class inventoryObjectsActions : MonoBehaviour
     private void Awake()
     {
         MyAudioSource = GetComponent<AudioSource>();
-       
+
     }
 
     public void PlayAudioInventory(AudioClip AC)
@@ -70,6 +75,7 @@ public class inventoryObjectsActions : MonoBehaviour
         {
             StadisticPlayerScript.health += 10;
             HealthPotions -= 1;
+            PlayAudioInventory(UsePotionAudio);
             HealthPotionParticles.Play();
             Debug.Log("Te has curado 10 puntos de salud con una mejora de salud");
         }
@@ -81,6 +87,7 @@ public class inventoryObjectsActions : MonoBehaviour
         {
             ActivatorsOfCards[CardsOnCountdown] = true;
             cardsOnInventory[CardsOnCountdown].gameObject.SetActive(ActivatorsOfCards[CardsOnCountdown]);
+            PlayAudioInventory(newCard);
             Debug.Log("Has obtenido una nueva carta [i] para ver el inventario");
             /*if (inventoryTutorialTrigger == false)
             {
@@ -105,7 +112,7 @@ public class inventoryObjectsActions : MonoBehaviour
             WhispersCount += 1;
             Destroy(other.gameObject);
 
-            PlayAudioInventory(OpenCardBox);
+            PlayAudioInventory(DeadlyEvilPageTutorial);
             if (WhispersCount == 1)
             {
                 Debug.Log("Escucha atentamente Oswald, el combate está cerca. tienes dos mazos. uno de ellos me alimentará de tu vigor para darte" +
@@ -134,13 +141,20 @@ public class inventoryObjectsActions : MonoBehaviour
         }
         if (other.gameObject.layer == 7)
         {
+           
             //puerta
             if (KeyForTheBlackDoor == 1)
             {
                 animationDoor.SetBool("PlayAnimation", true);
+                
                 animationDoor.CrossFade("AnimationDoor", 0f);
                 // Destroy(other.gameObject);
                 Destroy(DoorHolder);
+            }
+            if (contador == 0)
+            {
+                PlayAudioInventory(doorOpen);
+                contador += 1;
             }
 
         }

@@ -91,7 +91,7 @@ public class CardDisplay : MonoBehaviour
         {
             case "Sacred Font":
                 StatsPlayerScript.health += 5;
-                PlayAudio(NormalAudioCard);
+                PlayAudio(komori);
                 Debug.Log("Te has curado 5 puntos de salud");
                 break;
 
@@ -105,7 +105,7 @@ public class CardDisplay : MonoBehaviour
                 PlayAudio(DestructionAudio);
                 break;
             case "cristal Pierce":
-                PlayAudio(NormalAudioCard);
+                PlayAudio(komori);
                 break;
             case "Magestic":
                 PlayAudio(komori);

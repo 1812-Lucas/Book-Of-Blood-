@@ -26,11 +26,18 @@ public class VigorCardsDisplay : MonoBehaviour
     public AudioClip WarriorPendantAudio;
     public AudioClip DeadEyeAudio;
     public AudioClip CaosAudio;
+    public AudioClip arrowhit;
+    public AudioClip magicSuntemple;
+    public AudioClip magicCircle;
+    public AudioClip windowFixing;
+    public AudioClip claps;
+    public AudioClip healUp;
+    public AudioClip iceMagic;
+    public AudioClip remorseFemale;
 
-
-   // private void Awake()
+    // private void Awake()
     //{
-        //MyAudioSource = GetComponent<AudioSource>();
+    //MyAudioSource = GetComponent<AudioSource>();
     //}
     public void PlayAudio(AudioClip AC)
     {
@@ -81,6 +88,7 @@ public class VigorCardsDisplay : MonoBehaviour
 
                 protectiontottempasive();
                 enemyy.health -= 4;
+                PlayAudio(arrowhit);
                 if (stadisticplayerScipt.health <= 20)
                 {
                     enemyy.health -= 3;
@@ -90,6 +98,7 @@ public class VigorCardsDisplay : MonoBehaviour
             case "Sacrifice":
 
                 enemyy.health -= 12;
+                PlayAudio(magicSuntemple);
                 protectiontottempasive();
                 stadisticplayerScipt.health -= 3;
                 Debug.Log("Te has inflingido daño pero mucho mas al enemigo");
@@ -97,6 +106,7 @@ public class VigorCardsDisplay : MonoBehaviour
             case "Spirit Growth":
 
                 SpiritGrowthStacks += 1;
+                PlayAudio(magicCircle);
                 enemyy.health -= 1;
                 protectiontottempasive();
                 if (SpiritGrowthStacks >= 3)
@@ -106,6 +116,8 @@ public class VigorCardsDisplay : MonoBehaviour
                 }
                 break;
             case "Unbreakable":
+
+                PlayAudio(windowFixing);
                 stadisticplayerScipt.vigor += 5;
                 protectiontottempasive();
                 Debug.Log("Te has aumentado 5 puntos de vigor");
@@ -117,7 +129,13 @@ public class VigorCardsDisplay : MonoBehaviour
                 ProtectionTottemStacks += 1;
                 if (ProtectionTottemStacks == 5)
                 {
+                    PlayAudio(remorseFemale);
                     Debug.Log("El tottem de proteccción ya está activado");
+                }
+                else
+                {
+                    PlayAudio(claps);
+
                 }
                 break;
             case "Caos":
@@ -137,6 +155,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 break;
             case "Prominence burn":
                 enemyy.health -= 3;
+                PlayAudio(healUp);
                 stadisticplayerScipt.health += 3;
                 protectiontottempasive();
                 Debug.Log("Has inflingido 3 de daño y te has curado 3 puntos de salud");
@@ -144,6 +163,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 break;
             case "Absolution":
                 enemyy.health -= 6;
+                PlayAudio(iceMagic);
                 stadisticplayerScipt.health += 4;
                 protectiontottempasive();
                 Debug.Log("Has inflingido 6 de daño y te has curado 4 puntos de salud");
@@ -151,6 +171,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 break;
             case "Uncontrolled pride":
                 enemyy.health -= 5;
+                PlayAudio(CaosAudio);
                 Debug.Log("Has inflingido 5 de daño");
                 protectiontottempasive();
                 Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
