@@ -28,5 +28,6 @@ public class StadisticPlayer : MonoBehaviour
     public void PlayerDies()
     {
         SceneManager.LoadScene("LoseScene");
+        Cursor.lockState = CursorLockMode.Confined;
     }
 }

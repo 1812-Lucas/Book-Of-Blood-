@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -48,9 +49,11 @@ public class Player : MonoBehaviour
     public int vigorPoints = 40;
     public float gravity = 9.8f;
 
-    public float _currenthealth; 
+    public float _currenthealth;
 
-    
+    public string nombreEscenaACargar;
+
+
 
     private void Awake()
     {
@@ -95,10 +98,19 @@ public class Player : MonoBehaviour
         {
           view.Isrunning(false);
         }
+
+
     }
 
-    
-    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("ObjetoColisionable"))
+        {
+            SceneManager.LoadScene(nombreEscenaACargar);
+            Cursor.lockState = CursorLockMode.Confined;
+        }
+    }
+
     void camDirection()
     {
         camForward = mainCamera.transform.forward;

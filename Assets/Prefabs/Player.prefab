@@ -313,6 +313,7 @@ MonoBehaviour:
   vigorPoints: 40
   gravity: 9.8
   _currenthealth: 0
+  nombreEscenaACargar: WInScene
 --- !u!54 &8077958657708868332
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -392,7 +393,10 @@ MonoBehaviour:
   - {fileID: 0}
   ActivatorsOfCards: 00000000000000000000000000000000000000
   CardsOnCountdown: 0
-  OpenCardBox: {fileID: 8300000, guid: 70910e94ac9394d4f86ff5736ca1811f, type: 3}
+  DeadlyEvilPageTutorial: {fileID: 0}
+  doorOpen: {fileID: 0}
+  newCard: {fileID: 0}
+  UsePotionAudio: {fileID: 0}
   HealthPotions: 0
   StadisticPlayerScript: {fileID: 5273619601675263601}
   HealthPotionParticles: {fileID: 2920806326754537092}
