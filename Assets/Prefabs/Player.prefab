@@ -516,6 +516,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  drawButtonBool: 1
+  drawButton: {fileID: 0}
+  VigorCardsAnimation: {fileID: 0}
+  NormalCardsAnimation: {fileID: 0}
 --- !u!114 &7910656068851151482
 MonoBehaviour:
   m_ObjectHideFlags: 0

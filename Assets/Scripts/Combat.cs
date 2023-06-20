@@ -343,7 +343,7 @@ public class Combat : MonoBehaviour
         button4.interactable = true;
         button5.interactable = true;
         button6.interactable = true;
-        for (int i = 0; i <=5; i++)
+        for (int i = 0; i <= 5; i++)
         {
             TheCanvasesForFade[i].alpha = 1;
         }
@@ -545,25 +545,37 @@ public class Combat : MonoBehaviour
         if (PlayerStadisticsScript.vigor >= carddisplayscriptinSlot4.actualizarinformacióncostedeVigor())
         {
             StartCoroutine(FadeAnimSlot4(3));
-            VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed", 0f);
         }
+            if (PlayerStadisticsScript.vigor < carddisplayscriptinSlot4.actualizarinformacióncostedeVigor())
+            {
+
+                VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed", 0f);
+            }
     }
     public void clickonslotfive()
     {
         if (PlayerStadisticsScript.vigor >= carddisplayscriptinSlot5.actualizarinformacióncostedeVigor())
         {
             StartCoroutine(FadeAnimSlot5(4));
-            VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed2", 0f);
 
         }
+            if (PlayerStadisticsScript.vigor < carddisplayscriptinSlot5.actualizarinformacióncostedeVigor())
+            {
+
+                VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed2", 0f);
+            }
     }
     public void clickonslotsix()
     {
         if (PlayerStadisticsScript.vigor >= carddisplayscriptinSlot6.actualizarinformacióncostedeVigor())
         {
             StartCoroutine(FadeAnimSlot6(5));
-            VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed3", 0f);
 
         }
+            if (PlayerStadisticsScript.vigor < carddisplayscriptinSlot6.actualizarinformacióncostedeVigor())
+            {
+
+                VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed3", 0f);
+            }
     }
 }
