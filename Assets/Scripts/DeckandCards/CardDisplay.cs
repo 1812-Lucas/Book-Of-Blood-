@@ -27,9 +27,13 @@ public class CardDisplay : MonoBehaviour
     public AudioClip BigBangAudio;
     public AudioClip fireExplosionAudio;
     public AudioClip DestructionAudio;
-    public AudioClip NormalAudioCard;
 
+    public AudioClip NormalAudioCard;
+    public AudioClip komori;
+    public AudioClip musicBox;
+    public AudioClip railgun;
    
+
     private void Start()
     {
         
@@ -102,6 +106,15 @@ public class CardDisplay : MonoBehaviour
                 break;
             case "cristal Pierce":
                 PlayAudio(NormalAudioCard);
+                break;
+            case "Magestic":
+                PlayAudio(komori);
+                break;
+            case "Mortal Punch":
+                PlayAudio(railgun);
+                break;
+            case "Weak Punch":
+                PlayAudio(musicBox);
                 break;
 
 
