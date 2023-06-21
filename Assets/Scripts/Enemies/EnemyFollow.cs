@@ -4,33 +4,35 @@ using UnityEngine;
 
 public class EnemyFollow : MonoBehaviour
 {
-    public Transform player;  // Referencia al transform del jugador
-    public float range = 10f; // Rango en el que el enemigo comenzará a seguir al jugador
-    public float speed = 5f;  // Velocidad de movimiento del enemigo
-    private bool isFollowing; // Indica si el enemigo está siguiendo al jugador
+    public Transform player;
+    public float range = 10f;
+    public float speed = 5f;
+    private bool isFollowing;
+    Charview view;
 
+    private void Awake()
+    {
+        view = GetComponent<Charview>();
+    }
     void Update()
     {
-        // Calcula la distancia entre el enemigo y el jugador
         float distance = Vector3.Distance(transform.position, player.position);
 
-        // Si el jugador está dentro del rango, comienza a seguirlo
         if (distance <= range)
         {
             isFollowing = true;
+            view.Isrunning(true);
         }
         else
         {
             isFollowing = false;
+            view.Isrunning(false);
         }
 
-        // Si está siguiendo al jugador, mueve al enemigo hacia él
         if (isFollowing)
         {
-            // Calcula la dirección hacia el jugador
             Vector3 direction = (player.position - transform.position).normalized;
 
-            // Mueve al enemigo en la dirección del jugador con la velocidad especificada
             transform.position += direction * speed * Time.deltaTime;
         }
     }

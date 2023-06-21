@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
 
     public CharacterController player;
     public float playerspeed;
-    public int _maxhealth = 30; 
+    public int _maxhealth = 30;
     public int vigorPoints = 40;
     public float gravity = 9.8f;
 
@@ -61,11 +61,7 @@ public class Player : MonoBehaviour
     }
     private void Start()
     {
-        
-
         player = GetComponent<CharacterController>();
-
-        
     }
     private void Update()
     {
@@ -90,13 +86,13 @@ public class Player : MonoBehaviour
 
         player.Move(movePLayer * playerspeed * Time.deltaTime);
 
-        if(movePLayer.magnitude > 0.3f)
+        if (movePLayer.magnitude > 0.3f)
         {
             view.Isrunning(true);
         }
         else
         {
-          view.Isrunning(false);
+            view.Isrunning(false);
         }
 
 
