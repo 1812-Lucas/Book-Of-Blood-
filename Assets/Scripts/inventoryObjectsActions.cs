@@ -108,7 +108,7 @@ public class inventoryObjectsActions : MonoBehaviour
             healthPotionMiniParticles.Stop();
            
             
-            Debug.Log("Obtuviste una pocion de curacion, para usarla puedes presionar H o tocar el icono desde el inventario, pero recuerda que solamente podras curarte estando en combate");
+            Debug.Log("Obtuviste una pocion de curacion, solamente podras utilizarla en combate presionando la tecla H o su boton correspondiente");
         }
 
         if (other.gameObject.layer == 6)
