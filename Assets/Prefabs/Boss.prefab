@@ -1329,6 +1329,8 @@ GameObject:
   - component: {fileID: 3977171306973590695}
   - component: {fileID: 3977171306973590692}
   - component: {fileID: 2343242780130852906}
+  - component: {fileID: 6922665666019387247}
+  - component: {fileID: -117158664783978816}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -1406,6 +1408,38 @@ MonoBehaviour:
   ataqueEnemigo2SpawnPoint_Combate2: {fileID: 0}
   ataqueEnemy1SpawnPoint_Combate3: {fileID: 0}
   ataqueEnemigo2SpawnPoint_Combate3: {fileID: 0}
+--- !u!95 &6922665666019387247
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4319138868206258675}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: e43fb10ea498ce3409fad19b51bfe756, type: 3}
+  m_Controller: {fileID: 9100000, guid: 5001949f5281c6141875293224fa9aa8, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-117158664783978816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4319138868206258675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355303126e14d824680cbf61d03a4de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4801954724113906737
 GameObject:
   m_ObjectHideFlags: 0

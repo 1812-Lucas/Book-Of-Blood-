@@ -28,7 +28,10 @@ public class Enemy : MonoBehaviour
     private ParticleSystem ataqueEnemigo2_combate3;
     private ParticleSystem debris_combate3;
 
-
+    public virtual void Awake()
+    {
+        
+    }
     public virtual void Start()
     {
         Enemyapears();
@@ -72,7 +75,7 @@ public class Enemy : MonoBehaviour
     }
     public virtual void Enemyturn()
     {
-
+        
     }
     
     public void Setcombat(CombatPosition combatPosition)

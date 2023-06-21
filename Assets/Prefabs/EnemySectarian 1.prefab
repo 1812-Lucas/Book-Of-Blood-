@@ -1828,6 +1828,8 @@ GameObject:
   - component: {fileID: 1785442630259735097}
   - component: {fileID: 9149010368841475027}
   - component: {fileID: 6348709470255592744}
+  - component: {fileID: 8036029520711402205}
+  - component: {fileID: 4735365606495131048}
   m_Layer: 0
   m_Name: EnemySectarian 1
   m_TagString: Untagged
@@ -1905,6 +1907,38 @@ CapsuleCollider:
   m_Height: 2.0420156
   m_Direction: 1
   m_Center: {x: -0.016334534, y: 0.9925072, z: 0}
+--- !u!95 &8036029520711402205
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6107105603314195914}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: a0de05d030d441145b49a944c227c565, type: 3}
+  m_Controller: {fileID: 9100000, guid: 87c6b498d69e1184a9218da85c767170, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4735365606495131048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6107105603314195914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355303126e14d824680cbf61d03a4de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6228420114507762158
 GameObject:
   m_ObjectHideFlags: 0

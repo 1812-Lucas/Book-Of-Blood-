@@ -746,6 +746,8 @@ GameObject:
   - component: {fileID: 2188277551262375930}
   - component: {fileID: 2254953784624751224}
   - component: {fileID: 8745720974087836029}
+  - component: {fileID: 1547160549447698244}
+  - component: {fileID: 4850567513902530302}
   m_Layer: 0
   m_Name: EnemyTank 1
   m_TagString: Untagged
@@ -823,6 +825,38 @@ CapsuleCollider:
   m_Height: 2.0420156
   m_Direction: 1
   m_Center: {x: -0.016334534, y: 0.9925072, z: 0}
+--- !u!95 &1547160549447698244
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3232888709861344664}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: adfaad022894e6441bec478c209c9866, type: 3}
+  m_Controller: {fileID: 9100000, guid: 1c718fc1df73d7f4e8a331e08a002ff1, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4850567513902530302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3232888709861344664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355303126e14d824680cbf61d03a4de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3346878276677996988
 GameObject:
   m_ObjectHideFlags: 0

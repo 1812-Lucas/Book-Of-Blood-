@@ -73,7 +73,7 @@ public class inventoryObjectsActions : MonoBehaviour
     {
         if (HealthPotions > 0 && combatpositionscript.CombatON == true)
         {
-            StadisticPlayerScript.health += 10;
+            StadisticPlayerScript.health += 30;
             HealthPotions -= 1;
             PlayAudioInventory(UsePotionAudio);
             HealthPotionParticles.Play();
