@@ -341,10 +341,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.2
-  m_Height: 1.4
+  m_Radius: 0.3610817
+  m_Height: 1.6624072
   m_Direction: 1
-  m_Center: {x: -0.01, y: 0.87, z: 0}
+  m_Center: {x: -0.01000002, y: 1.0012037, z: 0.1610817}
 --- !u!143 &2164653984255317432
 CharacterController:
   m_ObjectHideFlags: 0
@@ -394,10 +394,10 @@ MonoBehaviour:
   - {fileID: 0}
   ActivatorsOfCards: 00000000000000000000000000000000000000
   CardsOnCountdown: 0
-  DeadlyEvilPageTutorial: {fileID: 0}
-  doorOpen: {fileID: 0}
-  newCard: {fileID: 0}
-  UsePotionAudio: {fileID: 0}
+  DeadlyEvilPageTutorial: {fileID: 8300000, guid: a604987c90e50f54283bbf6936b745c8, type: 3}
+  doorOpen: {fileID: 8300000, guid: af8542efcbb271e41a95284a9b3d556b, type: 3}
+  newCard: {fileID: 8300000, guid: 120669a9b14f2154e94d7ebeb03fd389, type: 3}
+  UsePotionAudio: {fileID: 8300000, guid: 36b0a3a342ef64c479d17593b6f704a7, type: 3}
   HealthPotions: 0
   StadisticPlayerScript: {fileID: 5273619601675263601}
   HealthPotionParticles: {fileID: 2920806326754537092}
@@ -407,6 +407,9 @@ MonoBehaviour:
   healthPotionLight: {fileID: 0}
   lightCardbox: {fileID: 0}
   demonWhispersLight: {fileID: 0}
+  healthPotionLight2: {fileID: 0}
+  healthPotionParticles2: {fileID: 0}
+  healthPotionMiniParticles2: {fileID: 0}
   animationDoor: {fileID: 0}
 --- !u!114 &5299470838625391949
 MonoBehaviour:
@@ -1126,15 +1129,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4306792746029836758, guid: 98ab9e6e17a9bad43a52a64250ae2158, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 249.56
+      value: -0.008
       objectReference: {fileID: 0}
     - target: {fileID: 4306792746029836758, guid: 98ab9e6e17a9bad43a52a64250ae2158, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0000054836273
+      value: 0.192
       objectReference: {fileID: 0}
     - target: {fileID: 4306792746029836758, guid: 98ab9e6e17a9bad43a52a64250ae2158, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -39.449
+      value: -0.22
       objectReference: {fileID: 0}
     - target: {fileID: 4306792746029836758, guid: 98ab9e6e17a9bad43a52a64250ae2158, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1237,6 +1240,10 @@ PrefabInstance:
     - target: {fileID: 5499431717857736290, guid: b752c8dfdb930f94897ffc39df860951, type: 3}
       propertyPath: m_Name
       value: Modelo Genio - Texturas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499431717857736290, guid: b752c8dfdb930f94897ffc39df860951, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b752c8dfdb930f94897ffc39df860951, type: 3}
