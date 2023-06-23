@@ -77,6 +77,8 @@ public class Combat : MonoBehaviour
     public Animator VigorCardsAnimation;
     public Animator NormalCardsAnimation;
 
+    public int devilEyesPassive;
+
 
 
 
@@ -222,6 +224,8 @@ public class Combat : MonoBehaviour
 
             Debug.Log("Final del turno");
             Debug.Log("Inicio el siguiente turno");
+
+            devilEyesPassive += 1;
 
             //if (enemyy.attackType == 1)
             //{

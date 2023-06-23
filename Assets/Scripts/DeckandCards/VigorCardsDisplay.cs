@@ -12,8 +12,12 @@ public class VigorCardsDisplay : MonoBehaviour
 
     public Text vigortext;
     public VigorDeck vigorscriptdeck;
+    public inventoryObjectsActions InvObjActionsScript;
+    public Combat combatScript;
     public int myslot;
     public int thevigorCostOfMyCard;
+
+    private int bloodDrainerCounter;
 
     public string NombredelaCartadeVigoryEjecutarPasiva;
     public Player player;
@@ -176,6 +180,82 @@ public class VigorCardsDisplay : MonoBehaviour
                 protectiontottempasive();
                 Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
                 break;
+
+            case "absortion":
+                if (stadisticplayerScipt.vigor <= 3)
+                {
+                    stadisticplayerScipt.vigor = 7;
+                }
+                break;
+            case "Balance of Death":
+                int i = enemyy.health - stadisticplayerScipt.health;
+                if (i < 0)
+                {
+                    i*= -1;
+                    enemyy.health -= i;
+                }
+                else
+                {
+                    enemyy.health -= i;
+                }
+                break;
+            case "Balance of Life":
+                int u = enemyy.health - stadisticplayerScipt.health;
+                if (u < 0)
+                {
+                    u *= -1;
+                    stadisticplayerScipt.health -= u;
+                }
+                else
+                {
+                    stadisticplayerScipt.health -= u;
+                }
+
+                break;
+
+            case "Blood Drainer":
+                enemyy.health -= 4;
+                bloodDrainerCounter += 1;
+
+                if (bloodDrainerCounter == 3)
+                {
+                    InvObjActionsScript.HealthPotions += 1;
+                    bloodDrainerCounter = 0;
+                }
+                break;
+            case "Death Reaper":
+                stadisticplayerScipt.vigor += 7;
+                if (stadisticplayerScipt.health <= 15)
+                {
+                    enemyy.health = 0;
+                }
+                break;
+            case "Devil Eyes":
+                stadisticplayerScipt.health += combatScript.devilEyesPassive;
+                break;
+            case "Evil Pendant":
+                stadisticplayerScipt.health += 7;
+                stadisticplayerScipt.vigor += 6;
+                break;
+            case "Souls Strike":
+                enemyy.health -= 5;
+                if (stadisticplayerScipt.health < stadisticplayerScipt.vigor)
+                {
+                    enemyy.health = 0;
+                }
+                break;
+            case "Thanatos":
+                enemyy.health -= 5;
+                if (stadisticplayerScipt.health <= 15)
+                {
+                    stadisticplayerScipt.vigor += 15;
+                }
+                break;
+                
+
+
+
+
         }
 
 
