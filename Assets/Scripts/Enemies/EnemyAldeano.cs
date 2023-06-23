@@ -16,11 +16,11 @@ public class EnemyAldeano : Enemy
         if (health <= 20 && health > 15)
         {
             int Numero = Random.Range(1, 101);
-            if (Numero >= 20)
+            if (Numero >= 10)
             {
                 BasicDamage();
             }
-            else if (Numero < 20)
+            else if (Numero < 10)
             {
                 HeavyDamage();
             }
@@ -28,11 +28,11 @@ public class EnemyAldeano : Enemy
         else if (health > 5 && health <= 15)
         {
             int Numero2 = Random.Range(1, 101);
-            if (Numero2 >= 30)
+            if (Numero2 >= 15)
             {
                 BasicDamage();
             }
-            else if (Numero2 < 30)
+            else if (Numero2 < 15)
             {
                 HeavyDamage();
             }
@@ -40,15 +40,15 @@ public class EnemyAldeano : Enemy
         else if (health > 0 && health <= 5)
         {
             int Numero3 = Random.Range(1, 101);
-            if (Numero3 >= 40)
+            if (Numero3 >= 20)
             {
                 BasicDamage();
             }
-            else if (Numero3 < 40)
+            else if (Numero3 < 20)
             {
                 HeavyDamage();
             }
-            if (Numero3 <= 20)
+            if (Numero3 <= 10)
             {
                 Regeneration();
             }
