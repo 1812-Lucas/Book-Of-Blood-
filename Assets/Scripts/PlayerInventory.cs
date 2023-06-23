@@ -44,11 +44,6 @@ public class PlayerInventory : MonoBehaviour
     }
     private void Update()
     {
-        /* if (isMenuActive)
-         {
-             PlayAudio(MyEffectAudio);
-         }*/
-
         EffectAudioPlayer();
 
         if (CombatPositionScript.battlePosition == true)
@@ -83,14 +78,6 @@ public class PlayerInventory : MonoBehaviour
         {
             if (isMenuActive)
                 ToggleMenu();
-        }
-
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            if (!isInventoryActive && !isMenuActive)
-            {
-                ToggleControls();
-            }
         }
     }
     public void ToggleInventory()
