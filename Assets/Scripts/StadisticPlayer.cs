@@ -9,7 +9,10 @@ public class StadisticPlayer : MonoBehaviour
 {
     public int health = 50;
     public int vigor = 1;
-    public int defense;
+    public int damageReduction;
+    public int bloodFontPassive;
+    public int healingRingPassive;
+    public int antihealingToEnemies;
     public GameManager _myGM;
 
     public void Update()
