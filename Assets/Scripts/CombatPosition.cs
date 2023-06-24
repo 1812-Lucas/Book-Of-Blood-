@@ -48,6 +48,15 @@ public class CombatPosition : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Confined;
         }
+
+        if (CombatON == false)
+        {
+            combatscript.NormalCardsAnimation.StopPlayback();
+            combatscript.NormalCardsAnimation.Rebind();
+            combatscript.VigorCardsAnimation.StopPlayback();
+            combatscript.VigorCardsAnimation.Rebind();
+
+        }
     }
 
     private void Awake()
@@ -84,11 +93,7 @@ public class CombatPosition : MonoBehaviour
             playerRB.constraints = RigidbodyConstraints.FreezeRotation;
             CombatON = false;
             enemyInvoke = false;
-
-            combatscript.NormalCardsAnimation.StopPlayback();
-            //combatscript.NormalCardsAnimation.Rebind();
-            combatscript.VigorCardsAnimation.StopPlayback();
-            //combatscript.VigorCardsAnimation.Rebind();
+            combatscript.DrawAgain();
 
             Debug.Log("Saliste del combate");
         }
@@ -96,8 +101,7 @@ public class CombatPosition : MonoBehaviour
 
     public void combatON()
     {
-        combatscript.NormalCardsAnimation.Rebind();
-        combatscript.VigorCardsAnimation.Rebind();
+
         // SwitchCamera(cameras[1]);
         battlePosition = true;
         PlayAudio(CardSwipe);

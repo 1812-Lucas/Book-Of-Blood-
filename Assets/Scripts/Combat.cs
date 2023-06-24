@@ -102,14 +102,11 @@ public class Combat : MonoBehaviour
         cardOrange1.gameObject.SetActive(cartafueUsada);
         if (cartafueUsada == true)
         {
-            NormalCardsAnimation.SetBool("NormalNewCard", true);
+           
             NormalCardsAnimation.CrossFade("NormalCardNewAnimation", 0f);
 
         }
-        else
-        {
-            NormalCardsAnimation.SetBool("NormalNewCard", false);
-        }
+        
 
 
     }
@@ -119,14 +116,10 @@ public class Combat : MonoBehaviour
         cardOrange2.gameObject.SetActive(cartafueUsada2);
         if (cartafueUsada2 == true)
         {
-            NormalCardsAnimation.SetBool("NormalNewCard2", true);
+           
             NormalCardsAnimation.CrossFade("NormalcardNewAnimation2", 0f);
         }
-        else
-        {
-            NormalCardsAnimation.SetBool("NormalNewCard2", false);
-        }
-
+        
 
     }
     public void activaryDesactivarCartaAlUsarlaSlot3()
@@ -135,13 +128,10 @@ public class Combat : MonoBehaviour
         cardOrange3.gameObject.SetActive(cartafueUsada3);
         if (cartafueUsada3 == true)
         {
-            NormalCardsAnimation.SetBool("NormalNewCard3", true);
+          
             NormalCardsAnimation.CrossFade("NormalCardNewAnimation3", 0f);
         }
-        else
-        {
-            NormalCardsAnimation.SetBool("NormalNewCard3", false);
-        }
+        
 
     }
 
@@ -151,13 +141,10 @@ public class Combat : MonoBehaviour
         cardOrange4.gameObject.SetActive(cartafueUsada4);
         if (cartafueUsada4 == true)
         {
-            VigorCardsAnimation.SetBool("NewCard", true);
+            
             VigorCardsAnimation.CrossFade("VigorCardNewAnimation", 0f);
         }
-        else
-        {
-            VigorCardsAnimation.SetBool("NewCard", false);
-        }
+       
     }
     public void activaryDesactivarCartaAlUsarlaSlot5()
     {
@@ -165,13 +152,10 @@ public class Combat : MonoBehaviour
         cardOrange5.gameObject.SetActive(cartafueUsada5);
         if (cartafueUsada5 == true)
         {
-            VigorCardsAnimation.SetBool("NewCard2", true);
+           
             VigorCardsAnimation.CrossFade("VigorCardNewAnimation2", 0f);
         }
-        else
-        {
-            VigorCardsAnimation.SetBool("NewCard2", false);
-        }
+        
     }
     public void activaryDesactivarCartaAlUsarlaSlot6()
     {
@@ -179,13 +163,10 @@ public class Combat : MonoBehaviour
         cardOrange6.gameObject.SetActive(cartafueUsada6);
         if (cartafueUsada6 == true)
         {
-            VigorCardsAnimation.SetBool("NewCard3", true);
+            
             VigorCardsAnimation.CrossFade("VigorCardNewAnimation3", 0f);
         }
-        else
-        {
-            VigorCardsAnimation.SetBool("NewCard3", false);
-        }
+       
     }
 
     public void setenemy(Enemy enemy)
@@ -585,12 +566,12 @@ public class Combat : MonoBehaviour
         if (PlayerStadisticsScript.vigor >= carddisplayscriptinSlot4.actualizarinformacióncostedeVigor())
         {
             StartCoroutine(FadeAnimSlot4(3));
-            VigorCardsAnimation.SetBool("CardUsed", false);
+           
         }
         else if (PlayerStadisticsScript.vigor < carddisplayscriptinSlot4.actualizarinformacióncostedeVigor())
         {
 
-            VigorCardsAnimation.SetBool("CardUsed", true);
+            
             VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed", 0f);
         }
     }
@@ -599,13 +580,13 @@ public class Combat : MonoBehaviour
         if (PlayerStadisticsScript.vigor >= carddisplayscriptinSlot5.actualizarinformacióncostedeVigor())
         {
             StartCoroutine(FadeAnimSlot5(4));
-            VigorCardsAnimation.SetBool("CardUsed2", false);
+            
 
         }
         else if (PlayerStadisticsScript.vigor < carddisplayscriptinSlot5.actualizarinformacióncostedeVigor())
         {
 
-            VigorCardsAnimation.SetBool("CardUsed2", true);
+           
             VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed2", 0f);
         }
     }
@@ -614,13 +595,12 @@ public class Combat : MonoBehaviour
         if (PlayerStadisticsScript.vigor >= carddisplayscriptinSlot6.actualizarinformacióncostedeVigor())
         {
             StartCoroutine(FadeAnimSlot6(5));
-            VigorCardsAnimation.SetBool("CardUsed3", false);
+            
 
         }
         else if (PlayerStadisticsScript.vigor < carddisplayscriptinSlot6.actualizarinformacióncostedeVigor())
         {
 
-            VigorCardsAnimation.SetBool("CardUsed3", true);
             VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed3", 0f);
         }
     }
