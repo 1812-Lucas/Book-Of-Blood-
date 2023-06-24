@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 public class EnemyAldeano : Enemy
 {
+    private Animator myAnim;
     public override void Awake()
     {
+        myAnim = GetComponentInChildren<Animator>();
         base.Awake();
     }
     public override void Start()
@@ -13,6 +15,7 @@ public class EnemyAldeano : Enemy
     }
     public override void Enemyturn()
     {
+        //Isattack(true);
         if (health <= 20 && health > 15)
         {
             int Numero = Random.Range(1, 101);
@@ -81,5 +84,9 @@ public class EnemyAldeano : Enemy
             Debug.Log("the enemy healed 3 points of health");
 
         }
+    }
+    public void Isattack(bool attack)
+    {
+        myAnim.SetBool("isattack", attack);
     }
 }
