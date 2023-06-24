@@ -55,19 +55,28 @@ public class EnemySectarian : Enemy
     {
         PlayerStadisticsScript.health -= 3;
         Debug.Log("El enemigo inflingio 3 de daño al jugador con un ataque basico");
-       
+
         PlayBasicAttackParticles();
     }
     public void HeavyDamage()
     {
         PlayerStadisticsScript.health -= 5;
         Debug.Log("El enemigo inflingio 5 de daño al jugador con un golpe pesado");
-       
+
         PlayHeavyAttackParticles();
     }
     public void Regeneration()
     {
         health += 5;
-        Debug.Log("El enemigo se curo 5 de vida");
+        health -= PlayerStadisticsScript.antihealingToEnemies;
+        if (PlayerStadisticsScript.antihealingToEnemies > 0)
+        {
+            Debug.Log("enemy got damage by Cursed Mud when tried to heal himself with 5 points of health");
+        }
+        else
+        {
+            Debug.Log("the enemy healed 5 points of health");
+
+        }
     }
 }

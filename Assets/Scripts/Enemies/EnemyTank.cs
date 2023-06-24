@@ -66,6 +66,16 @@ public class EnemyTank : Enemy
     public void Regeneration()
     {
         health += 6;
-        Debug.Log("El enemigo se curo 6 de vida");
+        health -= PlayerStadisticsScript.antihealingToEnemies;
+        if (PlayerStadisticsScript.antihealingToEnemies > 0)
+        {
+            Debug.Log("enemy got damage by Cursed Mud when tried to heal himself with 6 points of health");
+        }
+        else
+        {
+            Debug.Log("the enemy healed 6 points of health");
+
+        }
+
     }
 }

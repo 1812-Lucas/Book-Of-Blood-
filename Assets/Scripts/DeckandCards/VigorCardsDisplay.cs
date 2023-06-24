@@ -17,13 +17,13 @@ public class VigorCardsDisplay : MonoBehaviour
     public int myslot;
     public int thevigorCostOfMyCard;
 
-    private int bloodDrainerCounter;
+    
 
     public string NombredelaCartadeVigoryEjecutarPasiva;
     public Player player;
     public StadisticPlayer stadisticplayerScipt;
-    private int SpiritGrowthStacks;
-    private int ProtectionTottemStacks;
+    
+   
     public Enemy enemyy;
 
     public AudioSource MyAudioSource;
@@ -109,14 +109,14 @@ public class VigorCardsDisplay : MonoBehaviour
                 break;
             case "Spirit Growth":
 
-                SpiritGrowthStacks += 1;
+                stadisticplayerScipt.SpiritGrowthStacks += 1;
                 PlayAudio(magicCircle);
                 enemyy.health -= 1;
                 protectiontottempasive();
-                if (SpiritGrowthStacks >= 3)
+                if (stadisticplayerScipt.SpiritGrowthStacks >= 3)
                 {
-                    enemyy.health -= 3;
-                    Debug.Log("Has inflingido 8 de daño con Spirit Growth");
+                    enemyy.health -= 4;
+                    Debug.Log("Has inflingido 5 de daño con Spirit Growth");
                 }
                 break;
             case "Unbreakable":
@@ -130,8 +130,8 @@ public class VigorCardsDisplay : MonoBehaviour
                 stadisticplayerScipt.health += 1;
                 protectiontottempasive();
                 Debug.Log("Te has curado 1 puntos de salud");
-                ProtectionTottemStacks += 1;
-                if (ProtectionTottemStacks == 5)
+                stadisticplayerScipt.ProtectionTottemStacks += 1;
+                if (stadisticplayerScipt.ProtectionTottemStacks == 5)
                 {
                     PlayAudio(remorseFemale);
                     Debug.Log("El tottem de proteccción ya está activado");
@@ -215,12 +215,12 @@ public class VigorCardsDisplay : MonoBehaviour
 
             case "Blood Drainer":
                 enemyy.health -= 4;
-                bloodDrainerCounter += 1;
+                stadisticplayerScipt.bloodDrainerCounter += 1;
 
-                if (bloodDrainerCounter == 3)
+                if (stadisticplayerScipt.bloodDrainerCounter == 3)
                 {
                     InvObjActionsScript.HealthPotions += 1;
-                    bloodDrainerCounter = 0;
+                    stadisticplayerScipt.bloodDrainerCounter = 0;
                 }
                 break;
             case "Death Reaper":
@@ -262,7 +262,7 @@ public class VigorCardsDisplay : MonoBehaviour
     }
     public void protectiontottempasive()
     {
-        if (ProtectionTottemStacks >= 5)
+        if (stadisticplayerScipt.ProtectionTottemStacks >= 5)
         {
             stadisticplayerScipt.health += 1;
         }

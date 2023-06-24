@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Nemea BreastPlate
   m_EditorClassIdentifier: 
   name: Nemea BreastPlate
-  description: reduce all Incoming damage in 1 point permanently
+  description: reduce all Incoming damage in 1 point permanently. Max 2 stacks
   image: {fileID: 0}
   vigorcost: 0
   attack: 4

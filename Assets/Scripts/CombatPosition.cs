@@ -32,6 +32,11 @@ public class CombatPosition : MonoBehaviour
     public VigorCardsDisplay ScriptVigorCardDisplaySlot4;
     public VigorCardsDisplay ScriptVigorCardDisplaySlot5;
     public VigorCardsDisplay ScriptVigorCardDisplaySlot6;
+    public CardDisplay cardDisplayScriptSlot1;
+    public CardDisplay cardDisplayScriptSlot2;
+    public CardDisplay cardDisplayScriptSlot3;
+
+
     public StadisticPlayer stadisticPlayerScript;
     public EnemyHeathPointsUI EnemyHealthPointsScript;
 
@@ -252,6 +257,10 @@ public class CombatPosition : MonoBehaviour
         ScriptVigorCardDisplaySlot4.setenemy(actualenemy);
         ScriptVigorCardDisplaySlot5.setenemy(actualenemy);
         ScriptVigorCardDisplaySlot6.setenemy(actualenemy);
+        cardDisplayScriptSlot1.setenemy(actualenemy);
+        cardDisplayScriptSlot2.setenemy(actualenemy);
+        cardDisplayScriptSlot3.setenemy(actualenemy);
+
         enemyInvoke = true;
         CounterforPlacesWhereEnemiesSpawns += 1; // PRUEBA
     }

@@ -76,6 +76,17 @@ public class EnemyBoss : Enemy
     public void Regeneration()
     {
         health += 7;
-        Debug.Log("El jefe se curo 7 de vida");
+       
+
+        health -= PlayerStadisticsScript.antihealingToEnemies;
+        if (PlayerStadisticsScript.antihealingToEnemies > 0)
+        {
+            Debug.Log("enemy got damage by Cursed Mud when tried to heal himself with 7 points of health");
+        }
+        else
+        {
+            Debug.Log("the enemy healed 7 points of health");
+
+        }
     }
 }

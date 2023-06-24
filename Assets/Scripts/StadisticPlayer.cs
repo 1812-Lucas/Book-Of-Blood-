@@ -13,6 +13,10 @@ public class StadisticPlayer : MonoBehaviour
     public int bloodFontPassive;
     public int healingRingPassive;
     public int antihealingToEnemies;
+    public int bloodFontAditionalDamage;
+    public int SpiritGrowthStacks;
+    public int ProtectionTottemStacks;
+    public int bloodDrainerCounter;
     public GameManager _myGM;
 
     public void Update()

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Cursed Mud
   m_EditorClassIdentifier: 
   name: Cursed Mud
-  description: Reduce enemy healing in 2 points this match
+  description: permanent debuff to enemies. they will get 2 points of damage every
+    time they try to heal. max 3 stacks
   image: {fileID: 0}
   vigorcost: 0
   attack: 3

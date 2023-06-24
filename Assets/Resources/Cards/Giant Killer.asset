@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Giant Killer
   m_EditorClassIdentifier: 
   name: Giant Killer
-  description: Deals 20% of the max enemy health as damage
+  description: Deals 25% of the enemy health as damage
   image: {fileID: 0}
   vigorcost: 0
   attack: 1

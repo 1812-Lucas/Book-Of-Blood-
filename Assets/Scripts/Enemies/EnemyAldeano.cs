@@ -69,6 +69,17 @@ public class EnemyAldeano : Enemy
     public void Regeneration()
     {
         health += 3;
-        Debug.Log("El enemigo se curo 3 de vida");
+       
+
+        health -= PlayerStadisticsScript.antihealingToEnemies;
+        if (PlayerStadisticsScript.antihealingToEnemies > 0)
+        {
+            Debug.Log("enemy got damage by Cursed Mud when tried to heal himself with 3 points of health");
+        }
+        else
+        {
+            Debug.Log("the enemy healed 3 points of health");
+
+        }
     }
 }
