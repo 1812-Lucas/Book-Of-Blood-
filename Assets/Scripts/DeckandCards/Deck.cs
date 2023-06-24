@@ -19,6 +19,7 @@ public class Deck : MonoBehaviour
     public List<Card> TrueDeckInCombat = new List<Card>();
     
 
+
     private void Awake()
     {
         _deck = Resources.FindObjectsOfTypeAll<Card>();
@@ -74,18 +75,21 @@ public class Deck : MonoBehaviour
                 {
                     Slot1.card = randomCard;
                     Slot1.actualizarinfodeUIdeCadaCarta();
+                   // combatScript.NormalCardsAnimation.CrossFade("NormalCardNewAnimation", 0f);
                     SlotBool1 = true;
                 }
                 else if (i == 1 && SlotBool2 == false)
                 {
                     Slot2.card = randomCard;
                     Slot2.actualizarinfodeUIdeCadaCarta();
+                    //combatScript.NormalCardsAnimation.CrossFade("NormalcardNewAnimation2", 0f);
                     SlotBool2 = true;
                 }
                 else if (i == 2 && SlotBool3 == false)
                 {
                     Slot3.card = randomCard;
                     Slot3.actualizarinfodeUIdeCadaCarta();
+                    //combatScript.NormalCardsAnimation.CrossFade("NormalCardNewAnimation3", 0f);
                     SlotBool3 = true;
                 }
 

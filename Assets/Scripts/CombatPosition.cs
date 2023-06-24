@@ -84,12 +84,20 @@ public class CombatPosition : MonoBehaviour
             playerRB.constraints = RigidbodyConstraints.FreezeRotation;
             CombatON = false;
             enemyInvoke = false;
+
+            combatscript.NormalCardsAnimation.StopPlayback();
+            //combatscript.NormalCardsAnimation.Rebind();
+            combatscript.VigorCardsAnimation.StopPlayback();
+            //combatscript.VigorCardsAnimation.Rebind();
+
             Debug.Log("Saliste del combate");
         }
     }
 
     public void combatON()
     {
+        combatscript.NormalCardsAnimation.Rebind();
+        combatscript.VigorCardsAnimation.Rebind();
         // SwitchCamera(cameras[1]);
         battlePosition = true;
         PlayAudio(CardSwipe);
