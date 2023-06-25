@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class EnemyTank : Enemy
 {
+    public Animator myAnim;
+    public override void Awake()
+    {
+        myAnim = GetComponent<Animator>();
+        base.Awake();
+    }
     public override void Start()
     {
         base.Start();
@@ -53,28 +59,31 @@ public class EnemyTank : Enemy
     }
     public void BasicDamage()
     {
+        myAnim.Play("Enemy T Attack");
         PlayerStadisticsScript.health -= 4;
-        Debug.Log("El enemigo inflingio 4 de daño al jugador con un ataque basico");
+        Debug.Log("The enemy dealt 4 damage to the player with a basic attack");
         PlayBasicAttackParticles();
     }
     public void HeavyDamage()
     {
+        myAnim.Play("Enemy T HAttack");
         PlayerStadisticsScript.health -= 6;
-        Debug.Log("El enemigo inflingio 6 de daño al jugador con un golpe pesado");
+        Debug.Log("The enemy dealt 6 damage to the player with a heavy attack");
         PlayHeavyAttackParticles();
     }
     public void Regeneration()
     {
+        myAnim.Play("Enemy Health");
         health += 6;
         health -= PlayerStadisticsScript.antihealingToEnemies;
         if (PlayerStadisticsScript.antihealingToEnemies > 0)
         {
-            Debug.Log("enemy got damage by Cursed Mud when tried to heal himself with 6 points of health");
+            Debug.Log("Enemy got damage by Cursed Mud when tried to heal himself with 6 points of health");
         }
         else
         {
-            Debug.Log("the enemy healed 6 points of health");
-
+            Debug.Log("The enemy healed 6 points of health");
+            myAnim.Play("Enemy Health");
         }
 
     }

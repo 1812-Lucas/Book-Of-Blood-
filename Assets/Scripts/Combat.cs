@@ -316,8 +316,8 @@ public class Combat : MonoBehaviour
             }
             enemyattack = false;
 
-            Debug.Log("Final del turno");
-            Debug.Log("Inicio el siguiente turno");
+            Debug.Log("End of turn");
+            Debug.Log("Start next turn");
 
             devilEyesPassive += 1;
         }
@@ -455,8 +455,8 @@ public class Combat : MonoBehaviour
         //damageParticleSlot1.Play();
         //damageParticleSlot1Combate2.Play();
         //damageParticleSlot1_Combate3.Play();
-        Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
-        Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
+        Debug.Log("Player dealt " + carddmgtrue + (" damage"));
+        Debug.Log("Enemy has " + enemyy.health + " health left ");
         enemyattack = true;
         playercontador = 1;
         deckscript.DrawCards();
@@ -485,8 +485,8 @@ public class Combat : MonoBehaviour
         //damageParticleSlot2.Play();
         //damageParticleSlot2Combate2.Play();
         //damageParticleSlot2_Combate3.Play();
-        Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
-        Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
+        Debug.Log("Player dealt " + carddmgtrue + (" damage"));
+        Debug.Log("Enemy has " + enemyy.health + " health left ");
         //contador = 1;
         enemyattack = true;
         playercontador = 1;
@@ -513,8 +513,8 @@ public class Combat : MonoBehaviour
         //damageParticleSlot3.Play();
         //damageParticleSlot3Combate2.Play();
         //damageParticleSlot3_Combate3.Play();
-        Debug.Log("El player inflingio " + carddmgtrue + (" de daño"));
-        Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
+        Debug.Log("Player dealt " + carddmgtrue + (" damage"));
+        Debug.Log("Enemy has " + enemyy.health + " health left ");
         //contador = 1;
         enemyattack = true;
         playercontador = 1;
@@ -535,7 +535,7 @@ public class Combat : MonoBehaviour
             TheCanvasesForFade[myplace].alpha = alpha;
         }
         PlayerStadisticsScript.vigor -= carddisplayscriptinSlot4.actualizarinformacióncostedeVigor();
-        Debug.Log("Restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
+        Debug.Log(PlayerStadisticsScript.vigor + " vigor points left");
         carddisplayscriptinSlot4.ejecutarpasivadelacartadevigor();
         activaryDesactivarCartaAlUsarlaSlot4();
 
@@ -559,7 +559,7 @@ public class Combat : MonoBehaviour
             TheCanvasesForFade[myplace].alpha = alpha;
         }
         PlayerStadisticsScript.vigor -= carddisplayscriptinSlot5.actualizarinformacióncostedeVigor();
-        Debug.Log("Restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
+        Debug.Log(PlayerStadisticsScript.vigor + " vigor points left");
         carddisplayscriptinSlot5.ejecutarpasivadelacartadevigor();
 
         activaryDesactivarCartaAlUsarlaSlot5();
@@ -583,7 +583,7 @@ public class Combat : MonoBehaviour
             TheCanvasesForFade[myplace].alpha = alpha;
         }
         PlayerStadisticsScript.vigor -= carddisplayscriptinSlot6.actualizarinformacióncostedeVigor();
-        Debug.Log("Restan " + PlayerStadisticsScript.vigor + " puntos de vigor");
+        Debug.Log(PlayerStadisticsScript.vigor + " vigor points left");
         carddisplayscriptinSlot6.ejecutarpasivadelacartadevigor();
 
         activaryDesactivarCartaAlUsarlaSlot6();

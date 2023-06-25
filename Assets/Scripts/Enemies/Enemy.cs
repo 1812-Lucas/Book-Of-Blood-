@@ -67,7 +67,7 @@ public class Enemy : MonoBehaviour
     }
     void Enemyapears()
     {
-        Debug.Log("Aparecio un " + tipodeenemigo);
+        Debug.Log("An enemy " + tipodeenemigo + " appeared");
     }
     private void Update()
     {

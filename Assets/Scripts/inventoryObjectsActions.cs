@@ -64,10 +64,10 @@ public class inventoryObjectsActions : MonoBehaviour
         {
             // Llamar a tu función aquí
             //TuFuncion();
-            StadisticPlayerScript.health += 10;
+            StadisticPlayerScript.health += 30;
             HealthPotions -= 1;
             HealthPotionParticles.Play();
-            Debug.Log("Te has curado 10 puntos de salud con una mejora de salud");
+            Debug.Log("You have healed 30 health with a health buff");
 
         }
     }
@@ -79,7 +79,7 @@ public class inventoryObjectsActions : MonoBehaviour
             HealthPotions -= 1;
             PlayAudioInventory(UsePotionAudio);
             HealthPotionParticles.Play();
-            Debug.Log("Te has curado 10 puntos de salud con una mejora de salud");
+            Debug.Log("You have healed 30 health with a health buff");
         }
     }
 
@@ -90,7 +90,7 @@ public class inventoryObjectsActions : MonoBehaviour
             ActivatorsOfCards[CardsOnCountdown] = true;
             cardsOnInventory[CardsOnCountdown].gameObject.SetActive(ActivatorsOfCards[CardsOnCountdown]);
             PlayAudioInventory(newCard);
-            Debug.Log("Has obtenido una nueva carta [i] para ver el inventario");
+            Debug.Log("You have obtained a new card [i] to see the inventory");
             /*if (inventoryTutorialTrigger == false)
             {
                 inventoryTutorialTrigger = true;
@@ -108,7 +108,7 @@ public class inventoryObjectsActions : MonoBehaviour
             healthPotionMiniParticles.Stop();
            
             
-            Debug.Log("Obtuviste una pocion de curacion, solamente podras utilizarla en combate presionando la tecla H o su boton correspondiente");
+            Debug.Log("You obtained a healing potion, you can only use it in combat by pressing the H key or its corresponding button");
         }
 
         if (other.gameObject.layer == 6)

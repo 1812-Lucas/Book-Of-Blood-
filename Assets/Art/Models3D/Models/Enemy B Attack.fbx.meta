@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 04bf24ecdae25a6459edcfa84dbd8aa1
+guid: b9831a58bef600c4dacc2430f466ceb5
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Boss SHA
+    second: Enemy B Attack
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -36,11 +36,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Boss SHA
+      name: Enemy B Attack
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 114
+      lastFrame: 33
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

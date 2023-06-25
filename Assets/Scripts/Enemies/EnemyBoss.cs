@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class EnemyBoss : Enemy
 {
+    public Animator myAnim;
+    public override void Awake()
+    {
+        myAnim = GetComponent<Animator>();
+        base.Awake();
+    }
     public override void Start()
     {
         base.Start();
@@ -57,36 +63,38 @@ public class EnemyBoss : Enemy
     }
     public void BasicDamage()
     {
+        myAnim.Play("Enemy B Attack");
         PlayerStadisticsScript.health -= 5;
-        Debug.Log("El jefe inflingio 5 de daño al jugador con un ataque basico");
+        Debug.Log("The Boss dealt 5 damage to the player with a basic attack");
         PlayBasicAttackParticles();
     }
     public void HeavyDamage()
     {
+        myAnim.Play("Enemy B HAttack");
         PlayerStadisticsScript.health -= 7;
-        Debug.Log("El jefe inflingio 7 de daño al jugador con un golpe pesado");
+        Debug.Log("The Boss dealt 7 damage to the player with a heavy attack");
         PlayHeavyAttackParticles();
     }
     public void SuperHeavyDamage()
     {
-        PlayerStadisticsScript.health -= 10;
-        Debug.Log("El jefe inflingio 10 de daño al jugador con un golpe super pesado");
+        myAnim.Play("Enemy B SHAttack");
+        PlayerStadisticsScript.health -= 9;
+        Debug.Log("The Boss dealt 9 damage to the player with a super heavy attack");
         PlayHeavyAttackParticles();
     }
     public void Regeneration()
     {
+        myAnim.Play("Enemy Health");
         health += 7;
-       
-
         health -= PlayerStadisticsScript.antihealingToEnemies;
         if (PlayerStadisticsScript.antihealingToEnemies > 0)
         {
-            Debug.Log("enemy got damage by Cursed Mud when tried to heal himself with 7 points of health");
+            Debug.Log("Boss got damage by Cursed Mud when tried to heal himself with 7 points of health");
         }
         else
         {
-            Debug.Log("the enemy healed 7 points of health");
-
+            Debug.Log("The Boss healed 7 points of health");
+            myAnim.Play("Enemy Health");
         }
     }
 }
