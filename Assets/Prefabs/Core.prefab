@@ -36,6 +36,7 @@ Transform:
   - {fileID: 3932207500671228772}
   - {fileID: 3932207500383777530}
   - {fileID: 3323654084146621483}
+  - {fileID: 2957205303154410520}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -517,6 +518,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &7056883519313470077
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 821224281829306533}
+    m_Modifications:
+    - target: {fileID: 5252618446890821221, guid: acade1f96795d944185123affaa7e247, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252618446890821221, guid: acade1f96795d944185123affaa7e247, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 185.038
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252618446890821221, guid: acade1f96795d944185123affaa7e247, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.351
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252618446890821221, guid: acade1f96795d944185123affaa7e247, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -153.229
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252618446890821221, guid: acade1f96795d944185123affaa7e247, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.17781283
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252618446890821221, guid: acade1f96795d944185123affaa7e247, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.012885721
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252618446890821221, guid: acade1f96795d944185123affaa7e247, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.983187
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252618446890821221, guid: acade1f96795d944185123affaa7e247, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.039495464
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252618446890821221, guid: acade1f96795d944185123affaa7e247, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -4.191
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252618446890821221, guid: acade1f96795d944185123affaa7e247, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -159.415
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252618446890821221, guid: acade1f96795d944185123affaa7e247, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -2.263
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252618446890821223, guid: acade1f96795d944185123affaa7e247, type: 3}
+      propertyPath: m_Name
+      value: VirtualCameraSeven
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: acade1f96795d944185123affaa7e247, type: 3}
+--- !u!4 &2957205303154410520 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5252618446890821221, guid: acade1f96795d944185123affaa7e247, type: 3}
+  m_PrefabInstance: {fileID: 7056883519313470077}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7420508741038148174
 PrefabInstance:
   m_ObjectHideFlags: 0
