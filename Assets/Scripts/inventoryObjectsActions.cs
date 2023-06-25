@@ -47,6 +47,8 @@ public class inventoryObjectsActions : MonoBehaviour
     
 
     public Animator animationDoor;
+
+    public Animator playerAnimator;
     private void Awake()
     {
         MyAudioSource = GetComponent<AudioSource>();
@@ -77,6 +79,7 @@ public class inventoryObjectsActions : MonoBehaviour
         {
             StadisticPlayerScript.health += 30;
             HealthPotions -= 1;
+            playerAnimator.Play("UsarPocion");
             PlayAudioInventory(UsePotionAudio);
             HealthPotionParticles.Play();
             Debug.Log("You have healed 30 health with a health buff");

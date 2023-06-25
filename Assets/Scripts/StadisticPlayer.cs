@@ -18,7 +18,7 @@ public class StadisticPlayer : MonoBehaviour
     public int ProtectionTottemStacks;
     public int bloodDrainerCounter;
     public GameManager _myGM;
-
+    
     public void Update()
     {
         if (health > 50)
@@ -30,6 +30,7 @@ public class StadisticPlayer : MonoBehaviour
         {
             PlayerDies();
         }
+      
     }
 
     public void PlayerDies()

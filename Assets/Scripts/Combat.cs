@@ -163,7 +163,7 @@ public class Combat : MonoBehaviour
 
     public int devilEyesPassive;
 
-
+    public Animator playerAnimator;
 
 
     void Start()
@@ -188,7 +188,7 @@ public class Combat : MonoBehaviour
         {
            
             NormalCardsAnimation.CrossFade("NormalCardNewAnimation", 0f);
-
+            
         }
         
 
@@ -285,6 +285,7 @@ public class Combat : MonoBehaviour
             button6.interactable = true;
 
             enemyy.Enemyturn();
+            playerAnimator.Play("RecibirDaño");
             //contador = 0;
             playercontador = 0;
             deckscript.DrawCards();
@@ -608,7 +609,7 @@ public class Combat : MonoBehaviour
             StartCoroutine(FadeAnimSlot1(0));
            
             NormalCardsAnimation.CrossFade("CardAlreadyUsed", 0f);
-
+            playerAnimator.Play("AtaqueCartas");
         }
         
     }
@@ -619,6 +620,7 @@ public class Combat : MonoBehaviour
             StartCoroutine(FadeAnimSlot2(1));
        
             NormalCardsAnimation.CrossFade("CardAlreadyUsed2_", 0f);
+            playerAnimator.Play("AtaqueCartas");
         }
        
     }
@@ -629,6 +631,7 @@ public class Combat : MonoBehaviour
             StartCoroutine(FadeAnimSlot3(2));
         
             NormalCardsAnimation.CrossFade("CardAlreadyUsed3", 0f);
+            playerAnimator.Play("AtaqueCartas");
         }
        
     }
@@ -644,6 +647,7 @@ public class Combat : MonoBehaviour
 
             
             VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed", 0f);
+            playerAnimator.Play("AtaqueCartas");
         }
     }
     public void clickonslotfive()
@@ -659,6 +663,7 @@ public class Combat : MonoBehaviour
 
            
             VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed2", 0f);
+            playerAnimator.Play("AtaqueCartas");
         }
     }
     public void clickonslotsix()
@@ -673,6 +678,7 @@ public class Combat : MonoBehaviour
         {
 
             VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed3", 0f);
+            playerAnimator.Play("AtaqueCartas");
         }
     }
 }

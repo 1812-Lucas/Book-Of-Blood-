@@ -407,6 +407,7 @@ MonoBehaviour:
   lightCardbox: {fileID: 0}
   demonWhispersLight: {fileID: 0}
   animationDoor: {fileID: 0}
+  playerAnimator: {fileID: 6633360425303154989}
 --- !u!114 &5299470838625391949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -615,6 +616,7 @@ MonoBehaviour:
   VigorCardsAnimation: {fileID: 0}
   NormalCardsAnimation: {fileID: 0}
   devilEyesPassive: 0
+  playerAnimator: {fileID: 6633360425303154989}
 --- !u!114 &7910656068851151482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,6 +749,7 @@ MonoBehaviour:
   ProtectionTottemStacks: 0
   bloodDrainerCounter: 0
   _myGM: {fileID: 0}
+  player: {fileID: 2164653984255317432}
 --- !u!82 &8940846620823324685
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1131,6 +1134,11 @@ PrefabInstance:
 --- !u!4 &928653200469705726 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5171799420950574692, guid: e92c99c58f66e484d9377d6d188d7b42, type: 3}
+  m_PrefabInstance: {fileID: 5415245427317585306}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6633360425303154989 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1668793870718506167, guid: e92c99c58f66e484d9377d6d188d7b42, type: 3}
   m_PrefabInstance: {fileID: 5415245427317585306}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6117983486533681994
