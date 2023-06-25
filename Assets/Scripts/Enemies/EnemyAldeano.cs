@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 public class EnemyAldeano : Enemy
 {
-    private Animator myAnim;
+    public Animator myAnim;
     public override void Awake()
     {
-        myAnim = GetComponentInChildren<Animator>();
+        myAnim = GetComponent<Animator>();
         base.Awake();
     }
     public override void Start()
@@ -15,7 +15,6 @@ public class EnemyAldeano : Enemy
     }
     public override void Enemyturn()
     {
-        //Isattack(true);
         if (health <= 20 && health > 15)
         {
             int Numero = Random.Range(1, 101);
@@ -59,6 +58,7 @@ public class EnemyAldeano : Enemy
     }
     public void BasicDamage()
     {
+        myAnim.Play("Enemy Attack");
         PlayerStadisticsScript.health -= 2;
         Debug.Log("El enemigo inflingio 2 de daño al jugador con un ataque basico");
         PlayBasicAttackParticles();

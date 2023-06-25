@@ -656,6 +656,7 @@ MonoBehaviour:
   ataqueEnemigo2SpawnPoint_Combate2: {fileID: 0}
   ataqueEnemy1SpawnPoint_Combate3: {fileID: 0}
   ataqueEnemigo2SpawnPoint_Combate3: {fileID: 0}
+  myAnim: {fileID: 5417256309861757755}
 --- !u!136 &4440287569902730533
 CapsuleCollider:
   m_ObjectHideFlags: 0

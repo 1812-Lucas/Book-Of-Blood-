@@ -407,9 +407,6 @@ MonoBehaviour:
   healthPotionLight: {fileID: 0}
   lightCardbox: {fileID: 0}
   demonWhispersLight: {fileID: 0}
-  healthPotionLight2: {fileID: 0}
-  healthPotionParticles2: {fileID: 0}
-  healthPotionMiniParticles2: {fileID: 0}
   animationDoor: {fileID: 0}
 --- !u!114 &5299470838625391949
 MonoBehaviour:
@@ -458,6 +455,9 @@ MonoBehaviour:
   ScriptVigorCardDisplaySlot4: {fileID: 0}
   ScriptVigorCardDisplaySlot5: {fileID: 0}
   ScriptVigorCardDisplaySlot6: {fileID: 0}
+  cardDisplayScriptSlot1: {fileID: 0}
+  cardDisplayScriptSlot2: {fileID: 0}
+  cardDisplayScriptSlot3: {fileID: 0}
   stadisticPlayerScript: {fileID: 5273619601675263601}
   EnemyHealthPointsScript: {fileID: 0}
   CardSwipe: {fileID: 8300000, guid: 120669a9b14f2154e94d7ebeb03fd389, type: 3}
@@ -481,19 +481,107 @@ MonoBehaviour:
   damageparticleSlot4: {fileID: 0}
   damageparticleSlot5: {fileID: 0}
   damageparticleSlot6: {fileID: 0}
+  damageparticleSlot7: {fileID: 0}
+  damageparticleSlot8: {fileID: 0}
+  damageparticleSlot9: {fileID: 0}
+  damageparticleSlot10: {fileID: 0}
+  damageparticleSlot11: {fileID: 0}
+  damageparticleSlot12: {fileID: 0}
+  damageparticleSlot13: {fileID: 0}
+  damageparticleSlot14: {fileID: 0}
+  damageparticleSlot15: {fileID: 0}
+  damageparticleSlot16: {fileID: 0}
+  damageparticleSlot17: {fileID: 0}
+  damageparticleSlot18: {fileID: 0}
+  damageparticleSlot19: {fileID: 0}
+  damageparticleSlot20: {fileID: 0}
+  damageparticleSlot21: {fileID: 0}
+  damageparticleSlot22: {fileID: 0}
+  damageparticleSlot23: {fileID: 0}
+  damageparticleSlot24: {fileID: 0}
+  damageparticleSlot25: {fileID: 0}
+  damageparticleSlot26: {fileID: 0}
+  damageparticleSlot27: {fileID: 0}
+  damageparticleSlot28: {fileID: 0}
+  damageparticleSlot29: {fileID: 0}
+  damageparticleSlot30: {fileID: 0}
+  damageparticleSlot31: {fileID: 0}
+  damageparticleSlot32: {fileID: 0}
+  damageparticleSlot33: {fileID: 0}
+  damageparticleSlot34: {fileID: 0}
+  damageparticleSlot35: {fileID: 0}
   damageParticleSlot1Combate2: {fileID: 0}
   damageParticleSlot2Combate2: {fileID: 0}
   damageParticleSlot3Combate2: {fileID: 0}
   damageparticleSlot4Combate2: {fileID: 0}
   damageparticleSlot5Combate2: {fileID: 0}
   damageparticleSlot6Combate2: {fileID: 0}
+  damageparticleSlot7Combate2: {fileID: 0}
+  damageparticleSlot8Combate2: {fileID: 0}
+  damageparticleSlot9Combate2: {fileID: 0}
+  damageparticleSlot10Combate2: {fileID: 0}
+  damageparticleSlot11Combate2: {fileID: 0}
+  damageparticleSlot12Combate2: {fileID: 0}
+  damageparticleSlot13Combate2: {fileID: 0}
+  damageparticleSlot14Combate2: {fileID: 0}
+  damageparticleSlot15Combate2: {fileID: 0}
+  damageparticleSlot16Combate2: {fileID: 0}
+  damageparticleSlot17Combate2: {fileID: 0}
+  damageparticleSlot18Combate2: {fileID: 0}
+  damageparticleSlot19Combate2: {fileID: 0}
+  damageparticleSlot20Combate2: {fileID: 0}
+  damageparticleSlot21Combate2: {fileID: 0}
+  damageparticleSlot22Combate2: {fileID: 0}
+  damageparticleSlot23Combate2: {fileID: 0}
+  damageparticleSlot24Combate2: {fileID: 0}
+  damageparticleSlot25Combate2: {fileID: 0}
+  damageparticleSlot26Combate2: {fileID: 0}
+  damageparticleSlot27Combate2: {fileID: 0}
+  damageparticleSlot28Combate2: {fileID: 0}
+  damageparticleSlot29Combate2: {fileID: 0}
+  damageparticleSlot30Combate2: {fileID: 0}
+  damageparticleSlot31Combate2: {fileID: 0}
+  damageparticleSlot32Combate2: {fileID: 0}
+  damageparticleSlot33Combate2: {fileID: 0}
+  damageparticleSlot34Combate2: {fileID: 0}
+  damageparticleSlot35Combate2: {fileID: 0}
   damageParticleSlot1_Combate3: {fileID: 0}
   damageParticleSlot2_Combate3: {fileID: 0}
   damageParticleSlot3_Combate3: {fileID: 0}
   damageparticleSlot4_Combate3: {fileID: 0}
   damageparticleSlot5_Combate3: {fileID: 0}
   damageparticleSlot6_Combate3: {fileID: 0}
+  damageparticleSlot7_Combate3: {fileID: 0}
+  damageparticleSlot8_Combate3: {fileID: 0}
+  damageparticleSlot9_Combate3: {fileID: 0}
+  damageparticleSlot10_Combate3: {fileID: 0}
+  damageparticleSlot11_Combate3: {fileID: 0}
+  damageparticleSlot12_Combate3: {fileID: 0}
+  damageparticleSlot13_Combate3: {fileID: 0}
+  damageparticleSlot14_Combate3: {fileID: 0}
+  damageparticleSlot15_Combate3: {fileID: 0}
+  damageparticleSlot16_Combate3: {fileID: 0}
+  damageparticleSlot17_Combate3: {fileID: 0}
+  damageparticleSlot18_Combate3: {fileID: 0}
+  damageparticleSlot19_Combate3: {fileID: 0}
+  damageparticleSlot20_Combate3: {fileID: 0}
+  damageparticleSlot21_Combate3: {fileID: 0}
+  damageparticleSlot22_Combate3: {fileID: 0}
+  damageparticleSlot23_Combate3: {fileID: 0}
+  damageparticleSlot24_Combate3: {fileID: 0}
+  damageparticleSlot25_Combate3: {fileID: 0}
+  damageparticleSlot26_Combate3: {fileID: 0}
+  damageparticleSlot27_Combate3: {fileID: 0}
+  damageparticleSlot28_Combate3: {fileID: 0}
+  damageparticleSlot29_Combate3: {fileID: 0}
+  damageparticleSlot30_Combate3: {fileID: 0}
+  damageparticleSlot31_Combate3: {fileID: 0}
+  damageparticleSlot32_Combate3: {fileID: 0}
+  damageparticleSlot33_Combate3: {fileID: 0}
+  damageparticleSlot34_Combate3: {fileID: 0}
+  damageparticleSlot35_Combate3: {fileID: 0}
   enemyy: {fileID: 0}
+  aldeano: {fileID: 3897299064811942888, guid: d398157aa9b1e4f44aff92b21add58d9, type: 3}
   deckscript: {fileID: 7910656068851151482}
   carddisplayscriptinSlot1: {fileID: 0}
   carddisplayscriptinSlot2: {fileID: 0}
@@ -527,6 +615,7 @@ MonoBehaviour:
   drawButton: {fileID: 0}
   VigorCardsAnimation: {fileID: 0}
   NormalCardsAnimation: {fileID: 0}
+  devilEyesPassive: 0
 --- !u!114 &7910656068851151482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,7 +736,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   vigor: 1
-  defense: 0
+  damageReduction: 0
+  bloodFontPassive: 0
+  healingRingPassive: 0
+  antihealingToEnemies: 0
+  bloodFontAditionalDamage: 0
+  SpiritGrowthStacks: 0
+  ProtectionTottemStacks: 0
+  bloodDrainerCounter: 0
   _myGM: {fileID: 0}
 --- !u!82 &8940846620823324685
 AudioSource:

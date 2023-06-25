@@ -116,6 +116,7 @@ public class Combat : MonoBehaviour
     public ParticleSystem damageparticleSlot35_Combate3;
 
     public Enemy enemyy;
+    public EnemyAldeano aldeano;
     //private CombatPosition combat;
     //private bool combatmode = false;
     int playercontador;
@@ -171,7 +172,7 @@ public class Combat : MonoBehaviour
     }
     void Update()
     {
-
+        
     }
     public void DrawButtonActiveOrNot()
     {
@@ -319,19 +320,6 @@ public class Combat : MonoBehaviour
             Debug.Log("Inicio el siguiente turno");
 
             devilEyesPassive += 1;
-
-            //if (enemyy.attackType == 1)
-            //{
-            //    ataqueEnemy1.Play();
-            //    ataqueEnemy1_Combate2.Play();
-            //    ataqueEnemy1_Combate3.Play();
-            //}
-            //else if (enemyy.attackType == 2)
-            //{
-            //    ataqueEnemigo2.Play();
-            //    ataqueEnemigo2_Combate2.Play();
-            //    ataqueEnemigo2_Combate3.Play();
-            //}
         }
     }
     public void EndOfCombat()
