@@ -30,6 +30,15 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField]
     private GameObject OptionsMenu;
 
+    [SerializeField]
+    private GameObject firstPageOfInventory;
+
+    [SerializeField]
+    private GameObject secondPageOfInventory;
+    [SerializeField]
+    private Button switchPagesInventory;
+
+    private bool boolForPages=false;
     public void PlayAudio(AudioClip AC)
     {
         MyAudioSource.clip = AC;
@@ -107,6 +116,23 @@ public class PlayerInventory : MonoBehaviour
             camerascript.enabled = true;
         }
     }
+
+    public void ToggleInventoryPage()
+    {
+        boolForPages = !boolForPages;
+        
+        if (boolForPages == false)
+        {
+            firstPageOfInventory.gameObject.SetActive(true);
+            secondPageOfInventory.gameObject.SetActive(false);
+        }
+        else 
+        {
+            secondPageOfInventory.gameObject.SetActive(true);
+            firstPageOfInventory.gameObject.SetActive(false);
+        }
+    }
+
     public void ToggleMenu()
     {
         isMenuActive = !isMenuActive;
