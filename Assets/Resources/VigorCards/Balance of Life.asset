@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Balance of Life
   m_EditorClassIdentifier: 
   name: Balance of Life
-  description: Heals you equally to the difference of health between you and your
-    oponent
+  description: <i><color=green>Heals</color></i> you equally to the difference of
+    health between you and your oponent
   image: {fileID: 0}
   vigorcost: 4

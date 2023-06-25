@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Evil Pendant
   m_EditorClassIdentifier: 
   name: Evil Pendant
-  description: restores 7 points of health and 6 points of vigor
+  description: restores <i><color=green>7 points of health</color></i> and <i><color=blue>6
+    points of vigor</color></i>
   image: {fileID: 0}
   vigorcost: 3

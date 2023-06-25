@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Blood Drainer
   m_EditorClassIdentifier: 
   name: Blood Drainer
-  description: Deals 4 points of damage. Every 3 uses you get a health potion
-  image: {fileID: 0}
+  description: Deals <i><color=red>4 points</color></i> of damage. Every 3 uses you
+    get a <i><color=green>health potion</color></i>
+  image: {fileID: 21300000, guid: 8c53a1c15cf5d794fa7183e018432143, type: 3}
   vigorcost: 1

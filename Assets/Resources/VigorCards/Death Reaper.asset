@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Death Reaper
   m_EditorClassIdentifier: 
   name: Death Reaper
-  description: Gives you 7 points of vigor. if enemy is below 15 points of health,
-    he gets insta-killed
+  description: Gives you 7 points of <i><color=blue>vigor</color></i>. if enemy is
+    below 15 points of <i><color=green>health</color></i>, he gets insta-killed
   image: {fileID: 0}
   vigorcost: 4

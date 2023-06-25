@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Cursed Mud
   m_EditorClassIdentifier: 
   name: Cursed Mud
-  description: permanent debuff to enemies. they will get 2 points of damage every
-    time they try to heal. max 3 stacks
+  description: permanent debuff to enemies. they will get 2 points of <i><color=red>damage</color></i>
+    every time they try to <i><color=green>heal</color></i>. Max 3 stacks.
   image: {fileID: 0}
   vigorcost: 0
   attack: 3

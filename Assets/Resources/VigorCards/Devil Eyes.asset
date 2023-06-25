@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Devil Eyes
   m_EditorClassIdentifier: 
   name: Devil Eyes
-  description: heals you equally to the same amount of turns your oponents had
+  description: <i><color=green>heals</color></i> you equally to the same amount of
+    turns your oponents had
   image: {fileID: 0}
   vigorcost: 2

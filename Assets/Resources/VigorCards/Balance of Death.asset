@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Balance of Death
   m_EditorClassIdentifier: 
   name: Balance of Death
-  description: deals damage equally to the difference of  health between you and
-    your oponent
+  description: <i><color=red>deals damage</color></i> equally to the difference of 
+    <i><color=green>health</color></i> between you and your oponent
   image: {fileID: 0}
   vigorcost: 5
