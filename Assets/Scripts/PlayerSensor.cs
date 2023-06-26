@@ -24,7 +24,7 @@ public class PlayerSensor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("Se encontró una llave.");
+        print("Found a key");
         if (IsPlayer(other))
         {
             SwitchCameraDoor(CamarasDoor[1]);

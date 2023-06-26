@@ -183,39 +183,4 @@ public class inventoryObjectsActions : MonoBehaviour
             demonWhispersLight.enabled = false;
         }
     }
-
-    /*private void Update()
-    {
-        if(combatMode == true)
-        {
-            fightStarts();
-        }
-        if (aldeano.health <= 0)
-        {
-            fightIsOver();
-        }
-        if (isfrozen == true)
-        {
-           
-        }
-        player2.frozee();
-    }
-
-    public void isFreeze()
-    {
-        isfrozen = true;
-    }
-    public void fightStarts()
-    {
-        transform.LookAt(enemy.transform);
-        mainCameraa.transform.LookAt(enemy.transform);
-        isFreeze();
-        //transicion de cámara
-
-    }
-    public void fightIsOver()
-    {
-        isfrozen = false;
-        //transicion de cámara
-    }*/
 }

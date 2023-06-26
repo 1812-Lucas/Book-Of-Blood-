@@ -153,8 +153,6 @@ public class Combat : MonoBehaviour
 
     public Enemy enemyy;
     public EnemyAldeano aldeano;
-    //private CombatPosition combat;
-    //private bool combatmode = false;
     int playercontador;
     public Deck deckscript;
     public CardDisplay carddisplayscriptinSlot1;
@@ -190,8 +188,6 @@ public class Combat : MonoBehaviour
 
     public bool drawButtonBool;
     public Button drawButton;
-
-
     public object WaitForSeconds3 { get; private set; }
 
     public Animator VigorCardsAnimation;
@@ -293,21 +289,6 @@ public class Combat : MonoBehaviour
     {
         enemyy = enemy;
     }
-    /*public void carddmg()
-    {
-        if (contador == 0)
-        {
-            enemyaldean.health -= 2;
-            Debug.Log("El player inflingio 2 de daño");
-            Debug.Log("Al enemigo le queda " + enemyaldean.health + " de vida ");
-            contador += 1;
-
-        }
-    }*/
-    /*public void combatmodeON()
-    {
-        combatmode = true;
-    }*/
     public void Enemydealsdamage()
     {
         if (enemyattack == true)
@@ -469,11 +450,6 @@ public class Combat : MonoBehaviour
         {
             TheCanvasesForFade[i].alpha = 1;
         }
-
-
-
-
-
     }
     IEnumerator FadeAnimSlot1(int myplace)
     {
@@ -632,10 +608,6 @@ public class Combat : MonoBehaviour
         TheCanvasesForFade[myplace].alpha = 1;
         yield return null;
     }
-
-
-
-
 
 
     public void clickonslotone()

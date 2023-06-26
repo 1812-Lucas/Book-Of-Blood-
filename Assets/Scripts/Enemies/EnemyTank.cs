@@ -60,15 +60,15 @@ public class EnemyTank : Enemy
     public void BasicDamage()
     {
         myAnim.Play("Enemy T Attack");
-        PlayerStadisticsScript.health -= 4;
-        Debug.Log("The enemy dealt 4 damage to the player with a basic attack");
+        PlayerStadisticsScript.health -= 3;
+        Debug.Log("The enemy dealt 3 damage to the player with a basic attack");
         PlayBasicAttackParticles();
     }
     public void HeavyDamage()
     {
         myAnim.Play("Enemy T HAttack");
-        PlayerStadisticsScript.health -= 6;
-        Debug.Log("The enemy dealt 6 damage to the player with a heavy attack");
+        PlayerStadisticsScript.health -= 5;
+        Debug.Log("The enemy dealt 5 damage to the player with a heavy attack");
         PlayHeavyAttackParticles();
     }
     public void Regeneration()

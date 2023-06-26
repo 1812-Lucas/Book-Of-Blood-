@@ -60,21 +60,21 @@ public class EnemySectarian : Enemy
     public void BasicDamage()
     {
         myAnim.Play("Enemy S Attack");
-        PlayerStadisticsScript.health -= 3;
-        Debug.Log("The enemy dealt 3 damage to the player with a basic attack");
+        PlayerStadisticsScript.health -= 2;
+        Debug.Log("The enemy dealt 2 damage to the player with a basic attack");
         PlayBasicAttackParticles();
     }
     public void HeavyDamage()
     {
         myAnim.Play("Enemy S HAttack");
-        PlayerStadisticsScript.health -= 5;
-        Debug.Log("The enemy dealt 5 damage to the player with a heavy attack");
+        PlayerStadisticsScript.health -= 4;
+        Debug.Log("The enemy dealt 4 damage to the player with a heavy attack");
         PlayHeavyAttackParticles();
     }
     public void Regeneration()
     {
         myAnim.Play("Enemy Health");
-        health += 5;
+        health += 4;
         health -= PlayerStadisticsScript.antihealingToEnemies;
         if (PlayerStadisticsScript.antihealingToEnemies > 0)
         {
@@ -82,7 +82,7 @@ public class EnemySectarian : Enemy
         }
         else
         {
-            Debug.Log("The enemy healed 5 points of health");
+            Debug.Log("The enemy healed 4 points of health");
             myAnim.Play("Enemy Health");
         }
     }

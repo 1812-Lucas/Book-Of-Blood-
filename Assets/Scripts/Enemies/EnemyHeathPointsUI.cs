@@ -13,8 +13,6 @@ public class EnemyHeathPointsUI : MonoBehaviour
     private void Start()
     {
         HealthEnemyCounter = GetComponent<TextMeshProUGUI>();
-        
-
     }
     public void SetEnemyInEnemyHealthPoints(Enemy EnemyReference)
     {
