@@ -969,7 +969,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Creditos
+  m_text: Credits
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 96860fd55bec7c44ab1dfb765686c7a1, type: 2}
   m_sharedMaterial: {fileID: 4141538601267562643, guid: 96860fd55bec7c44ab1dfb765686c7a1, type: 2}
@@ -1322,25 +1322,25 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '-<color=green>WASD</color>: Movimiento por el entorno
+  m_text: '-<color=green>WASD</color>: Movement around the environment
 
 
     -<color=green>Click
-    izquierdo</color>: interactuar en el combate
+    izquierdo</color>: Interact in combat
 
 
-    -<color=green>I</color>: Acceso
-    al inventario
+    -<color=green>I</color>: Inventory
+    access
 
 
-    -<color=green>P</color>: Acceso al menu de pausa
+    -<color=green>P</color>: Access to the pause menu
 
 
     -<color=green>H</color>:
-    Usar pocion
+    Use potion
 
 
-    -<color=green>L</color>: Recargar escena'
+    -<color=green>L</color>: Reload scene'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 96860fd55bec7c44ab1dfb765686c7a1, type: 2}
   m_sharedMaterial: {fileID: 4141538601267562643, guid: 96860fd55bec7c44ab1dfb765686c7a1, type: 2}
@@ -1715,7 +1715,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Controles
+  m_text: Controls
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 96860fd55bec7c44ab1dfb765686c7a1, type: 2}
   m_sharedMaterial: {fileID: 4141538601267562643, guid: 96860fd55bec7c44ab1dfb765686c7a1, type: 2}
@@ -2134,9 +2134,6 @@ MonoBehaviour:
   m_text: 'Marco Lavacchielli
 
 
-    Luz Flores
-
-
     Facundo Tisera
 
 
@@ -2354,7 +2351,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Creditos
+  m_text: Credits
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 96860fd55bec7c44ab1dfb765686c7a1, type: 2}
   m_sharedMaterial: {fileID: 4141538601267562643, guid: 96860fd55bec7c44ab1dfb765686c7a1, type: 2}
@@ -2489,7 +2486,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jugar
+  m_text: PLay
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 96860fd55bec7c44ab1dfb765686c7a1, type: 2}
   m_sharedMaterial: {fileID: 4141538601267562643, guid: 96860fd55bec7c44ab1dfb765686c7a1, type: 2}
@@ -2835,9 +2832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Controles
-
-'
+  m_text: Controls
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 96860fd55bec7c44ab1dfb765686c7a1, type: 2}
   m_sharedMaterial: {fileID: 4141538601267562643, guid: 96860fd55bec7c44ab1dfb765686c7a1, type: 2}
