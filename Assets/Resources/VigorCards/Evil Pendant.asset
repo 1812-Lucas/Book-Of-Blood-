@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Evil Pendant
   description: restores <i><color=green>7 points of health</color></i> and <i><color=blue>6
     points of vigor</color></i>
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 0d551eefa52ac4a40846ab9c64240353, type: 3}
   vigorcost: 3

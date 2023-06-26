@@ -15,6 +15,6 @@ MonoBehaviour:
   name: Nemesis
   description: Deals <i><color=red>damage</color></i> equally to your actual vigor
     amount
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 40859557c049278468aed2cdf8f75378, type: 3}
   vigorcost: 0
   attack: 2
