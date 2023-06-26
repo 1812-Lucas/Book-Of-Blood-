@@ -39,7 +39,7 @@ public class VigorCardsDisplay : MonoBehaviour
     public AudioClip iceMagic;
     public AudioClip remorseFemale;
 
-    
+    public AudioClip[] audiosVigorArray;
 
     public void PlayAudio(AudioClip AC)
     {
@@ -212,6 +212,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot27.Play();
                 combatScript.damageparticleSlot27Combate2.Play();
                 combatScript.damageparticleSlot27_Combate3.Play();
+                PlayAudio(audiosVigorArray[0]);
                 if (stadisticplayerScipt.vigor <= 3)
                 {
                     stadisticplayerScipt.vigor = 7;
@@ -221,6 +222,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot28.Play();
                 combatScript.damageparticleSlot28Combate2.Play();
                 combatScript.damageparticleSlot28_Combate3.Play();
+                PlayAudio(audiosVigorArray[1]);
                 int i = enemyy.health - stadisticplayerScipt.health;
                 if (i < 0)
                 {
@@ -236,6 +238,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot29.Play();
                 combatScript.damageparticleSlot29Combate2.Play();
                 combatScript.damageparticleSlot29_Combate3.Play();
+                PlayAudio(audiosVigorArray[2]);
                 int u = enemyy.health - stadisticplayerScipt.health;
                 if (u < 0)
                 {
@@ -255,6 +258,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot30_Combate3.Play();
                 enemyy.health -= 4;
                 stadisticplayerScipt.bloodDrainerCounter += 1;
+                PlayAudio(audiosVigorArray[3]);
 
                 if (stadisticplayerScipt.bloodDrainerCounter == 3)
                 {
@@ -266,6 +270,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot31.Play();
                 combatScript.damageparticleSlot31Combate2.Play();
                 combatScript.damageparticleSlot31_Combate3.Play();
+                PlayAudio(audiosVigorArray[4]);
                 stadisticplayerScipt.vigor += 7;
                 if (stadisticplayerScipt.health <= 15)
                 {
@@ -275,12 +280,14 @@ public class VigorCardsDisplay : MonoBehaviour
             case "Devil Eyes":
                 combatScript.damageparticleSlot32.Play();
                 combatScript.damageparticleSlot32Combate2.Play();
+                PlayAudio(audiosVigorArray[5]);
                 combatScript.damageparticleSlot32_Combate3.Play();
                 stadisticplayerScipt.health += combatScript.devilEyesPassive;
                 break;
             case "Evil Pendant":
                 combatScript.damageparticleSlot33.Play();
                 combatScript.damageparticleSlot33Combate2.Play();
+                PlayAudio(audiosVigorArray[6]);
                 combatScript.damageparticleSlot33_Combate3.Play();
                 stadisticplayerScipt.health += 7;
                 stadisticplayerScipt.vigor += 6;
@@ -289,6 +296,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot34.Play();
                 combatScript.damageparticleSlot34Combate2.Play();
                 combatScript.damageparticleSlot34_Combate3.Play();
+                PlayAudio(audiosVigorArray[7]);
                 enemyy.health -= 5;
                 if (stadisticplayerScipt.health < stadisticplayerScipt.vigor)
                 {
@@ -297,6 +305,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 break;
             case "Thanatos":
                 combatScript.damageparticleSlot35.Play();
+                PlayAudio(audiosVigorArray[8]);
                 combatScript.damageparticleSlot35Combate2.Play();
                 combatScript.damageparticleSlot35_Combate3.Play();
                 enemyy.health -= 5;

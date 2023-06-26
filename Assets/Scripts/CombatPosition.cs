@@ -121,7 +121,7 @@ public class CombatPosition : MonoBehaviour
         if (combatscript.drawButtonBool == false)
         {
             combatscript.DrawButtonActiveOrNot();
-
+            combatscript.counterForDrawButton = 0;
         }
     }
     public void SwitchCamera(CinemachineVirtualCamera camera)

@@ -34,6 +34,8 @@ public class CardDisplay : MonoBehaviour
     public AudioClip musicBox;
     public AudioClip railgun;
 
+    public AudioClip[] audiosArray;
+
     public Combat combatScript;
 
 
@@ -166,6 +168,7 @@ public class CardDisplay : MonoBehaviour
                 combatScript.damageparticleSlot9Combate2.Play();
                 combatScript.damageparticleSlot9_Combate3.Play();
                 StatsPlayerScript.bloodFontAditionalDamage += 1;
+                PlayAudio(audiosArray[0]);
                 BloodFont();
                 break;
             case "Convertion":
@@ -173,6 +176,7 @@ public class CardDisplay : MonoBehaviour
                 combatScript.damageparticleSlot10Combate2.Play();
                 combatScript.damageparticleSlot10_Combate3.Play();
                 StatsPlayerScript.health += StatsPlayerScript.vigor;
+                PlayAudio(audiosArray[1]);
                 StatsPlayerScript.health += StatsPlayerScript.healingRingPassive;
                 BloodFont();
                 break;
@@ -180,6 +184,7 @@ public class CardDisplay : MonoBehaviour
                 combatScript.damageparticleSlot11.Play();
                 combatScript.damageparticleSlot11Combate2.Play();
                 combatScript.damageparticleSlot11_Combate3.Play();
+                PlayAudio(audiosArray[2]);
                 BloodFont();
                 if (StatsPlayerScript.antihealingToEnemies <= 6)
                 {
@@ -199,6 +204,7 @@ public class CardDisplay : MonoBehaviour
                 float PorcentageReduction = enemyy.health * 0.25f;
                 int ResultRounded = (int)Math.Round(PorcentageReduction);
                 enemyy.health -= ResultRounded;
+                PlayAudio(audiosArray[3]);
                 BloodFont();
                 break;
             case "Healing Ring":
@@ -207,6 +213,7 @@ public class CardDisplay : MonoBehaviour
                 combatScript.damageparticleSlot13_Combate3.Play();
                 StatsPlayerScript.healingRingPassive += 1;
                 BloodFont();
+                PlayAudio(audiosArray[4]);
                 break;
             case "Nemea BreastPlate":
                 combatScript.damageparticleSlot14.Play();
@@ -216,6 +223,7 @@ public class CardDisplay : MonoBehaviour
                 {
                     StatsPlayerScript.damageReduction += 1;
                 }
+                PlayAudio(audiosArray[5]);
                 BloodFont();
                 break;
             case "Nemesis":
@@ -223,6 +231,7 @@ public class CardDisplay : MonoBehaviour
                 combatScript.damageparticleSlot15Combate2.Play();
                 combatScript.damageparticleSlot15_Combate3.Play();
                 enemyy.health -= StatsPlayerScript.vigor;
+                PlayAudio(audiosArray[6]);
                 BloodFont();
                 break;
 
