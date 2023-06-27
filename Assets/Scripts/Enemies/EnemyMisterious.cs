@@ -16,7 +16,7 @@ public class EnemyMisterious : Enemy
     }
     public override void Enemyturn()
     {
-        if (health <= 50 && health > 30)
+        if (health <= 45 && health > 30)
         {
             int Numero = Random.Range(1, 101);
             if (Numero >= 30)
