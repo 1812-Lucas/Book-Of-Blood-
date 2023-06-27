@@ -46,6 +46,9 @@ public class CombatPosition : MonoBehaviour
 
     public float ContadorTransicion;
 
+    Charview view;
+    public CharacterController playercontroler;
+
 
     public void Update()
     {
@@ -65,11 +68,13 @@ public class CombatPosition : MonoBehaviour
 
     private void Awake()
     {
+        view = GetComponent<Charview>();
         MyAudioSource = GetComponent<AudioSource>();
     }
 
     public void Start()
     {
+        playercontroler = GetComponent<CharacterController>();
         myGM = GameManager.instance;
     }
     public void PlayAudio(AudioClip AC)
@@ -105,6 +110,7 @@ public class CombatPosition : MonoBehaviour
         // SwitchCamera(cameras[1]);
         battlePosition = true;
         PlayAudio(CardSwipe);
+        view.Isrunning(false);
         camerascript.enabled = false;
         myGM.activeUI();
         player.enabled = false;

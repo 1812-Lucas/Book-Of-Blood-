@@ -465,6 +465,7 @@ MonoBehaviour:
   CardSwipe: {fileID: 8300000, guid: 120669a9b14f2154e94d7ebeb03fd389, type: 3}
   EnemyDiesAudio: {fileID: 8300000, guid: a99e3c4ff882fc7498ed6c65ea8e07ba, type: 3}
   ContadorTransicion: 1
+  playercontroler: {fileID: 2164653984255317432}
 --- !u!114 &5790167006782233436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,6 +620,7 @@ MonoBehaviour:
   damageparticleSlot35_Combate4: {fileID: 0}
   enemyy: {fileID: 0}
   aldeano: {fileID: 3897299064811942888, guid: d398157aa9b1e4f44aff92b21add58d9, type: 3}
+  playercontador: 0
   deckscript: {fileID: 7910656068851151482}
   carddisplayscriptinSlot1: {fileID: 0}
   carddisplayscriptinSlot2: {fileID: 0}
