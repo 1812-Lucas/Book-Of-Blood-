@@ -671,7 +671,7 @@ public class Combat : MonoBehaviour
         {
 
 
-            VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed", 0f);
+            //VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed", 0f);
             playerAnimator.Play("AtaqueCartas");
         }
     }
@@ -687,7 +687,7 @@ public class Combat : MonoBehaviour
         {
 
 
-            VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed2", 0f);
+            //VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed2", 0f);
             playerAnimator.Play("AtaqueCartas");
         }
     }
@@ -702,7 +702,7 @@ public class Combat : MonoBehaviour
         else if (PlayerStadisticsScript.vigor < carddisplayscriptinSlot6.actualizarinformacióncostedeVigor())
         {
 
-            VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed3", 0f);
+            //VigorCardsAnimation.CrossFade("VigorCardAlreadyUsed3", 0f);
             playerAnimator.Play("AtaqueCartas");
         }
     }
