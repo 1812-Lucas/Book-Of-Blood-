@@ -121,22 +121,19 @@ public class inventoryObjectsActions : MonoBehaviour
             PlayAudioInventory(DeadlyEvilPageTutorial);
             if (WhispersCount == 1)
             {
-                Debug.Log("Escucha atentamente Oswald, el combate está cerca. tienes dos mazos. uno de ellos me alimentará de tu vigor para darte" +
-                    " gran parte de mi poder y pueden poner el combate a tu favor si lo usas con ingenio. Mientras más luches tu vigor aumentará" +
-                    ", y por ende, más podré consumir de ti, así que trata de no morirte tan rápido");
+                Debug.Log("Listen carefully Oswald, the fight is near. you have two decks. one of them will feed me your vigor to give you much of my power and they can turn the fight in your favor if you use it with ingenuity. The more you fight, your stamina will increase, and therefore, the more I can consume from you, so try not to die too quickly.");
             }
             else if (WhispersCount == 2)
             {
-                Debug.Log("Al presionar [i] entrarás en el inventario, presiona sobre una carta para equipartela. debes equiparte tanto" +
-                    " cartas de vigor como cartas normales o no podrás derrotar a tus enemigos.");
+                Debug.Log("By pressing [i] you will enter the inventory, press on a card to equip it. you must equip both vigor cards and normal cards or you will not be able to defeat your enemies.");
             }
             else if (WhispersCount == 3)
             {
-                Debug.Log("El mazo que no consume tu vigor son sólo un suplemento, pero pueden ser muy oportunas. Te las di por pena...");
+                Debug.Log("The deck that does not consume your stamina are just a supplement, but they can be very timely. I gave them to you out of pity...");
             }
             else if (WhispersCount == 4)
             {
-                Debug.Log("¿así usas mis cartas? eres decepcionante");
+                Debug.Log("Is that how you use my cards? you are disappointing");
             }
         }
         if (other.gameObject.layer == 8)
