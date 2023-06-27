@@ -77,13 +77,14 @@ public class EnemyMisterious : Enemy
     }
     public void SuperHeavyDamage()
     {
+        myAnim.Play("Enemy M SHAttack");
         PlayerStadisticsScript.health -= 8;
         Debug.Log("The Mini Boss dealt 8 damage to the player with a super heavy attack");
         PlayHeavyAttackParticles();
     }
     public void Regeneration()
     {
-        myAnim.Play("Enemy Health");
+        myAnim.Play("Enemy M Health");
         health += 8;
         health -= PlayerStadisticsScript.antihealingToEnemies;
         if (PlayerStadisticsScript.antihealingToEnemies > 0)

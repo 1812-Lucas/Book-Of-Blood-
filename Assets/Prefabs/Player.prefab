@@ -426,7 +426,7 @@ MonoBehaviour:
   - {fileID: 1883684176553347868, guid: d398157aa9b1e4f44aff92b21add58d9, type: 3}
   - {fileID: 6107105603314195914, guid: bf53cac988929f74ea49db6e9fff9c92, type: 3}
   - {fileID: 3232888709861344664, guid: db88ad0712515b245824c40d7c152d01, type: 3}
-  - {fileID: 2954663944383439717, guid: a3b005bc768134d40868b991b8f1be71, type: 3}
+  - {fileID: 2359392996956114415, guid: 59afa86ff8f6f2a49bef4deb5fe791ec, type: 3}
   enemytransf: {fileID: 8249360497324799471, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
   areaWhereTheEnemySpawns: {fileID: 0}
   AreasWhereTheEnemiesSpawns:
@@ -653,6 +653,7 @@ MonoBehaviour:
   NormalCardsAnimation: {fileID: 0}
   devilEyesPassive: 0
   playerAnimator: {fileID: 6633360425303154989}
+  counterForDrawButton: 0
 --- !u!114 &7910656068851151482
 MonoBehaviour:
   m_ObjectHideFlags: 0
