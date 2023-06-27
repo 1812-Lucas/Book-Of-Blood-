@@ -153,7 +153,7 @@ public class Combat : MonoBehaviour
 
     public Enemy enemyy;
     public EnemyAldeano aldeano;
-    int playercontador;
+    public int playercontador;
     public Deck deckscript;
     public CardDisplay carddisplayscriptinSlot1;
     public CardDisplay carddisplayscriptinSlot2;

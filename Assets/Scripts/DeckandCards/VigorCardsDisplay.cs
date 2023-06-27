@@ -41,6 +41,8 @@ public class VigorCardsDisplay : MonoBehaviour
 
     public AudioClip[] audiosVigorArray;
 
+    public Image notUsable;
+
     public void PlayAudio(AudioClip AC)
     {
         MyAudioSource.clip = AC;
@@ -57,6 +59,19 @@ public class VigorCardsDisplay : MonoBehaviour
         thevigorCostOfMyCard = card.vigorcost;
 
     }
+
+    public void Update()
+    {
+        if (actualizarinformacióncostedeVigor() > stadisticplayerScipt.vigor)
+        {
+            notUsable.gameObject.SetActive(true);
+        }
+        else
+        {
+            notUsable.gameObject.SetActive(false);
+        }
+    }
+
     public void setenemy(Enemy enemy)
     {
         enemyy = enemy;

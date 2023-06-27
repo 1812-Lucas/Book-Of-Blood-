@@ -38,6 +38,8 @@ public class CardDisplay : MonoBehaviour
 
     public Combat combatScript;
 
+    public Image notUsable;
+
 
     private void Start()
     {
@@ -49,6 +51,17 @@ public class CardDisplay : MonoBehaviour
         attacktext.text = card.attack.ToString();
 
 
+    }
+    public void Update()
+    {
+        if (combatScript.playercontador == 1)
+        {
+            notUsable.gameObject.SetActive(true);
+        }
+        else
+        {
+            notUsable.gameObject.SetActive(false);
+        }
     }
     public void PlayAudio(AudioClip AC)
     {
