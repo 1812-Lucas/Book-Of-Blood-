@@ -84,7 +84,6 @@ public class EnemyBoss : Enemy
     }
     public void Regeneration()
     {
-        myAnim.Play("Enemy M Health");
         health += 10;
         health -= PlayerStadisticsScript.antihealingToEnemies;
         if (PlayerStadisticsScript.antihealingToEnemies > 0)
@@ -94,7 +93,7 @@ public class EnemyBoss : Enemy
         else
         {
             Debug.Log("The Boss healed 10 points of health");
-            myAnim.Play("Enemy Health");
+            myAnim.Play("Enemy M Health");
         }
     }
 }

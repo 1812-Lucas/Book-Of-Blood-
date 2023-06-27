@@ -84,7 +84,6 @@ public class EnemyMisterious : Enemy
     }
     public void Regeneration()
     {
-        myAnim.Play("Enemy M Health");
         health += 8;
         health -= PlayerStadisticsScript.antihealingToEnemies;
         if (PlayerStadisticsScript.antihealingToEnemies > 0)
@@ -94,7 +93,7 @@ public class EnemyMisterious : Enemy
         else
         {
             Debug.Log("The Mini Boss healed 7 points of health");
-            myAnim.Play("Enemy Health");
+            myAnim.Play("Enemy M Health");
         }
     }
 }
