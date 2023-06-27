@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
     public float _currenthealth;
 
     public string nombreEscenaACargar;
+    public string nombreEscenaACargar2;
 
 
 
@@ -76,6 +77,11 @@ public class Player : MonoBehaviour
         if (other.CompareTag("ObjetoColisionable"))
         {
             SceneManager.LoadScene(nombreEscenaACargar);
+            Cursor.lockState = CursorLockMode.Confined;
+        }
+        if (other.CompareTag("ObjetoColisionable2"))
+        {
+            SceneManager.LoadScene(nombreEscenaACargar2);
             Cursor.lockState = CursorLockMode.Confined;
         }
     }

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - ObjetoColisionable
+  - ObjetoColisionable2
   layers:
   - Default
   - TransparentFX

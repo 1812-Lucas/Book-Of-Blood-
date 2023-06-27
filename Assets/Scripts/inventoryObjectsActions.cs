@@ -64,8 +64,7 @@ public class inventoryObjectsActions : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.H) && HealthPotions > 0 && combatpositionscript.CombatON == true)
         {
-            // Llamar a tu función aquí
-            //TuFuncion();
+            playerAnimator.Play("UsarPocion");
             StadisticPlayerScript.health += 30;
             HealthPotions -= 1;
             HealthPotionParticles.Play();
