@@ -350,6 +350,11 @@ public class Combat : MonoBehaviour
                 counterForDrawButton = 0;
             }
                 devilEyesPassive += 1;
+            PlayerStadisticsScript.health += PlayerStadisticsScript.damageReduction;
+            if (PlayerStadisticsScript.damageReduction > 0)
+            {
+                PlayerStadisticsScript.health += PlayerStadisticsScript.healingRingPassive;
+            }
         }
     }
     public void EndOfCombat()

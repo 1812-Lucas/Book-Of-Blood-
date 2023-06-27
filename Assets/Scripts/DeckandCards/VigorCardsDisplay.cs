@@ -87,7 +87,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 stadisticplayerScipt.health += 8;
                 protectiontottempasive();
                 PlayAudio(WarriorPendantAudio);
-                Debug.Log("Te has curado 5 puntos de salud");
+                Debug.Log("You healed 8 points of health");
                 break;
             case "Senpukku":
                 combatScript.damageparticleSlot17.Play();
@@ -100,7 +100,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 {
                     enemyy.health -= 3;
                 }
-                Debug.Log("Has cometido Senpukku");
+                Debug.Log("You have done a senpuku to yourself");
                 break;
             case "Sacrifice":
                 combatScript.damageparticleSlot18.Play();
@@ -110,7 +110,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 PlayAudio(magicSuntemple);
                 protectiontottempasive();
                 stadisticplayerScipt.health -= 3;
-                Debug.Log("Te has inflingido daño pero mucho mas al enemigo");
+                Debug.Log("You just damage yourself to deal more to the enemy");
                 break;
             case "Spirit Growth":
                 combatScript.damageparticleSlot19.Play();
@@ -123,7 +123,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 if (stadisticplayerScipt.SpiritGrowthStacks >= 3)
                 {
                     enemyy.health -= 4;
-                    Debug.Log("Has inflingido 5 de daño con Spirit Growth");
+                    Debug.Log("You have done 5 points of damage with spirit growth");
                 }
                 break;
             case "Unbreakable":
@@ -133,7 +133,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 PlayAudio(windowFixing);
                 stadisticplayerScipt.vigor += 5;
                 protectiontottempasive();
-                Debug.Log("Te has aumentado 5 puntos de vigor");
+                Debug.Log("You have increase your vigor in 5 points");
                 break;
             case "Protection Tottem":
                 combatScript.damageparticleSlot21.Play();
@@ -141,12 +141,12 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot21_Combate3.Play();
                 stadisticplayerScipt.health += 1;
                 protectiontottempasive();
-                Debug.Log("Te has curado 1 puntos de salud");
+                Debug.Log("You have healed 1 point of health");
                 stadisticplayerScipt.ProtectionTottemStacks += 1;
                 if (stadisticplayerScipt.ProtectionTottemStacks == 5)
                 {
                     PlayAudio(remorseFemale);
-                    Debug.Log("El tottem de proteccción ya está activado");
+                    Debug.Log("Protection tottem got activated");
                 }
                 else
                 {
@@ -161,8 +161,8 @@ public class VigorCardsDisplay : MonoBehaviour
                 enemyy.health -= 9;
                 protectiontottempasive();
                 PlayAudio(CaosAudio);
-                Debug.Log("Has inflingido 9 de daño");
-                Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
+                Debug.Log("You have done 9 points of damage to your enemy");
+                
                 break;
             case "Dead eye":
                 combatScript.damageparticleSlot23.Play();
@@ -172,8 +172,8 @@ public class VigorCardsDisplay : MonoBehaviour
                 stadisticplayerScipt.health += 3;
                 protectiontottempasive();
                 PlayAudio(DeadEyeAudio);
-                Debug.Log("Has inflingido 7 de daño y te has curado 2 puntos de salud");
-                Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
+                Debug.Log("You have done 7 points of damage and healed yourself in 3 points");
+               
                 break;
             case "Prominence burn":
                 combatScript.damageparticleSlot24.Play();
@@ -183,8 +183,8 @@ public class VigorCardsDisplay : MonoBehaviour
                 PlayAudio(healUp);
                 stadisticplayerScipt.health += 3;
                 protectiontottempasive();
-                Debug.Log("Has inflingido 3 de daño y te has curado 3 puntos de salud");
-                Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
+                Debug.Log("You have done 3 points of damage and healed yourself in 3 points");
+               
                 break;
             case "Absolution":
                 combatScript.damageparticleSlot25.Play();
@@ -194,8 +194,8 @@ public class VigorCardsDisplay : MonoBehaviour
                 PlayAudio(iceMagic);
                 stadisticplayerScipt.health += 4;
                 protectiontottempasive();
-                Debug.Log("Has inflingido 6 de daño y te has curado 4 puntos de salud");
-                Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
+                Debug.Log("You have done 6 points of damage and healed yourself in 4 points");
+                
                 break;
             case "Uncontrolled pride":
                 combatScript.damageparticleSlot26.Play();
@@ -203,9 +203,9 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot26_Combate3.Play();
                 enemyy.health -= 5;
                 PlayAudio(CaosAudio);
-                Debug.Log("Has inflingido 5 de daño");
+                Debug.Log("You have done 7 points of damage");
                 protectiontottempasive();
-                Debug.Log("Al enemigo le queda " + enemyy.health + " de vida ");
+                
                 break;
 
             case "absortion":
@@ -213,13 +213,16 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot27Combate2.Play();
                 combatScript.damageparticleSlot27_Combate3.Play();
                 PlayAudio(audiosVigorArray[0]);
+                protectiontottempasive();
                 if (stadisticplayerScipt.vigor <= 3)
                 {
                     stadisticplayerScipt.vigor = 7;
+                    Debug.Log("You have increase your vigor in 7 points");
                 }
                 break;
             case "Balance of Death":
                 combatScript.damageparticleSlot28.Play();
+                protectiontottempasive();
                 combatScript.damageparticleSlot28Combate2.Play();
                 combatScript.damageparticleSlot28_Combate3.Play();
                 PlayAudio(audiosVigorArray[1]);
@@ -233,30 +236,34 @@ public class VigorCardsDisplay : MonoBehaviour
                 {
                     enemyy.health -= i;
                 }
+                Debug.Log("You have done the difference of health between you and your oponent as damage");
                 break;
             case "Balance of Life":
                 combatScript.damageparticleSlot29.Play();
                 combatScript.damageparticleSlot29Combate2.Play();
+                protectiontottempasive();
                 combatScript.damageparticleSlot29_Combate3.Play();
                 PlayAudio(audiosVigorArray[2]);
                 int u = enemyy.health - stadisticplayerScipt.health;
                 if (u < 0)
                 {
                     u *= -1;
-                    stadisticplayerScipt.health -= u;
+                    stadisticplayerScipt.health += u;
                 }
                 else
                 {
-                    stadisticplayerScipt.health -= u;
+                    stadisticplayerScipt.health += u;
                 }
-
+                Debug.Log("You have healed yourself the difference of health between you and your oponent");
                 break;
 
             case "Blood Drainer":
                 combatScript.damageparticleSlot30.Play();
                 combatScript.damageparticleSlot30Combate2.Play();
+                protectiontottempasive();
                 combatScript.damageparticleSlot30_Combate3.Play();
                 enemyy.health -= 4;
+                Debug.Log("You have done 4 points of damage");
                 stadisticplayerScipt.bloodDrainerCounter += 1;
                 PlayAudio(audiosVigorArray[3]);
 
@@ -264,54 +271,68 @@ public class VigorCardsDisplay : MonoBehaviour
                 {
                     InvObjActionsScript.HealthPotions += 1;
                     stadisticplayerScipt.bloodDrainerCounter = 0;
+                    Debug.Log("You got a health potion");
                 }
                 break;
             case "Death Reaper":
                 combatScript.damageparticleSlot31.Play();
                 combatScript.damageparticleSlot31Combate2.Play();
+                protectiontottempasive();
                 combatScript.damageparticleSlot31_Combate3.Play();
                 PlayAudio(audiosVigorArray[4]);
                 stadisticplayerScipt.vigor += 7;
+                Debug.Log("You have increase your vigor in 7 points");
                 if (stadisticplayerScipt.health <= 15)
                 {
                     enemyy.health = 0;
+                    Debug.Log("You have execute your oponent");
                 }
                 break;
             case "Devil Eyes":
                 combatScript.damageparticleSlot32.Play();
                 combatScript.damageparticleSlot32Combate2.Play();
+                protectiontottempasive();
                 PlayAudio(audiosVigorArray[5]);
                 combatScript.damageparticleSlot32_Combate3.Play();
                 stadisticplayerScipt.health += combatScript.devilEyesPassive;
+                Debug.Log("You have damage your enemy with"+combatScript.devilEyesPassive+" points of damage");
                 break;
             case "Evil Pendant":
                 combatScript.damageparticleSlot33.Play();
                 combatScript.damageparticleSlot33Combate2.Play();
+                protectiontottempasive();
                 PlayAudio(audiosVigorArray[6]);
                 combatScript.damageparticleSlot33_Combate3.Play();
                 stadisticplayerScipt.health += 7;
                 stadisticplayerScipt.vigor += 6;
+                Debug.Log("You have increase your vigor in 6 points and you healed yourself in 7 points");
                 break;
             case "Souls Strike":
                 combatScript.damageparticleSlot34.Play();
                 combatScript.damageparticleSlot34Combate2.Play();
+                protectiontottempasive();
                 combatScript.damageparticleSlot34_Combate3.Play();
                 PlayAudio(audiosVigorArray[7]);
                 enemyy.health -= 5;
+                Debug.Log("You have done 5 points of damage to your oponent");
                 if (stadisticplayerScipt.health < stadisticplayerScipt.vigor)
                 {
                     enemyy.health = 0;
+                    Debug.Log("You have execute your oponent");
                 }
                 break;
             case "Thanatos":
                 combatScript.damageparticleSlot35.Play();
                 PlayAudio(audiosVigorArray[8]);
                 combatScript.damageparticleSlot35Combate2.Play();
+                protectiontottempasive();
                 combatScript.damageparticleSlot35_Combate3.Play();
                 enemyy.health -= 5;
+                Debug.Log("You have done 5 points of damage to your oponent");
                 if (stadisticplayerScipt.health <= 15)
                 {
                     stadisticplayerScipt.vigor += 15;
+                    Debug.Log("You have increase your vigor in 15 points");
                 }
                 break;
                 

@@ -111,7 +111,7 @@ public class CardDisplay : MonoBehaviour
                 StatsPlayerScript.health += StatsPlayerScript.healingRingPassive;
                 BloodFont();
                 PlayAudio(komori);
-                Debug.Log("you healed");
+                Debug.Log("You healed");
                 break;
 
             case "Big Bang":
@@ -189,7 +189,7 @@ public class CardDisplay : MonoBehaviour
                 if (StatsPlayerScript.antihealingToEnemies <= 6)
                 {
                     StatsPlayerScript.antihealingToEnemies += 2;
-                    Debug.Log("the damage taken every time the enemies try to heal is" + StatsPlayerScript.antihealingToEnemies + " points of damage");
+                    Debug.Log("The damage taken every time the enemies try to heal is" + StatsPlayerScript.antihealingToEnemies + " points of damage");
 
                 }
                 else
@@ -204,6 +204,7 @@ public class CardDisplay : MonoBehaviour
                 float PorcentageReduction = enemyy.health * 0.25f;
                 int ResultRounded = (int)Math.Round(PorcentageReduction);
                 enemyy.health -= ResultRounded;
+                Debug.Log("You have 25% of the oponent actual health as damage");
                 PlayAudio(audiosArray[3]);
                 BloodFont();
                 break;
@@ -212,6 +213,7 @@ public class CardDisplay : MonoBehaviour
                 combatScript.damageparticleSlot13Combate2.Play();
                 combatScript.damageparticleSlot13_Combate3.Play();
                 StatsPlayerScript.healingRingPassive += 1;
+                Debug.Log("You got a stack of Healing Ring");
                 BloodFont();
                 PlayAudio(audiosArray[4]);
                 break;
@@ -222,6 +224,11 @@ public class CardDisplay : MonoBehaviour
                 if (StatsPlayerScript.damageReduction <= 2)
                 {
                     StatsPlayerScript.damageReduction += 1;
+                    Debug.Log("You got a stack of nemea Breastplate");
+                }
+                else if(StatsPlayerScript.damageReduction > 2)
+                {
+                    Debug.Log("You already got the stacks of nemea Breastplate");
                 }
                 PlayAudio(audiosArray[5]);
                 BloodFont();
@@ -231,6 +238,7 @@ public class CardDisplay : MonoBehaviour
                 combatScript.damageparticleSlot15Combate2.Play();
                 combatScript.damageparticleSlot15_Combate3.Play();
                 enemyy.health -= StatsPlayerScript.vigor;
+                Debug.Log("You damage your enemy equal to the amount of vigor you have");
                 PlayAudio(audiosArray[6]);
                 BloodFont();
                 break;
