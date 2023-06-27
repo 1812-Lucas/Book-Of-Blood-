@@ -84,6 +84,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot16.Play();
                 combatScript.damageparticleSlot16Combate2.Play();
                 combatScript.damageparticleSlot16_Combate3.Play();
+                combatScript.damageparticleSlot16_Combate4.Play();
                 stadisticplayerScipt.health += 8;
                 protectiontottempasive();
                 PlayAudio(WarriorPendantAudio);
@@ -93,6 +94,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot17.Play();
                 combatScript.damageparticleSlot17Combate2.Play();
                 combatScript.damageparticleSlot17_Combate3.Play();
+                combatScript.damageparticleSlot17_Combate4.Play();
                 protectiontottempasive();
                 enemyy.health -= 4;
                 PlayAudio(arrowhit);
@@ -106,6 +108,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot18.Play();
                 combatScript.damageparticleSlot18Combate2.Play();
                 combatScript.damageparticleSlot18_Combate3.Play();
+                combatScript.damageparticleSlot18_Combate4.Play();
                 enemyy.health -= 12;
                 PlayAudio(magicSuntemple);
                 protectiontottempasive();
@@ -116,6 +119,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot19.Play();
                 combatScript.damageparticleSlot19Combate2.Play();
                 combatScript.damageparticleSlot19_Combate3.Play();
+                combatScript.damageparticleSlot19_Combate4.Play();
                 stadisticplayerScipt.SpiritGrowthStacks += 1;
                 PlayAudio(magicCircle);
                 enemyy.health -= 1;
@@ -130,6 +134,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot20.Play();
                 combatScript.damageparticleSlot20Combate2.Play();
                 combatScript.damageparticleSlot20_Combate3.Play();
+                combatScript.damageparticleSlot20_Combate4.Play();
                 PlayAudio(windowFixing);
                 stadisticplayerScipt.vigor += 5;
                 protectiontottempasive();
@@ -139,6 +144,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot21.Play();
                 combatScript.damageparticleSlot21Combate2.Play();
                 combatScript.damageparticleSlot21_Combate3.Play();
+                combatScript.damageparticleSlot21_Combate4.Play();
                 stadisticplayerScipt.health += 1;
                 protectiontottempasive();
                 Debug.Log("You have healed 1 point of health");
@@ -158,6 +164,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot22.Play();
                 combatScript.damageparticleSlot22Combate2.Play();
                 combatScript.damageparticleSlot22_Combate3.Play();
+                combatScript.damageparticleSlot22_Combate4.Play();
                 enemyy.health -= 9;
                 protectiontottempasive();
                 PlayAudio(CaosAudio);
@@ -168,6 +175,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot23.Play();
                 combatScript.damageparticleSlot23Combate2.Play();
                 combatScript.damageparticleSlot23_Combate3.Play();
+                combatScript.damageparticleSlot23_Combate4.Play();
                 enemyy.health -= 7;
                 stadisticplayerScipt.health += 3;
                 protectiontottempasive();
@@ -179,6 +187,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot24.Play();
                 combatScript.damageparticleSlot24Combate2.Play();
                 combatScript.damageparticleSlot24_Combate3.Play();
+                combatScript.damageparticleSlot24_Combate4.Play();
                 enemyy.health -= 3;
                 PlayAudio(healUp);
                 stadisticplayerScipt.health += 3;
@@ -190,6 +199,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot25.Play();
                 combatScript.damageparticleSlot25Combate2.Play();
                 combatScript.damageparticleSlot25_Combate3.Play();
+                combatScript.damageparticleSlot25_Combate4.Play();
                 enemyy.health -= 6;
                 PlayAudio(iceMagic);
                 stadisticplayerScipt.health += 4;
@@ -201,6 +211,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot26.Play();
                 combatScript.damageparticleSlot26Combate2.Play();
                 combatScript.damageparticleSlot26_Combate3.Play();
+                combatScript.damageparticleSlot26_Combate4.Play();
                 enemyy.health -= 5;
                 PlayAudio(CaosAudio);
                 Debug.Log("You have done 7 points of damage");
@@ -212,6 +223,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot27.Play();
                 combatScript.damageparticleSlot27Combate2.Play();
                 combatScript.damageparticleSlot27_Combate3.Play();
+                combatScript.damageparticleSlot27_Combate4.Play();
                 PlayAudio(audiosVigorArray[0]);
                 protectiontottempasive();
                 if (stadisticplayerScipt.vigor <= 3)
@@ -225,6 +237,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 protectiontottempasive();
                 combatScript.damageparticleSlot28Combate2.Play();
                 combatScript.damageparticleSlot28_Combate3.Play();
+                combatScript.damageparticleSlot28_Combate4.Play();
                 PlayAudio(audiosVigorArray[1]);
                 int i = enemyy.health - stadisticplayerScipt.health;
                 if (i < 0)
@@ -243,6 +256,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot29Combate2.Play();
                 protectiontottempasive();
                 combatScript.damageparticleSlot29_Combate3.Play();
+                combatScript.damageparticleSlot29_Combate4.Play();
                 PlayAudio(audiosVigorArray[2]);
                 int u = enemyy.health - stadisticplayerScipt.health;
                 if (u < 0)
@@ -262,6 +276,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot30Combate2.Play();
                 protectiontottempasive();
                 combatScript.damageparticleSlot30_Combate3.Play();
+                combatScript.damageparticleSlot30_Combate4.Play();
                 enemyy.health -= 4;
                 Debug.Log("You have done 4 points of damage");
                 stadisticplayerScipt.bloodDrainerCounter += 1;
@@ -279,6 +294,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot31Combate2.Play();
                 protectiontottempasive();
                 combatScript.damageparticleSlot31_Combate3.Play();
+                combatScript.damageparticleSlot31_Combate4.Play();
                 PlayAudio(audiosVigorArray[4]);
                 stadisticplayerScipt.vigor += 7;
                 Debug.Log("You have increase your vigor in 7 points");
@@ -294,6 +310,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 protectiontottempasive();
                 PlayAudio(audiosVigorArray[5]);
                 combatScript.damageparticleSlot32_Combate3.Play();
+                combatScript.damageparticleSlot32_Combate4.Play();
                 stadisticplayerScipt.health += combatScript.devilEyesPassive;
                 Debug.Log("You have damage your enemy with"+combatScript.devilEyesPassive+" points of damage");
                 break;
@@ -303,6 +320,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 protectiontottempasive();
                 PlayAudio(audiosVigorArray[6]);
                 combatScript.damageparticleSlot33_Combate3.Play();
+                combatScript.damageparticleSlot33_Combate4.Play();
                 stadisticplayerScipt.health += 7;
                 stadisticplayerScipt.vigor += 6;
                 Debug.Log("You have increase your vigor in 6 points and you healed yourself in 7 points");
@@ -312,6 +330,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot34Combate2.Play();
                 protectiontottempasive();
                 combatScript.damageparticleSlot34_Combate3.Play();
+                combatScript.damageparticleSlot34_Combate4.Play();
                 PlayAudio(audiosVigorArray[7]);
                 enemyy.health -= 5;
                 Debug.Log("You have done 5 points of damage to your oponent");
@@ -327,6 +346,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot35Combate2.Play();
                 protectiontottempasive();
                 combatScript.damageparticleSlot35_Combate3.Play();
+                combatScript.damageparticleSlot35_Combate4.Play();
                 enemyy.health -= 5;
                 Debug.Log("You have done 5 points of damage to your oponent");
                 if (stadisticplayerScipt.health <= 15)
