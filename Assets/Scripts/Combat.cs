@@ -633,7 +633,7 @@ public class Combat : MonoBehaviour
         {
             StartCoroutine(FadeAnimSlot1(0));
 
-            NormalCardsAnimation.CrossFade("CardAlreadyUsed", 0f);
+            //NormalCardsAnimation.CrossFade("CardAlreadyUsed", 0f);
             playerAnimator.Play("AtaqueCartas");
         }
 
@@ -644,7 +644,7 @@ public class Combat : MonoBehaviour
         {
             StartCoroutine(FadeAnimSlot2(1));
 
-            NormalCardsAnimation.CrossFade("CardAlreadyUsed2_", 0f);
+            //NormalCardsAnimation.CrossFade("CardAlreadyUsed2_", 0f);
             playerAnimator.Play("AtaqueCartas");
         }
 
@@ -655,7 +655,7 @@ public class Combat : MonoBehaviour
         {
             StartCoroutine(FadeAnimSlot3(2));
 
-            NormalCardsAnimation.CrossFade("CardAlreadyUsed3", 0f);
+            //NormalCardsAnimation.CrossFade("CardAlreadyUsed3", 0f);
             playerAnimator.Play("AtaqueCartas");
         }
 
