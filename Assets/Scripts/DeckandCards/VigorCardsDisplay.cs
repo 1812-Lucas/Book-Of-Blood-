@@ -243,7 +243,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 protectiontottempasive();
                 if (stadisticplayerScipt.vigor <= 3)
                 {
-                    stadisticplayerScipt.vigor = 7;
+                    stadisticplayerScipt.vigor += 7;
                     Debug.Log("You have increase your vigor in 7 points");
                 }
                 break;

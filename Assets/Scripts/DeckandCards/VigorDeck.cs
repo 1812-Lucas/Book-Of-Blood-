@@ -17,7 +17,7 @@ public class VigorDeck : MonoBehaviour
     public VigorCards[] DeckOfTheVigorDeck;
     public bool[] EquipOrUnequipTheCardBool;
     public List<VigorCards> TrueVigorDeckInCombat = new List<VigorCards>();
-   
+
 
     private void Awake()
     {
@@ -38,18 +38,27 @@ public class VigorDeck : MonoBehaviour
                 TrueVigorDeckInCombat.Add(objeto);
             }
         }
+        TrueVigorDeckInCombat.RemoveAll(item => item == null);
+    }
+
+    public void EmptyListOfMyVigorCardsBuildForCombat()
+    {
+        for (int i = 0; i < TrueVigorDeckInCombat.Count; i++)
+        {
+            TrueVigorDeckInCombat[i] = null;
+        }
     }
 
     public void BuildMyVigorDeck(VigorCards browser, int ThePlaceInArray)
     {
         //DeckOfTheVigorDeck[ThePlaceInArray] = browser;
         //DeckOfTheVigorDeck[ThePlaceInArray] = null;
-        if (EquipOrUnequipTheCardBool[ThePlaceInArray]==false)
+        if (EquipOrUnequipTheCardBool[ThePlaceInArray] == false)
         {
             DeckOfTheVigorDeck[ThePlaceInArray] = browser;
             EquipOrUnequipTheCardBool[ThePlaceInArray] = true;
         }
-        else if(EquipOrUnequipTheCardBool[ThePlaceInArray] == true)
+        else if (EquipOrUnequipTheCardBool[ThePlaceInArray] == true)
         {
             DeckOfTheVigorDeck[ThePlaceInArray] = null;
             EquipOrUnequipTheCardBool[ThePlaceInArray] = false;
@@ -80,28 +89,28 @@ public class VigorDeck : MonoBehaviour
                 {
                     Slot4.card = randomCard;
                     Slot4.actualizarinfodeUIdeCadaCarta();
-                    
+
                     SlotBool4 = true;
 
-                    
+
                 }
                 else if (i == 1 && SlotBool5 == false)
                 {
                     Slot5.card = randomCard;
                     Slot5.actualizarinfodeUIdeCadaCarta();
-                   
+
                     SlotBool5 = true;
 
-                   
+
                 }
                 else if (i == 2 && SlotBool6 == false)
                 {
                     Slot6.card = randomCard;
                     Slot6.actualizarinfodeUIdeCadaCarta();
-                    
+
                     SlotBool6 = true;
 
-                    
+
                 }
 
             }
