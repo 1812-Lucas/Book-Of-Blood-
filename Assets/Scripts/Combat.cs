@@ -198,6 +198,7 @@ public class Combat : MonoBehaviour
     public Animator playerAnimator;
 
     public int counterForDrawButton;
+    public Image blockerAguileImage;// FALTA REFE
 
 
     void Start()
@@ -553,6 +554,7 @@ public class Combat : MonoBehaviour
         playercontador = 1;
         deckscript.DrawCards();
         activaryDesactivarCartaAlUsarlaSlot1();
+
         button1.interactable = false;
         TheCanvasesForFade[0].alpha = 1;
         yield return null;
@@ -693,6 +695,7 @@ public class Combat : MonoBehaviour
     {
         if (carddisplayscriptinSlot1.myslot == 1 && playercontador == 0)
         {
+            blockerAguileImage.gameObject.SetActive(false);
             StartCoroutine(FadeAnimSlot1(0));
 
             //NormalCardsAnimation.CrossFade("CardAlreadyUsed", 0f);
@@ -704,6 +707,7 @@ public class Combat : MonoBehaviour
     {
         if (carddisplayscriptinSlot2.myslot == 2 && playercontador == 0)
         {
+            blockerAguileImage.gameObject.SetActive(false);
             StartCoroutine(FadeAnimSlot2(1));
 
             //NormalCardsAnimation.CrossFade("CardAlreadyUsed2_", 0f);
@@ -715,6 +719,7 @@ public class Combat : MonoBehaviour
     {
         if (carddisplayscriptinSlot3.myslot == 3 && playercontador == 0)
         {
+            blockerAguileImage.gameObject.SetActive(false);
             StartCoroutine(FadeAnimSlot3(2));
 
             //NormalCardsAnimation.CrossFade("CardAlreadyUsed3", 0f);
