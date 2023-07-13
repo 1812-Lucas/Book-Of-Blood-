@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Lucky Cojn
   description: Select one of six coins. Normal Coins does 3 points of damage. the
-    Lucky Coin does 16.
+    Lucky Coin does 13.
   image: {fileID: 0}
   vigorcost: 1

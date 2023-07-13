@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 
@@ -17,7 +18,16 @@ public class StadisticPlayer : MonoBehaviour
     public int SpiritGrowthStacks;
     public int ProtectionTottemStacks;
     public int bloodDrainerCounter;
+    public int clearMind;
+    public int soulDrainer;
     public GameManager _myGM;
+    public Image LuckyCoinSkillImage;
+    public Image GameOfFaithSkillImage;
+    public Combat combatScript;
+    public inventoryObjectsActions inventoryObjectsActionsScript;
+
+    public bool inmortalHeavyBool;
+    public bool magicShieldBasicBool;
     
     public void Update()
     {
@@ -37,5 +47,48 @@ public class StadisticPlayer : MonoBehaviour
     {
         SceneManager.LoadScene("LoseScene");
         Cursor.lockState = CursorLockMode.Confined;
+    }
+
+    public void LuckyCoinSkillActive()
+    {
+        LuckyCoinSkillImage.gameObject.SetActive(true);
+
+
+    }
+    public void ButtonFunctionOfLuckyCoin()
+    {
+        int lc = Random.Range(0, 7);
+        if (lc == 6)
+        {
+            combatScript.enemyy.health -= 13;
+            Debug.Log(" You did 13 points of damage to your oponent with the Lucky Coin!");
+        }
+        else
+        {
+            combatScript.enemyy.health -= 3;
+            Debug.Log(" You did 3 points of damage to your oponent");
+        }
+        LuckyCoinSkillImage.gameObject.SetActive(false);
+    }
+    public void GameOfFaithSkillActive()
+    {
+        GameOfFaithSkillImage.gameObject.SetActive(true);
+
+
+    }
+    public void ButtonFunctionOfGameOfFaith()
+    {
+        int lc = Random.Range(0, 7);
+        if (lc == 6)
+        {
+            inventoryObjectsActionsScript.VigorPotions += 1;
+            Debug.Log("You found the vigor potion from the Game of Faith!");
+        }
+        else
+        {
+            
+            Debug.Log(" You couldn´t find the Vigor Potion in the Game of Faith");
+        }
+        LuckyCoinSkillImage.gameObject.SetActive(false);
     }
 }

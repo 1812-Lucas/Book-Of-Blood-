@@ -254,7 +254,7 @@ public class CardDisplay : MonoBehaviour
                     StatsPlayerScript.damageReduction += 1;
                     Debug.Log("You got a stack of nemea Breastplate");
                 }
-                else if(StatsPlayerScript.damageReduction > 2)
+                else if (StatsPlayerScript.damageReduction > 2)
                 {
                     Debug.Log("You already got the stacks of nemea Breastplate");
                 }
@@ -270,6 +270,30 @@ public class CardDisplay : MonoBehaviour
                 Debug.Log("You damage your enemy equal to the amount of vigor you have");
                 PlayAudio(audiosArray[6]);
                 BloodFont();
+                break;
+            case "Game of Faith":
+                StatsPlayerScript.GameOfFaithSkillActive();
+                break;
+            case "Golden Angel":
+
+                StatsPlayerScript.vigor += 6;
+                Debug.Log("You recovered 6 points of vigor");
+                break;
+
+            case "Iron Heart":
+
+                float PercReduction = StatsPlayerScript.health * 0.3f;
+                int TheResultRounded = (int)Math.Round(PercReduction);
+                enemyy.health -= TheResultRounded;
+                Debug.Log("You have done 30% of your actual health as damage");
+                break;
+
+            case "Inmortal":
+
+                break;
+
+            case "Magic Shield":
+
                 break;
 
 

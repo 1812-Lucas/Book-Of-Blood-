@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Game of Faith
   m_EditorClassIdentifier: 
   name: Game of Faith
-  description: ' Select a coin Between 6. if you pick the aproppiate coin you get
-    a health potion'
+  description: ' Select a coin Between 6. Just one of them will grant you a vigor
+    potion'
   image: {fileID: 0}
   vigorcost: 0
   attack: 8
