@@ -234,7 +234,7 @@ public class VigorCardsDisplay : MonoBehaviour
 
                 break;
 
-            case "absortion":
+            case "Absortion":
                 combatScript.damageparticleSlot27.Play();
                 combatScript.damageparticleSlot27Combate2.Play();
                 combatScript.damageparticleSlot27_Combate3.Play();
@@ -376,12 +376,16 @@ public class VigorCardsDisplay : MonoBehaviour
             case "Clear Mind":
                 enemyy.health -= 4;
                 stadisticplayerScipt.clearMind += 1;
-                if (stadisticplayerScipt.clearMind >= 3)
+                if (stadisticplayerScipt.clearMind >= 3 && InvObjActionsScript.AguilePotions <= 1)
                 {
                     InvObjActionsScript.AguilePotions += 1;
                     stadisticplayerScipt.clearMind = 0;
                     Debug.Log("You got an Aguile potion form Clear Mind and done 4 points of damage to your oponent");
 
+                }
+                else if (stadisticplayerScipt.clearMind >= 3 && InvObjActionsScript.AguilePotions> 1)
+                {
+                    Debug.Log(" you already have the max stacks of guile potions");
                 }
                 else
                 {
@@ -391,8 +395,8 @@ public class VigorCardsDisplay : MonoBehaviour
 
             case "Holy Luck":
                 int hc = Random.Range(1, 11);
-                enemyy.health -= hc;
-                Debug.Log("you did " + hc + " points of damage to your oponent wit Holy Luck");
+                stadisticplayerScipt.health += hc;
+                Debug.Log("you healed " + hc + " points of health with Holy Luck");
 
                 break;
 
@@ -400,7 +404,7 @@ public class VigorCardsDisplay : MonoBehaviour
             case "Runic Dice":
                 int rc = Random.Range(1, 11);
                 enemyy.health -= rc;
-                Debug.Log("you did " + rc + " points of damage to your oponent wit Holy Luck");
+                Debug.Log("you did " + rc + " points of damage to your oponent with Runic Dice.");
 
                 break;
             case "Soul Drainer":

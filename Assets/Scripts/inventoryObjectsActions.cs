@@ -147,6 +147,32 @@ public class inventoryObjectsActions : MonoBehaviour
 
             Debug.Log("You obtained a healing potion, you can only use it in combat by pressing the H key or its corresponding button");
         }
+        if (other.gameObject.layer == 20)
+        {
+            VigorPotions += 1;
+            Destroy(other.gameObject);
+            healthPotionLight.enabled = false;
+            healthPotionParticles.Stop();
+            healthPotionMiniParticles.Stop();
+
+
+            Debug.Log("You obtained a vigor potion, you can only use it in combat");
+        }
+        if (other.gameObject.layer == 21)
+        {
+            if (AguilePotions <= 1)
+            {
+                AguilePotions += 1;
+
+            }
+            Destroy(other.gameObject);
+            healthPotionLight.enabled = false;
+            healthPotionParticles.Stop();
+            healthPotionMiniParticles.Stop();
+
+
+            Debug.Log("You obtained an aguile potion, you can only use it in combat. max 2 potions");
+        }
 
         if (other.gameObject.layer == 6)
         {

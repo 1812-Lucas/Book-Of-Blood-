@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f42e8829653e1c4dbfaf5c502342e4a, type: 3}
   m_Name: Lucky Coin
   m_EditorClassIdentifier: 
-  name: Lucky Cojn
+  name: Lucky Coin
   description: Select one of six coins. Normal Coins does 3 points of damage. the
     Lucky Coin does 13.
   image: {fileID: 0}

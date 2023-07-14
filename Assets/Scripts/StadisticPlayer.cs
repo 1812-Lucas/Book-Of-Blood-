@@ -89,6 +89,6 @@ public class StadisticPlayer : MonoBehaviour
             
             Debug.Log(" You couldn´t find the Vigor Potion in the Game of Faith");
         }
-        LuckyCoinSkillImage.gameObject.SetActive(false);
+        GameOfFaithSkillImage.gameObject.SetActive(false);
     }
 }
