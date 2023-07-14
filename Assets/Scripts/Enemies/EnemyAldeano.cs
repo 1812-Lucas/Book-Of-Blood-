@@ -58,16 +58,34 @@ public class EnemyAldeano : Enemy
     }
     public void BasicDamage()
     {
+        if (PlayerStadisticsScript.magicShieldBasicBool == false)
+        {
+            PlayerStadisticsScript.health -= 1;
+            Debug.Log("The enemy dealt 1 damage to the player with a basic attack");
+
+
+        }
+        else
+        {
+            Debug.Log("Magic shield protected you from a basic attack");
+        }
         myAnim.Play("Enemy Attack");
-        PlayerStadisticsScript.health -= 1;
-        Debug.Log("The enemy dealt 1 damage to the player with a basic attack");
         PlayBasicAttackParticles();
     }
     public void HeavyDamage()
     {
+        if (PlayerStadisticsScript.inmortalHeavyBool == false)
+        {
+            PlayerStadisticsScript.health -= 3;
+            Debug.Log("The enemy dealt 3 damage to the player with a heavy attack");
+
+
+        }
+        else
+        {
+            Debug.Log("inmortal protected you from a heavy attack");
+        }
         myAnim.Play("Enemy HAttack");
-        PlayerStadisticsScript.health -= 3;
-        Debug.Log("The enemy dealt 3 damage to the player with a heavy attack");
         PlayHeavyAttackParticles();
     }
     public void Regeneration()

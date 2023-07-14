@@ -289,11 +289,13 @@ public class CardDisplay : MonoBehaviour
                 break;
 
             case "Inmortal":
-
+                StatsPlayerScript.inmortalHeavyBool = true;
+                Debug.Log("you gain a shield that blocks a heavy attack of the next turn");
                 break;
 
             case "Magic Shield":
-
+                StatsPlayerScript.magicShieldBasicBool = true;
+                Debug.Log("you gain a shield that blocks a basic attack of the next turn");
                 break;
 
 

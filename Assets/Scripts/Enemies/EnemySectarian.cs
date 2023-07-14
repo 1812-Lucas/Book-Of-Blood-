@@ -59,16 +59,34 @@ public class EnemySectarian : Enemy
     }
     public void BasicDamage()
     {
+        if (PlayerStadisticsScript.magicShieldBasicBool == false)
+        {
+            PlayerStadisticsScript.health -= 2;
+            Debug.Log("The enemy dealt 2 damage to the player with a basic attack");
+
+
+        }
+        else
+        {
+            Debug.Log("Magic shield protected you from a basic attack");
+        }
         myAnim.Play("Enemy S Attack");
-        PlayerStadisticsScript.health -= 2;
-        Debug.Log("The enemy dealt 2 damage to the player with a basic attack");
         PlayBasicAttackParticles();
     }
     public void HeavyDamage()
     {
+        if (PlayerStadisticsScript.inmortalHeavyBool == false)
+        {
+            PlayerStadisticsScript.health -= 4;
+            Debug.Log("The enemy dealt 4 damage to the player with a heavy attack");
+
+
+        }
+        else
+        {
+            Debug.Log("inmortal protected you from a heavy attack");
+        }
         myAnim.Play("Enemy S HAttack");
-        PlayerStadisticsScript.health -= 4;
-        Debug.Log("The enemy dealt 4 damage to the player with a heavy attack");
         PlayHeavyAttackParticles();
     }
     public void Regeneration()

@@ -59,16 +59,33 @@ public class EnemyTank : Enemy
     }
     public void BasicDamage()
     {
+        if (PlayerStadisticsScript.magicShieldBasicBool == false)
+        {
+            PlayerStadisticsScript.health -= 3;
+            Debug.Log("The enemy dealt 3 damage to the player with a basic attack");
+
+        }
+        else
+        {
+            Debug.Log("Magic shield protected you from a basic attack");
+        }
         myAnim.Play("Enemy T Attack");
-        PlayerStadisticsScript.health -= 3;
-        Debug.Log("The enemy dealt 3 damage to the player with a basic attack");
         PlayBasicAttackParticles();
     }
     public void HeavyDamage()
     {
+        if (PlayerStadisticsScript.inmortalHeavyBool == false)
+        {
+            PlayerStadisticsScript.health -= 5;
+            Debug.Log("The enemy dealt 5 damage to the player with a heavy attack");
+
+
+        }
+        else
+        {
+            Debug.Log("inmortal protected you from a heavy attack");
+        }
         myAnim.Play("Enemy T HAttack");
-        PlayerStadisticsScript.health -= 5;
-        Debug.Log("The enemy dealt 5 damage to the player with a heavy attack");
         PlayHeavyAttackParticles();
     }
     public void Regeneration()

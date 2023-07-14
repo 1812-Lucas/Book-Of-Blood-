@@ -336,6 +336,8 @@ public class Combat : MonoBehaviour
                 activaryDesactivarCartaAlUsarlaSlot6();
             }
             enemyattack = false;
+            PlayerStadisticsScript.inmortalHeavyBool = false;
+            PlayerStadisticsScript.magicShieldBasicBool = false;
 
             Debug.Log("End of turn");
             Debug.Log("Start next turn");

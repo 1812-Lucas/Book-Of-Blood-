@@ -63,23 +63,50 @@ public class EnemyMisterious : Enemy
     }
     public void BasicDamage()
     {
+        if (PlayerStadisticsScript.magicShieldBasicBool == false)
+        {
+            PlayerStadisticsScript.health -= 4;
+            Debug.Log("The Mini Boss dealt 4 damage to the player with a basic attack");
+
+
+        }
+        else
+        {
+            Debug.Log("Magic shield protected you from a basic attack");
+        }
         myAnim.Play("Enemy M Attack");
-        PlayerStadisticsScript.health -= 4;
-        Debug.Log("The Mini Boss dealt 4 damage to the player with a basic attack");
         PlayBasicAttackParticles();
     }
     public void HeavyDamage()
     {
+        if (PlayerStadisticsScript.inmortalHeavyBool == false)
+        {
+            PlayerStadisticsScript.health -= 6;
+            Debug.Log("The Mini Boss dealt 6 damage to the player with a heavy attack");
+
+
+        }
+        else
+        {
+            Debug.Log("inmortal protected you from a heavy attack");
+        }
         myAnim.Play("Enemy M HAttack");
-        PlayerStadisticsScript.health -= 6;
-        Debug.Log("The Mini Boss dealt 6 damage to the player with a heavy attack");
         PlayHeavyAttackParticles();
     }
     public void SuperHeavyDamage()
     {
+        if (PlayerStadisticsScript.inmortalHeavyBool == false)
+        {
+            PlayerStadisticsScript.health -= 8;
+            Debug.Log("The Mini Boss dealt 8 damage to the player with a super heavy attack");
+
+
+        }
+        else
+        {
+            Debug.Log("inmortal protected you from a super heavy attack");
+        }
         myAnim.Play("Enemy M SHAttack");
-        PlayerStadisticsScript.health -= 8;
-        Debug.Log("The Mini Boss dealt 8 damage to the player with a super heavy attack");
         PlayHeavyAttackParticles();
     }
     public void Regeneration()
