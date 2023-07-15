@@ -126,7 +126,7 @@ public class CardDisplay : MonoBehaviour
                 StatsPlayerScript.health += StatsPlayerScript.healingRingPassive;
                 BloodFont();
                 PlayAudio(komori);
-                Debug.Log("You healed");
+                Debug.Log("You had <color=green>healed</color>.");
                 break;
 
             case "Big Bang":
@@ -214,12 +214,12 @@ public class CardDisplay : MonoBehaviour
                 if (StatsPlayerScript.antihealingToEnemies <= 6)
                 {
                     StatsPlayerScript.antihealingToEnemies += 2;
-                    Debug.Log("The damage taken every time the enemies try to heal is" + StatsPlayerScript.antihealingToEnemies + " points of damage");
+                    Debug.Log("The damage taken every time the <color=red>enemy</color> try to heal is" + StatsPlayerScript.antihealingToEnemies + " <color=red>points of damage</color>.");
 
                 }
                 else
                 {
-                    Debug.Log("You already got the max stacks of Cursed Mud ");
+                    Debug.Log("You already got the max stacks of <color=red>Cursed Mud</color>.");
                 }
                 break;
             case "Giant Killer":
@@ -230,7 +230,7 @@ public class CardDisplay : MonoBehaviour
                 float PorcentageReduction = enemyy.health * 0.25f;
                 int ResultRounded = (int)Math.Round(PorcentageReduction);
                 enemyy.health -= ResultRounded;
-                Debug.Log("You have 25% of the oponent actual health as damage");
+                Debug.Log("You had <color=green>25%</color> of the oponent actual health as <color=red>damage</color>.");
                 PlayAudio(audiosArray[3]);
                 BloodFont();
                 break;
@@ -240,7 +240,7 @@ public class CardDisplay : MonoBehaviour
                 combatScript.damageparticleSlot13_Combate3.Play();
                 combatScript.damageparticleSlot13_Combate4.Play();
                 StatsPlayerScript.healingRingPassive += 1;
-                Debug.Log("You got a stack of Healing Ring");
+                Debug.Log("You had got a stack of <color=green>Healing Ring</color>.");
                 BloodFont();
                 PlayAudio(audiosArray[4]);
                 break;
@@ -252,11 +252,11 @@ public class CardDisplay : MonoBehaviour
                 if (StatsPlayerScript.damageReduction <= 2)
                 {
                     StatsPlayerScript.damageReduction += 1;
-                    Debug.Log("You got a stack of nemea Breastplate");
+                    Debug.Log("You had got a stack of <color=red>Nemea Breastplate</color>.");
                 }
                 else if (StatsPlayerScript.damageReduction > 2)
                 {
-                    Debug.Log("You already got the stacks of nemea Breastplate");
+                    Debug.Log("You already got the stacks of <color=red>Nemea Breastplate</color>.");
                 }
                 PlayAudio(audiosArray[5]);
                 BloodFont();
@@ -267,7 +267,7 @@ public class CardDisplay : MonoBehaviour
                 combatScript.damageparticleSlot15_Combate3.Play();
                 combatScript.damageparticleSlot15_Combate4.Play();
                 enemyy.health -= StatsPlayerScript.vigor;
-                Debug.Log("You damage your enemy equal to the amount of vigor you have");
+                Debug.Log("You damaged your <color=red>enemy</color> equal to the amount of <color=blue>vigor</color> you had.");
                 PlayAudio(audiosArray[6]);
                 BloodFont();
                 break;
@@ -277,7 +277,7 @@ public class CardDisplay : MonoBehaviour
             case "Golden Angel":
 
                 StatsPlayerScript.vigor += 6;
-                Debug.Log("You recovered 6 points of vigor");
+                Debug.Log("You recovered <color=blue>6 points of vigor</color>.");
                 break;
 
             case "Iron Heart":
@@ -285,17 +285,17 @@ public class CardDisplay : MonoBehaviour
                 float PercReduction = StatsPlayerScript.health * 0.3f;
                 int TheResultRounded = (int)Math.Round(PercReduction);
                 enemyy.health -= TheResultRounded;
-                Debug.Log("You have done 30% of your actual health as damage");
+                Debug.Log("You had done <color=red>30%</color> of your actual <color=green>health</color> as <color=red>damage</color>.");
                 break;
 
             case "Inmortal":
                 StatsPlayerScript.inmortalHeavyBool = true;
-                Debug.Log("you gain a shield that blocks a heavy attack of the next turn");
+                Debug.Log("You gained a <color=green>shield</color> that blocks a <color=red>heavy attack</color> of the next turn.");
                 break;
 
             case "Magic Shield":
                 StatsPlayerScript.magicShieldBasicBool = true;
-                Debug.Log("you gain a shield that blocks a basic attack of the next turn");
+                Debug.Log("You gained a <color=green>shield</color> that blocks a <color=red>basic attack</color> of the next turn.");
                 break;
 
 
