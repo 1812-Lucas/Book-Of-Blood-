@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Lucky Coin
   description: Select one of six coins. Normal Coins does 3 points of damage. the
     Lucky Coin does 13.
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 12b4f57ea421e9240b4c45797ff385be, type: 3}
   vigorcost: 1

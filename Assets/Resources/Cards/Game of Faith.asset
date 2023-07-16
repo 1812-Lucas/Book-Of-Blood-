@@ -15,6 +15,6 @@ MonoBehaviour:
   name: Game of Faith
   description: ' Select a coin Between 6. Just one of them will grant you a vigor
     potion'
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: d9242e5b838ac714a80e6ffe788e4a9d, type: 3}
   vigorcost: 0
   attack: 8
