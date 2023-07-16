@@ -105,7 +105,7 @@ public class CombatPosition : MonoBehaviour
             enemyInvoke = false;
             combatscript.DrawAgain();
 
-            Debug.Log("You came out of combat");
+            Debug.Log("You came out of <color=red>combat</color>.");
         }
     }
 
@@ -123,7 +123,7 @@ public class CombatPosition : MonoBehaviour
         deckscript.CreateListOfMyrCardsBuildForCombat();
         mainCamera.transform.LookAt(enemytransf);
         playerRB.constraints = RigidbodyConstraints.FreezeAll;
-        Debug.Log("You entered combat");
+        Debug.Log("You entered <color=red>combat</color>.");
         //deckscript.DrawCards();
         //vigordeckscript.DrawCards();
         combatscript.DrawCardsStartCombat();

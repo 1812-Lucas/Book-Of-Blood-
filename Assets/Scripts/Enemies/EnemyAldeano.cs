@@ -61,13 +61,13 @@ public class EnemyAldeano : Enemy
         if (PlayerStadisticsScript.magicShieldBasicBool == false)
         {
             PlayerStadisticsScript.health -= 1;
-            Debug.Log("The enemy dealt 1 damage to the player with a basic attack");
+            Debug.Log("The <color=red>enemy</color> dealt <color=red>1 points of damage</color> to the player with a basic attack.");
 
 
         }
         else
         {
-            Debug.Log("Magic shield protected you from a basic attack");
+            Debug.Log("<color=green>Magic shield</color> protected you from a basic attack.");
         }
         myAnim.Play("Enemy Attack");
         PlayBasicAttackParticles();
@@ -77,13 +77,13 @@ public class EnemyAldeano : Enemy
         if (PlayerStadisticsScript.inmortalHeavyBool == false)
         {
             PlayerStadisticsScript.health -= 3;
-            Debug.Log("The enemy dealt 3 damage to the player with a heavy attack");
+            Debug.Log("The <color=red>enemy</color> dealt <color=red>3 points of damage</color> to the player with a heavy attack.");
 
 
         }
         else
         {
-            Debug.Log("inmortal protected you from a heavy attack");
+            Debug.Log("<color=green>Inmortal</color> protected you from a heavy attack.");
         }
         myAnim.Play("Enemy HAttack");
         PlayHeavyAttackParticles();
@@ -94,11 +94,11 @@ public class EnemyAldeano : Enemy
         health -= PlayerStadisticsScript.antihealingToEnemies;
         if (PlayerStadisticsScript.antihealingToEnemies > 0)
         {
-            Debug.Log("Enemy got damage by Cursed Mud when tried to heal himself with 3 points of health");
+            Debug.Log("<color=red>Enemy</color> got <color=red>damaged</color> by Cursed Mud when tried to heal himself with <color=green>3 points of health</color>.");
         }
         else
         {
-            Debug.Log("The enemy healed 2 points of health");
+            Debug.Log("The <color=red>enemy</color> healed <color=green>2 points of health</color>.");
             myAnim.Play("Enemy Health");
         }
     }

@@ -61,12 +61,12 @@ public class StadisticPlayer : MonoBehaviour
         if (lc == 6)
         {
             combatScript.enemyy.health -= 13;
-            Debug.Log(" You did 13 points of damage to your oponent with the Lucky Coin!");
+            Debug.Log(" You did <color=red>13 points of damage</color> to your oponent with the Lucky Coin!");
         }
         else
         {
             combatScript.enemyy.health -= 3;
-            Debug.Log(" You did 3 points of damage to your oponent");
+            Debug.Log(" You did <color=red>3 points of damage</color> to your oponent.");
         }
         LuckyCoinSkillImage.gameObject.SetActive(false);
     }
@@ -82,12 +82,12 @@ public class StadisticPlayer : MonoBehaviour
         if (lc == 6)
         {
             inventoryObjectsActionsScript.VigorPotions += 1;
-            Debug.Log("You found the vigor potion from the Game of Faith!");
+            Debug.Log("You <color=yellow>found</color> the <color=blue>Vigor Potion</color> from the Game of Faith!");
         }
         else
         {
             
-            Debug.Log(" You couldn´t find the Vigor Potion in the Game of Faith");
+            Debug.Log(" You <color=yellow>couldn´t find</color> the <color=blue>Vigor Potion</color> in the Game of Faith.");
         }
         GameOfFaithSkillImage.gameObject.SetActive(false);
     }

@@ -73,7 +73,7 @@ public class inventoryObjectsActions : MonoBehaviour
             StadisticPlayerScript.health += 30;
             HealthPotions -= 1;
             HealthPotionParticles.Play();
-            Debug.Log("You have <color=green>healed 30 points</color> with a health buff.");
+            Debug.Log("You had <color=green>healed 30 points</color> with a health buff.");
 
         }
     }
@@ -86,7 +86,7 @@ public class inventoryObjectsActions : MonoBehaviour
             playerAnimator.Play("UsarPocion");
             PlayAudioInventory(UsePotionAudio);
             HealthPotionParticles.Play();
-            Debug.Log("You have <color=green>healed 30 points</color> with a health buff.");
+            Debug.Log("You had <color=green>healed 30 points</color> with a health buff.");
         }
     }
     public void UseVigorPotion()
@@ -98,7 +98,7 @@ public class inventoryObjectsActions : MonoBehaviour
             playerAnimator.Play("UsarPocion");
             PlayAudioInventory(UsePotionAudio);
             //HealthPotionParticles.Play();
-            Debug.Log("You have recover <color=blue>10 points of vigor</color> with a potion.");
+            Debug.Log("You had recovered <color=blue>10 points of vigor</color> with a potion.");
         }
     }
     public void UseAguilePotion()
@@ -127,7 +127,7 @@ public class inventoryObjectsActions : MonoBehaviour
             ActivatorsOfCards[CardsOnCountdown] = true;
             cardsOnInventory[CardsOnCountdown].gameObject.SetActive(ActivatorsOfCards[CardsOnCountdown]);
             PlayAudioInventory(newCard);
-            Debug.Log("You have obtained a new card <color=yellow>[i]</color> to see the <color=yellow>inventory</color>.");
+            Debug.Log("You had obtained a new card <color=yellow>[i]</color> to see the <color=yellow>inventory</color>.");
             /*if (inventoryTutorialTrigger == false)
             {
                 inventoryTutorialTrigger = true;
@@ -145,7 +145,7 @@ public class inventoryObjectsActions : MonoBehaviour
             healthPotionMiniParticles.Stop();
 
 
-            Debug.Log("You obtained a <color=green>healing potion</color>, you can only use it in combat by pressing the <color=yellow>H</color> key or its corresponding button.");
+            Debug.Log("You had obtained a <color=green>healing potion</color>, you can only use it in combat by pressing the <color=yellow>H</color> key or its corresponding button.");
         }
         if (other.gameObject.layer == 20)
         {
@@ -156,7 +156,7 @@ public class inventoryObjectsActions : MonoBehaviour
             healthPotionMiniParticles.Stop();
 
 
-            Debug.Log("You obtained a <color=blue>vigor potion</color>, you can only use it in combat.");
+            Debug.Log("You had obtained a <color=blue>vigor potion</color>, you can only use it in combat.");
         }
         if (other.gameObject.layer == 21)
         {
@@ -171,7 +171,7 @@ public class inventoryObjectsActions : MonoBehaviour
             healthPotionMiniParticles.Stop();
 
 
-            Debug.Log("You obtained an <color=red>aguile potion</color>, you can only use it in combat. Max <color=red>2 potions</color>.");
+            Debug.Log("You had obtained an <color=red>aguile potion</color>, you can only use it in combat. Max <color=red>2 potions</color>.");
         }
 
         if (other.gameObject.layer == 6)
