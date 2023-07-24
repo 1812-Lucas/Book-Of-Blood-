@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: a3b6731ea31eee14dbfd662d49fcf785
+guid: 44e9f53bb63cd59439ec84a2358e15b3
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable:
   - first:
-      74: -1245888001772292248
-    second: Enemy L Walk
+      74: -3100369314251171874
+    second: Enemy ML Idle
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -36,11 +36,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Enemy L Walk
-      takeName: Caminar
+      name: Enemy ML Idle
+      takeName: Idle
       internalID: 0
       firstFrame: 1
-      lastFrame: 24
+      lastFrame: 80
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -121,7 +121,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: Character2_Hips
+    rootMotionBoneName: Character1_Hips
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
