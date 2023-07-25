@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: c4b6b0b8664809f4c8dfbe8c97693192
+guid: ab970735a55937d48a589290eefb914e
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable:
   - first:
-      74: -1245888001772292248
-    second: Caminar
+      74: -6762003922680585823
+    second: GolpeDebilPj1
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -36,19 +36,19 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Caminar
-      takeName: Caminar
+      name: GolpeDebilPj1
+      takeName: GolpeDebilPj1
       internalID: 0
       firstFrame: 1
-      lastFrame: 25
+      lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 1
-      loopTime: 1
-      loopBlend: 1
+      loopTime: 0
+      loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1
       loopBlendPositionXZ: 1

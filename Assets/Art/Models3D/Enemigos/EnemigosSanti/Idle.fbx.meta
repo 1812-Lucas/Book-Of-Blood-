@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: c4b6b0b8664809f4c8dfbe8c97693192
+guid: 6a6e1449f5680bb40b73c3539e1ae748
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable:
   - first:
-      74: -1245888001772292248
-    second: Caminar
+      74: 9145247897925379337
+    second: IdlePj1
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -36,11 +36,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Caminar
-      takeName: Caminar
+      name: IdlePj1
+      takeName: IdlePj1
       internalID: 0
-      firstFrame: 1
-      lastFrame: 25
+      firstFrame: 0
+      lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -63,7 +63,7 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
