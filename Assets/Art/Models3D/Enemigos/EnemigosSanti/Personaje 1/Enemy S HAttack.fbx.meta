@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 6da5733819b32fb4b87ed3c6968ef245
+guid: 6f052156f99445d46bb1b56c78bdd0f9
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable:
   - first:
-      74: 8623088181087514663
-    second: Enemy S1 Health
+      74: -8516932126704035769
+    second: Enemy S HAttack
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -36,8 +36,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Enemy S1 Health
-      takeName: CurarPj1
+      name: Enemy S HAttack
+      takeName: GolpeFuertePj1
       internalID: 0
       firstFrame: 0
       lastFrame: 40

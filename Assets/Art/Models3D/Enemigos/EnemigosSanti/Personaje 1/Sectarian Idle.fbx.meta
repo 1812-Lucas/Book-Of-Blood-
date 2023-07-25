@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: ab970735a55937d48a589290eefb914e
+guid: 6a6e1449f5680bb40b73c3539e1ae748
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable:
   - first:
-      74: -6762003922680585823
-    second: Enemy S1 Attack
+      74: 9145247897925379337
+    second: Sectarian Idle
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -36,10 +36,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Enemy S1 Attack
-      takeName: GolpeDebilPj1
+      name: Sectarian Idle
+      takeName: IdlePj1
       internalID: 0
-      firstFrame: 1
+      firstFrame: 0
       lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
@@ -47,8 +47,8 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 1
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 1
       loopBlendPositionY: 1
       loopBlendPositionXZ: 1
@@ -63,7 +63,7 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
