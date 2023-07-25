@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: ab970735a55937d48a589290eefb914e
+guid: 6f052156f99445d46bb1b56c78bdd0f9
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable:
   - first:
-      74: -6762003922680585823
-    second: GolpeDebilPj1
+      74: -8516932126704035769
+    second: Enemy S1 H Attack
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -36,10 +36,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: GolpeDebilPj1
-      takeName: GolpeDebilPj1
+      name: Enemy S1 H Attack
+      takeName: GolpeFuertePj1
       internalID: 0
-      firstFrame: 1
+      firstFrame: 0
       lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
@@ -63,7 +63,7 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
