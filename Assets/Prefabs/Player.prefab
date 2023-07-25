@@ -398,6 +398,10 @@ MonoBehaviour:
   doorOpen: {fileID: 8300000, guid: af8542efcbb271e41a95284a9b3d556b, type: 3}
   newCard: {fileID: 8300000, guid: 120669a9b14f2154e94d7ebeb03fd389, type: 3}
   UsePotionAudio: {fileID: 8300000, guid: 36b0a3a342ef64c479d17593b6f704a7, type: 3}
+  VigorPotions: 0
+  AguilePotions: 0
+  BlockerAguilePotionImage: {fileID: 0}
+  combatScript: {fileID: 0}
   HealthPotions: 0
   StadisticPlayerScript: {fileID: 5273619601675263601}
   HealthPotionParticles: {fileID: 2920806326754537092}
@@ -424,7 +428,7 @@ MonoBehaviour:
   enemyy: {fileID: 0}
   combatscript: {fileID: 5790167006782233436}
   enemyGObj:
-  - {fileID: 1883684176553347868, guid: d398157aa9b1e4f44aff92b21add58d9, type: 3}
+  - {fileID: 3577649903166417398, guid: f647a1fb65a029449a6d97432514e086, type: 3}
   - {fileID: 6107105603314195914, guid: bf53cac988929f74ea49db6e9fff9c92, type: 3}
   - {fileID: 3232888709861344664, guid: db88ad0712515b245824c40d7c152d01, type: 3}
   - {fileID: 2359392996956114415, guid: 59afa86ff8f6f2a49bef4deb5fe791ec, type: 3}
@@ -657,6 +661,7 @@ MonoBehaviour:
   devilEyesPassive: 0
   playerAnimator: {fileID: 6633360425303154989}
   counterForDrawButton: 0
+  blockerAguileImage: {fileID: 0}
 --- !u!114 &7910656068851151482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,7 +793,15 @@ MonoBehaviour:
   SpiritGrowthStacks: 0
   ProtectionTottemStacks: 0
   bloodDrainerCounter: 0
+  clearMind: 0
+  soulDrainer: 0
   _myGM: {fileID: 0}
+  LuckyCoinSkillImage: {fileID: 0}
+  GameOfFaithSkillImage: {fileID: 0}
+  combatScript: {fileID: 0}
+  inventoryObjectsActionsScript: {fileID: 0}
+  inmortalHeavyBool: 0
+  magicShieldBasicBool: 0
 --- !u!82 &8940846620823324685
 AudioSource:
   m_ObjectHideFlags: 0
