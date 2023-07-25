@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: c1aa5b3575695d84aa813d226637e8de
+guid: 7dec575286de0b1438e77f22041287c1
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable:
   - first:
       74: 2502189974491854217
-    second: Enemy S2 Health
+    second: Enemy T Attack
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -36,7 +36,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Enemy S2 Health
+      name: Enemy T Attack
       takeName: caminar
       internalID: 0
       firstFrame: 0

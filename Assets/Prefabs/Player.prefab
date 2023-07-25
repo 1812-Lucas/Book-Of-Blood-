@@ -430,7 +430,7 @@ MonoBehaviour:
   enemyGObj:
   - {fileID: 3577649903166417398, guid: f647a1fb65a029449a6d97432514e086, type: 3}
   - {fileID: 9048808584763440999, guid: 40c09634682e3dd489dbf6449c4573b1, type: 3}
-  - {fileID: 3232888709861344664, guid: db88ad0712515b245824c40d7c152d01, type: 3}
+  - {fileID: 7397832358408620860, guid: 2ad120a7fe51ea04e81c490dfb89c6a4, type: 3}
   - {fileID: 2359392996956114415, guid: 59afa86ff8f6f2a49bef4deb5fe791ec, type: 3}
   enemytransf: {fileID: 8249360497324799471, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
   areaWhereTheEnemySpawns: {fileID: 0}
