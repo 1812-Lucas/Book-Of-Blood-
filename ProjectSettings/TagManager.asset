@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ObjetoColisionable
   - ObjetoColisionable2
+  - Sectary
   layers:
   - Default
   - TransparentFX

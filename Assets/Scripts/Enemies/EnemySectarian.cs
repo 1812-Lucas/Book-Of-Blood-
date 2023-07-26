@@ -13,6 +13,7 @@ public class EnemySectarian : Enemy
     public override void Start()
     {
         base.Start();
+        RotateOnSpawn();
     }
     public override void Enemyturn()
     {
@@ -102,6 +103,18 @@ public class EnemySectarian : Enemy
         {
             Debug.Log("The <color=red>enemy</color> healed <color=green>4 points of health</color>.");
             myAnim.Play("Enemy Health");
+        }
+    }
+
+    private void RotateOnSpawn()
+    {
+        // Buscar todos los objetos en la escena con el tag "Sectary"
+        GameObject[] sectaryObjects = GameObject.FindGameObjectsWithTag("Sectary");
+
+        // Rotar cada objeto en 180 grados en el eje Y (eje vertical)
+        foreach (GameObject sectaryObject in sectaryObjects)
+        {
+            sectaryObject.transform.Rotate(Vector3.up, 180.0f);
         }
     }
 }
