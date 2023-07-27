@@ -27,6 +27,7 @@ public class CombatPosition : MonoBehaviour
     GameManager myGM;
     public MyCamera camerascript;
     public int enemiesreminder;
+    public int totalEnemies;
     public Deck deckscript;
     public VigorDeck vigordeckscript;
     public VigorCardsDisplay ScriptVigorCardDisplaySlot4;
@@ -49,6 +50,7 @@ public class CombatPosition : MonoBehaviour
     Charview view;
     public CharacterController playercontroler;
 
+    public Animator gridAnimation;
 
     public void Update()
     {
@@ -76,6 +78,7 @@ public class CombatPosition : MonoBehaviour
     {
         playercontroler = GetComponent<CharacterController>();
         myGM = GameManager.instance;
+
     }
     public void PlayAudio(AudioClip AC)
     {
@@ -106,6 +109,17 @@ public class CombatPosition : MonoBehaviour
             combatscript.DrawAgain();
 
             Debug.Log("You came out of <color=red>combat</color>.");
+        }
+
+        if(totalEnemies == 2)
+        {
+            totalEnemies--;
+            SwitchCamera(cameras[5]);
+            player.enabled = false;
+            camerascript.canMoveCamera = false;
+            playerRB.constraints = RigidbodyConstraints.FreezeAll;
+            gridAnimation.SetBool("RejaPlayAnimation", true);
+            gridAnimation.CrossFade("RejaAnimation", 0f);
         }
     }
 
@@ -153,6 +167,7 @@ public class CombatPosition : MonoBehaviour
     {
         if (other.gameObject.layer == 9)
         {
+            totalEnemies++;
             Destroy(other.gameObject);
             camerascript.canMoveCamera = false;
             enemiesreminder = 1;
@@ -174,6 +189,7 @@ public class CombatPosition : MonoBehaviour
         }
         if (other.gameObject.layer == 13)
         {
+            totalEnemies++;
             Destroy(other.gameObject);
             camerascript.canMoveCamera = false;
             enemiesreminder = 1;
@@ -195,6 +211,7 @@ public class CombatPosition : MonoBehaviour
         }
         if (other.gameObject.layer == 14)
         {
+            totalEnemies++;
             Destroy(other.gameObject);
             camerascript.canMoveCamera = false;
             enemiesreminder = 1;
@@ -216,6 +233,7 @@ public class CombatPosition : MonoBehaviour
         }
         if (other.gameObject.layer == 17)
         {
+            totalEnemies++;
             Destroy(other.gameObject);
             camerascript.canMoveCamera = false;
             enemiesreminder = 1;

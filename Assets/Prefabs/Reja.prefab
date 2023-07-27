@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4211570704617522014}
   - component: {fileID: 27742189306159982}
+  - component: {fileID: 8755851186968026572}
   m_Layer: 0
   m_Name: Reja
   m_TagString: Untagged
@@ -47,6 +48,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.034, y: 0.041, z: 0.0023208214}
   m_Center: {x: -0.005000001, y: 0.019999998, z: -0.00051447796}
+--- !u!95 &8755851186968026572
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3546955866514856420}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 09731f529febac5498c0a88c374a5f9e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4849236594809727032
 GameObject:
   m_ObjectHideFlags: 0
