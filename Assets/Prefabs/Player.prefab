@@ -313,8 +313,9 @@ MonoBehaviour:
   vigorPoints: 40
   gravity: 9.8
   _currenthealth: 0
-  nombreEscenaACargar: LoadSceneFinalBattle
-  nombreEscenaACargar2: WInScene
+  nombreEscenaACargar: LoadSceneSecondLevel
+  nombreEscenaACargar2: LoadSceneFinalBattle
+  nombreEscenaACargar3: WinScene
 --- !u!54 &8077958657708868332
 Rigidbody:
   m_ObjectHideFlags: 0

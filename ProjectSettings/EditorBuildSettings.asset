@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
     guid: b22603640a82bea4e8afa3964bead13e
   - enabled: 1
+    path: Assets/Scenes/LoadSceneSecondLevel.unity
+    guid: 02da00fd0f0eaa14f91a2ee115b60357
+  - enabled: 1
+    path: Assets/Scenes/SecondLevel.unity
+    guid: 0dc6e49fd00367b468749069743d3b82
+  - enabled: 1
     path: Assets/Scenes/LoadSceneFinalBattle.unity
     guid: 553b9f5e9c671ad4dbf328fc37736e66
   - enabled: 1

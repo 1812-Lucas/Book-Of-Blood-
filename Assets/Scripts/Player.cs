@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
 
     public string nombreEscenaACargar;
     public string nombreEscenaACargar2;
+    public string nombreEscenaACargar3;
 
 
 
@@ -82,6 +83,11 @@ public class Player : MonoBehaviour
         if (other.CompareTag("ObjetoColisionable2"))
         {
             SceneManager.LoadScene(nombreEscenaACargar2);
+            Cursor.lockState = CursorLockMode.Confined;
+        }
+        if (other.CompareTag("ObjetoColisionable3"))
+        {
+            SceneManager.LoadScene(nombreEscenaACargar3);
             Cursor.lockState = CursorLockMode.Confined;
         }
     }
