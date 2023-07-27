@@ -18,7 +18,7 @@ public class SensorGrid : MonoBehaviour
     public CinemachineVirtualCamera activeCamera;
     public MyCamera myCamera;
 
-
+    public Animator gridAnimator;
     private void OnTriggerEnter(Collider other)
     {
         print("The grid <color=yellow>opened</color>.");
@@ -30,8 +30,10 @@ public class SensorGrid : MonoBehaviour
             playerRB.constraints = RigidbodyConstraints.FreezeAll;
             EV_OnTriggerGrid.Invoke();
             playerColl.enabled = false;
-            
+            gridAnimator.SetBool("RejaPlayAnimation", true);
+            gridAnimator.CrossFade("RejaAnimation", 0f);
             StartCoroutine(CameraTransation());
+            
         }
     }
 
