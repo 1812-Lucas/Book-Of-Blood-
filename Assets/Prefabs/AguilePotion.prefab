@@ -106,7 +106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3478016339052296464}
-  m_Layer: 16
+  m_Layer: 21
   m_Name: AguilePotion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
