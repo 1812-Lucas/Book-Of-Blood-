@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Runic Dice
   m_EditorClassIdentifier: 
   name: Runic Dice
-  description: Does a random Damage between 1 and 10
+  description: Does a random <i><color=red>damage</color></i> between 1 and 10.
   image: {fileID: 21300000, guid: 4f5652d85db1eb64db06828007dd292b, type: 3}
   vigorcost: 2

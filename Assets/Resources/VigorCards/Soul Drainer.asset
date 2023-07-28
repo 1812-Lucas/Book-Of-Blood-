@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Soul Drainer
   m_EditorClassIdentifier: 
   name: Soul Drainer
-  description: Deals 4 points of damage. Every 3 uses you get a Vigor Potion.
+  description: Deals 4 points of <i><color=red>damage</color></i>. Every 3 uses you
+    get a <i><color=blue>vigor potion</color></i>.
   image: {fileID: 21300000, guid: 162c3372b21c84649a37ddab4886c6e2, type: 3}
   vigorcost: 2

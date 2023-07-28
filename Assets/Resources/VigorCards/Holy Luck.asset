@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Holy Luck
   m_EditorClassIdentifier: 
   name: Holy Luck
-  description: Random healing between 1 and 10 points
+  description: Random <i><color=green>healing</color></i> between 1 and 10 points.
   image: {fileID: 21300000, guid: 6cc1659fbfd268a46972e3bb4bbd9904, type: 3}
   vigorcost: 2

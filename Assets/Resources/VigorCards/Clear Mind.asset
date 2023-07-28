@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Clear Mind
   m_EditorClassIdentifier: 
   name: Clear Mind
-  description: Deals 4 points of damage. Every 3 uses u get a guile potion
+  description: Deals 4 points of <i><color=red>damage</color></i>. Every 3 uses you
+    get an <i><color=orange>aguile potion</color></i>.
   image: {fileID: 21300000, guid: 0da78824444117944a67c1c52100c319, type: 3}
   vigorcost: 1
