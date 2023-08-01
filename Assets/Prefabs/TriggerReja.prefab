@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6207546120589928875}
   - component: {fileID: 5525468120844867582}
   - component: {fileID: 9117321973237133834}
-  m_Layer: 11
+  m_Layer: 22
   m_Name: TriggerReja
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ MonoBehaviour:
   gridCounter: 3
   gridCamera: {fileID: 0}
   player: {fileID: 0}
-  playerColl: {fileID: 0}
+  playerColl: {fileID: 7743135051285978989}
   playerRB: {fileID: 0}
   gridCameras:
   - {fileID: 0}

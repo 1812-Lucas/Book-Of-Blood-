@@ -37,6 +37,7 @@ public class SensorGrid : MonoBehaviour
         }
     }
 
+  
 
 
     public void SwitchCameraDoor(CinemachineVirtualCamera Door)
