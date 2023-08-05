@@ -2134,10 +2134,14 @@ MonoBehaviour:
   m_text: 'Marco Lavacchielli
 
 
+    Santiago Sanchez
+
+
     Facundo Tisera
 
 
-    Lucas Torres'
+    Lucas
+    Torres'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 96860fd55bec7c44ab1dfb765686c7a1, type: 2}
   m_sharedMaterial: {fileID: 4141538601267562643, guid: 96860fd55bec7c44ab1dfb765686c7a1, type: 2}
