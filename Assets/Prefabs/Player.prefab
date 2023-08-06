@@ -265,9 +265,9 @@ GameObject:
   - component: {fileID: 8940846620823324685}
   - component: {fileID: 8997924972283122296}
   - component: {fileID: 2034795175}
-  - component: {fileID: 8077958658333811777}
-  - component: {fileID: 8077958658333811780}
-  - component: {fileID: 8077958658333811788}
+  - component: {fileID: 9095580120866224871}
+  - component: {fileID: 6470497308972621883}
+  - component: {fileID: 7737177019260581226}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1074,7 +1074,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8077958658333811777
+--- !u!114 &9095580120866224871
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1098,23 +1098,7 @@ MonoBehaviour:
   buttonForTransitions: {fileID: 0}
   playerScript: {fileID: 8077958657708868335}
   imageThatContainsStory: {fileID: 0}
---- !u!114 &8077958658333811780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8077958657708868338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b1d4a0e795a1db4aaed441650b02b1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PotionsCounters:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!114 &8077958658333811788
+--- !u!114 &6470497308972621883
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1127,6 +1111,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PagesCounter:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &7737177019260581226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8077958657708868338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b1d4a0e795a1db4aaed441650b02b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PotionsCounters:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
