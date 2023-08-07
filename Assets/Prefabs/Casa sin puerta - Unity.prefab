@@ -4285,6 +4285,10 @@ PrefabInstance:
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
+      propertyPath: ShapeModule.m_Scale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
       propertyPath: VelocityModule.x.scalar
       value: 0.3
       objectReference: {fileID: 0}
@@ -4293,8 +4297,16 @@ PrefabInstance:
       value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
+      propertyPath: ShapeModule.m_Rotation.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
       propertyPath: ShapeModule.radius.value
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].time
@@ -4423,6 +4435,10 @@ PrefabInstance:
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
+      propertyPath: ShapeModule.m_Scale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
       propertyPath: VelocityModule.x.scalar
       value: 0.3
       objectReference: {fileID: 0}
@@ -4431,8 +4447,16 @@ PrefabInstance:
       value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
+      propertyPath: ShapeModule.m_Rotation.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
       propertyPath: ShapeModule.radius.value
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].time
@@ -4549,10 +4573,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1937736151}
     m_Modifications:
     - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
-      propertyPath: ShapeModule.angle
-      value: 1.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
       propertyPath: NoiseModule.enabled
       value: 0
       objectReference: {fileID: 0}
@@ -4567,10 +4587,6 @@ PrefabInstance:
     - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
       propertyPath: VelocityModule.z.scalar
       value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
-      propertyPath: ShapeModule.radius.value
-      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].time
@@ -4699,6 +4715,10 @@ PrefabInstance:
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
+      propertyPath: ShapeModule.m_Scale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
       propertyPath: VelocityModule.x.scalar
       value: 0.3
       objectReference: {fileID: 0}
@@ -4707,8 +4727,16 @@ PrefabInstance:
       value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
+      propertyPath: ShapeModule.m_Rotation.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
       propertyPath: ShapeModule.radius.value
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8102432509507158528, guid: 7d6929160ed9e524a994cc47a191bfe6, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].time
