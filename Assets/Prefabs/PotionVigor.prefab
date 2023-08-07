@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 520413315599216352}
   - component: {fileID: 7840480627699345039}
   - component: {fileID: 2534158310429538247}
-  m_Layer: 16
+  m_Layer: 20
   m_Name: textureEditorIsolateSelectSet_frasco3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,8 +95,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.931863, y: 23.227182, z: 12.137584}
-  m_Center: {x: 33.893715, y: 241.72366, z: -395.7108}
+  m_Size: {x: 11, y: 23, z: 12}
+  m_Center: {x: 34, y: 241, z: -395}
 --- !u!1 &2704935581575259630
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 5231561060730839853}
   - component: {fileID: 5231561060730839855}
   - component: {fileID: 5231561060730839852}
-  m_Layer: 16
+  m_Layer: 20
   m_Name: VigorPotionParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4962,7 +4962,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8219993996049817}
   - component: {fileID: 2633336754371632939}
-  m_Layer: 16
+  m_Layer: 20
   m_Name: VigorPotionLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}

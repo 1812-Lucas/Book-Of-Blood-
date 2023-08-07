@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1855070119633365156}
   - component: {fileID: 8234993279977218251}
   - component: {fileID: 4444290700189446531}
-  m_Layer: 16
+  m_Layer: 21
   m_Name: textureEditorIsolateSelectSet_frasco3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,8 +95,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.931863, y: 23.227182, z: 12.137584}
-  m_Center: {x: 33.893715, y: 241.72366, z: -395.7108}
+  m_Size: {x: 11, y: 23, z: 12}
+  m_Center: {x: 34, y: 241, z: -395}
 --- !u!1 &4255820018899952554
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2205459095344659421}
   - component: {fileID: 4183022193528117615}
-  m_Layer: 16
+  m_Layer: 21
   m_Name: AguilePotionLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5057,7 +5057,7 @@ GameObject:
   - component: {fileID: 6204927054073046377}
   - component: {fileID: 6204927054073046379}
   - component: {fileID: 6204927054073046376}
-  m_Layer: 16
+  m_Layer: 21
   m_Name: AguileParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

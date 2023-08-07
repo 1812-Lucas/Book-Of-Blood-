@@ -162,13 +162,14 @@ public class inventoryObjectsActions : MonoBehaviour
 
             Debug.Log("You had obtained a <color=green>healing potion</color>, you can only use it in combat by pressing the <color=yellow>H</color> key or its corresponding button.");
         }
+
         if (other.gameObject.layer == 20)
         {
             VigorPotions += 1;
             Destroy(other.gameObject);
             vigorLightPotion.enabled = false;
             vigorParticlesPotion.Stop();
-            
+
 
 
             Debug.Log("You had obtained a <color=blue>vigor potion</color>, you can only use it in combat.");
@@ -246,6 +247,7 @@ public class inventoryObjectsActions : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
+
         if (other.gameObject.layer == 15)
         {
             lightCardbox.enabled = false;
