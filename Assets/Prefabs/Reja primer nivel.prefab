@@ -211,13 +211,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2b7b1a041ce0bc40966d714e3fc747c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numEnemies: 1
+  numEnemies: 2
+  enemy2Contador: 3
   Ev_Activa:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4117908762275388474}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 2534296743746524105}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -225,20 +226,12 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  ActiveCamera: {fileID: 0}
+  CamarasCombat2:
+  - {fileID: 0}
+  - {fileID: 0}
   rejaNivel1: {fileID: 2534296743746524105}
 --- !u!1001 &7265811017954421694
 PrefabInstance:
