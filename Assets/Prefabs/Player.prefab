@@ -866,6 +866,8 @@ MonoBehaviour:
   _myGM: {fileID: 0}
   LuckyCoinSkillImage: {fileID: 0}
   GameOfFaithSkillImage: {fileID: 0}
+  heartbeatSpeed: 1.5
+  heartbeatAmplitude: 0.35
   LowLife: {fileID: 0}
   combatScript: {fileID: 5790167006782233436}
   inventoryObjectsActionsScript: {fileID: 5561988426673552123}

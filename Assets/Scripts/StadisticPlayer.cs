@@ -23,6 +23,9 @@ public class StadisticPlayer : MonoBehaviour
     public GameManager _myGM;
     public Image LuckyCoinSkillImage;
     public Image GameOfFaithSkillImage;
+
+    public float heartbeatSpeed = 1.5f; // Speed of the heartbeat effect
+    public float heartbeatAmplitude = 0.35f;
     public Image LowLife;
     public Combat combatScript;
     public inventoryObjectsActions inventoryObjectsActionsScript;
@@ -45,6 +48,11 @@ public class StadisticPlayer : MonoBehaviour
         if (health < 15)
         {
             LowLife.gameObject.SetActive(true);
+
+            float opacity = Mathf.Sin(Time.time * heartbeatSpeed) * heartbeatAmplitude + 0.5f;
+            Color color = LowLife.color;
+            color.a = opacity;
+            LowLife.color = color;
         }
         else
         {
