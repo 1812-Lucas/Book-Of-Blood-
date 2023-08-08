@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     public Combat combat;
     CombatPosition _combatposition;
     public int health;
+    public int healthTotal;
     public string tipodeenemigo;
     public StadisticPlayer PlayerStadisticsScript;
 
@@ -34,6 +35,7 @@ public class Enemy : MonoBehaviour
     }
     public virtual void Start()
     {
+        healthTotal = health;
         Enemyapears();
         GameObject PlayerObject = GameObject.Find("Player");
 
@@ -71,7 +73,19 @@ public class Enemy : MonoBehaviour
     }
     private void Update()
     {
+        if(health < healthTotal)
+        {
+
+            combat.enemyHearthAnimation.SetBool("EnemyHeartBool", true);
+            Invoke("ResetearVida", 1f);
+        }
+        
+        healthTotal = health;
         EnemyDies();
+    }
+    public void ResetearVida()
+    {
+        combat.enemyHearthAnimation.SetBool("EnemyHeartBool", false);
     }
     public virtual void Enemyturn()
     {

@@ -201,6 +201,8 @@ public class Combat : MonoBehaviour
     public Image blockerAguileImage;// FALTA REFE
 
     public Animator playerHeartAnimation;
+
+    public Animator enemyHearthAnimation;
     void Start()
     {
 
@@ -221,7 +223,7 @@ public class Combat : MonoBehaviour
         cardOrange1.gameObject.SetActive(cartafueUsada);
         if (cartafueUsada == true)
         {
-
+           // enemyHearthAnimation.SetBool("EnemyHeartBool", false);
             NormalCardsAnimation.CrossFade("NormalCardNewAnimation", 0f);
 
         }
@@ -235,7 +237,7 @@ public class Combat : MonoBehaviour
         cardOrange2.gameObject.SetActive(cartafueUsada2);
         if (cartafueUsada2 == true)
         {
-
+           // enemyHearthAnimation.SetBool("EnemyHeartBool", false);
             NormalCardsAnimation.CrossFade("NormalcardNewAnimation2", 0f);
         }
 
@@ -247,7 +249,7 @@ public class Combat : MonoBehaviour
         cardOrange3.gameObject.SetActive(cartafueUsada3);
         if (cartafueUsada3 == true)
         {
-
+            //enemyHearthAnimation.SetBool("EnemyHeartBool", false);
             NormalCardsAnimation.CrossFade("NormalCardNewAnimation3", 0f);
         }
 
@@ -260,7 +262,7 @@ public class Combat : MonoBehaviour
         cardOrange4.gameObject.SetActive(cartafueUsada4);
         if (cartafueUsada4 == true)
         {
-
+            //enemyHearthAnimation.SetBool("EnemyHeartBool", false);
             VigorCardsAnimation.CrossFade("VigorCardNewAnimation", 0f);
         }
 
@@ -271,7 +273,7 @@ public class Combat : MonoBehaviour
         cardOrange5.gameObject.SetActive(cartafueUsada5);
         if (cartafueUsada5 == true)
         {
-
+            //enemyHearthAnimation.SetBool("EnemyHeartBool", false);
             VigorCardsAnimation.CrossFade("VigorCardNewAnimation2", 0f);
         }
 
@@ -282,7 +284,7 @@ public class Combat : MonoBehaviour
         cardOrange6.gameObject.SetActive(cartafueUsada6);
         if (cartafueUsada6 == true)
         {
-
+            //enemyHearthAnimation.SetBool("EnemyHeartBool", false);
             VigorCardsAnimation.CrossFade("VigorCardNewAnimation3", 0f);
         }
 
@@ -297,6 +299,8 @@ public class Combat : MonoBehaviour
         if (enemyattack == true)
         {
             playerHeartAnimation.CrossFade("PlayerHeartAnimationUI", 0f);
+            playerHeartAnimation.SetBool("PlayerHearthBool", true);
+            enemyHearthAnimation.SetBool("EnemyHeartBool", false);
             PlayerStadisticsScript.vigor += 1;
             button1.interactable = true;
             button2.interactable = true;
