@@ -23,6 +23,7 @@ public class StadisticPlayer : MonoBehaviour
     public GameManager _myGM;
     public Image LuckyCoinSkillImage;
     public Image GameOfFaithSkillImage;
+    public Image LowLife;
     public Combat combatScript;
     public inventoryObjectsActions inventoryObjectsActionsScript;
 
@@ -39,6 +40,15 @@ public class StadisticPlayer : MonoBehaviour
         if (health <= 0)
         {
             PlayerDies();
+        }
+
+        if (health < 15)
+        {
+            LowLife.gameObject.SetActive(true);
+        }
+        else
+        {
+            LowLife.gameObject.SetActive(false);
         }
       
     }

@@ -467,10 +467,7 @@ MonoBehaviour:
   enemyy: {fileID: 0}
   combatscript: {fileID: 5790167006782233436}
   enemyGObj:
-  - {fileID: 9048808584763440999, guid: 40c09634682e3dd489dbf6449c4573b1, type: 3}
-  - {fileID: 7397832358408620860, guid: 2ad120a7fe51ea04e81c490dfb89c6a4, type: 3}
-  - {fileID: 2359392996956114415, guid: 59afa86ff8f6f2a49bef4deb5fe791ec, type: 3}
-  - {fileID: 7080345193331118160, guid: f10f70c3fb3f5e84e8d51f38b0f3bd3d, type: 3}
+  - {fileID: 5241877787689425648, guid: 90948626f514d9242a2727e169c053ad, type: 3}
   enemytransf: {fileID: 8249360497324799471, guid: 57b2f6fbb200dbb45a64c72a6c80e0d4, type: 3}
   areaWhereTheEnemySpawns: {fileID: 0}
   AreasWhereTheEnemiesSpawns:
@@ -509,6 +506,7 @@ MonoBehaviour:
   EnemyDiesAudio: {fileID: 8300000, guid: a99e3c4ff882fc7498ed6c65ea8e07ba, type: 3}
   ContadorTransicion: 1
   playercontroler: {fileID: 2164653984255317432}
+  enemyCheckerScript: {fileID: 0}
 --- !u!114 &5790167006782233436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -701,6 +699,12 @@ MonoBehaviour:
   playerAnimator: {fileID: 6633360425303154989}
   counterForDrawButton: 0
   blockerAguileImage: {fileID: 0}
+  playerHeartAnimation: {fileID: 0}
+  enemyHearthAnimation: {fileID: 0}
+  enemyHeartAnimationNivel2: {fileID: 0}
+  playerHeartAnimatorNivel2: {fileID: 0}
+  enemyHeartAnimationNivel3: {fileID: 0}
+  playerHeartAnimationNivel3: {fileID: 0}
 --- !u!114 &7910656068851151482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -862,6 +866,7 @@ MonoBehaviour:
   _myGM: {fileID: 0}
   LuckyCoinSkillImage: {fileID: 0}
   GameOfFaithSkillImage: {fileID: 0}
+  LowLife: {fileID: 0}
   combatScript: {fileID: 5790167006782233436}
   inventoryObjectsActionsScript: {fileID: 5561988426673552123}
   inmortalHeavyBool: 0
