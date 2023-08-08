@@ -43,14 +43,14 @@ public class PlayerSensor : MonoBehaviour
    
     public void SwitchCameraDoor(CinemachineVirtualCamera Door)
     {
-        Door.Priority = 10;
+        Door.Priority = 11;
         ActiveCamera = Door;
 
         foreach (CinemachineVirtualCamera c in CamarasDoor)
         {
-            if (c != Door && c.Priority != 0)
+            if (c != Door && c.Priority != 11)
             {
-                c.Priority = 0;
+                c.Priority = 11;
             }
         }
 
