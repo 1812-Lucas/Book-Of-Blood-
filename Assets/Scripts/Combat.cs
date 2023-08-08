@@ -200,7 +200,7 @@ public class Combat : MonoBehaviour
     public int counterForDrawButton;
     public Image blockerAguileImage;// FALTA REFE
 
-
+    public Animator playerHeartAnimation;
     void Start()
     {
 
@@ -296,6 +296,7 @@ public class Combat : MonoBehaviour
     {
         if (enemyattack == true)
         {
+            playerHeartAnimation.CrossFade("PlayerHeartAnimationUI", 0f);
             PlayerStadisticsScript.vigor += 1;
             button1.interactable = true;
             button2.interactable = true;

@@ -43,6 +43,7 @@ public class VigorCardsDisplay : MonoBehaviour
 
     public Image notUsable;
 
+    public Animator enemyHeartAnimation;
     public void PlayAudio(AudioClip AC)
     {
         MyAudioSource.clip = AC;
@@ -96,10 +97,8 @@ public class VigorCardsDisplay : MonoBehaviour
         switch (NombredelaCartadeVigoryEjecutarPasiva)
         {
             case "Warrior Pendant":
-                combatScript.damageparticleSlot16.Play();
-                combatScript.damageparticleSlot16Combate2.Play();
-                combatScript.damageparticleSlot16_Combate3.Play();
-                combatScript.damageparticleSlot16_Combate4.Play();
+                
+                InvObjActionsScript.HealthPotionParticles.Play();
                 stadisticplayerScipt.health += 8;
                 protectiontottempasive();
                 PlayAudio(WarriorPendantAudio);
@@ -110,6 +109,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot17Combate2.Play();
                 combatScript.damageparticleSlot17_Combate3.Play();
                 combatScript.damageparticleSlot17_Combate4.Play();
+                enemyHeartAnimation.CrossFade("EnemyHeartAnimationUI", 0f);
                 protectiontottempasive();
                 enemyy.health -= 4;
                 PlayAudio(arrowhit);
@@ -124,6 +124,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot18Combate2.Play();
                 combatScript.damageparticleSlot18_Combate3.Play();
                 combatScript.damageparticleSlot18_Combate4.Play();
+                enemyHeartAnimation.CrossFade("EnemyHeartAnimationUI", 0f);
                 enemyy.health -= 12;
                 PlayAudio(magicSuntemple);
                 protectiontottempasive();
@@ -135,6 +136,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot19Combate2.Play();
                 combatScript.damageparticleSlot19_Combate3.Play();
                 combatScript.damageparticleSlot19_Combate4.Play();
+                enemyHeartAnimation.CrossFade("EnemyHeartAnimationUI", 0f);
                 stadisticplayerScipt.SpiritGrowthStacks += 1;
                 PlayAudio(magicCircle);
                 enemyy.health -= 1;
@@ -146,20 +148,17 @@ public class VigorCardsDisplay : MonoBehaviour
                 }
                 break;
             case "Unbreakable":
-                combatScript.damageparticleSlot20.Play();
-                combatScript.damageparticleSlot20Combate2.Play();
-                combatScript.damageparticleSlot20_Combate3.Play();
-                combatScript.damageparticleSlot20_Combate4.Play();
+                
+                enemyHeartAnimation.CrossFade("EnemyHeartAnimationUI", 0f);
+                InvObjActionsScript.vigorParticlesPlayer.Play();
                 PlayAudio(windowFixing);
                 stadisticplayerScipt.vigor += 5;
                 protectiontottempasive();
                 Debug.Log("You had increase your <color=blue>vigor</color> in <color=blue>5 points</color>.");
                 break;
             case "Protection Tottem":
-                combatScript.damageparticleSlot21.Play();
-                combatScript.damageparticleSlot21Combate2.Play();
-                combatScript.damageparticleSlot21_Combate3.Play();
-                combatScript.damageparticleSlot21_Combate4.Play();
+                
+                InvObjActionsScript.HealthPotionParticles.Play();
                 stadisticplayerScipt.health += 1;
                 protectiontottempasive();
                 Debug.Log("You had <color=green>healed 1 point of health</color>.");
@@ -180,6 +179,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot22Combate2.Play();
                 combatScript.damageparticleSlot22_Combate3.Play();
                 combatScript.damageparticleSlot22_Combate4.Play();
+                enemyHeartAnimation.CrossFade("EnemyHeartAnimationUI", 0f);
                 enemyy.health -= 9;
                 protectiontottempasive();
                 PlayAudio(CaosAudio);
@@ -191,6 +191,8 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot23Combate2.Play();
                 combatScript.damageparticleSlot23_Combate3.Play();
                 combatScript.damageparticleSlot23_Combate4.Play();
+                enemyHeartAnimation.CrossFade("EnemyHeartAnimationUI", 0f);
+                InvObjActionsScript.HealthPotionParticles.Play();
                 enemyy.health -= 7;
                 stadisticplayerScipt.health += 3;
                 protectiontottempasive();
@@ -203,6 +205,8 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot24Combate2.Play();
                 combatScript.damageparticleSlot24_Combate3.Play();
                 combatScript.damageparticleSlot24_Combate4.Play();
+                enemyHeartAnimation.CrossFade("EnemyHeartAnimationUI", 0f);
+                InvObjActionsScript.HealthPotionParticles.Play();
                 enemyy.health -= 3;
                 PlayAudio(healUp);
                 stadisticplayerScipt.health += 3;
@@ -215,6 +219,8 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot25Combate2.Play();
                 combatScript.damageparticleSlot25_Combate3.Play();
                 combatScript.damageparticleSlot25_Combate4.Play();
+                enemyHeartAnimation.CrossFade("EnemyHeartAnimationUI", 0f);
+                InvObjActionsScript.HealthPotionParticles.Play();
                 enemyy.health -= 6;
                 PlayAudio(iceMagic);
                 stadisticplayerScipt.health += 4;
@@ -227,6 +233,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot26Combate2.Play();
                 combatScript.damageparticleSlot26_Combate3.Play();
                 combatScript.damageparticleSlot26_Combate4.Play();
+                enemyHeartAnimation.CrossFade("EnemyHeartAnimationUI", 0f);
                 enemyy.health -= 5;
                 PlayAudio(CaosAudio);
                 Debug.Log("You had done <color=red>7 points of damage</color>.");
@@ -239,10 +246,12 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot27Combate2.Play();
                 combatScript.damageparticleSlot27_Combate3.Play();
                 combatScript.damageparticleSlot27_Combate4.Play();
+                enemyHeartAnimation.CrossFade("EnemyHeartAnimationUI", 0f);
                 PlayAudio(audiosVigorArray[0]);
                 protectiontottempasive();
                 if (stadisticplayerScipt.vigor <= 3)
                 {
+                    InvObjActionsScript.vigorParticlesPlayer.Play();
                     stadisticplayerScipt.vigor += 7;
                     Debug.Log("You had increased your <color=blue>vigor in 7 points</color>.");
                 }
@@ -253,6 +262,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot28Combate2.Play();
                 combatScript.damageparticleSlot28_Combate3.Play();
                 combatScript.damageparticleSlot28_Combate4.Play();
+                enemyHeartAnimation.CrossFade("EnemyHeartAnimationUI", 0f);
                 PlayAudio(audiosVigorArray[1]);
                 int i = enemyy.health - stadisticplayerScipt.health;
                 if (i < 0)
@@ -278,6 +288,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 {
                     u *= -1;
                     stadisticplayerScipt.health += u;
+                    InvObjActionsScript.HealthPotionParticles.Play();
                 }
                 else
                 {
@@ -292,6 +303,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 protectiontottempasive();
                 combatScript.damageparticleSlot30_Combate3.Play();
                 combatScript.damageparticleSlot30_Combate4.Play();
+                enemyHeartAnimation.CrossFade("EnemyHeartAnimationUI", 0f);
                 enemyy.health -= 4;
                 Debug.Log("You had done <color=red>4 points of damage</color>.");
                 stadisticplayerScipt.bloodDrainerCounter += 1;
@@ -310,6 +322,8 @@ public class VigorCardsDisplay : MonoBehaviour
                 protectiontottempasive();
                 combatScript.damageparticleSlot31_Combate3.Play();
                 combatScript.damageparticleSlot31_Combate4.Play();
+                enemyHeartAnimation.CrossFade("EnemyHeartAnimationUI", 0f);
+                InvObjActionsScript.vigorParticlesPlayer.Play();
                 PlayAudio(audiosVigorArray[4]);
                 stadisticplayerScipt.vigor += 7;
                 Debug.Log("You had increased your <color=blue>vigor in 7 points</color>.");
@@ -326,6 +340,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 PlayAudio(audiosVigorArray[5]);
                 combatScript.damageparticleSlot32_Combate3.Play();
                 combatScript.damageparticleSlot32_Combate4.Play();
+                InvObjActionsScript.HealthPotionParticles.Play();
                 stadisticplayerScipt.health += combatScript.devilEyesPassive;
                 Debug.Log("You had damaged your <color=red>enemy</color> with" + combatScript.devilEyesPassive + " <color=red>points of damage</color>.");
                 break;
@@ -336,6 +351,8 @@ public class VigorCardsDisplay : MonoBehaviour
                 PlayAudio(audiosVigorArray[6]);
                 combatScript.damageparticleSlot33_Combate3.Play();
                 combatScript.damageparticleSlot33_Combate4.Play();
+                InvObjActionsScript.vigorParticlesPlayer.Play();
+                InvObjActionsScript.HealthPotionParticles.Play();
                 stadisticplayerScipt.health += 7;
                 stadisticplayerScipt.vigor += 6;
                 Debug.Log("You had increased your <color=blue>vigor in 6 points</color> and you had <color=green>healed yourself in 7 points</color>.");
@@ -346,6 +363,8 @@ public class VigorCardsDisplay : MonoBehaviour
                 protectiontottempasive();
                 combatScript.damageparticleSlot34_Combate3.Play();
                 combatScript.damageparticleSlot34_Combate4.Play();
+                enemyHeartAnimation.CrossFade("EnemyHeartAnimationUI", 0f);
+
                 PlayAudio(audiosVigorArray[7]);
                 enemyy.health -= 5;
                 Debug.Log("You had done <color=red>5 points of damage</color> to your oponent.");
@@ -362,18 +381,30 @@ public class VigorCardsDisplay : MonoBehaviour
                 protectiontottempasive();
                 combatScript.damageparticleSlot35_Combate3.Play();
                 combatScript.damageparticleSlot35_Combate4.Play();
+                enemyHeartAnimation.CrossFade("EnemyHeartAnimationUI", 0f);
+
                 enemyy.health -= 5;
                 Debug.Log("You had done <color=red>5 points of damage</color> to your oponent.");
                 if (stadisticplayerScipt.health <= 15)
                 {
+                    InvObjActionsScript.vigorParticlesPlayer.Play();
                     stadisticplayerScipt.vigor += 15;
                     Debug.Log("You had increased your <color=blue>vigor in 15 points</color>.");
                 }
                 break;
             case "Lucky Coin":
+                combatScript.damageparticleSlot33.Play();
+                combatScript.damageparticleSlot33Combate2.Play();
+
+                combatScript.damageparticleSlot33_Combate3.Play();
+                combatScript.damageparticleSlot33_Combate4.Play();
                 stadisticplayerScipt.LuckyCoinSkillActive();
                 break;
             case "Clear Mind":
+                combatScript.damageparticleSlot21.Play();
+                combatScript.damageparticleSlot21Combate2.Play();
+                combatScript.damageparticleSlot21_Combate3.Play();
+                combatScript.damageparticleSlot21_Combate4.Play();
                 enemyy.health -= 4;
                 stadisticplayerScipt.clearMind += 1;
                 if (stadisticplayerScipt.clearMind >= 3 && InvObjActionsScript.AguilePotions <= 1)
@@ -394,6 +425,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 break;
 
             case "Holy Luck":
+                InvObjActionsScript.HealthPotionParticles.Play();
                 int hc = Random.Range(1, 11);
                 stadisticplayerScipt.health += hc;
                 Debug.Log("You <color=green>healed</color> " + hc + " points of health with Holy Luck.");
@@ -402,12 +434,20 @@ public class VigorCardsDisplay : MonoBehaviour
 
 
             case "Runic Dice":
+                combatScript.damageparticleSlot20.Play();
+                combatScript.damageparticleSlot20Combate2.Play();
+                combatScript.damageparticleSlot20_Combate3.Play();
+                combatScript.damageparticleSlot20_Combate4.Play();
                 int rc = Random.Range(1, 11);
                 enemyy.health -= rc;
                 Debug.Log("You did " + rc + " <color=red>points of damage</color> to your oponent with Runic Dice.");
 
                 break;
             case "Soul Drainer":
+                combatScript.damageparticleSlot16.Play();
+                combatScript.damageparticleSlot16Combate2.Play();
+                combatScript.damageparticleSlot16_Combate3.Play();
+                combatScript.damageparticleSlot16_Combate4.Play();
                 enemyy.health -= 4;
                 stadisticplayerScipt.soulDrainer += 1;
                 if (stadisticplayerScipt.soulDrainer >= 3)
