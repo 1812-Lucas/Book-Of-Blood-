@@ -50,7 +50,7 @@ public class CombatPosition : MonoBehaviour
     Charview view;
     public CharacterController playercontroler;
 
-   
+    public EnemyChecker enemyCheckerScript;
 
     public void Update()
     {
@@ -91,6 +91,7 @@ public class CombatPosition : MonoBehaviour
         enemiesreminder--;
         if (enemiesreminder <= 0)
         {
+            enemyCheckerScript.numEnemies--;
             Cursor.lockState = CursorLockMode.Locked;
             SwitchCamera(cameras[0]);
             PlayAudio(EnemyDiesAudio);

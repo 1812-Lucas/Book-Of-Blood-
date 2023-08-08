@@ -13,7 +13,7 @@ public class EnemyChecker : MonoBehaviour
 
     private void Update()
     {
-        numEnemies = GameObject.FindGameObjectsWithTag("EnemyOpen").Length;
+        //numEnemies = GameObject.FindGameObjectsWithTag("EnemyOpen").Length;
         if (numEnemies <= 0)
         {
             rejaNivel1.SetBool("RejaBoolNivel1", true);
