@@ -8,6 +8,7 @@ TagManager:
   - ObjetoColisionable2
   - Sectary
   - ObjetoColisionable3
+  - EnemyOpen
   layers:
   - Default
   - TransparentFX
