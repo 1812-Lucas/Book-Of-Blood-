@@ -200,7 +200,6 @@ public class Combat : MonoBehaviour
     public int counterForDrawButton;
     public Image blockerAguileImage;// FALTA REFE
 
-    
 
     void Start()
     {
@@ -403,7 +402,7 @@ public class Combat : MonoBehaviour
                 activaryDesactivarCartaAlUsarlaSlot6();
             }
             enemyattack = false;
-            
+
         }
     }
     public void DrawAgain()
