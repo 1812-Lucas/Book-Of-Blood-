@@ -203,6 +203,10 @@ public class Combat : MonoBehaviour
     public Animator playerHeartAnimation;
 
     public Animator enemyHearthAnimation;
+
+    public Animator enemyHeartAnimationNivel2;
+
+    public Animator playerHeartAnimatorNivel2;
     void Start()
     {
 
@@ -298,9 +302,13 @@ public class Combat : MonoBehaviour
     {
         if (enemyattack == true)
         {
-            playerHeartAnimation.CrossFade("PlayerHeartAnimationUI", 0f);
+            playerHeartAnimation.Play("PlayerHeartAnimationUI");
             playerHeartAnimation.SetBool("PlayerHearthBool", true);
             enemyHearthAnimation.SetBool("EnemyHeartBool", false);
+            enemyHeartAnimationNivel2.SetBool("EnemyHeartBool2", false);
+            playerHeartAnimatorNivel2.Play("PlayerHeartAnimationUINivel2");
+            playerHeartAnimatorNivel2.SetBool("PlayerHeartBool2", true);
+            Invoke("ResetearVida", 1f);
             PlayerStadisticsScript.vigor += 1;
             button1.interactable = true;
             button2.interactable = true;
@@ -364,6 +372,11 @@ public class Combat : MonoBehaviour
                 PlayerStadisticsScript.health += PlayerStadisticsScript.healingRingPassive;
             }
         }
+    }
+    public void ResetearVida()
+    {
+       
+        playerHeartAnimatorNivel2.SetBool("PlayerHeartBool2", false);
     }
     public void EndOfCombat()
     {

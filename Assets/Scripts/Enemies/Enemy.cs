@@ -75,7 +75,7 @@ public class Enemy : MonoBehaviour
     {
         if(health < healthTotal)
         {
-
+            combat.enemyHeartAnimationNivel2.SetBool("EnemyHeartBool2", true);
             combat.enemyHearthAnimation.SetBool("EnemyHeartBool", true);
             Invoke("ResetearVida", 1f);
         }
@@ -85,6 +85,7 @@ public class Enemy : MonoBehaviour
     }
     public void ResetearVida()
     {
+        combat.enemyHeartAnimationNivel2.SetBool("EnemyHeartBool2", false);
         combat.enemyHearthAnimation.SetBool("EnemyHeartBool", false);
     }
     public virtual void Enemyturn()
