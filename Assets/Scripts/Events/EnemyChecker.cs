@@ -8,8 +8,10 @@ using Cinemachine;
 public class EnemyChecker : MonoBehaviour
 {
     public int numEnemies;
-    public float enemy2Contador;
+    public int enemy2Contador;
+    public int enemy2ContadorCamera3;
     [SerializeField] UnityEvent Ev_Activa;
+    [SerializeField] UnityEvent Ev_Exit;
     public CinemachineVirtualCamera ActiveCamera;
     public List<CinemachineVirtualCamera> CamarasCombat2;
 
@@ -24,19 +26,20 @@ public class EnemyChecker : MonoBehaviour
             rejaNivel1.SetBool("RejaBoolNivel1", true);
             rejaNivel1.CrossFade("RejaAnimationNivel1", 0f);
             StartCoroutine(CameraCombatTransition());
+            StartCoroutine(CameraCombatTransition2());
             EnemyKilled();
         }
     }
     public void SwitchCameraCombat(CinemachineVirtualCamera Combat2)
     {
-        Combat2.Priority = 10;
+        Combat2.Priority = 11;
         ActiveCamera = Combat2;
 
         foreach (CinemachineVirtualCamera c in CamarasCombat2)
         {
-            if (c != Combat2 && c.Priority != 0)
+            if (c != Combat2 && c.Priority != 11)
             {
-                c.Priority = 0;
+                c.Priority = 11;
             }
         }
 
@@ -46,8 +49,17 @@ public class EnemyChecker : MonoBehaviour
     {
         yield return new WaitForSeconds(enemy2Contador);
         SwitchCameraCombat(CamarasCombat2[1]);
-        //transition();
-        //Invoke("Playerenabled", 2.5f);
+        //SwitchCameraCombat(CamarasCombat2[2]);
+       // Ev_Exit.Invoke();
+
+        yield return null;
+    }
+    IEnumerator CameraCombatTransition2()
+    {
+        yield return new WaitForSeconds(enemy2ContadorCamera3);
+        
+        SwitchCameraCombat(CamarasCombat2[2]);
+        Ev_Exit.Invoke();
 
         yield return null;
     }
