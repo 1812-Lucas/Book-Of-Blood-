@@ -408,7 +408,7 @@ public class VigorCardsDisplay : MonoBehaviour
                 combatScript.damageparticleSlot21_Combate4.Play();
                 enemyy.health -= 4;
                 stadisticplayerScipt.clearMind += 1;
-                if (stadisticplayerScipt.clearMind >= 3 && InvObjActionsScript.AguilePotions <= 1)
+                if (stadisticplayerScipt.clearMind >= 3 && InvObjActionsScript.AguilePotions == 0)
                 {
                     InvObjActionsScript.AguilePotions += 1;
                     stadisticplayerScipt.clearMind = 0;
