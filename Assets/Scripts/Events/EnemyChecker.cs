@@ -6,6 +6,7 @@ using UnityEngine.Events;
 
 public class EnemyChecker : MonoBehaviour
 {
+
     public int numEnemies;
     [SerializeField] UnityEvent Ev_Activa;
 
@@ -19,6 +20,7 @@ public class EnemyChecker : MonoBehaviour
             rejaNivel1.SetBool("RejaBoolNivel1", true);
             rejaNivel1.CrossFade("RejaAnimationNivel1", 0f);
             EnemyKilled();
+            
         }
     }
 
