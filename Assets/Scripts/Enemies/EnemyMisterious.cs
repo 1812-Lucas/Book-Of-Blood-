@@ -66,13 +66,13 @@ public class EnemyMisterious : Enemy
         if (PlayerStadisticsScript.magicShieldBasicBool == false)
         {
             PlayerStadisticsScript.health -= 4;
-            Debug.Log("The Mini Boss dealt 4 damage to the player with a basic attack");
+            Debug.Log("The Boss dealt <color=red>4 damage</color> to the player with a <color=red>basic attack</color>.");
 
 
         }
         else
         {
-            Debug.Log("Magic shield protected you from a basic attack");
+            Debug.Log("<color=green>Magic shield</color> protected you from a <color=red>basic attack</color>.");
         }
         myAnim.Play("Enemy M Attack");
         PlayBasicAttackParticles();
@@ -82,13 +82,13 @@ public class EnemyMisterious : Enemy
         if (PlayerStadisticsScript.inmortalHeavyBool == false)
         {
             PlayerStadisticsScript.health -= 6;
-            Debug.Log("The Mini Boss dealt 6 damage to the player with a heavy attack");
+            Debug.Log("The Boss dealt <color=red>6 damage</color> to the player with a <color=red>heavy attack</color>.");
 
 
         }
         else
         {
-            Debug.Log("inmortal protected you from a heavy attack");
+            Debug.Log("<color=green>Inmortal</color> protected you from a <color=red>heavy attack</color>.");
         }
         myAnim.Play("Enemy M HAttack");
         PlayHeavyAttackParticles();
@@ -98,13 +98,13 @@ public class EnemyMisterious : Enemy
         if (PlayerStadisticsScript.inmortalHeavyBool == false)
         {
             PlayerStadisticsScript.health -= 8;
-            Debug.Log("The Mini Boss dealt 8 damage to the player with a super heavy attack");
+            Debug.Log("The Boss dealt <color=red>8 damage</color> to the player with a <color=red>super heavy attack</color>.");
 
 
         }
         else
         {
-            Debug.Log("inmortal protected you from a super heavy attack");
+            Debug.Log("<color=green>Inmortal</color> protected you from a <color=red>super heavy attack</color>.");
         }
         myAnim.Play("Enemy M SHAttack");
         PlayHeavyAttackParticles();
@@ -115,11 +115,11 @@ public class EnemyMisterious : Enemy
         health -= PlayerStadisticsScript.antihealingToEnemies;
         if (PlayerStadisticsScript.antihealingToEnemies > 0)
         {
-            Debug.Log("Mini Boss got damage by Cursed Mud when tried to heal himself with 7 points of health");
+            Debug.Log("Mini Boss got damage by Cursed Mud when tried to heal himself with 8 points of health");
         }
         else
         {
-            Debug.Log("The Mini Boss healed 7 points of health");
+            Debug.Log("The Mini Boss healed 8 points of health");
             myAnim.Play("Enemy M Health");
         }
     }

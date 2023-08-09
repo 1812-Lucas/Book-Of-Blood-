@@ -120,7 +120,7 @@ public class CardDisplay : MonoBehaviour
         switch (NombredelaCartayEjecutarPasiva)
         {
             case "Sacred Font":
-                inventoryObjectsScript.HealthPotionParticles.Play();
+                //inventoryObjectsScript.HealthPotionParticles.Play();
                 StatsPlayerScript.health += 5;
                 StatsPlayerScript.health += StatsPlayerScript.healingRingPassive;
                 BloodFont();
@@ -208,7 +208,7 @@ public class CardDisplay : MonoBehaviour
                 combatScript.damageparticleSlot10_Combate3.Play();
                 combatScript.damageparticleSlot10_Combate4.Play();
                 StatsPlayerScript.health += StatsPlayerScript.vigor;
-                inventoryObjectsScript.HealthPotionParticles.Play();
+                //inventoryObjectsScript.HealthPotionParticles.Play();
                 PlayAudio(audiosArray[1]);
                 StatsPlayerScript.health += StatsPlayerScript.healingRingPassive;
                 BloodFont();
@@ -250,7 +250,7 @@ public class CardDisplay : MonoBehaviour
                 combatScript.damageparticleSlot13Combate2.Play();
                 combatScript.damageparticleSlot13_Combate3.Play();
                 combatScript.damageparticleSlot13_Combate4.Play();
-                inventoryObjectsScript.HealthPotionParticles.Play();
+                //inventoryObjectsScript.HealthPotionParticles.Play();
                 
                 StatsPlayerScript.healingRingPassive += 1;
                 Debug.Log("You had got a stack of <color=green>Healing Ring</color>.");
