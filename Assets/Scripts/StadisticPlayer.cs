@@ -45,7 +45,7 @@ public class StadisticPlayer : MonoBehaviour
             PlayerDies();
         }
 
-        if (health < 15)
+        if (health <= 15)
         {
             LowLife.gameObject.SetActive(true);
 
